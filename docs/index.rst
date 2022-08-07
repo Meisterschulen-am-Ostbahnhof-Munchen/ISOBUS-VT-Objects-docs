@@ -24,14 +24,13 @@ Contents
    usage
    api
    Jetter-ISO-Designer
-   1.  [Jetter-ISO-Designer](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/ISOBUS-VT-Objects/wiki/Jetter-ISO-Designer)
-    1.  [Einträge-von-Schülern](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/ISOBUS-VT-Objects/wiki/Eintr%C3%A4ge-von-Sch%C3%BClern)
-    2.  [Workspace-öffnen](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/ISOBUS-VT-Objects/wiki/Jetter-ISO-Designer-Workspace-%C3%B6ffnen)
-    3.  [ISOBUS-Objekte](ISOBUS-Objekte)
-    4.  [Komplette-Liste](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/ISOBUS-VT-Objects/wiki/Komplette-Liste)
+    1.  Einträge-von-Schülern
+    2.  Workspace-öffnen
+    3.  ISOBUS-Objekte
+    4.  Komplette-Liste
     5.  Objekte:
         1.  Masken
-            1.  [Working-set-B.1](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/ISOBUS-VT-Objects/wiki/ID-00-%E2%80%93-Working-set-%E2%80%93-ISO-11783-6-%E2%80%93-B.1)
+            1.  ID-00-–-Working-set-–-ISO-11783-6-–-B.1
             2.  [Data-mask-B.2](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/ISOBUS-VT-Objects/wiki/ID-01-%E2%80%93-Data-mask-%E2%80%93-ISO-11783-6-%E2%80%93-B.2)
             3.  [Alarm-Mask-B.3](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/ISOBUS-VT-Objects/wiki/ID-02-%E2%80%93-Alarm-Mask-%E2%80%93-ISO-11783-6-%E2%80%93-B.3)
             4.  [Soft-key-mask-B.5](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/ISOBUS-VT-Objects/wiki/ID-04-%E2%80%93-Soft-key-mask-%E2%80%93-ISO-11783-6-%E2%80%93-B.5)

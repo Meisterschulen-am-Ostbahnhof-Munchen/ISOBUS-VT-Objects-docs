@@ -1,4 +1,5 @@
 ID 2 – Alarm Mask – ISO 11783-6 – B.3
+===================================
 
 Beispiel für eine "Low Priority Alarm Mask"
 

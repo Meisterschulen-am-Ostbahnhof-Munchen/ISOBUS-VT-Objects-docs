@@ -1,6 +1,7 @@
 ID 6 – Button – ISO 11783-6 – B.7
+===================================
 
-![](https://user-images.githubusercontent.com/69573151/94337426-7d6dcf00-ffea-11ea-8ab0-ca710054a888.png)
+.. image:: https://user-images.githubusercontent.com/69573151/94337426-7d6dcf00-ffea-11ea-8ab0-ca710054a888.png
 
 Auswertung des Buttons:
 
@@ -27,22 +28,22 @@ TODO: verweis auf internationale Standards, Safety etc.. 
 
 es gibt 2 Wege der Auswertung: 
 
-1.  Makro (ISO-Designer)
-2.  über einen Callback im C-Code (Eclipse)
+1.  Makro (ISO-Designer`
+2.  über einen Callback im C-Code (Eclipse`
 
 Call Hierarchy:
 
-![](https://user-images.githubusercontent.com/69573151/94337621-210baf00-ffec-11ea-9ec0-fe4a7e7c418b.png)
+.. image:: https://user-images.githubusercontent.com/69573151/94337621-210baf00-ffec-11ea-9ec0-fe4a7e7c418b.png
 
 ```c
 iso_u32 Tageszaehler = 0;
 iso_u32 Gesamtzaehler = 0;
 iso_u32 Hugo = 0;
 
-void VTC_handleSoftkeysAndButtons_RELEASED(const struct ButtonActivation_S *pButtonData) {
+void VTC_handleSoftkeysAndButtons_RELEASED(const struct ButtonActivation_S *pButtonData` {
 
     // what button was released
-    switch (pButtonData->objectIdOfButtonObject) {
+    switch (pButtonData->objectIdOfButtonObject` {
 
     case SoftKey_PlusPlus:
     case Button_PlusPlus:
@@ -63,11 +64,11 @@ void VTC_handleSoftkeysAndButtons_RELEASED(const struct ButtonActivation_S *pBut
     default:
         break;
     }
-    IsoVtcCmd_NumericValue(pButtonData->u8Instance, NumberVariable_Tageszaehler, Tageszaehler);
-    IsoVtcCmd_NumericValue(pButtonData->u8Instance, NumberVariable_Gesamtzaehler, Gesamtzaehler);
-    setU32("CF-A", "Tageszaehler", Tageszaehler);
-    setU32("CF-A", "Gesamtzaehler", Gesamtzaehler);
+    IsoVtcCmd_NumericValue(pButtonData->u8Instance, NumberVariable_Tageszaehler, Tageszaehler`;
+    IsoVtcCmd_NumericValue(pButtonData->u8Instance, NumberVariable_Gesamtzaehler, Gesamtzaehler`;
+    setU32("CF-A", "Tageszaehler", Tageszaehler`;
+    setU32("CF-A", "Gesamtzaehler", Gesamtzaehler`;
 }
 ```
 
-![](https://user-images.githubusercontent.com/69573151/94602909-cbf2c600-0295-11eb-946a-a68b45b3eccc.png)
+.. image:: https://user-images.githubusercontent.com/69573151/94602909-cbf2c600-0295-11eb-946a-a68b45b3eccc.png

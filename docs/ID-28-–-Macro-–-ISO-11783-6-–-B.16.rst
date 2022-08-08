@@ -1,6 +1,7 @@
 ID 28 – Macro – ISO 11783-6 – B.16
+===================================
 
-![](https://user-images.githubusercontent.com/69573151/95758343-a491f500-0ca8-11eb-8c8a-29371031c94f.png)
+.. image:: https://user-images.githubusercontent.com/69573151/95758343-a491f500-0ca8-11eb-8c8a-29371031c94f.png
 
 Hier eine Kurzzusammenfassung der verschiedenen Macro-Möglichkeiten:
 
@@ -52,4 +53,4 @@ Hier eine Kurzzusammenfassung der verschiedenen Macro-Möglichkeiten:
         *   Die einzelnen ISO-Objekte
             *   Das Objekt Macro
 
-![](https://user-images.githubusercontent.com/69573151/94601320-9fd64580-0293-11eb-981e-d02cb4d5bc7e.png)
+.. image:: https://user-images.githubusercontent.com/69573151/94601320-9fd64580-0293-11eb-981e-d02cb4d5bc7e.png

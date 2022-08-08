@@ -29,7 +29,7 @@ Contents
    Workspace-öffnen
    ISOBUS-Objekte
    Komplette-Liste
-   Objekte:
+   Objekte
    Masken
    ID-00-–-Working-set-–-ISO-11783-6-–-B.1
    ID-01-–-Data-mask-–-ISO-11783-6-–-B.2
@@ -60,12 +60,12 @@ Contents
    Funktionen
    ID-27-–-Object-pointer-–-ISO-11783-6-–-B.15
    ID-28-–-Macro-–-ISO-11783-6-–-B.16
-   Attribute Attribute
+   Attribute
    ID-23-–-Font-attributes-–-ISO-11783-6-–-B.14.2
    ID-24-–-Line-attributes-–-ISO-11783-6-–-B.14.3
    ID-25-–-Fill-attributes-–-ISO-11783-6-–-B.14.4
    ID-26-–-Input-attributes-–-ISO-11783-6-–-B.14.5
-   Variablen Variablen
+   Variablen
    ID-21-–-Number-variable-–-ISO-11783-6-–-B.13.2
    ID-22-–-String-variable-–-ISO-11783-6-–-B.13.3
 

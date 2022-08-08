@@ -22,8 +22,6 @@ Contents
    :numbered:
 
    Home <self>
-   usage
-   api
    Jetter-ISO-Designer
    Einträge-von-Schülern
    Workspace-öffnen

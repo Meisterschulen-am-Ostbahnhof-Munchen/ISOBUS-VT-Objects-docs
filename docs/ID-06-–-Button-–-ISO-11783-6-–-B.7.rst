@@ -28,8 +28,8 @@ TODO: verweis auf internationale Standards, Safety etc.. 
 
 es gibt 2 Wege der Auswertung: 
 
-1.  Makro (ISO-Designer`
-2.  über einen Callback im C-Code (Eclipse`
+1.  Makro (ISO-Designer)
+2.  über einen Callback im C-Code (Eclipse)
 
 Call Hierarchy:
 

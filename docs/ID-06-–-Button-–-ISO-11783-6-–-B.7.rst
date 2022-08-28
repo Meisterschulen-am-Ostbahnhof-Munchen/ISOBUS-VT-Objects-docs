@@ -35,7 +35,7 @@ Call Hierarchy:
 
 .. image:: https://user-images.githubusercontent.com/69573151/94337621-210baf00-ffec-11ea-9ec0-fe4a7e7c418b.png
 
-.. code-block::
+.. code-block:: c
     iso_u32 Tageszaehler = 0;
     iso_u32 Gesamtzaehler = 0;
     iso_u32 Hugo = 0;

@@ -1,6 +1,5 @@
 Bilder
-######
-
+===============
 
 .. toctree::
    :numbered:

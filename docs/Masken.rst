@@ -1,10 +1,6 @@
 Masken
 ===============
 
-
-
-
-
 .. toctree::
    :numbered:
    :maxdepth: 9

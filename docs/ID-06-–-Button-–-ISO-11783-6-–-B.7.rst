@@ -35,40 +35,42 @@ Call Hierarchy:
 
 .. image:: https://user-images.githubusercontent.com/69573151/94337621-210baf00-ffec-11ea-9ec0-fe4a7e7c418b.png
 
-```c
-iso_u32 Tageszaehler = 0;
-iso_u32 Gesamtzaehler = 0;
-iso_u32 Hugo = 0;
-
-void VTC_handleSoftkeysAndButtons_RELEASED(const struct ButtonActivation_S *pButtonData` {
-
-    // what button was released
-    switch (pButtonData->objectIdOfButtonObject` {
-
-    case SoftKey_PlusPlus:
-    case Button_PlusPlus:
-        Tageszaehler++;
-        Gesamtzaehler++;
-        break;
-
-    case SoftKey_Reset_Gesamtzaehler:
-    case Button_Reset_Gesamtzaehler:
-        Gesamtzaehler = 0;
-        break;
-
-    case SoftKey_Reset_Tageszaehler:
-    case Button_Reset_Tageszaehler:
-        Tageszaehler = 0;
-        break;
-
-    default:
-        break;
+.. code-block::
+    iso_u32 Tageszaehler = 0;
+    iso_u32 Gesamtzaehler = 0;
+    iso_u32 Hugo = 0;
+    
+    void VTC_handleSoftkeysAndButtons_RELEASED(const struct ButtonActivation_S *pButtonData` {
+    
+       // what button was released
+        switch (pButtonData->objectIdOfButtonObject` {
+    
+        case SoftKey_PlusPlus:
+        case Button_PlusPlus:
+            Tageszaehler++;
+            Gesamtzaehler++;
+            break;
+    
+        case SoftKey_Reset_Gesamtzaehler:
+        case Button_Reset_Gesamtzaehler:
+            Gesamtzaehler = 0;
+            break;
+    
+        case SoftKey_Reset_Tageszaehler:
+        case Button_Reset_Tageszaehler:
+            Tageszaehler = 0;
+            break;
+    
+        default:
+            break;
+        }
+        IsoVtcCmd_NumericValue(pButtonData->u8Instance, NumberVariable_Tageszaehler, Tageszaehler`;
+        IsoVtcCmd_NumericValue(pButtonData->u8Instance, NumberVariable_Gesamtzaehler, Gesamtzaehler`;
+        setU32("CF-A", "Tageszaehler", Tageszaehler`;
+        setU32("CF-A", "Gesamtzaehler", Gesamtzaehler`;
     }
-    IsoVtcCmd_NumericValue(pButtonData->u8Instance, NumberVariable_Tageszaehler, Tageszaehler`;
-    IsoVtcCmd_NumericValue(pButtonData->u8Instance, NumberVariable_Gesamtzaehler, Gesamtzaehler`;
-    setU32("CF-A", "Tageszaehler", Tageszaehler`;
-    setU32("CF-A", "Gesamtzaehler", Gesamtzaehler`;
-}
-```
+
+End of Code
+
 
 .. image:: https://user-images.githubusercontent.com/69573151/94602909-cbf2c600-0295-11eb-946a-a68b45b3eccc.png

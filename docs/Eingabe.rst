@@ -2,8 +2,6 @@ Eingabe
 ===============
 
 .. toctree::
-   :numbered:
-   :maxdepth: 9
 
    ID-07-–-Input-boolean-–-ISO-11783-6-–-B.8.2
    ID-08-–-Input-string-–-ISO-11783-6-–-B.8.3

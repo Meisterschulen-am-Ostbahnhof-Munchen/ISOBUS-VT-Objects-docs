@@ -3,8 +3,6 @@ Ausgabe
 
 
 .. toctree::
-   :numbered:
-   :maxdepth: 9
 
    ID-11-–-Output-string-–-ISO-11783-6-–-B.9.2
    ID-12-–-Output-number-–-ISO-11783-6-–-B.9.3

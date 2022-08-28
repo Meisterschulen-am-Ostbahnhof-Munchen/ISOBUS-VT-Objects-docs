@@ -2,8 +2,8 @@
 Komplette Liste
 ----------------
 
-1.  `Working-set-B.1 https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/Install-ISOBUS-Environment/wiki/ID-00-%E2%80%93%C2%A0Working-set-%E2%80%93%C2%A0ISO-11783-6-%E2%80%93-B.1`_
-2.  `Data-mask-B.2 https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/Install-ISOBUS-Environment/wiki/ID-01-%E2%80%93-Data-mask-%E2%80%93-ISO-11783-6-%E2%80%93-B.2`_
+1.  `Working-set-B.1 <https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/Install-ISOBUS-Environment/wiki/ID-00-%E2%80%93%C2%A0Working-set-%E2%80%93%C2%A0ISO-11783-6-%E2%80%93-B.1>`_
+2.  `Data-mask-B.2 <https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/Install-ISOBUS-Environment/wiki/ID-01-%E2%80%93-Data-mask-%E2%80%93-ISO-11783-6-%E2%80%93-B.2>`_
 3.  `Alarm-Mask-B.3 https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/Install-ISOBUS-Environment/wiki/ID-02-%E2%80%93-Alarm-Mask-%E2%80%93-ISO-11783-6-%E2%80%93-B.3`_
 4.  `Container-B.4 https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/Install-ISOBUS-Environment/wiki/ID-03-%E2%80%93-Container-%E2%80%93-ISO-11783-6-%E2%80%93-B.4`_
 5.  `Soft-key-mask-B.5 https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/Install-ISOBUS-Environment/wiki/ID-04-%E2%80%93-Soft-key-mask-%E2%80%93-ISO-11783-6-%E2%80%93-B.5`_

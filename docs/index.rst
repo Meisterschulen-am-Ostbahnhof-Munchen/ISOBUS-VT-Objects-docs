@@ -16,7 +16,6 @@ Contents
    :maxdepth: 9
 
    Home <self>
-   Home
    Jetter-ISO-Designer
    
 

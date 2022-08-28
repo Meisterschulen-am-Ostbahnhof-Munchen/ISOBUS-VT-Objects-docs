@@ -1,8 +1,6 @@
 Attribute
 ===================================
 
-
-
 .. toctree::
    :numbered:
    :maxdepth: 9

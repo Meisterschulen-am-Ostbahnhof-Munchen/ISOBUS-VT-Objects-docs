@@ -1,5 +1,5 @@
 Bedienelemente
-##############
+===============
 
 .. toctree::
    :numbered:

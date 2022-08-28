@@ -3,8 +3,6 @@ Objekte
 ---------------
 
 .. toctree::
-   :numbered:
-   :maxdepth: 9
 
    Masken
    Container

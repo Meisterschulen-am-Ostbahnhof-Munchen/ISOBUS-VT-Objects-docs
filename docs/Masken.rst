@@ -2,8 +2,6 @@ Masken
 ===============
 
 .. toctree::
-   :numbered:
-   :maxdepth: 9
 
    ID-00-–-Working-set-–-ISO-11783-6-–-B.1
    ID-01-–-Data-mask-–-ISO-11783-6-–-B.2

@@ -1,6 +1,5 @@
 Eingabe
-#######
-
+===============
 
 .. toctree::
    :numbered:

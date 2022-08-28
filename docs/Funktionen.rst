@@ -1,5 +1,5 @@
 Funktionen
-##########
+===============
 
 .. toctree::
    :numbered:

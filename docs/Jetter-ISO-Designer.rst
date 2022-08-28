@@ -9,7 +9,6 @@ Jetter ISO-Designer
    Einträge-von-Schülern
    Workspace-öffnen
    ISOBUS-Objekte
-   Komplette-Liste
    Objekte
 
 

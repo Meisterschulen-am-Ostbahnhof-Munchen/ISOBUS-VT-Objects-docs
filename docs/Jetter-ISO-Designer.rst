@@ -3,8 +3,6 @@ Jetter ISO-Designer
 ===================================
 
 .. toctree::
-   :numbered:
-   :maxdepth: 9
 
    Einträge-von-Schülern
    Workspace-öffnen

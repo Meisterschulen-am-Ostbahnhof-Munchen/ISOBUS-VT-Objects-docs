@@ -35,7 +35,7 @@ Call Hierarchy:
 
 .. image:: https://user-images.githubusercontent.com/69573151/94337621-210baf00-ffec-11ea-9ec0-fe4a7e7c418b.png
 
-.. code-block:: c
+.. code-block:: C
     :caption: Code Blocks can have captions.
 
     {

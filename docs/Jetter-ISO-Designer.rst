@@ -5,7 +5,7 @@ Jetter ISO-Designer
 .. toctree::
 
    Einträge-von-Schülern
-   Workspace-öffnen
+   Jetter-ISO-Designer-Workspace-öffnen
    ISOBUS-Objekte
    Objekte
 

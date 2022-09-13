@@ -43,10 +43,10 @@ Call Hierarchy:
     iso_u32 Gesamtzaehler = 0;
     iso_u32 Hugo = 0;
     
-    void VTC_handleSoftkeysAndButtons_RELEASED(const struct ButtonActivation_S *pButtonData` {
+    void VTC_handleSoftkeysAndButtons_RELEASED(const struct ButtonActivation_S *pButtonData) {
     
        // what button was released
-        switch (pButtonData->objectIdOfButtonObject` {
+        switch (pButtonData->objectIdOfButtonObject) {
     
         case SoftKey_PlusPlus:
         case Button_PlusPlus:
@@ -67,10 +67,10 @@ Call Hierarchy:
         default:
             break;
         }
-        IsoVtcCmd_NumericValue(pButtonData->u8Instance, NumberVariable_Tageszaehler, Tageszaehler`;
-        IsoVtcCmd_NumericValue(pButtonData->u8Instance, NumberVariable_Gesamtzaehler, Gesamtzaehler`;
-        setU32("CF-A", "Tageszaehler", Tageszaehler`;
-        setU32("CF-A", "Gesamtzaehler", Gesamtzaehler`;
+        IsoVtcCmd_NumericValue(pButtonData->u8Instance, NumberVariable_Tageszaehler, Tageszaehler);
+        IsoVtcCmd_NumericValue(pButtonData->u8Instance, NumberVariable_Gesamtzaehler, Gesamtzaehler);
+        setU32("CF-A", "Tageszaehler", Tageszaehler);
+        setU32("CF-A", "Gesamtzaehler", Gesamtzaehler);
     }
 
 End of Code

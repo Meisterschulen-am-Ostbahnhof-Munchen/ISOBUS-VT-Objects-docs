@@ -1,2 +1,0 @@
-Meisterschulen am Ostbahnhof, München
-===================================

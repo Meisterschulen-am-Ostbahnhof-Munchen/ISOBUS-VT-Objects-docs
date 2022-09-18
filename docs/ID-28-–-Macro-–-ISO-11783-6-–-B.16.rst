@@ -48,9 +48,13 @@ Hier eine Kurzzusammenfassung der verschiedenen Macro-Möglichkeiten:
 ## Empfohlene Lektüre:
 
 *   ISO 11783-6 – B.16
+
 *   Hilfe Jetter ISO-Designer.
+
     *   ISO-Objekte
+    
         *   Die einzelnen ISO-Objekte
+        
             *   Das Objekt Macro
 
 .. image:: https://user-images.githubusercontent.com/69573151/94601320-9fd64580-0293-11eb-981e-d02cb4d5bc7e.png

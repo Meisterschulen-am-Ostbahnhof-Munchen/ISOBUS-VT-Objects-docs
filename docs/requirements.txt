@@ -1,4 +1,6 @@
 sphinx-rtd-theme
 sphinx
 recommonmark
+sphinxcontrib.mermaid
+sphinx-markdown-tables
 

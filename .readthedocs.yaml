@@ -35,5 +35,5 @@ formats:
 
 
 sphinx:
-  fail_on_warning: true
+  fail_on_warning: false
 

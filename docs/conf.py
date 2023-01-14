@@ -27,13 +27,13 @@ author = "Franz Höpfinger"
 # -- General configuration
 
 extensions = [
+    "myst_parser",
     "sphinx.ext.duration",
     "sphinx.ext.doctest",
     "sphinx.ext.autosectionlabel",
     "sphinx.ext.autodoc",
     "sphinx.ext.intersphinx",
     "sphinx.ext.imgconverter",
-    "recommonmark",
     "sphinxcontrib.mermaid",
     "sphinx_markdown_tables"
 ]

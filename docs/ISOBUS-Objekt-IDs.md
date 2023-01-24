@@ -57,3 +57,53 @@ Stand Jetter ISO-Designer 5.6.1
 In Versionen vor V. 5.6.0, also bis ISO-Designer 5.5.1
 
 war folgende Benennung üblich:
+
+
+| TypeName | StartID | FmtStr |
+| --- | --- | --- |
+| WorkingSet | 0 | WorkingSet\_%ld |
+| WorkingSet |  | WorkingSet_%ld |
+| DataMask | 100 | DataMask_%ld |
+| AlarmMask | 200 | AlarmMask_%ld |
+| Container | 300 | Container_%ld |
+| SoftKeyMask | 400 | SoftKeyMask_%ld |
+| SoftKey | 500 | SoftKey_%ld |
+| KeyGroup | 3600 | KeyGroup_%ld |
+| Button | 600 | Button_%ld |
+| InputBoolean | 700 | InputBoolean_%ld |
+| InputString | 800 | InputString_%ld |
+| InputNumber | 900 | InputNumber_%ld |
+| InputList | 1000 | InputList_%ld |
+| OutputString | 1100 | OutputString_%ld |
+| OutputNumber | 1200 | OutputNumber_%ld |
+| OutputList | 3000 | OutputList_%ld |
+| Line | 1300 | Line_%ld |
+| Rectangle | 1400 | Rectangle_%ld |
+| Ellipse | 1500 | Ellipse_%ld |
+| Polygon | 1600 | Polygon_%ld |
+| Meter | 1700 | Meter_%ld |
+| LinearBargraph | 1800 | LinearBargraph_%ld |
+| ArchedBargraph | 1900 | ArchedBargraph_%ld |
+| PictureGraphic | 2000 | [File Name]_%ld |
+| GraphicsContext | 3100 | GraphicsContext_%ld |
+| NumberVariable | 2100 | NumberVariable_%ld |
+| StringVariable | 2200 | StringVariable_%ld |
+| FontAttributes | 2300 | FontAttributes_%ld |
+| LineAttributes | 2400 | LineAttributes_%ld |
+| FillAttributes | 2500 | FillAttributes_%ld |
+| InputAttributes | 2600 | InputAttributes_%ld |
+| ExtendedInputAttributes | 3200 | ExtendedInputAttributes_%ld |
+| ObjectPointer | 2700 | ObjectPointer_%ld |
+| Macro |  | Macro_%ld |
+| AuxInput2 | 2800 | AuxInput2_%ld |
+| AuxFunction2 | 2900 | AuxFunction2_%ld |
+| AuxObjectPointer | 3300 | AuxObjectPointer_%ld |
+| ColorMap | 3400 | ColorMap_%ld |
+| WindowMask | 3500 | WindowMask_%ld |
+| ObjectLabelReferenceList | 3700 | ObjectLabelReferenceList_%ld |
+| ExternalObjectDefinition | 3800 | ExternalObjectDefinition_%ld |
+| ExternalReferenceName | 3900 | ExternalReferenceName_%ld |
+| ExternalObjectPointer | 4000 | ExternalObjectPointer_%ld |
+| Animation | 4100 | Animation_%ld |
+| IDsForTemporaryUse | 64000 | IDsForTemporaryUse\_%ld |
+| Proxy | 4194304 | Proxy\_%ld |

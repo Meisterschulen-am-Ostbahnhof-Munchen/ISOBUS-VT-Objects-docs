@@ -7,81 +7,54 @@
 			<td>StartID</td>
 			<td>FmtStr</td>
 		</tr>
-		<tr>
-			<td>WorkingSet</td>
-			<td>0</td>
-			<td>WorkingSet_%ld</td>
-		</tr>
-		<tr>
-			<td>&nbsp;</td>
-			<td>&nbsp;</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>&nbsp;</td>
-			<td>&nbsp;</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>&nbsp;</td>
-			<td>&nbsp;</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>&nbsp;</td>
-			<td>&nbsp;</td>
-			<td>&nbsp;</td>
-		</tr>
+<tr><td>WorkingSet</td><td>0</td><td>WorkingSet_%ld</td></tr>
+<tr><td>DataMask</td><td>1000</td><td>DataMask_%ld</td></tr>
+<tr><td>AlarmMask</td><td>2000</td><td>AlarmMask_%ld</td></tr>
+<tr><td>Container</td><td>3000</td><td>Container_%ld</td></tr>
+<tr><td>SoftKeyMask</td><td>4000</td><td>SoftKeyMask_%ld</td></tr>
+<tr><td>SoftKey</td><td>5000</td><td>SoftKey_%ld</td></tr>
+<tr><td>KeyGroup</td><td>35000</td><td>KeyGroup_%ld</td></tr>
+<tr><td>Button</td><td>6000</td><td>Button_%ld</td></tr>
+<tr><td>InputBoolean</td><td>7000</td><td>InputBoolean_%ld</td></tr>
+<tr><td>InputString</td><td>8000</td><td>InputString_%ld</td></tr>
+<tr><td>InputNumber</td><td>9000</td><td>InputNumber_%ld</td></tr>
+<tr><td>InputList</td><td>10000</td><td>InputList_%ld</td></tr>
+<tr><td>OutputString</td><td>11000</td><td>OutputString_%ld</td></tr>
+<tr><td>OutputNumber</td><td>12000</td><td>OutputNumber_%ld</td></tr>
+<tr><td>OutputList</td><td>37000</td><td>OutputList_%ld</td></tr>
+<tr><td>Line</td><td>13000</td><td>Line_%ld</td></tr>
+<tr><td>Rectangle</td><td>14000</td><td>Rectangle_%ld</td></tr>
+<tr><td>Ellipse</td><td>15000</td><td>Ellipse_%ld</td></tr>
+<tr><td>Polygon</td><td>16000</td><td>Polygon_%ld</td></tr>
+<tr><td>Meter</td><td>17000</td><td>Meter_%ld</td></tr>
+<tr><td>LinearBargraph</td><td>18000</td><td>LinearBargraph_%ld</td></tr>
+<tr><td>ArchedBargraph</td><td>19000</td><td>ArchedBargraph_%ld</td></tr>
+<tr><td>PictureGraphic</td><td>20000</td><td>PictureGraphic_%ld</td></tr>
+<tr><td>GraphicsContext</td><td>36000</td><td>GraphicsContext_%ld</td></tr>
+<tr><td>NumberVariable</td><td>21000</td><td>NumberVariable_%ld</td></tr>
+<tr><td>StringVariable</td><td>22000</td><td>StringVariable_%ld</td></tr>
+<tr><td>FontAttributes</td><td>23000</td><td>FontAttributes_%ld</td></tr>
+<tr><td>LineAttributes</td><td>24000</td><td>LineAttributes_%ld</td></tr>
+<tr><td>FillAttributes</td><td>25000</td><td>FillAttributes_%ld</td></tr>
+<tr><td>InputAttributes</td><td>26000</td><td>InputAttributes_%ld</td></tr>
+<tr><td>ExtendedInputAttributes</td><td>38000</td><td>ExtendedInputAttributes_%ld</td></tr>
+<tr><td>ObjectPointer</td><td>27000</td><td>ObjectPointer_%ld</td></tr>
+<tr><td>Macro</td><td>0</td><td>Macro_%ld" Hidden="0" ReadOnly="1"/>
+<tr><td>AuxFunction2</td><td>31000</td><td>AuxFunction2_%ld</td></tr>
+<tr><td>AuxInput2</td><td>32000</td><td>AuxInput2_%ld</td></tr>
+<tr><td>AuxObjectPointer</td><td>33000</td><td>AuxObjectPointer_%ld</td></tr>
+<tr><td>ColorMap</td><td>39000</td><td>ColorMap_%ld</td></tr>
+<tr><td>WindowMask</td><td>34000</td><td>WindowMask_%ld</td></tr>
+<tr><td>ObjectLabelReferenceList</td><td>40000</td><td>ObjectLabelReferenceList_%ld</td></tr>
+<tr><td>ExternalObjectDefinition</td><td>41000</td><td>ExternalObjectDefinition_%ld</td></tr>
+<tr><td>ExternalReferenceName</td><td>42000</td><td>ExternalReferenceName_%ld</td></tr>
+<tr><td>ExternalObjectPointer</td><td>43000</td><td>ExternalObjectPointer_%ld</td></tr>
+<tr><td>Animation</td><td>44000</td><td>Animation_%ld</td></tr>
+<tr><td>ScaledGraphic</td><td>48000</td><td>ScaledGraphic_%ld</td></tr>
+<tr><td>GraphicData</td><td>46000</td><td>GraphicData_%ld</td></tr>
+<tr><td>ColorPalette</td><td>45000</td><td>ColorPalette_%ld</td></tr>
+<tr><td>WorkingSetSpecialControls</td><td>47000</td><td>WorkingSetSpecialControls_%ld</td></tr>
+<tr><td>IDsForTemporaryUse</td><td>64000</td><td>IDsForTemporaryUse_%ld</td></tr>
+<tr><td>Proxy</td><td>4194304</td><td>Proxy_%ld</td></tr>
 	</tbody>
 </table>
-
-
-		<Template TypeName="WorkingSet" StartID="0" MaxID="65534" FmtStr="WorkingSet_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="DataMask" StartID="1000" MaxID="65534" FmtStr="DataMask_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="AlarmMask" StartID="2000" MaxID="65534" FmtStr="AlarmMask_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="Container" StartID="3000" MaxID="65534" FmtStr="Container_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="SoftKeyMask" StartID="4000" MaxID="65534" FmtStr="SoftKeyMask_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="SoftKey" StartID="5000" MaxID="65534" FmtStr="SoftKey_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="KeyGroup" StartID="35000" MaxID="65534" FmtStr="KeyGroup_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="Button" StartID="6000" MaxID="65534" FmtStr="Button_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="InputBoolean" StartID="7000" MaxID="65534" FmtStr="InputBoolean_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="InputString" StartID="8000" MaxID="65534" FmtStr="InputString_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="InputNumber" StartID="9000" MaxID="65534" FmtStr="InputNumber_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="InputList" StartID="10000" MaxID="65534" FmtStr="InputList_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="OutputString" StartID="11000" MaxID="65534" FmtStr="OutputString_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="OutputNumber" StartID="12000" MaxID="65534" FmtStr="OutputNumber_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="OutputList" StartID="37000" MaxID="65534" FmtStr="OutputList_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="Line" StartID="13000" MaxID="65534" FmtStr="Line_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="Rectangle" StartID="14000" MaxID="65534" FmtStr="Rectangle_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="Ellipse" StartID="15000" MaxID="65534" FmtStr="Ellipse_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="Polygon" StartID="16000" MaxID="65534" FmtStr="Polygon_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="Meter" StartID="17000" MaxID="65534" FmtStr="Meter_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="LinearBargraph" StartID="18000" MaxID="65534" FmtStr="LinearBargraph_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="ArchedBargraph" StartID="19000" MaxID="65534" FmtStr="ArchedBargraph_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="PictureGraphic" StartID="20000" MaxID="65534" FmtStr="PictureGraphic_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="GraphicsContext" StartID="36000" MaxID="65534" FmtStr="GraphicsContext_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="NumberVariable" StartID="21000" MaxID="65534" FmtStr="NumberVariable_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="StringVariable" StartID="22000" MaxID="65534" FmtStr="StringVariable_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="FontAttributes" StartID="23000" MaxID="65534" FmtStr="FontAttributes_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="LineAttributes" StartID="24000" MaxID="65534" FmtStr="LineAttributes_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="FillAttributes" StartID="25000" MaxID="65534" FmtStr="FillAttributes_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="InputAttributes" StartID="26000" MaxID="65534" FmtStr="InputAttributes_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="ExtendedInputAttributes" StartID="38000" MaxID="65534" FmtStr="ExtendedInputAttributes_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="ObjectPointer" StartID="27000" MaxID="65534" FmtStr="ObjectPointer_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="Macro" StartID="0" MaxID="65534" FmtStr="Macro_%ld" Hidden="0" ReadOnly="1"/>
-		<Template TypeName="AuxFunction2" StartID="31000" MaxID="65534" FmtStr="AuxFunction2_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="AuxInput2" StartID="32000" MaxID="65534" FmtStr="AuxInput2_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="AuxObjectPointer" StartID="33000" MaxID="65534" FmtStr="AuxObjectPointer_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="ColorMap" StartID="39000" MaxID="65534" FmtStr="ColorMap_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="WindowMask" StartID="34000" MaxID="65534" FmtStr="WindowMask_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="ObjectLabelReferenceList" StartID="40000" MaxID="65534" FmtStr="ObjectLabelReferenceList_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="ExternalObjectDefinition" StartID="41000" MaxID="65534" FmtStr="ExternalObjectDefinition_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="ExternalReferenceName" StartID="42000" MaxID="65534" FmtStr="ExternalReferenceName_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="ExternalObjectPointer" StartID="43000" MaxID="65534" FmtStr="ExternalObjectPointer_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="Animation" StartID="44000" MaxID="65534" FmtStr="Animation_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="ScaledGraphic" StartID="48000" MaxID="65534" FmtStr="ScaledGraphic_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="GraphicData" StartID="46000" MaxID="65534" FmtStr="GraphicData_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="ColorPalette" StartID="45000" MaxID="65534" FmtStr="ColorPalette_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="WorkingSetSpecialControls" StartID="47000" MaxID="65534" FmtStr="WorkingSetSpecialControls_%ld" Hidden="0" ReadOnly="0"/>
-		<Template TypeName="IDsForTemporaryUse" StartID="64000" MaxID="65534" FmtStr="IDsForTemporaryUse_%ld" Hidden="1" ReadOnly="0"/>
-		<Template TypeName="Proxy" StartID="4194304" MaxID="65534" FmtStr="Proxy_%ld" Hidden="1" ReadOnly="0"/>

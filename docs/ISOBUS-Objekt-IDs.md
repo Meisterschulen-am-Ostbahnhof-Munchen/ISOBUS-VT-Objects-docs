@@ -1,5 +1,7 @@
 # ISOBUS Objekt IDs
 
+Stand Jetter ISO-Designer 5.6.1
+
 | TypeName | StartID | FmtStr |
 | --- | --- | --- |
 | WorkingSet | 0 | WorkingSet\_%ld |

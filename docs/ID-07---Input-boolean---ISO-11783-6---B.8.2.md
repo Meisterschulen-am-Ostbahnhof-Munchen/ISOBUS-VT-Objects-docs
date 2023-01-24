@@ -1,7 +1,6 @@
 # ID 7 – Input boolean – ISO 11783-6 – B.8.2
 
-
-## Empfohlene Lektüre:
+## Empfohlene Lektüre Input boolean:
 
 *   Hilfe Jetter ISO-Designer.
     *   ISO-Objekte

@@ -1,60 +1,53 @@
 # ISOBUS Objekt IDs
 
-<table>
-	<tbody>
-		<tr>
-			<td>TypeName</td>
-			<td>StartID</td>
-			<td>FmtStr</td>
-		</tr>
-<tr><td>WorkingSet</td><td>0</td><td>WorkingSet_%ld</td></tr>
-<tr><td>DataMask</td><td>1000</td><td>DataMask_%ld</td></tr>
-<tr><td>AlarmMask</td><td>2000</td><td>AlarmMask_%ld</td></tr>
-<tr><td>Container</td><td>3000</td><td>Container_%ld</td></tr>
-<tr><td>SoftKeyMask</td><td>4000</td><td>SoftKeyMask_%ld</td></tr>
-<tr><td>SoftKey</td><td>5000</td><td>SoftKey_%ld</td></tr>
-<tr><td>KeyGroup</td><td>35000</td><td>KeyGroup_%ld</td></tr>
-<tr><td>Button</td><td>6000</td><td>Button_%ld</td></tr>
-<tr><td>InputBoolean</td><td>7000</td><td>InputBoolean_%ld</td></tr>
-<tr><td>InputString</td><td>8000</td><td>InputString_%ld</td></tr>
-<tr><td>InputNumber</td><td>9000</td><td>InputNumber_%ld</td></tr>
-<tr><td>InputList</td><td>10000</td><td>InputList_%ld</td></tr>
-<tr><td>OutputString</td><td>11000</td><td>OutputString_%ld</td></tr>
-<tr><td>OutputNumber</td><td>12000</td><td>OutputNumber_%ld</td></tr>
-<tr><td>OutputList</td><td>37000</td><td>OutputList_%ld</td></tr>
-<tr><td>Line</td><td>13000</td><td>Line_%ld</td></tr>
-<tr><td>Rectangle</td><td>14000</td><td>Rectangle_%ld</td></tr>
-<tr><td>Ellipse</td><td>15000</td><td>Ellipse_%ld</td></tr>
-<tr><td>Polygon</td><td>16000</td><td>Polygon_%ld</td></tr>
-<tr><td>Meter</td><td>17000</td><td>Meter_%ld</td></tr>
-<tr><td>LinearBargraph</td><td>18000</td><td>LinearBargraph_%ld</td></tr>
-<tr><td>ArchedBargraph</td><td>19000</td><td>ArchedBargraph_%ld</td></tr>
-<tr><td>PictureGraphic</td><td>20000</td><td>PictureGraphic_%ld</td></tr>
-<tr><td>GraphicsContext</td><td>36000</td><td>GraphicsContext_%ld</td></tr>
-<tr><td>NumberVariable</td><td>21000</td><td>NumberVariable_%ld</td></tr>
-<tr><td>StringVariable</td><td>22000</td><td>StringVariable_%ld</td></tr>
-<tr><td>FontAttributes</td><td>23000</td><td>FontAttributes_%ld</td></tr>
-<tr><td>LineAttributes</td><td>24000</td><td>LineAttributes_%ld</td></tr>
-<tr><td>FillAttributes</td><td>25000</td><td>FillAttributes_%ld</td></tr>
-<tr><td>InputAttributes</td><td>26000</td><td>InputAttributes_%ld</td></tr>
-<tr><td>ExtendedInputAttributes</td><td>38000</td><td>ExtendedInputAttributes_%ld</td></tr>
-<tr><td>ObjectPointer</td><td>27000</td><td>ObjectPointer_%ld</td></tr>
-<tr><td>Macro</td><td>0</td><td>Macro_%ld" Hidden="0" ReadOnly="1"/>
-<tr><td>AuxFunction2</td><td>31000</td><td>AuxFunction2_%ld</td></tr>
-<tr><td>AuxInput2</td><td>32000</td><td>AuxInput2_%ld</td></tr>
-<tr><td>AuxObjectPointer</td><td>33000</td><td>AuxObjectPointer_%ld</td></tr>
-<tr><td>ColorMap</td><td>39000</td><td>ColorMap_%ld</td></tr>
-<tr><td>WindowMask</td><td>34000</td><td>WindowMask_%ld</td></tr>
-<tr><td>ObjectLabelReferenceList</td><td>40000</td><td>ObjectLabelReferenceList_%ld</td></tr>
-<tr><td>ExternalObjectDefinition</td><td>41000</td><td>ExternalObjectDefinition_%ld</td></tr>
-<tr><td>ExternalReferenceName</td><td>42000</td><td>ExternalReferenceName_%ld</td></tr>
-<tr><td>ExternalObjectPointer</td><td>43000</td><td>ExternalObjectPointer_%ld</td></tr>
-<tr><td>Animation</td><td>44000</td><td>Animation_%ld</td></tr>
-<tr><td>ScaledGraphic</td><td>48000</td><td>ScaledGraphic_%ld</td></tr>
-<tr><td>GraphicData</td><td>46000</td><td>GraphicData_%ld</td></tr>
-<tr><td>ColorPalette</td><td>45000</td><td>ColorPalette_%ld</td></tr>
-<tr><td>WorkingSetSpecialControls</td><td>47000</td><td>WorkingSetSpecialControls_%ld</td></tr>
-<tr><td>IDsForTemporaryUse</td><td>64000</td><td>IDsForTemporaryUse_%ld</td></tr>
-<tr><td>Proxy</td><td>4194304</td><td>Proxy_%ld</td></tr>
-	</tbody>
-</table>
+| TypeName | StartID | FmtStr |
+| --- | --- | --- |
+| WorkingSet | 0 | WorkingSet\_%ld |
+| DataMask | 1000 | DataMask\_%ld |
+| AlarmMask | 2000 | AlarmMask\_%ld |
+| Container | 3000 | Container\_%ld |
+| SoftKeyMask | 4000 | SoftKeyMask\_%ld |
+| SoftKey | 5000 | SoftKey\_%ld |
+| KeyGroup | 35000 | KeyGroup\_%ld |
+| Button | 6000 | Button\_%ld |
+| InputBoolean | 7000 | InputBoolean\_%ld |
+| InputString | 8000 | InputString\_%ld |
+| InputNumber | 9000 | InputNumber\_%ld |
+| InputList | 10000 | InputList\_%ld |
+| OutputString | 11000 | OutputString\_%ld |
+| OutputNumber | 12000 | OutputNumber\_%ld |
+| OutputList | 37000 | OutputList\_%ld |
+| Line | 13000 | Line\_%ld |
+| Rectangle | 14000 | Rectangle\_%ld |
+| Ellipse | 15000 | Ellipse\_%ld |
+| Polygon | 16000 | Polygon\_%ld |
+| Meter | 17000 | Meter\_%ld |
+| LinearBargraph | 18000 | LinearBargraph\_%ld |
+| ArchedBargraph | 19000 | ArchedBargraph\_%ld |
+| PictureGraphic | 20000 | PictureGraphic\_%ld |
+| GraphicsContext | 36000 | GraphicsContext\_%ld |
+| NumberVariable | 21000 | NumberVariable\_%ld |
+| StringVariable | 22000 | StringVariable\_%ld |
+| FontAttributes | 23000 | FontAttributes\_%ld |
+| LineAttributes | 24000 | LineAttributes\_%ld |
+| FillAttributes | 25000 | FillAttributes\_%ld |
+| InputAttributes | 26000 | InputAttributes\_%ld |
+| ExtendedInputAttributes | 38000 | ExtendedInputAttributes\_%ld |
+| ObjectPointer | 27000 | ObjectPointer\_%ld |
+| Macro | 0 | Macro\_%ld" Hidden="0" ReadOnly="1"/> |
+| AuxFunction2 | 31000 | AuxFunction2\_%ld |
+| AuxInput2 | 32000 | AuxInput2\_%ld |
+| AuxObjectPointer | 33000 | AuxObjectPointer\_%ld |
+| ColorMap | 39000 | ColorMap\_%ld |
+| WindowMask | 34000 | WindowMask\_%ld |
+| ObjectLabelReferenceList | 40000 | ObjectLabelReferenceList\_%ld |
+| ExternalObjectDefinition | 41000 | ExternalObjectDefinition\_%ld |
+| ExternalReferenceName | 42000 | ExternalReferenceName\_%ld |
+| ExternalObjectPointer | 43000 | ExternalObjectPointer\_%ld |
+| Animation | 44000 | Animation\_%ld |
+| ScaledGraphic | 48000 | ScaledGraphic\_%ld |
+| GraphicData | 46000 | GraphicData\_%ld |
+| ColorPalette | 45000 | ColorPalette\_%ld |
+| WorkingSetSpecialControls | 47000 | WorkingSetSpecialControls\_%ld |
+| IDsForTemporaryUse | 64000 | IDsForTemporaryUse\_%ld |
+| Proxy | 4194304 | Proxy\_%ld |

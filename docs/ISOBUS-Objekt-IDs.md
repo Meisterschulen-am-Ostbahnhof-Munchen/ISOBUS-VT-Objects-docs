@@ -36,7 +36,7 @@ Stand Jetter ISO-Designer 5.6.1
 | InputAttributes | 26000 | InputAttributes\_%ld |
 | ExtendedInputAttributes | 38000 | ExtendedInputAttributes\_%ld |
 | ObjectPointer | 27000 | ObjectPointer\_%ld |
-| Macro | 0 | Macro\_%ld" Hidden="0" ReadOnly="1"/> |
+| Macro | 0 | Macro\_%ld |
 | AuxFunction2 | 31000 | AuxFunction2\_%ld |
 | AuxInput2 | 32000 | AuxInput2\_%ld |
 | AuxObjectPointer | 33000 | AuxObjectPointer\_%ld |

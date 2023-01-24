@@ -44,7 +44,7 @@ Hier eine Kurzzusammenfassung der verschiedenen Macro-Möglichkeiten:
 *   SetObjectLabel
     *   TODO
 
-## Empfohlene Lektüre:
+## Empfohlene Lektüre Macro:
 
 *   ISO 11783-6 – B.16
 *   Hilfe Jetter ISO-Designer.

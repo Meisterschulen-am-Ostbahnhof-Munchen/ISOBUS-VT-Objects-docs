@@ -53,3 +53,7 @@ Stand Jetter ISO-Designer 5.6.1
 | WorkingSetSpecialControls | 47000 | WorkingSetSpecialControls\_%ld |
 | IDsForTemporaryUse | 64000 | IDsForTemporaryUse\_%ld |
 | Proxy | 4194304 | Proxy\_%ld |
+
+In Versionen vor V. 5.6.0, also bis ISO-Designer 5.5.1
+
+war folgende Benennung üblich:

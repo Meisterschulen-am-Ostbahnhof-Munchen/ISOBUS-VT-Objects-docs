@@ -1,7 +1,6 @@
 # ID 8 – Input string – ISO 11783-6 – B.8.3
 
-
-## Empfohlene Lektüre:
+## Empfohlene Lektüre Input string:
 
 *   Hilfe Jetter ISO-Designer.
     *   ISO-Objekte

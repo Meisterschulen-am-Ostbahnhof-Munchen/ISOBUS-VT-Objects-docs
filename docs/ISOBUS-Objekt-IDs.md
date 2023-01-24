@@ -68,6 +68,10 @@ In Versionen vor V. 5.6.0, also bis ISO-Designer 5.5.1
 
 war folgende Benennung üblich:
 
+hier stimmte die ID nicht mit der ObjectID zusammen. 
+
+z.b. bei AUX Function. 
+
 | TypeName | StartID | FmtStr |
 | --- | --- | --- |
 | WorkingSet | 0 | WorkingSet\_%ld |

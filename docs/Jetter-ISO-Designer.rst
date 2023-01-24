@@ -7,6 +7,7 @@ Jetter ISO-Designer
    Einträge-von-Schülern
    Jetter-ISO-Designer-Workspace-öffnen
    ISOBUS-Objekte
+   ISOBUS-Objekt-IDs
    Objekte
 
 

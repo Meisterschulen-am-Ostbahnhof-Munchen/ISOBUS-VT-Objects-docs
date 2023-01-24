@@ -14,7 +14,7 @@ die Festlegung in dieser Tabelle kann man also als Good Practice bezeichnen.
 
 | TypeName | StartID | FmtStr | ID | Link |
 | --- | --- | --- | --- | --- |
-| WorkingSet | 0 | WorkingSet\_%ld | 0 | [ID-00-–-Working-set-–-ISO-11783-6-–-B.1](ID-00-–-Working-set-–-ISO-11783-6-–-B.1.md) |
+| WorkingSet | 0 | WorkingSet\_%ld | 0 | [ID-00---Working-set---ISO-11783-6---B.1](ID-00---Working-set---ISO-11783-6---B.1) |
 | DataMask | 1000 | DataMask\_%ld | 1 | [I](I) |
 | AlarmMask | 2000 | AlarmMask\_%ld | 2 | [I](I) |
 | Container | 3000 | Container\_%ld | 3 | [I](I) |

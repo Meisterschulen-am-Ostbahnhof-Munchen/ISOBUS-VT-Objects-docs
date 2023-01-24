@@ -1,7 +1,6 @@
 # ID 10 – Input list – ISO 11783-6 – B.8.5
 
-
-## Empfohlene Lektüre:
+## Empfohlene Lektüre Input-list:
 
 *   Hilfe Jetter ISO-Designer.
     *   ISO-Objekte

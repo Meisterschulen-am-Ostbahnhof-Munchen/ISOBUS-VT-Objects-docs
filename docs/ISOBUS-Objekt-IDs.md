@@ -62,7 +62,6 @@ war folgende Benennung üblich:
 | TypeName | StartID | FmtStr |
 | --- | --- | --- |
 | WorkingSet | 0 | WorkingSet\_%ld |
-| WorkingSet |  | WorkingSet_%ld |
 | DataMask | 100 | DataMask_%ld |
 | AlarmMask | 200 | AlarmMask_%ld |
 | Container | 300 | Container_%ld |
@@ -94,7 +93,7 @@ war folgende Benennung üblich:
 | InputAttributes | 2600 | InputAttributes_%ld |
 | ExtendedInputAttributes | 3200 | ExtendedInputAttributes_%ld |
 | ObjectPointer | 2700 | ObjectPointer_%ld |
-| Macro |  | Macro_%ld |
+| Macro | 0 | Macro_%ld |
 | AuxInput2 | 2800 | AuxInput2_%ld |
 | AuxFunction2 | 2900 | AuxFunction2_%ld |
 | AuxObjectPointer | 3300 | AuxObjectPointer_%ld |

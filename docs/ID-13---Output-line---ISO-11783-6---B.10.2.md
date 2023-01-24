@@ -1,8 +1,6 @@
 # ID 13 – Output line – ISO 11783-6 – B.10.2
 
-
-
-## Empfohlene Lektüre:
+## Empfohlene Lektüre Output line:
 
 *   Hilfe Jetter ISO-Designer.
     *   ISO-Objekte

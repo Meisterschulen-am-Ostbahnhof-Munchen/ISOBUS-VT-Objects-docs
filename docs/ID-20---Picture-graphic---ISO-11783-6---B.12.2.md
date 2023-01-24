@@ -1,6 +1,6 @@
 # ID 20 – Picture graphic – ISO 11783-6 – B.12.2
 
-## Empfohlene Lektüre:
+## Empfohlene Lektüre Picture graphic:
 
 *   Hilfe Jetter ISO-Designer.
     *   ISO-Objekte

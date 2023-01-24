@@ -1,7 +1,6 @@
 # ID 9 – Input number – ISO 11783-6 – B.8.4
 
-
-## Empfohlene Lektüre:
+## Empfohlene Lektüre Input number:
 
 *   Hilfe Jetter ISO-Designer.
     *   ISO-Objekte

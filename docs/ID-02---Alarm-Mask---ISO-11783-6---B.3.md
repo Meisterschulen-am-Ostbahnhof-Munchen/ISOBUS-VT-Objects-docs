@@ -16,7 +16,7 @@ Beispiel für eine "High Priority Alarm Mask"
 
 ![](https://user-images.githubusercontent.com/69573151/94601878-68b46400-0294-11eb-8eb6-2e652956ab6e.png)
 
-## Empfohlene Lektüre:
+## Empfohlene Lektüre Alarm Mask:
 
 *   Hilfe Jetter ISO-Designer.
     *   Die verschiedenen Maskentypen

@@ -14,13 +14,13 @@ myst:
 ```{include} ../README.md
 ```
 
-# Welcome to ISOBUS-VT-Objects documentation!
+**Welcome to ISOBUS-VT-Objects documentation!**
 
 :::{note}
 This project is under active development.
 :::
 
-## Contents
+**Contents**
 
 ```{toctree}
 :caption: 'Contents:'
@@ -35,3 +35,8 @@ Jetter-ISO-Designer
 
 genindex
 ```
+
+# Indices and tables
+
+- {ref}`genindex`
+- {ref}`search`

@@ -46,7 +46,7 @@ die Festlegung in dieser Tabelle kann man also als Good Practice bezeichnen.
 | InputAttributes | 26000 | InputAttributes\_%ld | 26 | [ID 26 – Input attributes – ISO 11783-6 – B.14.5](ID-26---Input-attributes---ISO-11783-6---B.14.5) |
 | ExtendedInputAttributes | 38000 | ExtendedInputAttributes\_%ld | 38 | [I](I) |
 | ObjectPointer | 27000 | ObjectPointer\_%ld | 27 | [ID 27 – Object pointer – ISO 11783-6 – B.15](ID-27---Object-pointer---ISO-11783-6---B.15) |
-| Macro | 28000 | Macro\_%ld | 28 | [ID 28 – Macro – ISO 11783-6 – B.16](ID-28---Macro---ISO-11783-6---B.16) |
+| Macro | 0 | Macro\_%ld | 0 | [I](I) |
 | AuxFunction2 | 31000 | AuxFunction2\_%ld | 31 | [I](I) |
 | AuxInput2 | 32000 | AuxInput2\_%ld | 32 | [I](I) |
 | AuxObjectPointer | 33000 | AuxObjectPointer\_%ld | 33 | [I](I) |

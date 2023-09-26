@@ -14,8 +14,8 @@ die Festlegung in dieser Tabelle kann man also als Good Practice bezeichnen.
 
 | TypeName                  | StartID | FmtStr                         | ID  | Link                                                                                                             |
 | ------------------------- | ------- | ------------------------------ | --- | ---------------------------------------------------------------------------------------------------------------- |
-| WorkingSet                | 0       | WorkingSet\_%ld                | 0   | [ID-00---Working-set---ISO-11783-6---B.1](ID-00---Working-set---ISO-11783-6---B.1)                               |
-| DataMask                  | 1000    | DataMask\_%ld                  | 1   | [ID-01---Data-mask---ISO-11783-6---B.2.](ID-01---Data-mask---ISO-11783-6---B.2)                                  |
+| WorkingSet                | 0       | WorkingSet\_%ld                | 0   | [ID 0 - Working-set - ISO-11783-6 - B.1](ID-00---Working-set---ISO-11783-6---B.1)                               |
+| DataMask                  | 1000    | DataMask\_%ld                  | 1   | [ID 1 - Data-mask - ISO-11783-6 - B.2.](ID-01---Data-mask---ISO-11783-6---B.2)                                  |
 | AlarmMask                 | 2000    | AlarmMask\_%ld                 | 2   | [ID 2 – Alarm Mask – ISO 11783-6 – B.3](ID-02---Alarm-Mask---ISO-11783-6---B.3)                                  |
 | Container                 | 3000    | Container\_%ld                 | 3   | [ID 3 – Container – ISO 11783-6 – B.4](ID-03---Container---ISO-11783-6---B.4)                                    |
 | SoftKeyMask               | 4000    | SoftKeyMask\_%ld               | 4   | [ID 4 – Soft key mask – ISO 11783-6 – B.5](ID-04---Soft-key-mask---ISO-11783-6---B.5)                            |

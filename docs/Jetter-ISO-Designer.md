@@ -5,6 +5,7 @@ Einträge-von-Schülern
 Jetter-ISO-Designer-Workspace-öffnen
 ISOBUS-Objekte
 ISOBUS-Objekt-IDs
+ISOBUS-Objekte-Versionen
 Objekte
 ```
 

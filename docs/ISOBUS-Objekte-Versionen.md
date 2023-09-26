@@ -1,4 +1,14 @@
+# ISOBUS-Objekte-Versionen
 
+Welches Objekt ist in welcher Version vorhanden ? 
+
+die Tabelle unter: 
+(https://extranet.epec.fi/Public/Manuals/EPEC_Programming_And_Libraries/projecttopics/topic000962.htm)[https://extranet.epec.fi/Public/Manuals/EPEC_Programming_And_Libraries/projecttopics/topic000962.htm]
+ist leider falsch und veraltet: 
+
+hier soll eine Aktuelle Tabelle entstehen, 
+basierend auf der ISO 11783-6:2018(en)
+Tractors and machinery for agriculture and forestry — Serial control and communications data network — Part 6: Virtual terminal
 
 
 | ID | Object description                                 | VT 2 | VT 3 | VT 4 | VT 5 | Standard         | Jetter L5 support |

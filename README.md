@@ -1,4 +1,4 @@
-# isobus-vt-objects-docs
+# Wiki 2: ISOBUS-VT-Objects
 
 <https://isobus-vt-objects-docs.readthedocs.io/de/latest/>
 
@@ -18,7 +18,7 @@ Wiki 0: [Wiki](https://docs.ms-muc-docs.de) das "über" Wiki
 
 Wiki 1: [Wiki](https://docs.ms-muc-docs.de/projects/install-isobus-environment-docs/) Install-ISOBUS-Environment
 
-## Wiki 2
+## Wiki 2: ISOBUS-VT-Objects
 
 Wiki 2: [Wiki](https://docs.ms-muc-docs.de/projects/isobus-vt-objects-docs/) ISOBUS-VT-Objects
 

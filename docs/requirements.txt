@@ -6,6 +6,7 @@ docutils
 sphinxcontrib-serializinghtml
 myst_parser
 sphinx-rtd-theme
+sphinx-rtd-size
 sphinx
 sphinxcontrib-websupport
 sphinx_design

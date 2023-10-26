@@ -52,10 +52,14 @@ Dieses gestrichelte Linie mit z.B. dem Trimmwerkzeug aus Solid Edge entfernen un
 Schließen
 
 
-ISO-Designer
+## ISO-Designer
 
 Die Unterstützung von DXFs für den Import von Vektorgrafiken wurde von Jetter entfernt. 
+
+
 ISO-Designer 5.3.1 ist die letzte die noch DXF importieren kann. 
+
+
 ![image](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/ISOBUS-VT-Objects-docs/assets/69573151/8fac882c-f1ba-4983-8ef7-468f9b2c0b9a)
 
 
@@ -99,14 +103,14 @@ Build → Deploy
 Falls das nicht so ist, den Strich unter WorkingSet überprüfen. (siehe oben)
 
 
- Alternative mit Autodesk Fusion 360 und Plugin
+## Alternative mit Autodesk Fusion 360 und Plugin
 Software und Plugin installieren
 Fusion 360 herunterladen und installieren
 http://www.autodesk.de/education/country-gateway
 Das Plugin "DXFSplineToPolyline-win64" installieren.
 
 
-Fusion 360 anwenden.
+### Fusion 360 anwenden.
 
 Neue Konstruktion erstellen
 

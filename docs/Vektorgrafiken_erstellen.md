@@ -103,7 +103,9 @@ Falls das nicht so ist, den Strich unter WorkingSet überprüfen. (siehe oben)
 ## Alternative mit Autodesk Fusion 360 und Plugin
 Software und Plugin installieren
 Fusion 360 herunterladen und installieren
-http://www.autodesk.de/education/country-gateway
+
+Studenten / Schüler kostenlos.
+
 Das Plugin "DXFSplineToPolyline-win64" installieren.
 
 

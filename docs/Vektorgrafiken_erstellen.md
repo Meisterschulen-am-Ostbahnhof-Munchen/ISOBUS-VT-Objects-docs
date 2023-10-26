@@ -54,13 +54,10 @@ Schließen
 
 ## ISO-Designer
 
-Die Unterstützung von DXFs für den Import von Vektorgrafiken wurde von Jetter entfernt. 
+* Die Unterstützung von DXFs für den Import von Vektorgrafiken wurde von Jetter entfernt. 
+* ISO-Designer 5.3.1 ist die letzte die noch DXF importieren kann. 
 
 
-ISO-Designer 5.3.1 ist die letzte die noch DXF importieren kann. 
-
-
-![image](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/ISOBUS-VT-Objects-docs/assets/69573151/8fac882c-f1ba-4983-8ef7-468f9b2c0b9a)
 
 
 File → New → Workspace: Name der .dfx Datei)

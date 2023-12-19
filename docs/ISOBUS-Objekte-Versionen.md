@@ -54,3 +54,5 @@ Tractors and machinery for agriculture and forestry — Serial control and commu
 |  42 | External reference NAME                            |      |      |      |   X  |   X  | 11783-6 – B.23   |         -         |
 |  43 | External object pointer reference                  |      |      |      |   X  |   X  | 11783-6 – B.24   |         -         |
 |  44 | Animation                                          |      |      |      |   X  |   X  | 11783-6 – B.25   |         -         |
+|  45 | Animation                                          |      |      |      |   X  |   X  | 11783-6 – B.25   |         -         |
+|  46 | Portable Network Graphic object                    |      |      |      |      |   X  | 11783-6 – B.27   |         -         |

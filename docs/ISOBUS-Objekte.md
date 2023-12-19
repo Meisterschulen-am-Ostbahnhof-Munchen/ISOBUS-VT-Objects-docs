@@ -2,6 +2,8 @@
 
 schauen Sie sich diesen Link genau an. 
 
+## Programming
+
 [Programming\_And\_Libraries](https://extranet.epec.fi/Public/Manuals/EPEC_Programming_And_Libraries/projecttopics/topic000962.htm)
 
 Wie Sie sehen gibt es verschiedenen Objekte, aber nicht alle werden in jeder ISOBUS Version unterstützt. 
@@ -21,6 +23,8 @@ oder ist es etwa dasselbe ? 
 ist VT 2.0 dasselbe wie UT 2.0 ? 
 
 hier kommt die Auflösung:
+
+## VT Levels
 
 |   | ISO 11783-06 | Jetter ISO-Designer | UT laut AEF Datenbank | AUX laut AEF Datenbank |
 | --- | --- | --- | --- | --- |

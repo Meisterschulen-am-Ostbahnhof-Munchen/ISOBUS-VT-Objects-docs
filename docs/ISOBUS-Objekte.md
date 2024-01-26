@@ -6,6 +6,8 @@ schauen Sie sich diesen Link genau an. 
 
 [Programming\_And\_Libraries](https://extranet.epec.fi/Public/Manuals/EPEC_Programming_And_Libraries/projecttopics/topic000962.htm)
 
+künftig: [ISOBUS-Objekte-Versionen](ISOBUS-Objekte-Versionen.md)
+
 Wie Sie sehen gibt es verschiedenen Objekte, aber nicht alle werden in jeder ISOBUS Version unterstützt. 
 
 ![](https://user-images.githubusercontent.com/69573151/94335435-08939880-ffdc-11ea-92e7-662f2ff7779f.png)

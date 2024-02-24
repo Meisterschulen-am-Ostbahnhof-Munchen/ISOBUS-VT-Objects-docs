@@ -1,5 +1,8 @@
 # Wiki 2: ISOBUS-VT-Objects
 
+![franz0748_a_new_Logo_for_ISOBUS-VT-Objects_--v_6_c975bb18-0a9f-4262-945c-c28b591187b7](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/ISOBUS-VT-Objects-docs/assets/69573151/cd8f17da-1a1a-43fc-a5a4-49cabc8eca87)
+
+
 [https://docs.ms-muc-docs.de/projects/isobus-vt-objects-docs/de/latest/](https://docs.ms-muc-docs.de/projects/isobus-vt-objects-docs/de/latest/)
 
 

@@ -45,9 +45,9 @@ Tractors and machinery for agriculture and forestry — Serial control and commu
 |  30 | Auxiliary Input Type 1                             |   X  |      |      |      |      | 11783-6 - J.4.4           |         ?         |
 |  31 | Auxiliary Function Type 2                          |      |   X  |   X  |   X  |   X  | 11783-6 – J.4.3           |         X         |
 |  32 | Auxiliary Input Type 2                             |      |   X  |   X  |   X  |   X  | 11783-6 – J.4.5           |         ?         |
-|  33 | Auxiliary Control Designator Type 2 Object Pointer |   X  |   X  |   X  |   X  |   X  | 11783-6 – J.4.7           |         X         |
+|  33 | Auxiliary Control Designator Type 2 Object Pointer |      |   X  |   X  |   X  |   X  | 11783-6 – J.4.7           |         X         |
 |  34 | Windows Mask                                       |      |      |   X  |   X  |   X  | 11783-6 – B.19            |         X         |
-|  35 | Key Group                                          |   X  |   X  |   X  |   X  |   X  | 11783-6 – B.20            |         -         |
+|  35 | Key Group                                          |      |      |   X  |   X  |   X  | 11783-6 – B.20            |         -         |
 |  36 | Graphics Context Object                            |      |      |   X  |   X  |   X  | 11783-6 – B.18            |         X         |
 |  37 | Output List                                        |      |      |   X  |   X  |   X  | 11783-6 – B.9.4           |         X         |
 |  38 | Extended Input Attributes                          |      |      |   X  |   X  |   X  | 11783-6 – B.14.6          |         X         |

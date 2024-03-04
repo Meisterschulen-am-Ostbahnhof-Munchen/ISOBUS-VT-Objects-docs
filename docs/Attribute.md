@@ -7,7 +7,7 @@ ID-25---Fill-attributes---ISO-11783-6---B.14.4
 ID-26---Input-attributes---ISO-11783-6---B.14.5
 ```
 
-\## Empfohlene Lektüre:
+## Empfohlene Lektüre:
 
 - Hilfe Jetter ISO-Designer.
 

@@ -36,8 +36,14 @@ die Größe ist wichtig:
 | Datamask | frei        |   |   |   |
 | CCI A3   | 64x64 pixel |   |   |   |
 
+Empfehlung: 
+wenn das Symbol als Softkey und als CCI A3 Symbol verwendet werden soll, dann 64x64 Pixel machen. 
+
+Man kann die Bilder vor dem Skalieren auch zuschneiden. 
 
 
 ## BMP Farbtiefe reduzieren
+
+
 
 ## BMP in ISO-Designer einfügen

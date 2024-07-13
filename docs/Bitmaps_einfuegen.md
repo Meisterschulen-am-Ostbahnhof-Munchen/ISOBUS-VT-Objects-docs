@@ -39,6 +39,15 @@ will man jedoch viele Dateien wandeln, so ist der Aufwand nicht unerheblich.
 <https://imagemagick.org/script/download.php#windows> Download für Windows
 
 
+unter: 
+<https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/tree/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/script>
+
+finden Sie ein Script, das, (vorausgesetzt Image Magick ist installiert) 
+per Doppelklick folgende Prozesse ausführt: 
+
+1. Alle Dateien unter img_original werden um 2 Pixel ringsum zugeschnitten:
+
+
 
 
 

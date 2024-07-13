@@ -44,6 +44,12 @@ Man kann die Bilder vor dem Skalieren auch zuschneiden.
 
 ## BMP Farbtiefe reduzieren
 
+für ein schnelles laden die Farbtiefe so weit als möglich reduzieren. 
+
+Windows Paint bietet folgende Farbtiefen an: 
+
+![image](https://github.com/user-attachments/assets/e8f49c00-4a94-4d6f-b1e2-3ce32dc89c61)
+
 
 
 ## BMP in ISO-Designer einfügen

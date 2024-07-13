@@ -75,6 +75,16 @@ Danach liegen die Zugeschnittenen Bilder unter "img_cropped"
 Danach liegen die Zugeschnittenen Bilder unter "img_resized"
 
 
+#### 3. 
+
+| vorher                                                                                                                                                                                                            |     | nachher                                                                                                                                                                                                          |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_resized/Tractor_wheel_slip_200.png) | --> | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_monochrome/Tractor_wheel_slip_200.png) |
+| 64x64                                                                                                                                                                                                           |     | 64x64                                          
+
+Danach liegen die Bilder unter "img_monochrome"
+
+
 
 
 ## BMP Skalieren

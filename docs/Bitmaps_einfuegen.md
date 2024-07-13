@@ -51,5 +51,13 @@ Windows Paint bietet folgende Farbtiefen an:
 ![image](https://github.com/user-attachments/assets/e8f49c00-4a94-4d6f-b1e2-3ce32dc89c61)
 
 
+| Format            | Farben                       | Bit | Hinweis                        |
+|-------------------|------------------------------|-----|--------------------------------|
+| Monochrom-Bitmap  |                              | 2   |                                |
+| 16-Farben-Bitmap  | 28 = 256                     | 4   |                                |
+| 256-Farben-Bitmap | 2<sup>8</sup> = 256          | 8   |                                |
+| 24-Bit-Bitmap     | 2<sup>24</sup> = 16.777.216  | 24  | in ISO 11783-6 nicht vorhanden |
+
+
 
 ## BMP in ISO-Designer einfügen

@@ -20,19 +20,12 @@ C:\git\ms\4diac_training1\Ventilsteuerung\ISO-DesignerProjects\Workspace\Default
 andere Ordner sind möglich, aber der Ordnung halber sei dieser empfohlen. 
 
 
-## PNG in BMP umwandlen
-
-das Bitmap geeigent benennen, die Dateinamen von ISO sind oft wenig aussagekräftig. 
-(keine Leerzeichen, keine Umlaute) siehe: <https://docs.ms-muc-docs.de/projects/visual-programming-languages-docs/de/latest/Allgemeines.html#namen>
 
 
-### Paint
-
-mit Microsoft Paint das in jedem Windows enthlaten ist geht das umwandeln PNG in BMP ganz leicht. 
-will man jedoch viele Dateien wandeln, so ist der Aufwand nicht unerheblich. 
 
 
-### ImageMagick®
+
+## ImageMagick®
 
 <https://imagemagick.org/> kann das umwandeln erleichtern, es wandelt bei Bedarf 100te Bilder mit einem Mausklick. 
 
@@ -53,7 +46,7 @@ Original:
 von `https://www.iso.org/obp/graphics/grs/343178e8-8b69-4dd7-83c6-cee7c66b28a4_200.png`
 
 
-#### 1. Alle Dateien unter img_original werden um 2 Pixel ringsum zugeschnitten:
+### 1. Alle Dateien unter img_original werden um 2 Pixel ringsum zugeschnitten:
 
 | vorher                                                                                                                                                                                                            |     | nachher                                                                                                                                                                                                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -65,7 +58,7 @@ dadurch werden die 2px großen Schnittmarken von <https://www.iso.org/obp/> entf
 Danach liegen die Zugeschnittenen Bilder unter "img_cropped"
 
 
-#### 2. Alle Dateien unter img_cropped werden auf 64x64 skaliert
+### 2. Alle Dateien unter img_cropped werden auf 64x64 skaliert
 
 | vorher                                                                                                                                                                                                            |     | nachher                                                                                                                                                                                                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -75,7 +68,7 @@ Danach liegen die Zugeschnittenen Bilder unter "img_cropped"
 Danach liegen die Zugeschnittenen Bilder unter "img_resized"
 
 
-#### 3. umwandlung auf 2 Farben (Monochrome)
+### 3. umwandlung auf 2 Farben (Monochrome)
 
 | vorher                                                                                                                                                                                                            |     | nachher                                                                                                                                                                                                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -85,7 +78,7 @@ Danach liegen die Zugeschnittenen Bilder unter "img_resized"
 Danach liegen die Bilder unter "img_monochrome"
 
 
-#### 4. Konvertierung ins Format BMP
+### 4. Konvertierung ins Format BMP
 
 
 | vorher                                                                                                                                                                                                            |     | nachher                                                                                                                                                                                                          |
@@ -97,7 +90,27 @@ Danach liegen die Bilder unter "img"
 
 
 
-## BMP Skalieren
+
+
+## Paint
+
+
+
+mit Microsoft Paint das in jedem Windows enthlaten ist geht das umwandeln PNG in BMP ganz leicht. 
+will man jedoch viele Dateien wandeln, so ist der Aufwand nicht unerheblich. 
+
+
+
+
+### PNG in BMP umwandlen
+
+das Bitmap geeigent benennen, die Dateinamen von ISO sind oft wenig aussagekräftig. 
+(keine Leerzeichen, keine Umlaute) siehe: <https://docs.ms-muc-docs.de/projects/visual-programming-languages-docs/de/latest/Allgemeines.html#namen>
+
+
+
+
+### BMP Skalieren
 
 die Größe ist wichtig: 
 
@@ -114,7 +127,7 @@ wenn das Symbol als Softkey und als CCI A3 Symbol verwendet werden soll, dann 64
 Man kann die Bilder vor dem Skalieren auch zuschneiden. 
 
 
-## BMP Farbtiefe reduzieren
+### BMP Farbtiefe reduzieren
 
 für ein schnelles laden die Farbtiefe so weit als möglich reduzieren. 
 
@@ -132,4 +145,4 @@ Windows Paint bietet folgende Farbtiefen an:
 
 
 
-## BMP in ISO-Designer einfügen
+### BMP in ISO-Designer einfügen

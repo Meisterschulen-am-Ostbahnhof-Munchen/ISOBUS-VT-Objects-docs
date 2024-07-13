@@ -13,7 +13,19 @@ siehe auch [ISOBUS-Objekte-Versionen](ISOBUS-Objekte-Versionen.md)
 ## PNG herunterladen
 
 
+Rechtsklick auf das Symbol, und Speichern, idealerweise im Ordner: 
+
+C:\git\ms\4diac_training1\Ventilsteuerung\ISO-DesignerProjects\Workspace\DefaultPool\img
+
+andere Ordner sind möglich, aber der Ordnung halber sei dieser empfohlen. 
+
+
 ## PNG in BMP umwandlen
+
+das Bitmap geeigent benennen, die Dateinamen von ISO sind oft wenig aussagekräftig. 
+(keine Leerzeichen, keine Umlaute) 
+
+
 
 ## BMP Skalieren
 

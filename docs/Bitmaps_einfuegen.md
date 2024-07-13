@@ -23,11 +23,20 @@ andere Ordner sind möglich, aber der Ordnung halber sei dieser empfohlen.
 ## PNG in BMP umwandlen
 
 das Bitmap geeigent benennen, die Dateinamen von ISO sind oft wenig aussagekräftig. 
-(keine Leerzeichen, keine Umlaute) 
-
-
+(keine Leerzeichen, keine Umlaute) siehe: <https://docs.ms-muc-docs.de/projects/visual-programming-languages-docs/de/latest/Allgemeines.html#namen>
 
 ## BMP Skalieren
+
+die Größe ist wichtig: 
+
+
+| wo       | Größe       |   |   |   |
+|----------|-------------|---|---|---|
+| Softkey  | 72x72 pixel |   |   |   |
+| Datamask | frei        |   |   |   |
+| CCI A3   | 64x64 pixel |   |   |   |
+
+
 
 ## BMP Farbtiefe reduzieren
 

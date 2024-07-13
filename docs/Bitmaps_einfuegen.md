@@ -25,6 +25,22 @@ andere Ordner sind möglich, aber der Ordnung halber sei dieser empfohlen.
 das Bitmap geeigent benennen, die Dateinamen von ISO sind oft wenig aussagekräftig. 
 (keine Leerzeichen, keine Umlaute) siehe: <https://docs.ms-muc-docs.de/projects/visual-programming-languages-docs/de/latest/Allgemeines.html#namen>
 
+
+### Paint
+
+mit Microsoft Paint das in jedem Windows enthlaten ist geht das umwandeln PNG in BMP ganz leicht. 
+will man jedoch viele Dateien wandeln, so ist der Aufwand nicht unerheblich. 
+
+
+### ImageMagick&#174
+
+
+
+
+
+
+
+
 ## BMP Skalieren
 
 die Größe ist wichtig: 

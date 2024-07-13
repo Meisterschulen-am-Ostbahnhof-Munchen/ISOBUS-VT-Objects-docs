@@ -34,6 +34,8 @@ will man jedoch viele Dateien wandeln, so ist der Aufwand nicht unerheblich.
 
 ### ImageMagick®
 
+<https://imagemagick.org/> kann das umwandeln erleichtern, es wandelt bei Bedarf 100te Bilder mit einem Mausklick. 
+
 
 
 

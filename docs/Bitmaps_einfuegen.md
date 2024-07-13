@@ -53,8 +53,8 @@ Windows Paint bietet folgende Farbtiefen an:
 
 | Format            | Farben                       | Bit | Hinweis                        |
 |-------------------|------------------------------|-----|--------------------------------|
-| Monochrom-Bitmap  |                              | 2   |                                |
-| 16-Farben-Bitmap  | 28 = 256                     | 4   |                                |
+| Monochrom-Bitmap  | 2<sup>1</sup> = 2            | 1   |                                |
+| 16-Farben-Bitmap  | 2<sup>4</sup> = 16           | 4   |                                |
 | 256-Farben-Bitmap | 2<sup>8</sup> = 256          | 8   |                                |
 | 24-Bit-Bitmap     | 2<sup>24</sup> = 16.777.216  | 24  | in ISO 11783-6 nicht vorhanden |
 

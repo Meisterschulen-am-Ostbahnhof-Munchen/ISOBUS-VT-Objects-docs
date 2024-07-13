@@ -32,7 +32,7 @@ mit Microsoft Paint das in jedem Windows enthlaten ist geht das umwandeln PNG in
 will man jedoch viele Dateien wandeln, so ist der Aufwand nicht unerheblich. 
 
 
-### ImageMagick&#174
+### ImageMagick®
 
 
 

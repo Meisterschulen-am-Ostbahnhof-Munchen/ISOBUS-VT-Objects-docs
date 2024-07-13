@@ -75,7 +75,7 @@ Danach liegen die Zugeschnittenen Bilder unter "img_cropped"
 Danach liegen die Zugeschnittenen Bilder unter "img_resized"
 
 
-#### 3. 
+#### 3. umwandlung auf 2 Farben (Monochrome)
 
 | vorher                                                                                                                                                                                                            |     | nachher                                                                                                                                                                                                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -85,7 +85,7 @@ Danach liegen die Zugeschnittenen Bilder unter "img_resized"
 Danach liegen die Bilder unter "img_monochrome"
 
 
-#### 4. 
+#### 4. Konvertierung ins Format BMP
 
 
 | vorher                                                                                                                                                                                                            |     | nachher                                                                                                                                                                                                          |

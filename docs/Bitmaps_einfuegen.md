@@ -45,9 +45,19 @@ unter:
 finden Sie ein Script, das, (vorausgesetzt Image Magick ist installiert) 
 per Doppelklick folgende Prozesse ausführt: 
 
-1. Alle Dateien unter img_original werden um 2 Pixel ringsum zugeschnitten:
+
+Original: 
+
+![image](https://www.iso.org/obp/graphics/grs/343178e8-8b69-4dd7-83c6-cee7c66b28a4_200.png)
+
+von `https://www.iso.org/obp/graphics/grs/343178e8-8b69-4dd7-83c6-cee7c66b28a4_200.png`
 
 
+#### 1. Alle Dateien unter img_original werden um 2 Pixel ringsum zugeschnitten:
+
+| vorher                                                                                                                                                                                                            |     | nachher                                                                                                                                                                                                          |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_original/Tractor_wheel_slip_200.png) | --> | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_cropped/Tractor_wheel_slip_200.png) |
 
 
 

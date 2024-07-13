@@ -158,4 +158,9 @@ Windows Paint bietet folgende Farbtiefen an:
 
 
 
-### BMP in ISO-Designer einfügen
+## BMP in ISO-Designer einfügen
+
+nun können die Bilder in ISO-Designer verwendet werden, 
+im Falle von Monochrom kann Weiß als Transparenter Hintergrund gesetzt werden, 
+im Falle einer anderen Farbtiefe wird oft Pink verwendet. 
+

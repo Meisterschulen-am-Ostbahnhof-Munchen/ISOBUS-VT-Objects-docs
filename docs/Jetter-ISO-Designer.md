@@ -7,6 +7,7 @@ ISOBUS-Objekte
 ISOBUS-Objekt-IDs
 ISOBUS-Objekte-Versionen
 Objekte
+Bitmaps_einfuegen
 Vektorgrafiken_erstellen
 ```
 

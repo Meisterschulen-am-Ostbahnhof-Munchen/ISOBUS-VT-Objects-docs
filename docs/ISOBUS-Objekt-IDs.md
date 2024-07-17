@@ -1,3 +1,10 @@
+---
+title: Blogging Like a Boss
+author: me
+---
+
+
+
 # ISOBUS Objekt IDs
 
 Siehe auch:

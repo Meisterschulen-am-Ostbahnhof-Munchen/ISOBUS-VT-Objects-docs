@@ -1,7 +1,7 @@
----
-title: ISOBUS Objekt IDs
-author: franz-ms-muc
----
+<head>
+<title>ISOBUS Objekt IDs</title>
+<link rel="canonical" href="https://docs.ms-muc-docs.de/projects/isobus-vt-objects-docs/de/latest/ISOBUS-Objekt-IDs.html" />
+</head>
 
 
 

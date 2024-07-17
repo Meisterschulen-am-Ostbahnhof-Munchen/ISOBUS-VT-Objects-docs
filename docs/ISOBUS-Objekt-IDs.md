@@ -1,6 +1,6 @@
 ---
-title: Blogging Like a Boss
-author: me
+title: ISOBUS Objekt IDs
+author: franz-ms-muc
 ---
 
 

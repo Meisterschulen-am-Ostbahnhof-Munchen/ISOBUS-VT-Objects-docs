@@ -23,9 +23,11 @@ dabei bedeutet
 
 
 
-339
-2
-2
-31002
-28001
-cfbd6d2a008100a0
+|                  |   | Beschreibung                                   |
+|------------------|---|------------------------------------------------|
+| 339              |   | Hersteller Code                                |
+| 2                |   | ModelIdentCode                                 |
+| 2                |   | Aux Typ (in diesem Fall Boolean non Latching)  |
+| 31002            |   | AuxFunction Objekt ID am Implement             |
+| 28001            |   | AuxInput Objekt ID am Joystick                 |
+| cfbd6d2a008100a0 |   | ISO-Name des Joystick                          |

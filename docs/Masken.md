@@ -22,12 +22,12 @@ Die **ISO 11783-6** beschreibt ein seriell betriebenes Datenkommunikationsnetzwe
 Ich hoffe, das hilft! Wenn du noch weitere Fragen hast, stehe ich gerne zur Verfügung. 🚜
 
 Quelle: Unterhaltung mit Copilot, 18.7.2024
-(1) ISO 11783 – STANDARD AND ITS IMPLEMENTATION - NTNU. https://folk.ntnu.no/skoge/prost/proceedings/ifac2005/Fullpapers/02392.pdf.
-(2) ISO 11783-6:2018(en), Tractors and machinery for agriculture and .... https://www.iso.org/obp/ui/en/.
-(3) INTERNATIONAL ISO This is a preview of ISO 11783-6:2018. Click here to .... https://webstore.ansi.org/preview-pages/ISO/preview_ISO+11783-6-2018.pdf.
-(4) ISOBUS Maskmaker - ANEDO. https://anedo.eu/produkt/isobus-mask-maker/.
-(5) Atemwiderstände von Masken - DGUV Publikationen. https://publikationen.dguv.de/widgets/pdf/download/article/4577.
-(6) Übersicht: Typen von Atemschutzmasken | Eigenschaften Schutzmasken .... https://www.heller-medizintechnik.de/informationen/patienten/schutzmasken/.
-(7) Atemwiderstände von Masken - DGUV Informationsportal. https://www.dguv.de/medien/ipa/publikationen/ipa-journale/ipa-journale2022/ipa_journal_1_2022_atemwiderstaende_masken.pdf.
+1. ISO 11783 – STANDARD AND ITS IMPLEMENTATION - NTNU. https://folk.ntnu.no/skoge/prost/proceedings/ifac2005/Fullpapers/02392.pdf.
+2. ISO 11783-6:2018(en), Tractors and machinery for agriculture and .... https://www.iso.org/obp/ui/en/.
+3. INTERNATIONAL ISO This is a preview of ISO 11783-6:2018. Click here to .... https://webstore.ansi.org/preview-pages/ISO/preview_ISO+11783-6-2018.pdf.
+4. ISOBUS Maskmaker - ANEDO. https://anedo.eu/produkt/isobus-mask-maker/.
+5. Atemwiderstände von Masken - DGUV Publikationen. https://publikationen.dguv.de/widgets/pdf/download/article/4577.
+6. Übersicht: Typen von Atemschutzmasken | Eigenschaften Schutzmasken .... https://www.heller-medizintechnik.de/informationen/patienten/schutzmasken/.
+7. Atemwiderstände von Masken - DGUV Informationsportal. https://www.dguv.de/medien/ipa/publikationen/ipa-journale/ipa-journale2022/ipa_journal_1_2022_atemwiderstaende_masken.pdf.
 
 

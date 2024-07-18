@@ -1,5 +1,14 @@
 # Masken
 
+```{toctree}
+ID-00---Working-set---ISO-11783-6---B.1
+ID-01---Data-mask---ISO-11783-6---B.2
+ID-02---Alarm-Mask---ISO-11783-6---B.3
+ID-04---Soft-key-mask---ISO-11783-6---B.5
+```
+
+----
+
 Die **ISO 11783-6** beschreibt ein seriell betriebenes Datenkommunikationsnetzwerk für landwirtschaftliche und forstwirtschaftliche Traktoren sowie montierte, halbmontierte, gezogene oder selbstfahrende Geräte. Ein zentrales Element ist das **virtuelle Terminal**, das als Schnittstelle für die Steuerung und Überwachung verschiedener Anbaugeräte dient. Hier sind die Maskentypen gemäß ISO 11783-6 aufgelistet:
 
 1. **Working Set (Arbeitsset)** (ID 0): Dieses Objekt definiert die Anzeige von Daten aus verschiedenen Arbeitssets auf einer Maske. Es ermöglicht die gleichzeitige Darstellung von Informationen von mehreren Anbaugeräten auf demselben virtuellen Terminal.
@@ -21,9 +30,4 @@ Quelle: Unterhaltung mit Copilot, 18.7.2024
 (6) Übersicht: Typen von Atemschutzmasken | Eigenschaften Schutzmasken .... https://www.heller-medizintechnik.de/informationen/patienten/schutzmasken/.
 (7) Atemwiderstände von Masken - DGUV Informationsportal. https://www.dguv.de/medien/ipa/publikationen/ipa-journale/ipa-journale2022/ipa_journal_1_2022_atemwiderstaende_masken.pdf.
 
-```{toctree}
-ID-00---Working-set---ISO-11783-6---B.1
-ID-01---Data-mask---ISO-11783-6---B.2
-ID-02---Alarm-Mask---ISO-11783-6---B.3
-ID-04---Soft-key-mask---ISO-11783-6---B.5
-```
+

@@ -2,6 +2,7 @@
 
 ```{toctree}
 Einträge-von-Schülern
+Videos
 Jetter-ISO-Designer-Workspace-öffnen
 ISOBUS-Objekte
 ISOBUS-Objekt-IDs

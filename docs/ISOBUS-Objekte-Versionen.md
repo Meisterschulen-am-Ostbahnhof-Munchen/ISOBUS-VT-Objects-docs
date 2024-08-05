@@ -32,7 +32,7 @@ Tractors and machinery for agriculture and forestry — Serial control and commu
 |  17 | Output Meter                                       |   X  |   X  |   X  |   X  |   X  | 11783-6 – B.11.2          |   L2 - L6         |
 |  18 | Output Linear Bar Graph                            |   X  |   X  |   X  |   X  |   X  | 11783-6 – B.11.3          |   L2 - L6         |
 |  19 | Output Arched Bar Graph                            |   X  |   X  |   X  |   X  |   X  | 11783-6 – B.11.4          |   L2 - L6         |
-|  20 | Picture Graphic (BMP)                              |   X  |   X  |   X  |   X  |   X  | 11783-6 – B.12.1 + B.12.2 |   L2 - L6         |
+|  20 | Picture Graphic (BMP)                              |   X  |   X  |   X  |   X  |   X  | 11783-6 – B.12.1 <br>+ B.12.2 |   L2 - L6         |
 |  21 | Number Variable                                    |   X  |   X  |   X  |   X  |   X  | 11783-6 – B.13.2          |   L2 - L6         |
 |  22 | String Variable                                    |   X  |   X  |   X  |   X  |   X  | 11783-6 – B.13.3          |   L2 - L6         |
 |  23 | Font Attributes                                    |   X  |   X  |   X  |   X  |   X  | 11783-6 – B.14.2          |   L2 - L6         |

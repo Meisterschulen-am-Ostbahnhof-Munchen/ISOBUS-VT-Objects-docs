@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = "Wiki 2: ISOBUS-VT-Objects Docs"
-copyright = "2022-2023, Meisterschulen am Ostbahnhof, München"
+copyright = "2022-2025, Meisterschulen am Ostbahnhof - München"
 author = "Franz Höpfinger"
 
 html_baseurl = "https://docs.ms-muc-docs.de/projects/isobus-vt-objects-docs/de/latest/"
@@ -17,6 +17,7 @@ html_baseurl = "https://docs.ms-muc-docs.de/projects/isobus-vt-objects-docs/de/l
 
 extensions = [
     "myst_parser",
+    "sphinxcontrib.googleanalytics",
     "sphinx_rtd_size",
 ]
 
@@ -42,6 +43,7 @@ myst_enable_extensions = [
 ]
 myst_heading_anchors = 7
 
+googleanalytics_id = 'G-4WPKCFX4NN'
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output

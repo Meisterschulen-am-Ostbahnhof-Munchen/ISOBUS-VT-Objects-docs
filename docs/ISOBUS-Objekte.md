@@ -8,6 +8,10 @@ schauen Sie sich diesen Link genau an. 
 
 künftig: [ISOBUS-Objekte-Versionen](ISOBUS-Objekte-Versionen.md)
 
+ISOBUS Wiki von Tobias Tenberg:
+
+<https://isobus-studio.com/en/isobus-wiki>
+
 Wie Sie sehen gibt es verschiedenen Objekte, aber nicht alle werden in jeder ISOBUS Version unterstützt. 
 
 ![](https://user-images.githubusercontent.com/69573151/94335435-08939880-ffdc-11ea-92e7-662f2ff7779f.png)

@@ -2,9 +2,7 @@
 
 ## podcast
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://creators.spotify.com/pod/profile/isobus-vt-objects/embed/episodes/ISOBUS-Wie-Logos-auf-euer-Traktor-Terminal-kommen--Das-Picture-Graphic-Objekt-erklrt-e36aagf/a-ac33t6i" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
-</div>
+<iframe src="https://creators.spotify.com/pod/profile/isobus-vt-objects/embed/episodes/ISOBUS-Wie-Logos-auf-euer-Traktor-Terminal-kommen--Das-Picture-Graphic-Objekt-erklrt-e36aagf/a-ac33t6i" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
 
 ## Empfohlene Lektüre Picture graphic:
 

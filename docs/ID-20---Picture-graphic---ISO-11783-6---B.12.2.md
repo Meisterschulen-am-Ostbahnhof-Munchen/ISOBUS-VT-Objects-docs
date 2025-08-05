@@ -1,6 +1,6 @@
 # ID 20 – Picture graphic – ISO 11783-6 – B.12.2
 
-## podcast
+## Podcast
 
 <iframe src="https://creators.spotify.com/pod/profile/isobus-vt-objects/embed/episodes/ISOBUS-Wie-Logos-auf-euer-Traktor-Terminal-kommen--Das-Picture-Graphic-Objekt-erklrt-e36aagf/a-ac33t6i" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
 

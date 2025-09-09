@@ -9,11 +9,9 @@ myst:
     "property=og:locale": "de"
 ---
 
-
-```{include} ../README.md
-```
-
 **Welcome to ISOBUS-VT-Objects documentation!**
+
+Main Menu: <https://www.ms-muc-docs.de/>
 
 :::{note}
 This project is under active development.
@@ -25,7 +23,6 @@ This project is under active development.
 :caption: 'Contents:'
 :maxdepth: 7
 :numbered: true
-
 Home <self>
 Home
 logiBUS

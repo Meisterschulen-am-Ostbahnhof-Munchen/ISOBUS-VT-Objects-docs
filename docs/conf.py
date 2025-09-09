@@ -6,11 +6,11 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "Wiki 2: ISOBUS-VT-Objects Docs"
+project = "ISOBUS Virtual Terminal: Benutzeroberfläche und Objekte (2)"
 copyright = "2022-2025, Meisterschulen am Ostbahnhof - München"
 author = "Franz Höpfinger"
 
-html_baseurl = "https://docs.ms-muc-docs.de/projects/isobus-vt-objects-docs/de/latest/"
+html_baseurl = "https://docs.ms-muc-docs.de/projects/isobus-vt-objects-docs"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -23,7 +23,7 @@ extensions = [
 
 sphinx_rtd_size_width = "90%"
 
-version = "0.0.1"
+version = "0.0.2"
 release = version
 templates_path = ["_templates"]
 

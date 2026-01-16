@@ -16,14 +16,21 @@ Das Button Objekt, wie in B.7 definiert, ist ein grafisches Element, das auf der
 Anhang B.7 spezifiziert eine Reihe von Attributen, die das Verhalten und die Darstellung des Button Objekts definieren. Diese Attribute umfassen unter anderem:
 
 - **Objekt-ID:** Eine eindeutige Identifikationsnummer für jede Schaltfläche innerhalb des Objektpools einer Arbeitsgruppe.
-- **Position und Größe:** Koordinaten und Abmessungen, die festlegen, wo die Schaltfläche auf der Datenmaske platziert ist und wie groß sie ist.
-- **Darstellung:** Attribute, die das Erscheinungsbild der Schaltfläche beeinflussen, wie z.B.
-    - **Farbe:** Die Farbe der Schaltfläche im Normalzustand und möglicherweise auch im aktivierten oder gedrückten Zustand.
-    - **Text oder Grafik:** Die Möglichkeit, Text (z.B. eine Beschriftung, die die Funktion der Schaltfläche angibt) oder eine Grafik (ein Symbol) auf der Schaltfläche anzuzeigen.
-    - **Schriftart und -größe:** Für Textbeschriftungen können Schriftart und -größe festgelegt werden.
-- **Verhalten:** Attribute, die das reaktive Verhalten der Schaltfläche steuern, z.B.
-    - **Aktivierbarkeit:** Definiert, ob die Schaltfläche in einem bestimmten Zustand aktiviert (d.h. anklickbar oder auswählbar) ist oder nicht.
-    - **Wiederholungsfunktion:** Die Option, einen Befehl wiederholt zu senden, solange die Schaltfläche gedrückt gehalten wird.
+- **Position und Größe:** 
+    - **Button Area:** Die durch Breite und Höhe definierte Gesamtfläche.
+    - **Button Face:** Die nutzbare Innenfläche für Inhalte. Sie ist standardmäßig 8 Pixel kleiner als die Button Area, sofern nicht anders konfiguriert.
+- **Darstellung und Optionen (Bitmaske AID 6):**
+    - **Bit 0 - Latchable:** Wenn TRUE, ist die Schaltfläche rastend (wie ein Schalter). Wenn FALSE, ist sie tastend (momentary).
+    - **Bit 1 - State:** Aktueller Zustand für rastende Buttons (0 = gelöst, 1 = eingerastet).
+    - **Bit 2 - Suppress Border:** Unterdrückt den Rahmen; die Fläche des Rahmens wird transparent.
+    - **Bit 3 - Transparent Background:** Schaltet den Hintergrund auf transparent (Hintergrundfarbe wird ignoriert).
+    - **Bit 4 - Disabled:** Deaktiviert die Interaktion; der Button wird ausgegraut/deaktiviert dargestellt.
+    - **Bit 5 - No Border:** Der Rahmen entfällt komplett, und die "Button Face" erweitert sich auf die volle "Button Area".
+- **Container-Struktur und Child-Objekte:**
+    - Ein Button fungiert als Container. Er kann andere Objekte (z.B. Texte, Bitmaps) enthalten.
+    - **Clipping:** Alle Child-Objekte werden an den Grenzen der "Button Face" abgeschnitten. Inhalte außerhalb dieses Bereichs sind nicht sichtbar.
+- **Verhalten:** 
+    - **Wiederholungsfunktion:** Die Option, einen Befehl wiederholt zu senden, solange die Schaltfläche gedrückt gehalten wird (über die Button Activation Nachricht gesteuert).
 - **Verknüpfung mit Ereignissen und Befehlen:** Jede Schaltfläche ist mit einem oder mehreren Ereignissen oder Befehlen verknüpft. Wenn die Schaltfläche betätigt wird, wird das entsprechende Ereignis ausgelöst oder der Befehl gesendet. Anhang B.7 beschreibt die Mechanismen, wie diese Verknüpfungen hergestellt und verwaltet werden.
 
 **Rolle des Button Objekts im Virtuellen Terminal**

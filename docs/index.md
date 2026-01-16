@@ -27,11 +27,8 @@ Home <self>
 Home
 logiBUS
 Jetter-ISO-Designer
-
-
-
-genindex
-search
+Objekte
+isobus-objects/index
 ```
 
 # Indices and tables

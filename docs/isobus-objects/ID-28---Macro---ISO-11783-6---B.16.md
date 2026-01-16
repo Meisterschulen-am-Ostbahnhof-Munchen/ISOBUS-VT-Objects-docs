@@ -1,55 +1,44 @@
 # ID 28 – Macro – ISO 11783-6 – B.16
 
-![](https://user-images.githubusercontent.com/69573151/95758343-a491f500-0ca8-11eb-8c8a-29371031c94f.png)
+Das **Macro** Objekt mit der **ID 28** erlaubt es, eine Sequenz von Befehlen im Virtuellen Terminal zu speichern und bei bestimmten Ereignissen (Events) automatisch auszuführen. Dies reduziert die notwendige Kommunikation über den ISOBUS, da einfache UI-Logik direkt im Terminal abläuft.
 
-Hier eine Kurzzusammenfassung der verschiedenen Macro-Möglichkeiten:
+## Technische Attribute (gemäß Tabelle B.56)
 
-*   **ShowHideObject**
-    *   blendet einen Container aus oder ein
-*   **EnableDisableObject**
-    *   blockiert die Eingabe auf ein Feld oder Button, bleibt aber sichtbar.
-*   SelectInputObject
-    *   TODO
-*   ControlAudioDevice
-    *   damit kann man ein Klavier bauen.
-    *   Beispiel Siehe: M:\\Landmaschinenmechanik\\Unterricht\\SL\\DLG\\pconvert\\iso\_test\\iop\\fac\\macro\\\_06\_button.iop
-*   **ChangeChildLocation & ChangeChildPosition**
-    *   Verschieben einen Container. für die genaue Verwendung siehe ISO; relativ kompliziert anzuwenden. 
-    *   Damit kann man z.B. einen Text scrollen.
-*   ChangeSize
-    *   TODO
-*   ChangeBackgroundColor
-    *   tut das was man vermutet
-*   ChangeNumericValue
-    *   eine Variable Verändern; geht für Number Variable und auch für Pointer
-*   ChangeStringValue
-    *   eine String Variable verändern
-*   ChangeEndPoint
-    *   von einer Linie einen Punkt verschieben
-*   ChangeFontAttribute
-    *   TODO
-*   ChangeLineAttribute
-    *   TODO
-*   **ChangeActiveMask**
-    *   auf eine andere Datenmaske schalten
-    *   TODO: die SK-Mask wird dabei ......
-*   **ChangeSoftkeyMask**
-    *   nur die Softkey-Maske umschalten, die DataMask bleibt.
-*   ChangeAttribut
-    *   TODO
-*   ChangePriority
-    *   TODO
-*   ChangeListItem
-    *   TODO irgendwas mit InputList
-*   SetObjectLabel
-    *   TODO
+| AID | Name | Typ | Beschreibung |
+| :--- | :--- | :--- | :--- |
+| - | **Object ID** | Integer 2 | Eindeutige Identifikationsnummer (0-255 bis VT v4, bis 65534 ab VT v5). |
+| 0 | **Type** | Integer 1 | Objekttyp = 28 (Macro). |
+| - | **Number of bytes** | Integer 2 | Gesamtzahl der folgenden Befehls-Bytes. |
+| - | **Commands** | Binary | Sequenz von Befehlspaketen (jeweils auf 8 Byte aufgefüllt). |
 
-## Empfohlene Lektüre Macro:
+## Funktionsweise und Struktur
+Ein Makro besteht aus einer Liste von VT-Kommandos (siehe ISO 11783-6, Anhang F). 
 
-*   ISO 11783-6 – B.16
-*   Hilfe Jetter ISO-Designer.
-    *   ISO-Objekte
-        *   Die einzelnen ISO-Objekte
-            *   Das Objekt Macro
+*   **Padding:** Jeder Befehl innerhalb eines Makros muss auf eine Länge von **8 Byte** aufgefüllt werden (mit `0xFF`), falls das eigentliche Kommando kürzer ist.
+*   **Ausführung:** Makros können durch Events (z. B. `On Press` eines Buttons) oder durch das Kommando `Execute Macro` von der ECU gestartet werden.
+*   **Konsistenz:** Die ECU ist dafür verantwortlich, dass Makros nur auf Objekte verweisen, die tatsächlich im Pool existieren.
 
-![](https://user-images.githubusercontent.com/69573151/94601320-9fd64580-0293-11eb-981e-d02cb4d5bc7e.png)
+## Verfügbare Makro-Befehle (Auszug)
+
+Makros können fast alle kommandierenden VT-Funktionen nutzen:
+
+*   **Sichtbarkeit:** `Hide/Show Object` (Ein-/Ausblenden von Containern).
+*   **Interaktion:** `Enable/Disable Object` (Sperren von Buttons/Eingaben), `Select Input Object` (Fokus setzen).
+*   **Werte:** `Change Numeric Value` (Variablen oder Pointer ändern), `Change String Value`.
+*   **Geometrie:** `Change Child Location/Position` (Objekte verschieben/scrollen), `Change Size`, `Change End Point`.
+*   **Darstellung:** `Change Background Color`, `Change Font/Line/Fill Attributes`.
+*   **Navigation:** `Change Active Mask` (Maskenwechsel), `Change Soft Key Mask`.
+*   **Audio:** `Control Audio Device` (Signaltöne ausgeben).
+*   **Listen:** `Change List Item` (Inhalt von Input-Listen ändern).
+
+## Ereignisse (Events - Tabelle B.56)
+*   Makros selbst lösen keine Events aus, sie werden durch Events *anderer* Objekte (Buttons, Masken, Variablen) referenziert und ausgeführt.
+
+## Bedeutung für die Implementierung
+Makros sind ein mächtiges Werkzeug zur **Performance-Optimierung**:
+1.  **Reaktionszeit:** Ein Maskenwechsel direkt nach einem Tastendruck erfolgt per Makro ohne CAN-Verzögerung.
+2.  **Entlastung:** Die ECU muss sich nicht um rein grafische Belange kümmern (z. B. das Umschalten eines Icons beim Drücken eines Buttons).
+3.  **Komplexität:** Mehrere Aktionen können in ein einziges Makro gepackt werden (z. B. "Variable auf 0 setzen" UND "Erfolgsmeldung einblenden" UND "Ton abspielen").
+
+----
+*Hinweis: Für detaillierte Spezifikationen zu den einzelnen Befehlscodes wird auf die offizielle ISO 11783-6:2018, Anhang F verwiesen.*

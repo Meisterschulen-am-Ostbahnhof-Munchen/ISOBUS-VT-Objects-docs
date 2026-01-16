@@ -4,46 +4,41 @@
 
 ----
 
-Die **ID 0** in der **ISO 11783-6** bezieht sich auf das **Working Set** (Arbeitsset). Hierbei handelt es sich um ein Objekt, das die Anzeige von Daten aus verschiedenen Arbeitssets auf einer Maske ermöglicht. Mit dem Working Set können Informationen von mehreren Anbaugeräten gleichzeitig auf demselben virtuellen Terminal dargestellt werden. Dies trägt zur besseren Übersichtlichkeit und Effizienz bei der Steuerung landwirtschaftlicher Geräte bei. 🚜
+Das **Working Set** (Arbeitsset) Objekt mit der **ID 0** ist das zentrale Verwaltungselement einer Arbeitsgruppe (Working Set) im ISOBUS. Es definiert, wie sich die Arbeitsgruppe gegenüber dem Virtuellen Terminal (VT) präsentiert und welche Maske initial angezeigt wird.
 
+## Wichtige Eigenschaften (gemäß ISO 11783-6, Anhang B.1)
 
-Abschnitt B.1 der ISO 11783-6:2018 beschreibt detailliert die Definitionen für Objekte im Zusammenhang mit dem Virtuellen Terminal (VT) und Arbeitsgruppen (Working Sets). Hier eine Zusammenfassung der wichtigsten Punkte:
+Jede Arbeitsgruppe muss **genau ein** Working Set Objekt in ihrem Objektpool definieren. Nur das VT kann dieses Objekt aktivieren.
 
-**B.1.1 Allgemeines:**
+### Technische Attribute (Tabelle B.2)
 
-*   Der Anhang B.1 ist ein normativer Teil der ISO 11783-6-Norm und legt die detaillierten Definitionen für alle Objekte fest, die im Zusammenhang mit dem VT verwendet werden.
-*   Die Objekte sind in Tabellenform dargestellt und enthalten Informationen zu den Attributen, den Datentypen, den möglichen Werten und den Beschreibungen jedes Objekts.
+| AID | Name | Typ | Beschreibung |
+| :--- | :--- | :--- | :--- |
+| - | **Object ID** | Integer 2 | Eindeutige ID im Pool (immer ID 0 für das Working Set Objekt). |
+| 0 | **Type** | Integer 1 | Objekttyp = 0 (Working Set). |
+| 1 | **Background colour** | Integer 1 | Hintergrundfarbe des Working Set Designators. |
+| 2 | **Selectable** | Boolean 1 | Bestimmt, ob der Bediener dieses Working Set manuell auswählen kann (0 = Nein, 1 = Ja). |
+| 3 | **Active mask** | Integer 2 | Die Objekt-ID der Datenmaske (Data Mask) oder Alarmmaske, die angezeigt wird, wenn das Working Set aktiv wird. |
 
-**B.1.2 Tabellenstruktur:**
+### Designator und Child-Objekte
+Das Working Set Objekt fungiert als Container für eine kleine grafische Kennung (Designator), die z. B. in der Liste der verfügbaren Geräte oder in Alarmmeldungen angezeigt wird.
+*   **Anzahl der Child-Objekte:** Muss mindestens 1 enthalten.
+*   **Platzbeschränkung:** Die enthaltenen Objekte müssen in einen **Softkey-Designator** passen. Alles, was darüber hinausragt, wird vom VT abgeschnitten (Clipping).
+*   **Positionierung:** X- und Y-Koordinaten der Child-Objekte beziehen sich auf die obere linke Ecke des Working Set Objekts.
 
-*   Jede Objekttabelle enthält Spalten für "Attribute ID (AID)", "Name", "Typ", "Bereich" und "Beschreibung".
-*   Die "Attribute ID" ist ein numerischer Wert, der das Attribut eindeutig identifiziert.
-*   Der "Name" ist eine textuelle Bezeichnung des Attributs.
-*   Der "Typ" gibt den Datentyp des Attributs an (z. B. "Integer", "String", "Boolean").
-*   Der "Bereich" definiert die zulässigen Werte oder den Wertebereich für das Attribut.
-*   Die "Beschreibung" enthält eine detaillierte Erläuterung des Attributs und seiner Funktion.
+## Ereignisse (Events - Tabelle B.1)
 
-**B.1.3 Objekttypen:**
+Das Working Set Objekt reagiert auf zentrale Statusänderungen:
 
-*   Die Norm definiert eine Vielzahl von Objekttypen, die zur Darstellung und Interaktion mit Informationen auf dem VT verwendet werden.
-*   Zu den Objekttypen gehören unter anderem:
-    *   Arbeitsgruppenelement (Working Set)
-    *   Datenmaske (Data Mask)
-    *   Softkey-Maske (Soft Key Mask)
-    *   Objekt-Pool
-    *   Verschiedene grafische und textuelle Objekte zur Anzeige von Daten
-    *   Eingabeobjekte zur Erfassung von Benutzerdaten
-    *   Steuerungsobjekte zur Interaktion mit dem System
+*   **On Activate:** Wird ausgelöst, wenn der Bediener zu diesem Working Set wechselt. Das VT sendet eine `VT Status` Nachricht.
+*   **On Deactivate:** Wird ausgelöst, wenn der Bediener zu einem anderen Working Set wechselt.
+*   **On Change Active Mask:** Wird durch das Kommando `Change Active Mask` ausgelöst und wechselt die aktuell sichtbare Maske.
 
-**B.1.4 Arbeitsgruppen (Working Sets):**
+## Sprachenunterstützung
+Das Objekt enthält eine Liste von Sprachcodes (z. B. "de", "en"), die das Working Set unterstützt. Dies ermöglicht dem VT, die passende Sprache für die Benutzeroberfläche auszuwählen.
 
-*   Arbeitsgruppen sind logische Gruppierungen von Objekten, die zusammen eine bestimmte Funktion oder ein bestimmtes Anbaugerät repräsentieren.
-*   Jede Arbeitsgruppe hat einen eigenen Objekt-Pool, der die für diese Gruppe relevanten Objekte enthält.
-*   Die Norm definiert das Arbeitsgruppenelement als ein spezielles Objekt, das Informationen über die Arbeitsgruppe selbst enthält.
+## Bedeutung für die Implementierung
+Das Working Set Objekt ist der "Anker" einer Applikation auf dem VT. Ohne ein korrekt definiertes Objekt ID 0 kann das VT die Arbeitsgruppe nicht identifizieren oder die erste Maske laden. Entwickler müssen sicherstellen, dass die `Active mask` AID auf eine gültige Datenmaske im Pool verweist.
 
-**B.1.5 Bedeutung für den Wiki-Artikel:**
-
-*   Für einen Wiki-Artikel über "ID 0 – Working Set – ISO 11783-6 – B.1" ist es wichtig zu betonen, dass B.1 die grundlegenden Definitionen für Arbeitsgruppen und die zugehörigen Objekte liefert.
-*   Der Artikel sollte erklären, dass die ID 0 eine spezifische Arbeitsgruppe identifiziert und dass die Definitionen in B.1 für das Verständnis und die Implementierung dieser Arbeitsgruppe unerlässlich sind.
-*   Es sollte auch darauf hingewiesen werden, dass die genauen Details und Spezifikationen der Objekte in den Tabellen in B.1 zu finden sind.
-*   Für ein vollständiges Verständnis des Themas ist es ratsam, das Originaldokument "ISO 11783-6:2018" zu konsultieren.
+----
+*Hinweis: Für detaillierte Implementierungsinformationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

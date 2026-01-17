@@ -61,8 +61,8 @@ die Festlegung in dieser Tabelle kann man also als Good Practice bezeichnen.
 | GraphicData               | 46000   | GraphicData\_%ld               | 46  | [ID 46 – Graphic Data (PNG) – ISO 11783-6 – B.27](isobus-objects/ID-46---Graphic-Data---ISO-11783-6---B.27.md)                                   |
 | ColorPalette              | 45000   | ColorPalette\_%ld              | 45  | [ID 45 – Colour Palette – ISO 11783-6 – B.26](isobus-objects/ID-45---Colour-Palette---ISO-11783-6---B.26.md)                                     |
 | WorkingSetSpecialControls | 47000   | WorkingSetSpecialControls\_%ld | 47  | [ID 47 – Working Set Special Controls – ISO 11783-6 – B.29](isobus-objects/ID-47---Working-Set-Special-Controls---ISO-11783-6---B.29.md)         |
-| IDsForTemporaryUse        | 64000   | IDsForTemporaryUse\_%ld        | 64  | [I](I)                                                                                                           |
-| Proxy                     | 4194304 | Proxy\_%ld                     |     | [I](I)                                                                                                           |
+| IDsForTemporaryUse        | 64000   | IDsForTemporaryUse\_%ld        | 64  |                                                                                                                  |
+| Proxy                     | 4194304 | Proxy\_%ld                     |     |                                                                                                                  |
 
 In Versionen vor V. 5.6.0, also bis ISO-Designer 5.5.1
 

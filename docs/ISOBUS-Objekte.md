@@ -10,7 +10,9 @@ künftig: [ISOBUS-Objekte-Versionen](ISOBUS-Objekte-Versionen.md)
 
 ISOBUS Wiki von Tobias Tenberg:
 
-<https://isobus-studio.com/en/isobus-wiki>
+* <https://isobus-studio.com/en/isobus-wiki>
+* [ISOBUS Wiki - Colours](https://isobus-studio.com/isobus-wiki/isobus-colours)
+* [ISOBUS Wiki - Objectpool Objects Database](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects-database)
 
 Wie Sie sehen gibt es verschiedenen Objekte, aber nicht alle werden in jeder ISOBUS Version unterstützt. 
 

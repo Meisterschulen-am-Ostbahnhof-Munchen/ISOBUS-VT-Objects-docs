@@ -5,6 +5,10 @@
 
 ![](https://user-images.githubusercontent.com/69573151/95071971-c7e9fc80-070a-11eb-8261-f87394d32fb4.png)
 
+## 🎧 Podcast
+
+* [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
+
 ----
 
 Das **Key Objekt** (ID 5) definiert das Aussehen und den funktionalen Code eines Softkeys. Es ist das interaktive Element innerhalb einer Softkey-Maske.

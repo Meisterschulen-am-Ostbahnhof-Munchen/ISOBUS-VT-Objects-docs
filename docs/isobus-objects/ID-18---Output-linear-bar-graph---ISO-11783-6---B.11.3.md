@@ -40,5 +40,9 @@ Der Balken wird proportional zum aktuellen `Value` zwischen `Min value` und `Max
 ## Bedeutung für die Implementierung
 Balkendiagramme sind ideal für Füllstandsanzeigen (Kraftstoff, Saatgut), Temperaturanzeigen oder Lastanzeigen. Durch die Option der `Target line` kann dem Bediener sofort visualisiert werden, ob er sich im optimalen Arbeitsbereich befindet. Die Kombination mit Skalenstrichen (Ticks) erhöht die Ablesbarkeit.
 
+## 🎧 Podcast
+
+* [ISOBUS-Balkendiagramm: Das Output Linear Bar Graph Objekt der ISO 11783-6 entschlüsselt](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Balkendiagramm-Das-Output-Linear-Bar-Graph-Objekt-der-ISO-11783-6-entschlsselt-e36l0v2)
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

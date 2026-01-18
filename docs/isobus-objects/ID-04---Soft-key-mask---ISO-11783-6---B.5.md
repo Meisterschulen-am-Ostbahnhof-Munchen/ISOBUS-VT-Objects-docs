@@ -33,5 +33,9 @@ Jede Datenmaske (ID 1) verweist auf eine Soft Key Mask (ID 4).
 ## Bedeutung für die Implementierung
 Das Design der Softkey-Masken ist entscheidend für die Ergonomie. Entwickler sollten darauf achten, dass wichtige Funktionen (z. B. "Zurück" oder "Home") immer an der gleichen Position liegen. Durch den Einsatz von NULL-Pointern kann ein Springen der Tasten beim Wechsel zwischen verschiedenen Masken verhindert werden.
 
+## 🎧 Podcast
+
+* [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

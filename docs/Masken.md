@@ -3,6 +3,10 @@
 ```{index} single: Masken
 ```
 
+## 🎧 Podcast
+
+* [ISOBUS-Masken im VT: Das Herzstück der Land- und Baumaschinen-Interfaces (ISO 11783-6)](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Masken-im-VT-Das-Herzstck-der-Land--und-Baumaschinen-Interfaces-ISO-11783-6-e36a8m7)
+
 ```{toctree}
 isobus-objects/ID-00---Working-set---ISO-11783-6---B.1
 isobus-objects/ID-01---Data-mask---ISO-11783-6---B.2
@@ -32,5 +36,4 @@ Quelle: Unterhaltung mit Copilot, 18.7.2024
 5. Atemwiderstände von Masken - DGUV Publikationen. https://publikationen.dguv.de/widgets/pdf/download/article/4577.
 6. Übersicht: Typen von Atemschutzmasken | Eigenschaften Schutzmasken .... https://www.heller-medizintechnik.de/informationen/patienten/schutzmasken/.
 7. Atemwiderstände von Masken - DGUV Informationsportal. https://www.dguv.de/medien/ipa/publikationen/ipa-journale/ipa-journale2022/ipa_journal_1_2022_atemwiderstaende_masken.pdf.
-
 

@@ -3,6 +3,10 @@
 ```{index} single: Attribute
 ```
 
+## 🎧 Podcast
+
+* [ISOBUS-Oberflächen: Hintergrundfarbe vs. Füll-Attribute – So optimieren Sie Ihre UI und Performance](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Oberflchen-Hintergrundfarbe-vs--Fll-Attribute--So-optimieren-Sie-Ihre-UI-und-Performance-e36oo3f)
+
 ```{toctree}
 isobus-objects/ID-23---Font-attributes---ISO-11783-6---B.14.2
 isobus-objects/ID-24---Line-attributes---ISO-11783-6---B.14.3

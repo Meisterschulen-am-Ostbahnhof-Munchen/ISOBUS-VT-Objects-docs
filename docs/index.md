@@ -55,7 +55,17 @@ Objekte
 isobus-objects/index
 ```
 
-# Indices and tables
+---
 
-- {ref}`genindex`
-- {ref}`search`
+```{toctree}
+:caption: 'Index & Suche'
+:maxdepth: 2
+genindex
+search
+```
+
+### Index & Suche
+* {ref}`genindex`
+* {ref}`search`
+
+[🏠 Hauptmenü](https://www.ms-muc-docs.de/) | [🔍 Super-Suche (alle Wikis)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/de/latest/) | [Schnelle Suche (IEC 61499)](https://www.ms-muc-docs.de/iec-61499/abk%C3%BCrzungen-und-bedeutungen/abk%C3%BCrzungen-und-bedeutungen)

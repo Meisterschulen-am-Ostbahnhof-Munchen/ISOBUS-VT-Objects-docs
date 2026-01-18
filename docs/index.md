@@ -15,6 +15,13 @@ myst:
 # Wiki 2: ISOBUS Virtual Terminal
 ## Meisterschulen am Ostbahnhof, München
 
+```{index} single: Virtual Terminal
+```
+```{index} single: Objekt-Pool
+```
+```{index} single: ISOBUS-Objekte
+```
+
 ---
 
 **Willkommen bei der Dokumentation zu ISOBUS Virtual Terminal.**

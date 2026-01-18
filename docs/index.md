@@ -10,7 +10,10 @@ myst:
 ---
 
 
-  <img src="logos/Meisterschulen_LogoG1_4c.gif" alt="Logo Meisterschulen am Ostbahnhof" width="400">
+```{image} _static/logos/Meisterschulen_LogoG1_4c.gif
+:alt: Logo Meisterschulen am Ostbahnhof
+:width: 400px
+```
 
 # Wiki 2: ISOBUS Virtual Terminal
 ## Meisterschulen am Ostbahnhof, München

@@ -25,5 +25,3 @@ Quelle: Unterhaltung mit Copilot, 18.7.2024
 3. ISO 11783-6 - 2018-06 - DIN Media - Beuth. https://www.dinmedia.de/de/norm/iso-11783-6/291680983.
 4. Rothmund-Wodok. ISOBUS - Norm ISO 11783 - gil-net.de. https://gil-net.de/Publikationen/22_163.pdf.
 5. en.wikipedia.org. https://en.wikipedia.org/wiki/ISO_11783.
-
-

@@ -3,7 +3,6 @@
 ```{index} single: Videos
 ```
 
-
 ## ISO-Designer: Deutsch
 
 * [ISO-Designer: Deutsch](https://youtube.com/playlist?list=PLD-CHxmB4P7dONUFIWaUbzUUxXmc9hayo\&si=0EX2K7hXmHuxW\_iM)
@@ -16,7 +15,6 @@
 1. [ISO-Designer: Verwenden der Objekt Bibliothek](https://www.youtube.com/watch?v=nLb67M12Lgg)  
 1. [ISO-Designer: Objekteigenschaften uebernehmen](https://www.youtube.com/watch?v=U2OBFeYmUaE)
 
-
 ## ISO-Designer: englisch
 
 * [ISO-Designer: englisch](https://youtube.com/playlist?list=PLD-CHxmB4P7dMFsr7TSBbH70BT4WvluEz\&si=VZRkW8oFbZgjS45a)
@@ -28,4 +26,3 @@
 1. [ISO-Designer: Inheriting Object-Properties](https://www.youtube.com/watch?v=DGJpKDz1Ldg)  
 1. [ISO Designer: Importing/exporting texts into/from an Excel CSV file](https://www.youtube.com/watch?v=\_alik3k3DFk)  
 1. [ISO-Designer: Language selection within texts and images](https://www.youtube.com/watch?v=01U2L6Nmegw) 
-

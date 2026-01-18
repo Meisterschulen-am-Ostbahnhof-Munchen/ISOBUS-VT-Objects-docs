@@ -10,7 +10,6 @@ isobus-objects/ID-06---Button---ISO-11783-6---B.7
 
 ----
 
-
 In der **ISO 11783-6** werden verschiedene Bedienelemente spezifiziert, die in landwirtschaftlichen und forstwirtschaftlichen Traktoren sowie Anbaugeräten verwendet werden. Hier sind die relevanten Bedienelemente gemäß ISO 11783-6:
 
 1. **Key (Soft Key)** (ID 5): Softkeys sind programmierbare Tasten auf dem virtuellen Terminal. Die Softkey-Maske ermöglicht die Anpassung dieser Tasten je nach Kontext und Anbaugerät. Der Fahrer kann sie verwenden, um bestimmte Funktionen auszuführen oder Einstellungen vorzunehmen¹.

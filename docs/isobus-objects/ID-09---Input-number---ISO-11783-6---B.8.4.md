@@ -1,5 +1,8 @@
 # ID 9 – Input number – ISO 11783-6 – B.8.4
 
+```{index} single: ID 9 – Input number – ISO 11783-6 – B.8.4
+```
+
 Das **Input Number** Objekt mit der **ID 9** ist eines der komplexesten und wichtigsten Eingabeobjekte. Es dient zur Eingabe und Anzeige von numerischen Werten und unterstützt automatische Skalierung, Formatierung und Grenzwertprüfung direkt im Terminal.
 
 ## Technische Attribute (gemäß Tabelle B.18)

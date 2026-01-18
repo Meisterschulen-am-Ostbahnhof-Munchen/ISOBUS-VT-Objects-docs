@@ -1,5 +1,8 @@
 # Variablen
 
+```{index} single: Variablen
+```
+
 ```{toctree}
 isobus-objects/ID-21---Number-variable---ISO-11783-6---B.13.2
 isobus-objects/ID-22---String-variable---ISO-11783-6---B.13.3

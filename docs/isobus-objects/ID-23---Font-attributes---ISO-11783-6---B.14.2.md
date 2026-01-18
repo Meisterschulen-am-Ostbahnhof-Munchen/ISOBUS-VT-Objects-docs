@@ -1,5 +1,8 @@
 # ID 23 – Font attributes – ISO 11783-6 – B.14.2
 
+```{index} single: ID 23 – Font attributes – ISO 11783-6 – B.14.2
+```
+
 Das **Font Attributes** Objekt mit der **ID 23** definiert das Erscheinungsbild von Texten (Schriftart, Größe, Farbe, Stil). Es ist ein zentrales Attribut-Objekt, das von allen textbasierten Anzeige- und Eingabeobjekten referenziert wird.
 
 ## Technische Attribute (gemäß Tabelle B.46)

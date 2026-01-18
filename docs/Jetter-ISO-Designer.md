@@ -1,5 +1,8 @@
 # Jetter ISO-Designer
 
+```{index} single: Jetter ISO-Designer
+```
+
 ```{toctree}
 Einträge-von-Schülern
 Videos

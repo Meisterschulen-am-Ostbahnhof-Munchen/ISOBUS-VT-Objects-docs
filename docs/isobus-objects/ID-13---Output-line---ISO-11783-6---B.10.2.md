@@ -1,5 +1,8 @@
 # ID 13 – Output line – ISO 11783-6 – B.10.2
 
+```{index} single: ID 13 – Output line – ISO 11783-6 – B.10.2
+```
+
 Das **Output Line** Objekt mit der **ID 13** wird verwendet, um eine einfache Linie zwischen zwei Punkten innerhalb eines virtuellen Rechtecks zu zeichnen.
 
 ## Technische Attribute (gemäß Tabelle B.27)

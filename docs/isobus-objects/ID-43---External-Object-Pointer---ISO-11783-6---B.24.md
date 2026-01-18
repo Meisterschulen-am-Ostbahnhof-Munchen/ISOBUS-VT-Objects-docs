@@ -1,5 +1,8 @@
 # ID 43 – External Object Pointer – ISO 11783-6 – B.24
 
+```{index} single: ID 43 – External Object Pointer – ISO 11783-6 – B.24
+```
+
 Das **External Object Pointer** Objekt mit der **ID 43** (ab VT Version 5) ermöglicht es einer Working Set, Objekte anzuzeigen, die sich physisch im Objekt-Pool einer **anderen** Working Set befinden.
 
 ## Technische Attribute (gemäß Tabelle B.70)

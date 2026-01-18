@@ -1,5 +1,8 @@
 # ID 3 – Container – ISO 11783-6 – B.4
 
+```{index} single: ID 3 – Container – ISO 11783-6 – B.4
+```
+
 Das **Container** Objekt mit der **ID 3** dient dazu, mehrere Objekte logisch zu gruppieren. Ein Container selbst ist nicht sichtbar, ermöglicht aber das gemeinsame Verschieben, Ein-/Ausblenden oder Teilen einer gesamten Gruppe von Objekten.
 
 ## Technische Attribute (gemäß Tabelle B.8)

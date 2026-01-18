@@ -1,5 +1,8 @@
 # ID 36 – Graphics Context Object – ISO 11783-6 – B.18
 
+```{index} single: ID 36 – Graphics Context Object – ISO 11783-6 – B.18
+```
+
 Das **Graphics Context Object (GCO)** mit der **ID 36** (ab VT Version 4) stellt einen dynamischen Grafikpuffer (Canvas) zur Verfügung, in den die ECU zur Laufzeit zeichnen kann. Es ist vergleichbar mit einer Bitmap, deren Inhalt pixelgenau verändert werden kann.
 
 ## Technische Attribute (gemäß Tabelle B.59)

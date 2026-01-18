@@ -1,5 +1,8 @@
 # ID 12 – Output number – ISO 11783-6 – B.9.3
 
+```{index} single: ID 12 – Output number – ISO 11783-6 – B.9.3
+```
+
 Das **Output Number** Objekt mit der **ID 12** dient zur Anzeige von numerischen Werten. Wie das *Input Number* Objekt unterstützt es automatische Skalierung und Formatierung, ist jedoch rein für die Anzeige (Read-only für den Bediener) konzipiert.
 
 ## Technische Attribute (gemäß Tabelle B.23)

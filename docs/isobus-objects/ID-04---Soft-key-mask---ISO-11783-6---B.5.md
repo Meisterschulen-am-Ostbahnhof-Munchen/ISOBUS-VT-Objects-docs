@@ -1,5 +1,8 @@
 # ID 4 – Soft Key Mask – ISO 11783-6 – B.5
 
+```{index} single: ID 4 – Soft Key Mask – ISO 11783-6 – B.5
+```
+
 Die **Soft Key Mask** (Softkey-Maske) mit der **ID 4** ist ein spezieller Container, der die Belegung der physischen oder virtuellen Softkeys am Rand des Terminals definiert. Sie wird in der Regel einer Datenmaske oder Alarmmaske fest zugeordnet.
 
 ## Technische Attribute (gemäß Tabelle B.10)

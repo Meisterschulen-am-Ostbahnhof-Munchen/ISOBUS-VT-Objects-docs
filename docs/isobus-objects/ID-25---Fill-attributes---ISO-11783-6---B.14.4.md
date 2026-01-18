@@ -1,5 +1,8 @@
 # ID 25 – Fill attributes – ISO 11783-6 – B.14.4
 
+```{index} single: ID 25 – Fill attributes – ISO 11783-6 – B.14.4
+```
+
 Das **Fill Attributes** Objekt mit der **ID 25** definiert, wie geschlossene geometrische Formen (Rechtecke, Ellipsen, Polygone) gefüllt werden.
 
 ## Technische Attribute (gemäß Tabelle B.50)

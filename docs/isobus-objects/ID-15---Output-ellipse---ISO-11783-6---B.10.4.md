@@ -1,5 +1,8 @@
 # ID 15 – Output ellipse – ISO 11783-6 – B.10.4
 
+```{index} single: ID 15 – Output ellipse – ISO 11783-6 – B.10.4
+```
+
 Das **Output Ellipse** Objekt mit der **ID 15** dient zum Zeichnen von Kreisen, Ellipsen sowie Kreisbögen, Segmenten und Sektoren (Tortendiagramm-Stücke).
 
 ## Technische Attribute (gemäß Tabelle B.31)

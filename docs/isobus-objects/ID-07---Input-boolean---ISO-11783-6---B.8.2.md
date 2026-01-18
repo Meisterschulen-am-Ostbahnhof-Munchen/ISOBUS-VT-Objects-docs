@@ -1,5 +1,8 @@
 # ID 7 – Input boolean – ISO 11783-6 – B.8.2
 
+```{index} single: ID 7 – Input boolean – ISO 11783-6 – B.8.2
+```
+
 Das **Input Boolean** Objekt mit der **ID 7** ermöglicht dem Bediener die Eingabe eines TRUE/FALSE-Wertes (z. B. in Form eines Kontrollkästchens).
 
 ## Technische Attribute (gemäß Tabelle B.16)

@@ -1,5 +1,8 @@
 # ID 38 – Extended Input Attributes – ISO 11783-6 – B.14.6
 
+```{index} single: ID 38 – Extended Input Attributes – ISO 11783-6 – B.14.6
+```
+
 Das **Extended Input Attributes** Objekt mit der **ID 38** (ab VT Version 4) dient der Validierung von Texteingaben (Input String) bei Verwendung von **WideStrings** (Unicode).
 
 ## Technische Attribute (gemäß Tabelle B.53)

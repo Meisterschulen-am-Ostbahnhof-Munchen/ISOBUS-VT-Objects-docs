@@ -1,5 +1,8 @@
 # ID 29 – Auxiliary Function Type 1 – ISO 11783-6 – J.4.2
 
+```{index} single: ID 29 – Auxiliary Function Type 1 – ISO 11783-6 – J.4.2
+```
+
 Das **Auxiliary Function Type 1** Objekt mit der **ID 29** definiert die Attribute und das Design eines Hilfsfunktions-Bedienelements (Auxiliary Function). 
 
 *Hinweis: Dieses Objekt gilt ab VT Version 3 als veraltet (obsolete) und wird durch den Typ 2 (ID 31) ersetzt. Es sollte in neuen Projekten nicht mehr verwendet werden.*

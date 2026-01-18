@@ -1,5 +1,8 @@
 # ID 17 – Output meter – ISO 11783-6 – B.11.2
 
+```{index} single: ID 17 – Output meter – ISO 11783-6 – B.11.2
+```
+
 Das **Output Meter** Objekt mit der **ID 17** ist eine Rundanzeige (Zeigerinstrument). Es visualisiert einen Zahlenwert durch die Position einer Nadel auf einem kreisförmigen Bogen.
 
 ## Technische Attribute (gemäß Tabelle B.35)

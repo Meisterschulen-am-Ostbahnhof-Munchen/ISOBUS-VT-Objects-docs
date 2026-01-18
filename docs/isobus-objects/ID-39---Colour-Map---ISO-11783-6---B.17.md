@@ -1,5 +1,8 @@
 # ID 39 – Colour Map – ISO 11783-6 – B.17
 
+```{index} single: ID 39 – Colour Map – ISO 11783-6 – B.17
+```
+
 Das **Colour Map** Objekt mit der **ID 39** (optional ab VT Version 4/5, Pflicht ab VT Version 6) ermöglicht es einer Working Set, die Farbtabelle des Terminals zur Laufzeit umzudefinieren.
 
 ## Technische Attribute (gemäß Tabelle B.57)

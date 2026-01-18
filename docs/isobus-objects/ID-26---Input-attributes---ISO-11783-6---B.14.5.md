@@ -1,5 +1,8 @@
 # ID 26 – Input attributes – ISO 11783-6 – B.14.5
 
+```{index} single: ID 26 – Input attributes – ISO 11783-6 – B.14.5
+```
+
 Das **Input Attributes** Objekt mit der **ID 26** dient zur Validierung von Texteingaben. Es legt fest, welche Zeichen ein Bediener in ein verknüpftes *Input String* Objekt eingeben darf.
 
 ## Technische Attribute (gemäß Tabelle B.52)

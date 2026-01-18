@@ -1,5 +1,8 @@
 # ID 24 – Line attributes – ISO 11783-6 – B.14.3
 
+```{index} single: ID 24 – Line attributes – ISO 11783-6 – B.14.3
+```
+
 Das **Line Attributes** Objekt mit der **ID 24** definiert die grafischen Eigenschaften von Linien und Umrissen (Farbe, Breite, Stil). Es wird von allen geometrischen Objekten wie *Line* (ID 13), *Rectangle* (ID 14), *Ellipse* (ID 15) und *Polygon* (ID 16) referenziert.
 
 ## Technische Attribute (gemäß Tabelle B.48)

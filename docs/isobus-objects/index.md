@@ -1,5 +1,8 @@
 # ISOBUS VT Objekte
 
+```{index} single: ISOBUS VT Objekte
+```
+
 Diese Sektion beschreibt die verschiedenen Objekttypen des ISOBUS Virtuellen Terminals gemäß ISO 11783-6.
 
 ## Liste der Objekte

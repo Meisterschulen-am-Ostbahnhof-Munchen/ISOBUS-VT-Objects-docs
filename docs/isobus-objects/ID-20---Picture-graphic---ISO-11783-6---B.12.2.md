@@ -1,5 +1,8 @@
 # ID 20 – Picture graphic – ISO 11783-6 – B.12.2
 
+```{index} single: ID 20 – Picture graphic – ISO 11783-6 – B.12.2
+```
+
 Das **Picture Graphic** Objekt mit der **ID 20** dient zur Anzeige von Rastergrafiken (Bitmaps) auf dem Virtuellen Terminal. Es ermöglicht die Integration von Logos, Icons und komplexen visuellen Elementen.
 
 ## Podcast (Audio-Erklärung)

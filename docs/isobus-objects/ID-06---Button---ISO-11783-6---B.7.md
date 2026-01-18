@@ -1,5 +1,8 @@
 # ID 6 – Button – ISO 11783-6 – B.7
 
+```{index} single: ID 6 – Button – ISO 11783-6 – B.7
+```
+
 ![](https://user-images.githubusercontent.com/69573151/94337426-7d6dcf00-ffea-11ea-8ab0-ca710054a888.png)
 
 

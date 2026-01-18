@@ -1,5 +1,8 @@
 # ID 42 – External Reference NAME – ISO 11783-6 – B.23
 
+```{index} single: ID 42 – External Reference NAME – ISO 11783-6 – B.23
+```
+
 Das **External Reference NAME** Objekt mit der **ID 42** (ab VT Version 5) identifiziert ein anderes Working Set auf dem Bus über seinen eindeutigen ISO-NAME.
 
 ## Technische Attribute (gemäß Tabelle B.68)

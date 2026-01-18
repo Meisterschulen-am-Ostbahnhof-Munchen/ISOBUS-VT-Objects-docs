@@ -1,5 +1,8 @@
 # ID 41 – External Object Definition – ISO 11783-6 – B.22
 
+```{index} single: ID 41 – External Object Definition – ISO 11783-6 – B.22
+```
+
 Das **External Object Definition** Objekt mit der **ID 41** (ab VT Version 5) ist Teil des Mechanismus für **Working-Set-übergreifende Objektreferenzen**. Es definiert, welche Objekte eines eigenen Pools von anderen Working Sets referenziert werden dürfen.
 
 ## Technische Attribute (gemäß Tabelle B.66)

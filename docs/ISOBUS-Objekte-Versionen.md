@@ -1,5 +1,8 @@
 # ISOBUS-Objekte-Versionen
 
+```{index} single: ISOBUS-Objekte-Versionen
+```
+
 Welches Objekt ist in welcher Version vorhanden ? 
 
 die Tabelle unter: 

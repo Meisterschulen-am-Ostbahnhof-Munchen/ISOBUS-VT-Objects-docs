@@ -1,5 +1,8 @@
 # ID 32 – Auxiliary Input Type 2 – ISO 11783-6 – J.4.5
 
+```{index} single: ID 32 – Auxiliary Input Type 2 – ISO 11783-6 – J.4.5
+```
+
 Das **Auxiliary Input Type 2** Objekt mit der **ID 32** definiert ein physisches Bedienelement eines Auxiliary Input Geräts (z. B. eine Taste auf einem Joystick) ab VT Version 3.
 
 ## Technische Attribute (gemäß Tabelle J.4)

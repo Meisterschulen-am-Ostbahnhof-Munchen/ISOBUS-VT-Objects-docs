@@ -1,5 +1,8 @@
 # ID 8 – Input string – ISO 11783-6 – B.8.3
 
+```{index} single: ID 8 – Input string – ISO 11783-6 – B.8.3
+```
+
 Das **Input String** Objekt mit der **ID 8** dient zur Eingabe und Anzeige von Textzeichenfolgen durch den Bediener.
 
 ## Technische Attribute (gemäß Tabelle B.17)

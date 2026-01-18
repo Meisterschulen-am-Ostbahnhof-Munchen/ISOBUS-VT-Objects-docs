@@ -1,5 +1,8 @@
 # ID 31 – Auxiliary Function Type 2 – ISO 11783-6 – J.4.3
 
+```{index} single: ID 31 – Auxiliary Function Type 2 – ISO 11783-6 – J.4.3
+```
+
 Das **Auxiliary Function Type 2** Objekt mit der **ID 31** ist die moderne Definition für Hilfsfunktionen im ISOBUS (ab VT Version 3). Es bietet erweiterte Möglichkeiten zur Zuweisung von Bedienelementen.
 
 ## Technische Attribute (gemäß Tabelle J.2)

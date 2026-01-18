@@ -1,5 +1,8 @@
 # ID 47 – Working Set Special Controls – ISO 11783-6 – B.29
 
+```{index} single: ID 47 – Working Set Special Controls – ISO 11783-6 – B.29
+```
+
 Das **Working Set Special Controls** Objekt mit der **ID 47** (ab VT Version 6) dient zur zentralen Steuerung von pool-weiten Einstellungen wie Farben und Sprachen.
 
 ## Technische Attribute (gemäß Tabelle B.78)

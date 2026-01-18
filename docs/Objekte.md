@@ -1,5 +1,8 @@
 # Objekte
 
+```{index} single: Objekte
+```
+
 ```{toctree}
 Masken
 Container

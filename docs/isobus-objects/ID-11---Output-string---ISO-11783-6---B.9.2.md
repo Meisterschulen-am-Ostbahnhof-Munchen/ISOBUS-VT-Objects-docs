@@ -1,5 +1,8 @@
 # ID 11 – Output string – ISO 11783-6 – B.9.2
 
+```{index} single: ID 11 – Output string – ISO 11783-6 – B.9.2
+```
+
 Das **Output String** Objekt mit der **ID 11** dient zur rein visuellen Anzeige von Textzeichenfolgen auf dem Virtuellen Terminal. Im Gegensatz zum *Input String* erlaubt dieses Objekt keine direkte Bearbeitung durch den Bediener.
 
 ## Technische Attribute (gemäß Tabelle B.22)

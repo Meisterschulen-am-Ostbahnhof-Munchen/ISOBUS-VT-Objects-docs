@@ -1,5 +1,8 @@
 # ID 46 – Graphic Data (PNG) – ISO 11783-6 – B.27
 
+```{index} single: ID 46 – Graphic Data (PNG) – ISO 11783-6 – B.27
+```
+
 Das **Graphic Data** Objekt mit der **ID 46** (ab VT Version 6) dient zur Speicherung von Rohdaten für Grafiken, insbesondere im **PNG-Format**.
 
 ## Technische Attribute (gemäß Tabelle B.74)

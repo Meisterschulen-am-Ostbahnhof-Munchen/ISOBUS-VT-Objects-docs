@@ -1,5 +1,8 @@
 # ID 2 – Alarm Mask – ISO 11783-6 – B.3
 
+```{index} single: ID 2 – Alarm Mask – ISO 11783-6 – B.3
+```
+
 Die **Alarm Mask** (Alarmmaske) mit der **ID 2** dient zur Anzeige kritischer Informationen oder Warnungen. Sie hat Vorrang vor normalen Datenmasken und kann je nach Priorität das gesamte Display oder Teile davon überlagern.
 
 ## Technische Attribute (gemäß Tabelle B.6)

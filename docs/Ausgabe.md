@@ -1,5 +1,8 @@
 # Ausgabe
 
+```{index} single: Ausgabe
+```
+
 ```{toctree}
 isobus-objects/ID-11---Output-string---ISO-11783-6---B.9.2
 isobus-objects/ID-12---Output-number---ISO-11783-6---B.9.3

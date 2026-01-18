@@ -1,5 +1,8 @@
 # ID 22 – String variable – ISO 11783-6 – B.13.3
 
+```{index} single: ID 22 – String variable – ISO 11783-6 – B.13.3
+```
+
 Das **String Variable** Objekt mit der **ID 22** dient zur Speicherung von Textzeichenfolgen, die von Anzeige- oder Eingabeobjekten referenziert werden können.
 
 ## Technische Attribute (gemäß Tabelle B.44)

@@ -1,5 +1,8 @@
 # ID 30 – Auxiliary Input Type 1 – ISO 11783-6 – J.4.4
 
+```{index} single: ID 30 – Auxiliary Input Type 1 – ISO 11783-6 – J.4.4
+```
+
 Das **Auxiliary Input Type 1** Objekt mit der **ID 30** definiert die Eigenschaften eines physischen Bedienelements (z. B. Joystick, Schalter) eines Auxiliary Input Geräts.
 
 *Hinweis: Dieses Objekt gilt ab VT Version 3 als veraltet (obsolete) und wird durch den Typ 2 (ID 32) ersetzt.*

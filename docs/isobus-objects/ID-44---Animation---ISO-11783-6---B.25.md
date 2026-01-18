@@ -1,5 +1,8 @@
 # ID 44 – Animation – ISO 11783-6 – B.25
 
+```{index} single: ID 44 – Animation – ISO 11783-6 – B.25
+```
+
 Das **Animation** Objekt mit der **ID 44** (ab VT Version 5) ermöglicht die automatische oder manuelle Wiedergabe einer Sequenz von Objekten (Frames).
 
 ## Technische Attribute (gemäß Tabelle B.72)

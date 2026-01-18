@@ -1,5 +1,8 @@
 # ID 45 – Colour Palette – ISO 11783-6 – B.26
 
+```{index} single: ID 45 – Colour Palette – ISO 11783-6 – B.26
+```
+
 Das **Colour Palette** Objekt mit der **ID 45** (ab VT Version 6) erlaubt es einer Working Set, die Standard-Farbpalette des Terminals vollständig durch eigene ARGB-Farbdefinitionen zu ersetzen.
 
 ## Technische Attribute (gemäß Tabelle B.73)

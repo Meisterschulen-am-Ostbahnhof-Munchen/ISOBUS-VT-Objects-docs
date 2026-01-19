@@ -72,26 +72,11 @@ This project is under active development.
 
 **Contents**
 
-```{toctree}
-:caption: 'Contents:'
-:maxdepth: 7
-:numbered: true
-Home <self>
-Home
-logiBUS
-Jetter-ISO-Designer
-Objekte
-isobus-objects/index
-```
+
 
 ---
 
-```{toctree}
-:caption: 'Index & Suche'
-:maxdepth: 2
-genindex
-search
-```
+
 
 ### Index & Suche
 * {ref}`genindex`

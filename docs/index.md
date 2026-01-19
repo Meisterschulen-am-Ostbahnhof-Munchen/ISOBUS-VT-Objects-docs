@@ -16,6 +16,35 @@ myst:
 ```
 
 # Wiki 2: ISOBUS Virtual Terminal
+
+```{toctree}
+:maxdepth: 1
+
+Attribute.md
+Ausgabe.md
+AuxAssignOfApp.md
+Bedienelemente.md
+Bilder.md
+Bitmaps_einfuegen.md
+Container.md
+Eingabe.md
+Einträge-von-Schülern.md
+Funktionen.md
+Home.md
+ISOBUS-Objekt-IDs.md
+ISOBUS-Objekte-Versionen.md
+ISOBUS-Objekte.md
+Jetter-ISO-Designer-Workspace-öffnen.md
+Jetter-ISO-Designer.md
+Masken.md
+Objekte.md
+Variablen.md
+Vektorgrafiken_erstellen.md
+Videos.md
+logiBUS.md
+isobus-objects/index.md
+```
+
 ## Meisterschulen am Ostbahnhof, München
 
 ```{index} single: Virtual Terminal

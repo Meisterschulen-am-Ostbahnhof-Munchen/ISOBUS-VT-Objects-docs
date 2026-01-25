@@ -5,15 +5,20 @@
 
 Das **Fill Attributes** Objekt mit der **ID 25** definiert, wie geschlossene geometrische Formen (Rechtecke, Ellipsen, Polygone) gefüllt werden.
 
-## Technische Attribute (gemäß Tabelle B.50)
+### Attribute und Record Format (Tabelle B.50)
 
-| AID | Name | Typ | Beschreibung |
-| :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer 2 | Eindeutige Identifikationsnummer im Objekt-Pool. |
-| 0 | **Type** | Integer 1 | Objekttyp = 25 (Fill Attributes). |
-| 1 | **Fill type** | Integer 1 | Art der Füllung: **0:** Keine, **1:** Linienfarbe, **2:** Eigene Farbe, **3:** Muster. |
-| 2 | **Fill colour** | Integer 1 | Farbe der Füllung (nur bei Fill type = 2). |
-| 3 | **Fill pattern** | Integer 2 | Verweis auf ein **Picture Graphic** Objekt (ID 20) als Muster. |
+Die folgende Tabelle beschreibt den Aufbau des Fill Attributes Objekts im Objektpool.
+
+| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
+| [0] | **Type** | Integer | 1 | 25 | 3 | Objekttyp = Fill Attributes. |
+| [1] | **Fill type** | Integer | 1 | 0 – 3 | 4 | 0=Keine Füllung, 1=Linienfarbe, 2=Füllfarbe, 3=Muster. |
+| [2] | **Fill colour** | Integer | 1 | 0 – 255 | 5 | Füllfarbe (nur bei Typ 2 relevant). |
+| [3] | **Fill pattern** | Integer | 2 | 0 – 65534, 65535 | 6 – 7 | Objekt-ID eines Picture Graphic Objekts für Musterfüllung (nur bei Typ 3). |
+| - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 8 | Anzahl der folgenden Makro-Referenzen. |
+| - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | Event ID, die das Makro auslöst. |
+| - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Fülltypen und Logik
 Über AID 1 wird gesteuert, welche Quelle für die Flächenfüllung genutzt wird:
@@ -27,10 +32,13 @@ Das **Fill Attributes** Objekt mit der **ID 25** definiert, wie geschlossene geo
 Wenn ein Muster (AID 3) verwendet wird, gelten strenge Regeln für die referenzierte Grafik:
 *   **Ausrichtung:** Bei monochromen Grafiken muss die Breite durch 8 teilbar sein. Bei 16-Farben-Grafiken muss sie durch 2 teilbar sein.
 *   **Reihenfolge:** Bei dynamischen Änderungen muss erst das `Fill pattern` und dann der `Fill type` gesetzt werden, um Fehler im VT zu vermeiden.
-*   **Transparenz:** Wenn das Muster-Objekt selbst Transparenz enthält, scheint der Hintergrund der Maske durch das Muster hindurch.
 
 ## Ereignisse (Events - Tabelle B.49)
-*   **On Change Fill Attributes:** Wird ausgelöst, wenn die Fülleigenschaften per ECU-Kommando `Change Fill Attributes` geändert werden. Alle betroffenen geometrischen Objekte werden sofort aktualisiert.
+
+Das Fill Attributes Objekt reagiert auf folgende Ereignisse:
+
+*   **On Change Fill Attributes:** Wird ausgelöst durch das Kommando `Change Fill Attributes`. Das VT aktualisiert alle Objekte, die dieses Attribut verwenden.
+*   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
 
 ## Bedeutung für die Implementierung
 Fill Attributes sind unverzichtbar für die Gestaltung der Benutzeroberfläche. Sie ermöglichen es, Flächen hervorzuheben (z. B. gelbe Füllung für einen Warnbereich in einem Balkendiagramm) oder texturierte Hintergründe zu schaffen. Durch den Wechsel des Fülltyps zur Laufzeit können Zustände (z. B. "Tank leer" -> rot blinkende Füllung) sehr auffällig visualisiert werden.

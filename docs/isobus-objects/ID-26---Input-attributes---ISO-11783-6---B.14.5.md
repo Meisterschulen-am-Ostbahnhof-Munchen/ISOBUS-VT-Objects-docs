@@ -5,15 +5,20 @@
 
 Das **Input Attributes** Objekt mit der **ID 26** dient zur Validierung von Texteingaben. Es legt fest, welche Zeichen ein Bediener in ein verknüpftes *Input String* Objekt eingeben darf.
 
-## Technische Attribute (gemäß Tabelle B.52)
+### Attribute und Record Format (Tabelle B.52)
 
-| AID | Name | Typ | Beschreibung |
-| :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer 2 | Eindeutige Identifikationsnummer im Objekt-Pool. |
-| 0 | **Type** | Integer 1 | Objekttyp = 26 (Input Attributes). |
-| 1 | **Validation type** | Integer 1 | **0:** Erlaubte Zeichen (Allow-List), **1:** Verbotene Zeichen (Block-List). |
-| - | **Length** | Integer 1 | Länge der Validierungs-Zeichenkette in Bytes. |
-| - | **Validation string**| String | Die Liste der (in-)validen Zeichen. |
+Die folgende Tabelle beschreibt den Aufbau des Input Attributes Objekts im Objektpool.
+
+| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
+| [0] | **Type** | Integer | 1 | 26 | 3 | Objekttyp = Input Attributes. |
+| [1] | **Validation type** | Integer | 1 | 0 – 1 | 4 | 0=Erlaubte Zeichen (Liste), 1=Verbotene Zeichen (Liste). |
+| - | **Length** | Integer | 1 | 0 – 255 | 5 | Länge des Validierungs-Strings in Bytes. |
+| - | **Validation string** | String | Length | - | 6 ... | Liste der Zeichen (8-Bit String). |
+| - | **Number of macros to follow** | Integer | 1 | 0 – 255 | var. | Anzahl der folgenden Makro-Referenzen. |
+| - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | Event ID, die das Makro auslöst. |
+| - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Funktionsweise und Validierung
 Das Objekt wirkt als Filter für die Tastatureingabe am VT:
@@ -23,7 +28,10 @@ Das Objekt wirkt als Filter für die Tastatureingabe am VT:
 *   **Einschränkung:** Dieses Objekt unterstützt ausschließlich **8-Bit Strings**. Wenn das verknüpfte Eingabefeld einen WideString verwendet, findet keine Validierung statt.
 
 ## Ereignisse (Events - Tabelle B.51)
-*   **On Change Value:** Tritt ein, wenn die ECU den `Validation string` per Kommando ändert. Das VT passt die Eingabeprüfung für das aktive Feld sofort an.
+
+Das Input Attributes Objekt reagiert auf folgende Ereignisse:
+
+*   **On Change Value:** Wird ausgelöst durch das Kommando `Change String Value`. Das VT aktualisiert den Validierungs-String.
 
 ## Bedeutung für die Implementierung
 Input Attributes sind ein wichtiges Werkzeug zur Vermeidung von Fehlbedienungen.

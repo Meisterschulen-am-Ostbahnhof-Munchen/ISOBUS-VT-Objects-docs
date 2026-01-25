@@ -5,25 +5,35 @@
 
 Die **Soft Key Mask** (Softkey-Maske) mit der **ID 4** ist ein spezieller Container, der die Belegung der physischen oder virtuellen Softkeys am Rand des Terminals definiert. Sie wird in der Regel einer Datenmaske oder Alarmmaske fest zugeordnet.
 
-## Technische Attribute (gemäß Tabelle B.10)
+### Attribute und Record Format (Tabelle B.10)
 
-| AID | Name | Typ | Beschreibung |
-| :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer 2 | Eindeutige Identifikationsnummer im Objekt-Pool. |
-| 0 | **Type** | Integer 1 | Objekttyp = 4 (Soft Key Mask). |
-| 1 | **Background colour** | Integer 1 | Hintergrundfarbe der Softkey-Leiste. (Wird oft durch die Farbe der einzelnen Keys überschrieben). |
+Die folgende Tabelle beschreibt den Aufbau des Soft Key Mask Objekts im Objektpool.
+
+| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
+| [0] | **Type** | Integer | 1 | 4 | 3 | Objekttyp = Soft Key Mask. |
+| [1] | **Background colour** | Integer | 1 | 0 – 255 | 4 | Hintergrundfarbe. Das Key-Objekt hat ein eigenes Hintergrundattribut, das dieses überschreiben kann. |
+| - | **Number of objects to follow** | Integer | 1 | 0 – 255 | 5 | Anzahl der enthaltenen Objekte (Keys oder Pointer). |
+| - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 6 | Anzahl der folgenden Makro-Referenzen. |
+| - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534 | 7 + ... | Objekt-ID eines enthaltenen Key-Objekts oder Pointers. |
+| - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | (Nach Objekten) Event ID, die das Makro auslöst. |
+| - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ### Funktionsweise und Zuweisung
-Eine Softkey-Maske enthält eine Liste von **Key Objekten** (ID 5) oder **Object Pointern**. 
-*   **Reihenfolge:** Die Zuweisung zu den physischen Tasten am Terminal erfolgt strikt in der Reihenfolge, in der die Objekte in der Liste aufgeführt sind.
-*   **NULL-Pointer:** Ein Verweis auf die Objekt-ID 65535 (NULL) reserviert eine Position, lässt den entsprechenden Softkey aber leer. Dies verhindert, dass nachfolgende Keys "nachrücken" und sorgt für ein konsistentes Layout.
-*   **Paging:** Wenn mehr Keys definiert sind, als das VT gleichzeitig anzeigen kann, erstellt das VT automatisch Pfeiltasten zum Umblättern (Paging).
+Eine Softkey-Maske enthält eine Liste von **Key Objekten** (ID 5), **Object Pointern** (ID 27) oder **External Object Pointern** (ID 43).
+*   **Reihenfolge:** Die Zuweisung zu den physischen Tasten am Terminal erfolgt strikt in der Reihenfolge der Liste.
+*   **NULL-Pointer:** Pointers auf die NULL Object ID reservieren eine Position (die folgenden Keys rücken nicht nach). Pointers auf NULL am Ende der Liste werden nicht angezeigt und nicht für das Paging berücksichtigt.
+*   **Paging:** Übersteigen die definierten Keys die Kapazität des VT, erstellt dieses automatisch Navigationshilfen (Pfeiltasten) zum Umblättern.
 
 ## Ereignisse (Events - Tabelle B.9)
 
-*   **On Show:** Wird ausgelöst, wenn die Softkey-Maske (zusammen mit einer Datenmaske) eingeblendet wird. Alle enthaltenen Keys werden gezeichnet.
-*   **On Hide:** Wird ausgelöst, wenn die Maske entfernt wird.
-*   **On Change Background Colour:** Ermöglicht das Ändern der Hintergrundfarbe der gesamten Leiste.
+Die Softkey-Maske reagiert auf folgende Ereignisse:
+
+*   **On Show:** Ausgelöst, wenn die Maske sichtbar wird. Das VT zeichnet alle Kind-Objekte in der definierten Reihenfolge.
+*   **On Hide:** Ausgelöst beim Entfernen der Maske.
+*   **On Change Background Colour:** Reaktion auf eine Änderung der Hintergrundfarbe der Leiste.
+*   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
 
 ## Zusammenspiel mit Datenmasken
 Jede Datenmaske (ID 1) verweist auf eine Soft Key Mask (ID 4). 

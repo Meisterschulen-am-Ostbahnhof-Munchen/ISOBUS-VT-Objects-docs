@@ -4,13 +4,13 @@
 ```
 
 ```{toctree}
-isobus-objects/ID-23---Font-attributes---ISO-11783-6---B.14.2
-isobus-objects/ID-24---Line-attributes---ISO-11783-6---B.14.3
-isobus-objects/ID-25---Fill-attributes---ISO-11783-6---B.14.4
-isobus-objects/ID-26---Input-attributes---ISO-11783-6---B.14.5
-isobus-objects/ID-38---Extended-Input-Attributes---ISO-11783-6---B.14.6
-isobus-objects/ID-39---Colour-Map---ISO-11783-6---B.17
-isobus-objects/ID-45---Colour-Palette---ISO-11783-6---B.26
+../isobus-objects/ID-23---Font-attributes---ISO-11783-6---B.14.2
+../isobus-objects/ID-24---Line-attributes---ISO-11783-6---B.14.3
+../isobus-objects/ID-25---Fill-attributes---ISO-11783-6---B.14.4
+../isobus-objects/ID-26---Input-attributes---ISO-11783-6---B.14.5
+../isobus-objects/ID-38---Extended-Input-Attributes---ISO-11783-6---B.14.6
+../isobus-objects/ID-39---Colour-Map---ISO-11783-6---B.17
+../isobus-objects/ID-45---Colour-Palette---ISO-11783-6---B.26
 ```
 
 ## Empfohlene Lektüre:

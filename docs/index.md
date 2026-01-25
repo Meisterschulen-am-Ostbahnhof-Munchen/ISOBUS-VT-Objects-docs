@@ -17,6 +17,15 @@ myst:
 
 # Wiki 2: ISOBUS Virtual Terminal
 
+
+```{toctree}
+:maxdepth: 1
+:caption: Objekt-Kategorien
+
+Objekte/Objekte
+```
+
+
 ```{toctree}
 :maxdepth: 1
 :caption: Einführung
@@ -26,6 +35,7 @@ ISOBUS-Objekte
 ISOBUS-Objekte-Versionen
 ISOBUS-Objekt-IDs
 logiBUS
+AuxAssignOfApp
 ```
 
 ```{toctree}
@@ -38,13 +48,7 @@ Bitmaps_einfuegen
 Vektorgrafiken_erstellen
 ```
 
-```{toctree}
-:maxdepth: 1
-:caption: Objekt-Kategorien
 
-Objekte
-AuxAssignOfApp
-```
 
 ```{toctree}
 :maxdepth: 1

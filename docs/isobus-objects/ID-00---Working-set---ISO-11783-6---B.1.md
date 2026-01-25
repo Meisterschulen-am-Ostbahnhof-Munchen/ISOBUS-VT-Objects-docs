@@ -43,5 +43,7 @@ Das Objekt enthält eine Liste von Sprachcodes (z. B. "de", "en"), die das Worki
 ## Bedeutung für die Implementierung
 Das Working Set Objekt ist der "Anker" einer Applikation auf dem VT. Ohne ein korrekt definiertes Objekt ID 0 kann das VT die Arbeitsgruppe nicht identifizieren oder die erste Maske laden. Entwickler müssen sicherstellen, dass die `Active mask` AID auf eine gültige Datenmaske im Pool verweist.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Working Set](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/working-set) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Implementierungsinformationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

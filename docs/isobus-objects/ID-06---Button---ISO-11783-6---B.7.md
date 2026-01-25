@@ -13,27 +13,50 @@ Anhang B.7 der ISO 11783-6:2018 widmet sich der detaillierten Definition des "Bu
 
 Das Button Objekt, wie in B.7 definiert, ist ein grafisches Element, das auf der Datenmaske des VT angezeigt wird. Es ist so konzipiert, dass der Bediener durch Berührung (auf Touchscreens) oder Auswahl mit einem Navigationsmittel (wie z.B. Cursor-Tasten) damit interagieren kann. Jede Schaltfläche ist mit einer bestimmten Funktion oder einem Befehl verknüpft, der ausgeführt wird, wenn die Schaltfläche betätigt wird.
 
-**Wichtige Attribute und Eigenschaften (gemäß B.7)**
+### Attribute und Record Format (Tabelle B.14)
 
-Anhang B.7 spezifiziert eine Reihe von Attributen, die das Verhalten und die Darstellung des Button Objekts definieren. Diese Attribute umfassen unter anderem:
+Die folgende Tabelle beschreibt den Aufbau des Button Objekts im Objektpool.
 
-- **Objekt-ID:** Eine eindeutige Identifikationsnummer für jede Schaltfläche innerhalb des Objektpools einer Arbeitsgruppe.
-- **Position und Größe:** 
-    - **Button Area:** Die durch Breite und Höhe definierte Gesamtfläche.
-    - **Button Face:** Die nutzbare Innenfläche für Inhalte. Sie ist standardmäßig 8 Pixel kleiner als die Button Area, sofern nicht anders konfiguriert.
-- **Darstellung und Optionen (Bitmaske AID 6):**
-    - **Bit 0 - Latchable:** Wenn TRUE, ist die Schaltfläche rastend (wie ein Schalter). Wenn FALSE, ist sie tastend (momentary).
-    - **Bit 1 - State:** Aktueller Zustand für rastende Buttons (0 = gelöst, 1 = eingerastet).
-    - **Bit 2 - Suppress Border:** Unterdrückt den Rahmen; die Fläche des Rahmens wird transparent.
-    - **Bit 3 - Transparent Background:** Schaltet den Hintergrund auf transparent (Hintergrundfarbe wird ignoriert).
-    - **Bit 4 - Disabled:** Deaktiviert die Interaktion; der Button wird ausgegraut/deaktiviert dargestellt.
-    - **Bit 5 - No Border:** Der Rahmen entfällt komplett, und die "Button Face" erweitert sich auf die volle "Button Area".
-- **Container-Struktur und Child-Objekte:**
-    - Ein Button fungiert als Container. Er kann andere Objekte (z.B. Texte, Bitmaps) enthalten.
-    - **Clipping:** Alle Child-Objekte werden an den Grenzen der "Button Face" abgeschnitten. Inhalte außerhalb dieses Bereichs sind nicht sichtbar.
-- **Verhalten:** 
-    - **Wiederholungsfunktion:** Die Option, einen Befehl wiederholt zu senden, solange die Schaltfläche gedrückt gehalten wird (über die Button Activation Nachricht gesteuert).
-- **Verknüpfung mit Ereignissen und Befehlen:** Jede Schaltfläche ist mit einem oder mehreren Ereignissen oder Befehlen verknüpft. Wenn die Schaltfläche betätigt wird, wird das entsprechende Ereignis ausgelöst oder der Befehl gesendet. Anhang B.7 beschreibt die Mechanismen, wie diese Verknüpfungen hergestellt und verwaltet werden.
+| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
+| [0] | **Type** | Integer | 1 | 6 | 3 | Objekttyp = Button. |
+| [1] | **Width** | Integer | 2 | 0 – 65535 | 4 – 5 | Maximale Breite des Button Area in Pixeln. |
+| [2] | **Height** | Integer | 2 | 0 – 65535 | 6 – 7 | Maximale Höhe des Button Area in Pixeln. |
+| [3] | **Background colour** | Integer | 1 | 0 – 255 | 8 | Hintergrundfarbe. |
+| [4] | **Border colour** | Integer | 1 | 0 – 255 | 9 | Farbe des Rahmens (wenn nicht unterdrückt). |
+| [5] | **Key Code** | Integer | 1 | 0 – 255 | 10 | Code, der in der `Button Activation` Nachricht gesendet wird. |
+| [6] | **Options** | Bitmask | 1 | 0 – 63 | 11 | Bit 0: Latchable (0=Tastend, 1=Rastend)<br>Bit 1: State (nur bei Latchable: 0=Gelöst, 1=Gedrückt)<br>Bit 2: Suppress Border (1=Kein Rahmen gezeichnet)<br>Bit 3: Transparent (1=Hintergrund transparent)<br>Bit 4: Disabled (1=Deaktiviert/Ausgegraut)<br>Bit 5: No Border (1=Rahmenfläche entfällt, Button Face = Button Area). |
+| - | **Number of objects to follow** | Integer | 1 | 0 – 255 | 12 | Anzahl der direkt enthaltenen Objekte (Symbole, Texte). |
+| - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 13 | Anzahl der folgenden Makro-Referenzen. |
+| - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534 | 14 + ... | Objekt-ID eines enthaltenen Objekts. |
+| - | {X Location} | Signed Integer | 2 | -32768 bis +32767 | 16 + ... | X-Position relativ zur oberen linken Ecke der Button Face. |
+| - | {Y Location} | Signed Integer | 2 | -32768 bis +32767 | 18 + ... | Y-Position relativ zur oberen linken Ecke der Button Face. |
+| - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | (Nach Objekten) Event ID, die das Makro auslöst. |
+| - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
+
+### Aufbau und Darstellung
+Der Button besteht aus drei Bereichen:
+1.  **Button Area:** Die gesamte durch Width/Height definierte Fläche.
+2.  **Button Border:** Ein proprietärer 8-Pixel-Rahmen (wenn nicht durch Option Bit 5 entfernt).
+3.  **Button Face:** Die innere Fläche für Inhalte (Button Area minus Border).
+
+### Container-Struktur
+Der Button ist ein Container. Er kann andere Objekte enthalten, die im **Button Face** dargestellt werden. Objekte, die über diesen Bereich hinausragen, werden abgeschnitten (Clipping).
+
+## Ereignisse (Events - Tabelle B.13)
+
+Der Button reagiert auf folgende Ereignisse:
+
+*   **On Key Press:** Ausgelöst beim Betätigen des Buttons. Sendet `Button Activation`.
+*   **On Key Release:** Ausgelöst beim Loslassen. Sendet `Button Activation`.
+*   **On Enable:** Wenn der Button per Kommando aktiviert wird.
+*   **On Disable:** Wenn der Button deaktiviert wird.
+*   **On Input Field Selection:** Wenn der Button fokussiert wird (Navigation).
+*   **On Input Field De-selection:** Wenn der Fokus verloren geht.
+*   **On Change Background Colour:** Reaktion auf Farbänderung.
+*   **On Change Size:** Reaktion auf Größenänderung (löscht alten Bereich, zeichnet neu).
+*   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
 
 **Rolle des Button Objekts im Virtuellen Terminal**
 

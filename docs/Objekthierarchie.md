@@ -237,25 +237,82 @@ Optionen in einer Ausgabeliste.
 | Object Pointer object (ID 27) | 4 |
 | External Object Pointer object (ID 43) | 5 |
 
-## Parent: Auxiliary Function Type 1 (ID 29) & Type 2 (ID 31)
+## Parent: Auxiliary Function Type 1 object (ID 29)
+Designator für Hilfsfunktionen (veraltet).
+
+| Child Object | Min. VT Version |
+| :--- | :--- |
+| Output String object (ID 11) | 2 |
+| Output Number object (ID 12) | 2 |
+| Output Line object (ID 13) | 2 |
+| Output Rectangle object (ID 14) | 2 |
+| Output Ellipse object (ID 15) | 2 |
+| Output Polygon object (ID 16) | 2 |
+| Output Meter object (ID 17) | 4 |
+| Output Linear Bar Graph object (ID 18) | 4 |
+| Output Arched Bar Graph object (ID 19) | 4 |
+| Picture Graphic object (ID 20) | 2 |
+| Object Pointer object (ID 27) | 2 |
+| External Object Pointer object (ID 43) | 5 |
+
+## Parent: Auxiliary Input Type 1 object (ID 30)
+Designator für Hilfseingänge (veraltet).
+
+| Child Object | Min. VT Version |
+| :--- | :--- |
+| Output String object (ID 11) | 3 |
+| Output Number object (ID 12) | 3 |
+| Output Line object (ID 13) | 3 |
+| Output Rectangle object (ID 14) | 3 |
+| Output Ellipse object (ID 15) | 3 |
+| Output Polygon object (ID 16) | 3 |
+| Output Meter object (ID 17) | 3 |
+| Output Linear Bar Graph object (ID 18) | 3 |
+| Output Arched Bar Graph object (ID 19) | 3 |
+| Picture Graphic object (ID 20) | 3 |
+| Object Pointer object (ID 27) | 3 |
+| External Object Pointer object (ID 43) | 5 |
+
+## Parent: Auxiliary Function Type 2 object (ID 31)
 Designator für Hilfsfunktionen.
 
 | Child Object | Min. VT Version |
 | :--- | :--- |
-| Output String object (ID 11) | 2 / 3 |
-| Output Number object (ID 12) | 2 / 3 |
-| Output Line object (ID 13) | 2 / 3 |
-| Output Rectangle object (ID 14) | 2 / 3 |
-| Output Ellipse object (ID 15) | 2 / 3 |
-| Output Polygon object (ID 16) | 2 / 3 |
-| Output Meter object (ID 17) | 4 / 3 |
-| Output Linear Bar Graph object (ID 18) | 4 / 3 |
-| Output Arched Bar Graph object (ID 19) | 4 / 3 |
-| Picture Graphic object (ID 20) | 2 / 3 |
+| Output String object (ID 11) | 3 |
+| Output Number object (ID 12) | 3 |
+| Output Line object (ID 13) | 3 |
+| Output Rectangle object (ID 14) | 3 |
+| Output Ellipse object (ID 15) | 3 |
+| Output Polygon object (ID 16) | 3 |
+| Output Meter object (ID 17) | 4 |
+| Output Linear Bar Graph object (ID 18) | 4 |
+| Output Arched Bar Graph object (ID 19) | 4 |
+| Picture Graphic object (ID 20) | 3 |
 | Animation object (ID 44) | 5 |
 | Scaled Graphic object (ID 48) | 6 |
-| Object Pointer object (ID 27) | 2 / 3 |
+| Object Pointer object (ID 27) | 3 |
 | External Object Pointer object (ID 43) | 5 |
+
+## Parent: Auxiliary Input Type 2 object (ID 32)
+Designator für Hilfseingänge.
+
+| Child Object | Min. VT Version |
+| :--- | :--- |
+| Output String object (ID 11) | 3 |
+| Output Number object (ID 12) | 3 |
+| Output Line object (ID 13) | 3 |
+| Output Rectangle object (ID 14) | 3 |
+| Output Ellipse object (ID 15) | 3 |
+| Output Polygon object (ID 16) | 3 |
+| Output Meter object (ID 17) | 3 |
+| Output Linear Bar Graph object (ID 18) | 3 |
+| Output Arched Bar Graph object (ID 19) | 3 |
+| Picture Graphic object (ID 20) | 3 |
+| Animation object (ID 44) | 5 |
+| Scaled Graphic object (ID 48) | 6 |
+| Object Pointer object (ID 27) | 3 |
+| External Object Pointer object (ID 43) | 5 |
+
 
 ## Parent: Object Label Reference List object (ID 40)
 Definiert Zuweisungen von Labels zu Objekten.

@@ -5,14 +5,16 @@
 
 Das **String Variable** Objekt mit der **ID 22** dient zur Speicherung von Textzeichenfolgen, die von Anzeige- oder Eingabeobjekten referenziert werden können.
 
-## Technische Attribute (gemäß Tabelle B.44)
+### Attribute und Record Format (Tabelle B.44)
 
-| AID | Name | Typ | Beschreibung |
-| :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer 2 | Eindeutige Identifikationsnummer im Objekt-Pool. |
-| 0 | **Type** | Integer 1 | Objekttyp = 22 (String Variable). |
-| - | **Length** | Integer 2 | Maximale feste Länge der Zeichenkette in Bytes. |
-| - | **Value** | String | Der aktuelle Textinhalt. Kürzere Texte werden mit Leerzeichen aufgefüllt. |
+Die folgende Tabelle beschreibt den Aufbau des String Variable Objekts im Objektpool.
+
+| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
+| [0] | **Type** | Integer | 1 | 22 | 3 | Objekttyp = String Variable. |
+| - | **Length** | Integer | 2 | 0 – 65535 | 4 – 5 | Maximale feste Länge der Zeichenkette in Bytes. |
+| - | **Value** | String | Length | - | 6 ... | String aus Zeichen. Muss mit Leerzeichen aufgefüllt werden, um die Länge zu erreichen. |
 
 ## Funktionsweise und Besonderheiten
 Wie die *Number Variable* ist auch die *String Variable* ein reines Datenobjekt ohne eigene visuelle Darstellung.
@@ -26,7 +28,10 @@ Wie die *Number Variable* ist auch die *String Variable* ein reines Datenobjekt 
 *   **Automatisches Redraw:** Sobald die ECU den Wert der Variable per `Change String Value` Kommando ändert, aktualisiert das VT automatisch alle sichtbaren Objekte, die diese Variable nutzen.
 
 ## Ereignisse (Events - Tabelle B.42)
-*   **On Change Value:** Tritt bei jeder inhaltlichen Änderung des Textes ein und triggert die Aktualisierung der Anzeige.
+
+Das String Variable Objekt reagiert auf folgende Ereignisse:
+
+*   **On Change Value:** Wird ausgelöst, wenn sich der Wert ändert (durch `Change String Value` Befehl oder Eingabe des Bedieners). Das VT zeichnet alle Objekte neu, die diese Variable referenzieren.
 
 ## Bedeutung für die Implementierung
 String Variablen sind essenziell für dynamische Texte wie Fehlermeldungen im Klartext, Namen von Arbeitsaufträgen oder Fahrernamen. Da Texteingaben und -änderungen über den CAN-Bus (ISOBUS) ressourcenintensiv sind, sollten String Variablen so kurz wie möglich definiert werden.

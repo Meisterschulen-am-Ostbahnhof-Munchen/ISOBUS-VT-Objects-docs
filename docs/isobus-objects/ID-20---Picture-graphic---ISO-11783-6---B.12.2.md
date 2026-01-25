@@ -5,28 +5,33 @@
 
 Das **Picture Graphic** Objekt mit der **ID 20** dient zur Anzeige von Rastergrafiken (Bitmaps) auf dem Virtuellen Terminal. Es ermöglicht die Integration von Logos, Icons und komplexen visuellen Elementen.
 
-## Technische Attribute (gemäß Tabelle B.41)
+### Attribute und Record Format (Tabelle B.41)
 
-| AID | Name | Typ | Beschreibung |
-| :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer 2 | Eindeutige Identifikationsnummer im Objekt-Pool. |
-| 0 | **Type** | Integer 1 | Objekttyp = 20 (Picture Graphic). |
-| 1 | **Width** | Integer 2 | **Zielbreite** am VT. Die Höhe wird automatisch skaliert, um das Seitenverhältnis beizubehalten. |
-| 4 | **Actual width** | Integer 2 | Tatsächliche Breite der Rohdaten in Pixeln (Read-only). |
-| 5 | **Actual height** | Integer 2 | Tatsächliche Höhe der Rohdaten in Pixeln (Read-only). |
-| 6 | **Format** | Integer 1 | **0:** Monochrom (1 Bit), **1:** 16 Farben (4 Bit), **2:** 256 Farben (8 Bit). |
-| 2 | **Options** | Bitmask 1 | **Bit 0:** Transparenz (0=Opak, 1=Transparent), **Bit 1:** Blinken, **Bit 2:** Komprimierung (0=Raw, 1=RLE). |
-| 3 | **Transp. colour** | Integer 1 | Farbindex, der als transparent behandelt wird. |
-| - | **Raw data size** | Integer 4 | Anzahl der Bytes in den Bilddaten. |
+Die folgende Tabelle beschreibt den Aufbau des Picture Graphic Objekts im Objektpool.
+
+| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
+| [0] | **Type** | Integer | 1 | 20 | 3 | Objekttyp = Picture Graphic. |
+| [1] | **Width** | Integer | 2 | 0 – 65535 | 4 – 5 | Zielbreite in Pixeln (Höhe wird proportional skaliert). |
+| [4] | **Actual width** | Integer | 2 | 0 – 65535 | 6 – 7 | Tatsächliche Breite der Rohdaten. |
+| [5] | **Actual height** | Integer | 2 | 0 – 65535 | 8 – 9 | Tatsächliche Höhe der Rohdaten. |
+| [6] | **Format** | Integer | 1 | 0 – 2 | 10 | 0=Monochrom (1 Bit), 1=16 Farben (4 Bit), 2=256 Farben (8 Bit). |
+| [2] | **Options** | Bitmask | 1 | 0 – 7 | 11 | Bit 0: Transparenz (0=Opak, 1=Transp)<br>Bit 1: Blinken<br>Bit 2: Datenformat (0=Raw, 1=Run-Length Encoded). |
+| [3] | **Transparency colour** | Integer | 1 | 0 – 255 | 12 | Farbindex, der transparent dargestellt wird. |
+| - | **Number of bytes in raw data** | Integer | 4 | 0 – 2^32-1 | 13 – 16 | Größe der Bilddaten. |
+| - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 17 | Anzahl der folgenden Makro-Referenzen. |
+| - | **Repeat:** {raw data} | Integer | 1 | 0 – 255 | 18 ... | Bilddaten (Bytes). |
+| - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | (Nach Bilddaten) Event ID, die das Makro auslöst. |
+| - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Funktionsweise und Darstellung
 
-Das Picture Graphic-Objekt speichert Pixelgrafiken in binärer Form innerhalb der Objektpool-Datei (.IOP). 
+Das Picture Graphic-Objekt speichert Pixelgrafiken in binärer Form innerhalb der Objektpool-Datei (.IOP).
 
 ### Skalierung und Formate
 *   **Seitenverhältnis:** Das VT skaliert die Grafik basierend auf der Ziel-Breite (`Width`). Um Verzerrungen zu vermeiden, berechnet das VT die Ziel-Höhe automatisch aus dem Verhältnis von `Actual width` zu `Actual height`.
-*   **Farbtiefe:** Unterstützt werden 1-Bit (Monochrom), 4-Bit (16 Farben) und 8-Bit (256 Farben). 
-*   **PNG-Unterstützung:** Moderne VTs (ab Version 6) unterstützen auch PNG-Grafiken, was eine bessere Qualität bei geringerer Dateigröße ermöglicht.
+*   **Farbtiefe:** Unterstützt werden 1-Bit (Monochrom), 4-Bit (16 Farben) und 8-Bit (256 Farben).
 
 ### Transparenz und Effekte
 *   **Transparency (Bit 0):** Wenn aktiviert, wird die in AID 3 definierte Farbe nicht gezeichnet; stattdessen scheint der Hintergrund durch.
@@ -34,8 +39,11 @@ Das Picture Graphic-Objekt speichert Pixelgrafiken in binärer Form innerhalb de
 *   **RLE-Komprimierung (Bit 2):** Run-Length Encoding kann bei einfachen Grafiken (viele gleichfarbige Flächen) Speicherplatz sparen.
 
 ## Ereignisse (Events - Tabelle B.40)
-*   **On Refresh:** Wird ausgelöst, wenn sich Anzeigeoptionen (Transparenz, Blinken) ändern oder die Maske neu gezeichnet wird.
-*   **On Change Attribute:** Wird bei Änderungen an den Attributen per ECU-Kommando ausgelöst.
+
+Das Picture Graphic Objekt reagiert auf folgende Ereignisse:
+
+*   **On Refresh:** Wird ausgelöst bei Änderungen von Optionen (z.B. Transparenz, Blinken) oder bei Masken-Refresh.
+*   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
 
 ## Bedeutung für die Implementierung
 Picture Graphics sind essenziell für ein modernes HMI. 

@@ -13,6 +13,9 @@ Eingabe
 Funktionen
 Attribute
 Variablen
+Auxiliary
+Extern
+Spezial
 ```
 
 ----

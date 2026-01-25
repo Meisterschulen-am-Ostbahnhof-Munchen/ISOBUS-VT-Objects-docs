@@ -5,35 +5,48 @@
 
 Das **Input String** Objekt mit der **ID 8** dient zur Eingabe und Anzeige von Textzeichenfolgen durch den Bediener.
 
-## Technische Attribute (gemäß Tabelle B.17)
+### Attribute und Record Format (Tabelle B.17)
 
-| AID | Name | Typ | Beschreibung |
-| :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer 2 | Eindeutige Identifikationsnummer im Objekt-Pool. |
-| 0 | **Type** | Integer 1 | Objekttyp = 8 (Input String). |
-| 1 | **Width** | Integer 2 | Breite des Eingabefeldes in Pixeln. |
-| 2 | **Height** | Integer 2 | Höhe des Eingabefeldes in Pixeln. |
-| 3 | **Background colour** | Integer 1 | Hintergrundfarbe (nur bei deaktivierter Transparenz). |
-| 4 | **Font attributes** | Integer 2 | Verweis auf ein **Font Attributes** Objekt (Farbe, Größe, Font). |
-| 5 | **Input attributes** | Integer 2 | Verweis auf ein **Input Attributes** Objekt zur Validierung der Eingabe. |
-| 6 | **Options** | Bitmask 1 | **Bit 0:** Transparent, **Bit 1:** Auto-Wrap (Zeilenumbruch), **Bit 2:** Wrap on Hyphen. |
-| 7 | **Variable reference** | Integer 2 | Verweis auf ein **String Variable** Objekt (ID 22). |
-| 8 | **Justification** | Integer 1 | Textausrichtung (Links, Mitte, Rechts / Oben, Mitte, Unten). |
-| - | **Length** | Integer 1 | Maximale Länge der Zeichenkette in Bytes (0-255). |
-| 9 | **Enabled** | Integer 1 | Status: 0 = Deaktiviert, 1 = Aktiviert. |
+Die folgende Tabelle beschreibt den Aufbau des Input String Objekts im Objektpool.
+
+| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
+| [0] | **Type** | Integer | 1 | 8 | 3 | Objekttyp = Input String. |
+| [1] | **Width** | Integer | 2 | 0 – 65535 | 4 – 5 | Breite des Eingabefeldes in Pixeln. Clipping erfolgt außerhalb dieses Bereichs. |
+| [2] | **Height** | Integer | 2 | 0 – 65535 | 6 – 7 | Höhe des Eingabefeldes in Pixeln. Clipping erfolgt außerhalb dieses Bereichs. |
+| [3] | **Background colour** | Integer | 1 | 0 – 255 | 8 | Hintergrundfarbe (nur bei deaktivierter Transparenz). |
+| [4] | **Font attributes** | Integer | 2 | 0 – 65534 | 9 – 10 | Objekt-ID eines Font Attributes Objekts (Farbe, Größe, Font). |
+| [5] | **Input attributes** | Integer | 2 | 0 – 65534, 65535 | 11 – 12 | Objekt-ID eines Input Attributes Objekts zur Validierung oder NULL. |
+| [6] | **Options** | Bitmask | 1 | 0 – 7 | 13 | Bit 0: Transparent<br>Bit 1: Auto-Wrap (Automatischer Zeilenumbruch)<br>Bit 2: Wrap on Hyphen (Umbruch bei Bindestrich). |
+| [7] | **Variable reference** | Integer | 2 | 0 – 65534, 65535 | 14 – 15 | Verweis auf ein String Variable Objekt. Wenn NULL, wird der Wert direkt im Attribut "Value" gespeichert. |
+| [8] | **Justification** | Integer | 1 | 0 – 15 | 16 | Textausrichtung: Bits 0-1 (Horiz.): 0=Links, 1=Mitte, 2=Rechts.<br>Bits 2-3 (Vert.): 0=Oben, 1=Mitte, 2=Unten. |
+| - | **Length** | Integer | 1 | 0 – 255 | 17 | Max. Länge in Bytes. Wenn Variable Reference != NULL, kann dies 0 sein. |
+| - | **Value** | String | Length | - | 18 ... | Initialer Wert des Strings (nur wenn Variable Reference == NULL). |
+| [9] | **Enabled** | Integer | 1 | 0 oder 1 | var. | 0 = Deaktiviert, 1 = Aktiviert. Position im Record ist abhängig von der Länge des Value-Feldes. |
+| - | **Number of macros to follow** | Integer | 1 | 0 – 255 | var. | Anzahl der folgenden Makro-Referenzen. |
+| - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | Event ID, die das Makro auslöst. |
+| - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Funktionsweise und Optionen
 Das Input String Objekt bietet flexible Möglichkeiten zur Textdarstellung:
 *   **Auto-Wrap:** Wenn aktiviert (Bit 1), bricht das VT den Text automatisch um, wenn die Breite des Feldes überschritten wird.
-*   **Justierung:** Über AID 8 wird sowohl die horizontale als auch die vertikale Ausrichtung gesteuert (Bitmaske für Bits 0-1 und 2-3).
+*   **Justierung:** Über AID 8 wird sowohl die horizontale als auch die vertikale Ausrichtung gesteuert.
 *   **Validierung:** Durch die Verknüpfung mit einem `Input Attributes` Objekt kann die Eingabe auf bestimmte Zeichensätze begrenzt werden.
 
-## Datentypen: 8-Bit vs. WideString
-Das Objekt unterstützt sowohl Standard 8-Bit Zeichenketten als auch WideStrings (für Sonderzeichen oder asiatische Sprachen). Der Typ wird durch das verknüpfte Variablen-Objekt oder die Initialisierung im Pool festgelegt.
+## Ereignisse (Events - Tabelle B.15)
 
-## Ereignisse (Events)
-*   **On Entry of Value:** Wird ausgelöst, wenn der Bediener die Texteingabe bestätigt. Das VT sendet eine `VT Change String Value` Nachricht an die Arbeitsgruppe.
-*   **On ESC:** Wird ausgelöst, wenn der Bediener die Eingabe ohne Speichern abbricht.
+Das Input String Objekt reagiert auf folgende Ereignisse:
+
+*   **On Enable:** Wenn das Objekt aktiviert wird.
+*   **On Disable:** Wenn das Objekt deaktiviert wird.
+*   **On Input Field Selection:** Bei Fokus/Auswahl durch den Bediener.
+*   **On Input Field De-selection:** Bei Fokusverlust.
+*   **On Entry of Value:** Wenn der Bediener die Texteingabe bestätigt (ENTER). Sendet `Change String Value`.
+*   **On Change Value:** Wenn der Wert (z.B. durch Variable) geändert wird.
+*   **On ESC:** Wenn der Bediener die Eingabe abbricht.
+*   **On Change Background Colour:** Reaktion auf Farbänderung.
+*   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
 
 ## Bedeutung für die Implementierung
 Input Strings werden häufig für Namen (z. B. Feldnamen, Kundendaten) oder Passwörter verwendet. Da die Texteingabe auf Terminals ohne Tastatur (nur Touch oder Dreh-Drück-Steller) mühsam sein kann, sollten Standardwerte oder Auswahllisten (Input List) bevorzugt werden, wenn der Wertevorrat begrenzt ist.

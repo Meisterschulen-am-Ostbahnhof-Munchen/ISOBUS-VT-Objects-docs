@@ -28,5 +28,7 @@ Die VT-Standardfarbpalette definiert 256 Farben. Die ersten 16 Farben sind ident
 
 *Hinweis: Für die Indizes 16 bis 231 ist eine algorithmische Verteilung im Farbwürfel (6x6x6) definiert. Siehe ISO 11783-6 Table A.4 für die vollständige Liste.*
 
+Weitere Informationen und Visualisierungen finden sich im [ISOBUS Wiki - Colours](https://isobus-studio.com/isobus-wiki/isobus-colours) von Tobias Tenberg.
+
 ### Transparenz
 Der Farbindex, der im Attribut "Transparency Colour" (z. B. bei Picture Graphics) angegeben wird, wird nicht gezeichnet. Oft wird hierfür eine "Signalfarbe" wie Magenta (Index 13) verwendet, wenn diese im Bild nicht vorkommt.

@@ -19,30 +19,47 @@ myst:
 
 ```{toctree}
 :maxdepth: 1
+:caption: Einführung
 
-Attribute
-Ausgabe
-AuxAssignOfApp
-Bedienelemente
-Bilder
-Bitmaps_einfuegen
-Container
-Eingabe
-Einträge-von-Schülern
-Funktionen
 Home
-ISOBUS-Objekt-IDs
-ISOBUS-Objekte-Versionen
 ISOBUS-Objekte
-Jetter-ISO-Designer-Workspace-öffnen
-Jetter-ISO-Designer
-Masken
-Objekte
-Variablen
-Vektorgrafiken_erstellen
-Videos
+ISOBUS-Objekte-Versionen
+ISOBUS-Objekt-IDs
 logiBUS
-isobus-objects/index
+```
+
+```{toctree}
+:maxdepth: 1
+:caption: Jetter ISO Designer
+
+Jetter-ISO-Designer
+Jetter-ISO-Designer-Workspace-öffnen
+Bitmaps_einfuegen
+Vektorgrafiken_erstellen
+```
+
+```{toctree}
+:maxdepth: 1
+:caption: Objekt-Kategorien
+
+Objekte
+AuxAssignOfApp
+```
+
+```{toctree}
+:maxdepth: 1
+:caption: Referenz
+
+isobus-objects/isobus-objects-index
+ISOBUS-Wiki-Links
+```
+
+```{toctree}
+:maxdepth: 1
+:caption: Sonstiges
+
+Einträge-von-Schülern
+Videos
 ```
 
 ## Meisterschulen am Ostbahnhof, München

@@ -5,13 +5,15 @@
 
 Das **Number Variable** Objekt mit der **ID 21** ist ein reines Datenobjekt. Es speichert einen numerischen Wert, der von anderen Anzeige- oder Eingabeobjekten referenziert werden kann.
 
-## Technische Attribute (gemäß Tabelle B.43)
+### Attribute und Record Format (Tabelle B.43)
 
-| AID | Name | Typ | Beschreibung |
-| :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer 2 | Eindeutige Identifikationsnummer im Objekt-Pool. |
-| 0 | **Type** | Integer 1 | Objekttyp = 21 (Number Variable). |
-| 1 | **Value** | Integer 4 | Aktueller 32-Bit unsigned Ganzzahlwert (0 bis 4.294.967.295). |
+Die folgende Tabelle beschreibt den Aufbau des Number Variable Objekts im Objektpool.
+
+| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
+| [0] | **Type** | Integer | 1 | 21 | 3 | Objekttyp = Number Variable. |
+| [1] | **Value** | Integer | 4 | 0 – 2^32-1 | 4 – 7 | 32-Bit unsigned Integer-Wert. |
 
 ## Funktionsweise und Referenzierung
 Variablen sind keine sichtbaren Objekte. Sie werden niemals direkt in eine Maske oder einen Container als "Child" eingefügt, sondern dienen als Datenquelle für andere Objekte:
@@ -20,7 +22,10 @@ Variablen sind keine sichtbaren Objekte. Sie werden niemals direkt in eine Maske
 *   **Zentrale Datenhaltung:** Mehrere Anzeigeobjekte können dieselbe Variable referenzieren. Wird der Wert der Variable geändert, aktualisiert das VT automatisch alle betroffenen Anzeigen.
 
 ## Ereignisse (Events - Tabelle B.42)
-*   **On Change Value:** Dieses Event tritt ein, wenn die Steuerung (ECU) den Wert der Variable per `Change Numeric Value` Kommando ändert oder der Bediener über ein Eingabeobjekt einen neuen Wert speichert. Das VT sorgt daraufhin für ein Redraw aller Objekte, die diese Variable nutzen.
+
+Das Number Variable Objekt reagiert auf folgende Ereignisse:
+
+*   **On Change Value:** Wird ausgelöst, wenn sich der Wert ändert (durch `Change Numeric Value` Befehl oder Eingabe des Bedieners). Das VT zeichnet alle Objekte neu, die diese Variable referenzieren.
 
 ## Bedeutung für die Implementierung
 Number Variables sind das Rückgrat der Kommunikation zwischen Maschine und Terminal. 

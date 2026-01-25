@@ -19,7 +19,7 @@ myst:
 
 
 ```{toctree}
-:maxdepth: 1
+:maxdepth: 7
 :caption: Objekt-Kategorien
 
 Objekte/Objekte

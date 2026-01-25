@@ -5,32 +5,43 @@
 
 Das **Input List** Objekt mit der **ID 10** ermöglicht dem Bediener die Auswahl eines Elements aus einer vordefinierten Liste von Objekten. Es wird häufig für Dropdown-Menüs oder Auswahllisten verwendet.
 
-## Technische Attribute (gemäß Tabelle B.20)
+### Attribute und Record Format (Tabelle B.20)
 
-| AID | Name | Typ | Beschreibung |
-| :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer 2 | Eindeutige Identifikationsnummer im Objekt-Pool. |
-| 0 | **Type** | Integer 1 | Objekttyp = 10 (Input List). |
-| 1 | **Width** | Integer 2 | Breite des Feldes (im geschlossenen Zustand). |
-| 2 | **Height** | Integer 2 | Höhe des Feldes (im geschlossenen Zustand). |
-| 3 | **Variable reference** | Integer 2 | Verweis auf ein **Number Variable** Objekt, das den aktuell gewählten Index speichert. |
-| 4 | **Value** | Integer 1 | Aktueller gewählter Index (0-254). Nur wenn AID 3 = NULL. |
-| 5 | **Options** | Bitmask 1 | **Bit 0:** Enabled (0 = Deaktiviert, 1 = Aktiviert). |
+Die folgende Tabelle beschreibt den Aufbau des Input List Objekts im Objektpool.
+
+| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
+| [0] | **Type** | Integer | 1 | 10 | 3 | Objekttyp = Input List. |
+| [1] | **Width** | Integer | 2 | 0 – 65535 | 4 – 5 | Breite des Feldes (im geschlossenen Zustand). |
+| [2] | **Height** | Integer | 2 | 0 – 65535 | 6 – 7 | Höhe des Feldes (im geschlossenen Zustand). |
+| [3] | **Variable reference** | Integer | 2 | 0 – 65534, 65535 | 8 – 9 | Verweis auf ein Number Variable Objekt für den Index. |
+| [4] | **Value** | Integer | 1 | 0 – 255 | 10 | Aktueller gewählter Index (0-254). 255 = keine Auswahl. (Nur wenn Variable Reference == NULL). |
+| - | **Number of list items** | Integer | 1 | 0 – 255 | 11 | Anzahl der Objekte in der Liste. |
+| [5] | **Options** | Bitmask | 1 | 0 – 3 | 12 | Bit 0: Enabled (0=Deaktiviert, 1=Aktiviert)<br>Bit 1: Real time editing (1=Wert bei Änderung senden). |
+| - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 13 | Anzahl der folgenden Makro-Referenzen. |
+| - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534, 65535 | 14 + ... | Objekt-ID eines Listeneintrags (angezeigt als Option). |
+| - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | (Nach Objekten) Event ID, die das Makro auslöst. |
+| - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Funktionsweise und Darstellung
-Die Input List zeigt im normalen Zustand nur das aktuell ausgewählte Element an. 
-*   **Auswahl:** Wenn der Bediener das Objekt öffnet, zeigt das VT die Liste der verfügbaren Einträge an. Die grafische Umsetzung (z. B. Pop-up-Box, Scroll-Liste) ist herstellerspezifisch.
-*   **Index:** Der übertragene Wert ist der **nullbasierte Index** des gewählten Elements in der Liste (0 für das erste Objekt, 1 für das zweite usw.).
-*   **Spezialwert 255:** Der Wert 255 signalisiert "keine Auswahl". Der Bediener kann diesen Wert normalerweise nicht manuell wählen, aber die Steuerung (ECU) kann diesen Wert setzen, um die Auswahl zurückzusetzen.
-
-## Struktur der Listeneinträge
-Eine Input List enthält eine Liste von Objekt-IDs (z. B. Texte, Bitmaps oder Container), die als Optionen dienen.
-*   **Relative Position:** Die Position der Listeneinträge wird innerhalb des für die Liste reservierten Bereichs (`Width`/`Height`) interpretiert.
-*   **Empty Objects:** Ein Object Pointer auf NULL (65535) erzeugt einen leeren Eintrag in der Liste, der dennoch eine Indexposition belegt.
+Die Input List zeigt im normalen Zustand nur das aktuell ausgewählte Element an.
+*   **Auswahl:** Wenn der Bediener das Objekt öffnet, zeigt das VT die Liste der verfügbaren Einträge an.
+*   **Index:** Der übertragene Wert ist der **nullbasierte Index** des gewählten Elements in der Liste.
+*   **Spezialwert 255:** Signalisiert "keine Auswahl".
 
 ## Ereignisse (Events - Tabelle B.19)
-*   **On Entry of Value:** Wird ausgelöst, wenn der Bediener eine Auswahl getroffen und bestätigt hat. Das VT sendet den neuen Index per `VT Change Numeric Value` Nachricht.
-*   **On ESC:** Wird ausgelöst, wenn der Bediener die Auswahl abbricht, ohne ein neues Element zu wählen.
+
+Das Input List Objekt reagiert auf folgende Ereignisse:
+
+*   **On Enable / On Disable:** Zustandsänderung des Objekts.
+*   **On Input Field Selection / De-selection:** Fokus-Ereignisse.
+*   **On Entry of Value:** Wenn der Bediener eine Auswahl bestätigt (ENTER). Sendet `Change Numeric Value`.
+*   **On Change Value:** Wenn der Index durch das Programm geändert wird.
+*   **On Entry of New Value:** Ausgelöst, wenn sich der Wert ändert (oft redundant zu "On Entry of Value").
+*   **On ESC:** Abbruch der Auswahl.
+*   **On Change Attribute:** Allgemeine Attributänderung.
+*   **On Change Size:** Reaktion auf Größenänderung.
 
 ## Bedeutung für die Implementierung
 Input Lists sind hervorragend geeignet, um Fehleingaben zu vermeiden, da der Bediener nur aus gültigen Optionen wählen kann. Da die Darstellung (z. B. Schriftgröße in der aufgeklappten Liste) vom VT gesteuert wird, ist eine gute Lesbarkeit auf verschiedenen Endgeräten gewährleistet.

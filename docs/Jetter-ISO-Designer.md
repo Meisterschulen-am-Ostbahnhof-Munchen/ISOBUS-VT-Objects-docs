@@ -7,12 +7,6 @@
 Einträge-von-Schülern
 Videos
 Jetter-ISO-Designer-Workspace-öffnen
-ISOBUS-Objekte
-ISOBUS-Objekt-IDs
-ISOBUS-Objekte-Versionen
-Objekte
-Bitmaps_einfuegen
-Vektorgrafiken_erstellen
 ```
 
 M:\\Landmaschinenmechanik\\Unterricht\\SL\\Jetter\\ISODesignerSetup551.exe

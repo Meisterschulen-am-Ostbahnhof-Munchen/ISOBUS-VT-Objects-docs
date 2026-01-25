@@ -5,13 +5,15 @@
 
 Das **Object Pointer** Objekt mit der **ID 27** dient als dynamischer Platzhalter. Es ermöglicht es, an einer fest definierten Stelle in einer Maske oder einem Container das referenzierte Objekt zur Laufzeit auszutauschen.
 
-## Technische Attribute (gemäß Tabelle B.55)
+### Attribute und Record Format (Tabelle B.55)
 
-| AID | Name | Typ | Beschreibung |
-| :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer 2 | Eindeutige Identifikationsnummer im Objekt-Pool. |
-| 0 | **Type** | Integer 1 | Objekttyp = 27 (Object Pointer). |
-| 1 | **Value** | Integer 2 | Die Objekt-ID des aktuell anzuzeigenden Objekts (oder 65535 für NULL/unsichtbar). |
+Die folgende Tabelle beschreibt den Aufbau des Object Pointer Objekts im Objektpool.
+
+| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
+| [0] | **Type** | Integer | 1 | 27 | 3 | Objekttyp = Object Pointer. |
+| [1] | **Value** | Integer | 2 | 0 – 65534, 65535 | 4 – 5 | Objekt-ID des referenzierten Objekts oder NULL (65535). |
 
 ## Funktionsweise und Anwendung
 Ein Object Pointer wird wie ein normales Child-Objekt in eine Maske eingebunden. Anstatt jedoch selbst etwas zu zeichnen, "leitet" er die Anzeige an das Objekt weiter, dessen ID in AID 1 gespeichert ist.
@@ -21,7 +23,10 @@ Ein Object Pointer wird wie ein normales Child-Objekt in eine Maske eingebunden.
 *   **NULL-Pointer:** Wird der Wert auf 65535 gesetzt, wird an dieser Stelle nichts gezeichnet.
 
 ## Ereignisse (Events - Tabelle B.54)
-*   **On Change Value:** Tritt ein, wenn die ECU die Ziel-Objekt-ID ändert. Das VT führt automatisch das "Hide" für das bisherige und das "Show" für das neue Objekt aus und aktualisiert die Maske.
+
+Das Object Pointer Objekt reagiert auf folgende Ereignisse:
+
+*   **On Change Value:** Wird ausgelöst durch das Kommando `Change Numeric Value`. Das VT versteckt das vorherige Objekt und zeigt das neue an. Die Eltern-Maske wird aktualisiert.
 
 ## Bedeutung für die Implementierung
 Object Pointer reduzieren die Komplexität der Maskensteuerung erheblich. Anstatt viele Objekte manuell per `Hide/Show` zu verwalten, muss die ECU nur eine einzige ID im Pointer ändern. Dies spart CAN-Bus-Bandbreite und vereinfacht die Programmlogik auf der Maschinensteuerung.

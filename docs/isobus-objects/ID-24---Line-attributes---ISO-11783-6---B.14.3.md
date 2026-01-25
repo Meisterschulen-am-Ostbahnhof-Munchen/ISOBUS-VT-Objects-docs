@@ -34,5 +34,7 @@ Das VT verwendet einen quadratischen "Pinsel" der Größe `Line width` x `Line w
 ## Bedeutung für die Implementierung
 Line Attributes ermöglichen eine effiziente Steuerung der grafischen Darstellung. Durch das Ändern eines einzigen Attribut-Objekts können beispielsweise alle Umrandungen in einer Maske gleichzeitig von "Dünn/Schwarz" auf "Dick/Rot" umgeschaltet werden, um einen Alarmzustand zu visualisieren.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Line Attribute](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/line-attribute) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

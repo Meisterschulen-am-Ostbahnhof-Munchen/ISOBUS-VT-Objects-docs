@@ -38,5 +38,7 @@ Das Objekt unterstützt sowohl Standard 8-Bit Zeichenketten als auch WideStrings
 ## Bedeutung für die Implementierung
 Input Strings werden häufig für Namen (z. B. Feldnamen, Kundendaten) oder Passwörter verwendet. Da die Texteingabe auf Terminals ohne Tastatur (nur Touch oder Dreh-Drück-Steller) mühsam sein kann, sollten Standardwerte oder Auswahllisten (Input List) bevorzugt werden, wenn der Wertevorrat begrenzt ist.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - String (Input)](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/string-input) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

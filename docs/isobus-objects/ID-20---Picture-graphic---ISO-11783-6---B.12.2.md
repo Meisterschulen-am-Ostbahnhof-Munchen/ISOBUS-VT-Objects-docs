@@ -43,5 +43,7 @@ Picture Graphics sind essenziell für ein modernes HMI.
 *   **Ziederverwendung:** Ein Bild kann im Pool einmal definiert und von vielen Objekten (z. B. mehreren Buttons) referenziert werden.
 *   **Icons:** Sie werden häufig als "Designatoren" für Softkeys (ID 5) oder als Symbole in Containern (ID 3) verwendet.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Picture Graphic object](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/picture-graphic-object) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

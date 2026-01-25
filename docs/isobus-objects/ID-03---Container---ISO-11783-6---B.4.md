@@ -41,5 +41,7 @@ Container sind essenziell für dynamische Benutzeroberflächen:
 ## Bedeutung für die Implementierung
 Da der Container ein logisches Element ist, verbraucht er selbst kaum Rechenleistung, ist aber mächtig in der Steuerung der Z-Order und Gruppierung. Entwickler sollten darauf achten, dass die `Width` und `Height` korrekt gesetzt sind, um ungewolltes Clipping zu vermeiden.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Container](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/container) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

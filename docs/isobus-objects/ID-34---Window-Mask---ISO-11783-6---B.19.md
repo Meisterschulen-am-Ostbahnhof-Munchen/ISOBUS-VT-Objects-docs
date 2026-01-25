@@ -30,5 +30,7 @@ Window Masks sind essenziell für **User-Layout Data Masks**. Hierbei kann der B
 *   **On Refresh:** Wird ausgelöst, wenn das Fenster neu gezeichnet werden muss.
 *   **On Change Attribute:** Bei Änderung technischer Parameter.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Window Mask](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/window-mask) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen wird auf die offizielle ISO 11783-6:2018, B.19 verwiesen.*

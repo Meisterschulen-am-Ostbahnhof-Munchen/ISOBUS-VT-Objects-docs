@@ -39,5 +39,7 @@ Der Polygontyp (AID 5) informiert das VT über die Komplexität der Form, was di
 ## Bedeutung für die Implementierung
 Polygone sind sehr mächtig für die Darstellung von unregelmäßigen Flächen, wie z. B. Tankinhalten in asymmetrischen Behältern oder zur Visualisierung von Feldumrissen. Aufgrund der Rechenlast bei komplexen Polygonen sollten ECU-Entwickler nach Möglichkeit "konvexe" Typen bevorzugen, wenn die Form dies zulässt.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Polygon](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/polygon) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

@@ -42,5 +42,7 @@ Die Winkelwerte in AID 5 und 6 werden **halbiert** übertragen (Bereich 0-180 en
 ## Bedeutung für die Implementierung
 Ellipsen und Sektoren sind unverzichtbar für die Erstellung von analogen Zeigerinstrumenten (Meters) oder Fortschrittsanzeigen. Durch die dynamische Änderung des `End angle` per ECU-Kommando lassen sich füllende Kreisbögen realisieren, die intuitiv Zustände visualisieren.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Ellipse](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/ellipse) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

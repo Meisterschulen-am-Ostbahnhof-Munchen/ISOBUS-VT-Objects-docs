@@ -32,5 +32,7 @@ Wie alle Eingabeobjekte reagiert das Input Boolean auf:
 ## Bedeutung für die Implementierung
 Das Input Boolean ist ideal für einfache Ja/Nein-Optionen oder das Aktivieren/Deaktivieren von Maschinenfunktionen. Da die grafische Ausprägung (Häkchen-Stil) vom VT-Hersteller abhängt, sorgt dieses Objekt für ein konsistentes Erscheinungsbild innerhalb der Terminal-Oberfläche.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Boolean](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/boolean) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

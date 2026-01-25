@@ -24,5 +24,7 @@ Die Output List verhält sich ähnlich wie eine Animation, wird aber manuell üb
 ## Besonderheiten
 Wenn der Index auf ein Objekt verweist, das größer als die definierte `Width`/`Height` der Liste ist, wird es abgeschnitten (Clipped).
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - List (Output)](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/list-output) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen wird auf die offizielle ISO 11783-6:2018, B.9.4 verwiesen.*

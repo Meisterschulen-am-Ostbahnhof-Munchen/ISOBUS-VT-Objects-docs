@@ -38,5 +38,7 @@ Das **Output String** Objekt mit der **ID 11** dient zur rein visuellen Anzeige 
 ## Bedeutung für die Implementierung
 Output Strings sind die primäre Methode für Statusmeldungen, Beschriftungen und Einheitenanzeigen. Für Texte, die in vielen Sprachen vorliegen, empfiehlt es sich, die Texte über Variablen einzusteuern oder für jede Sprache eine eigene Maske/einen eigenen Pool vorzuhalten.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - String (Output)](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/string-output) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

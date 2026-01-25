@@ -27,5 +27,7 @@ Number Variables sind das Rückgrat der Kommunikation zwischen Maschine und Term
 *   **Effizienz:** Anstatt jedes Anzeigeobjekt einzeln zu aktualisieren, ändert die ECU nur den Wert der zentralen Variable.
 *   **Konsistenz:** Durch die Verwendung von Variablen wird sichergestellt, dass an verschiedenen Stellen der Benutzeroberfläche (z. B. Hauptmaske und Einstellungsmenü) immer derselbe aktuelle Wert angezeigt wird.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Number Variable](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/number-variable) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

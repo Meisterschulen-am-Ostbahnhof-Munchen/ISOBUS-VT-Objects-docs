@@ -31,5 +31,7 @@ Wie die *Number Variable* ist auch die *String Variable* ein reines Datenobjekt 
 ## Bedeutung für die Implementierung
 String Variablen sind essenziell für dynamische Texte wie Fehlermeldungen im Klartext, Namen von Arbeitsaufträgen oder Fahrernamen. Da Texteingaben und -änderungen über den CAN-Bus (ISOBUS) ressourcenintensiv sind, sollten String Variablen so kurz wie möglich definiert werden.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - String Variable](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/string-variable) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

@@ -41,5 +41,7 @@ Die Datenmaske reagiert auf verschiedene Systemereignisse:
 ## Bedeutung für die Implementierung
 Die Datenmaske ist das Herzstück des HMI-Designs. Entwickler müssen darauf achten, dass die Auflösung der Maske zu den Fähigkeiten des VTs passt (Standard-Mindestauflösung oft 200x200 Pixel, moderne VTs bieten deutlich mehr). Eine effiziente Nutzung von Makros auf Masken-Events (z. B. `On Show`) kann helfen, Initialisierungen direkt im VT auszuführen.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Data Mask](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/datamask) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

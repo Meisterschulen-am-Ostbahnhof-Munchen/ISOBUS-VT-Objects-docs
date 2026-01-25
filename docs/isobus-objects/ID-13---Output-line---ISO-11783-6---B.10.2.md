@@ -38,5 +38,7 @@ Die eigentliche Erscheinungsform der Linie (Dicke, Farbe, gestrichelt/durchgezog
 ## Bedeutung für die Implementierung
 Linien werden häufig als Trennelemente in Masken oder zur einfachen grafischen Darstellung von Zusammenhängen genutzt. Durch die Verknüpfung mit Variablen (über die Line Attributes) können Linien zur Laufzeit ihre Farbe ändern, um Zustände (z. B. Aktiv/Inaktiv) zu signalisieren.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Line (Output)](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/line-output) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

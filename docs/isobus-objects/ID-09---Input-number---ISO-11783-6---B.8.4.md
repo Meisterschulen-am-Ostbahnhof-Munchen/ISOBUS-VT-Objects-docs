@@ -43,5 +43,7 @@ Wenn dieses Bit gesetzt ist, sendet das VT bei jeder Änderung (z. B. bei jedem 
 ## Bedeutung für die Implementierung
 Das Input Number Objekt nimmt der Maschinensteuerung (ECU) viel Arbeit bei der Formatierung und Validierung ab. Entwickler sollten darauf achten, den Skalierungsfaktor und die Nachkommastellen so zu wählen, dass keine Rundungsfehler die Anzeige verfälschen.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Number (Input)](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/number-input) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

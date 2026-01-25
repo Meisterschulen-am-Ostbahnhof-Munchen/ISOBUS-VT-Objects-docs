@@ -49,5 +49,7 @@ Wenn mehrere Alarmmasken von verschiedenen Arbeitsgruppen gleichzeitig aktiv sin
 ## Bedeutung für die Implementierung
 Alarmmasken sollten sparsam und nur für echte Warnungen eingesetzt werden, da sie den Arbeitsfluss des Bedieners unterbrechen. Es ist wichtig, die passende akustische Unterstützung (AID 4) zu wählen, um die Aufmerksamkeit zu steuern, ohne den Bediener zu stressen.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Alarm Mask](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/alarm-mask) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

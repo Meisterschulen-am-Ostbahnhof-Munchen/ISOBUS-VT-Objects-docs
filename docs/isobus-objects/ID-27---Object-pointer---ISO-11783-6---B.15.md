@@ -26,5 +26,7 @@ Ein Object Pointer wird wie ein normales Child-Objekt in eine Maske eingebunden.
 ## Bedeutung für die Implementierung
 Object Pointer reduzieren die Komplexität der Maskensteuerung erheblich. Anstatt viele Objekte manuell per `Hide/Show` zu verwalten, muss die ECU nur eine einzige ID im Pointer ändern. Dies spart CAN-Bus-Bandbreite und vereinfacht die Programmlogik auf der Maschinensteuerung.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Object Pointer](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/object-pointer) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

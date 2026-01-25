@@ -35,5 +35,7 @@ Wenn ein Muster (AID 3) verwendet wird, gelten strenge Regeln für die referenzi
 ## Bedeutung für die Implementierung
 Fill Attributes sind unverzichtbar für die Gestaltung der Benutzeroberfläche. Sie ermöglichen es, Flächen hervorzuheben (z. B. gelbe Füllung für einen Warnbereich in einem Balkendiagramm) oder texturierte Hintergründe zu schaffen. Durch den Wechsel des Fülltyps zur Laufzeit können Zustände (z. B. "Tank leer" -> rot blinkende Füllung) sehr auffällig visualisiert werden.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Fill Attribute](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/fill-attribute) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

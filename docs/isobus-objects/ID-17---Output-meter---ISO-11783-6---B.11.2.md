@@ -41,5 +41,7 @@ Dies ist ein kritisches Attribut für die intuitive Bedienung:
 ## Bedeutung für die Implementierung
 Das Output Meter ist ideal für die Visualisierung von Motordrehzahlen, Füllständen oder Druckwerten. Da es transparent ist, lassen sich durch Kombination mit Hintergrundgrafiken (ID 20) und verschiedenen Masken sehr ansprechende, analog wirkende Cockpit-Anzeigen gestalten.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Meter](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/meter) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

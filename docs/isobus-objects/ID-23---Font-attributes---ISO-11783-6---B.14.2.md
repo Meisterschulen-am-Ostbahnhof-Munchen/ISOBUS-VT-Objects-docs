@@ -41,5 +41,7 @@ Mehrere Stile können durch Kombination der Bits gleichzeitig aktiviert werden:
 ## Bedeutung für die Implementierung
 Font Attributes erlauben ein konsistentes Design. Anstatt bei jedem Textobjekt Farbe und Größe einzeln zu definieren, verweisen alle Objekte auf ein gemeinsames Attribut-Objekt. Ändert man dieses eine Objekt (z. B. von weißer auf gelbe Schrift), ändert sich das gesamte HMI-Erscheinungsbild sofort.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Font Attribute](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/font-attribute) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

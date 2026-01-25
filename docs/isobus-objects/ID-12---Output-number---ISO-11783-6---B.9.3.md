@@ -39,5 +39,7 @@ Beispiel: Ein Rohwert von 2500 mit einem Offset von 0 und einem Skalierungsfakto
 ## Bedeutung für die Implementierung
 Output Numbers sind ideal für die Anzeige von Sensordaten (Druck, Temperatur, Geschwindigkeit). Da die ECU lediglich Ganzzahlen (Rohwerte) übertragen muss, wird die CAN-Bus-Last minimiert und die Komplexität der Formatierung auf das Terminal verlagert. Die pixelgenaue Justierung (AID 11) sorgt dafür, dass die Zahlen auch bei verschiedenen Schriftarten exakt im Designrahmen ausgerichtet sind.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Number (Output)](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/number-output) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

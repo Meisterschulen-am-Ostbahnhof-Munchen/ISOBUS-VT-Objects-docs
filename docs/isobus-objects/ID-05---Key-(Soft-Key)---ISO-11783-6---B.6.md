@@ -41,5 +41,7 @@ Der **Key Code** (AID 2) ist das entscheidende Bindeglied zur Softwarelogik (C-C
 ## Bedeutung für die Implementierung
 Da die tatsächliche Größe und Form der Softkeys von VT zu VT variieren kann (z. B. Hochformat vs. Querformat, Touch vs. Hardwaretasten), ist es Best Practice, grafische Inhalte (Bitmaps) innerhalb des Keys klein genug zu wählen und mittig zu positionieren. Ein Key-Objekt ohne Child-Objekte erscheint als leere Fläche in der gewählten Hintergrundfarbe.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Softkey](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/softkey) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

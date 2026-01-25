@@ -38,5 +38,7 @@ Die Linienstärke (Line Width) muss bei der Planung berücksichtigt werden, da s
 ## Bedeutung für die Implementierung
 Rechtecke sind die am häufigsten verwendeten grafischen Primitiven. Sie dienen als Hintergrund für Textfelder, als Umrandung von Gruppen oder zur Erstellung von Balken (z. B. durch dynamische Änderung der `Width` oder `Height` per ECU-Kommando). In Kombination mit transparenten Hintergründen lassen sich so komplexe Layouts realisieren.
 
+Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Rectangle](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/rectangle) von Tobias Tenberg.
+
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

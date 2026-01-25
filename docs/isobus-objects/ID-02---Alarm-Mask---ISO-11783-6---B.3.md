@@ -5,16 +5,25 @@
 
 Die **Alarm Mask** (Alarmmaske) mit der **ID 2** dient zur Anzeige kritischer Informationen oder Warnungen. Sie hat Vorrang vor normalen Datenmasken und kann je nach Priorität das gesamte Display oder Teile davon überlagern.
 
-## Technische Attribute (gemäß Tabelle B.6)
+### Attribute und Record Format (Tabelle B.6)
 
-| AID | Name | Typ | Beschreibung |
-| :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer 2 | Eindeutige Identifikationsnummer im Objekt-Pool. |
-| 0 | **Type** | Integer 1 | Objekttyp = 2 (Alarm Mask). |
-| 1 | **Background colour** | Integer 1 | Hintergrundfarbe der Maske. |
-| 2 | **Soft Key Mask** | Integer 2 | Zugehörige Softkey-Maske (65535 = keine). |
-| 3 | **Priority** | Integer 1 | Alarm-Priorität: **0 = High**, **1 = Medium**, **2 = Low**. |
-| 4 | **Acoustic signal** | Integer 1 | Akustisches Signal: 0 = Höchste Prio, 1 = Mittel, 2 = Niedrig, 3 = Lautlos. |
+Die folgende Tabelle beschreibt den Aufbau des Alarm Mask Objekts im Objektpool.
+
+| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
+| [0] | **Type** | Integer | 1 | 2 | 3 | Objekttyp = Alarm Mask. |
+| [1] | **Background colour** | Integer | 1 | 0 – 255 | 4 | Hintergrundfarbe der Maske. |
+| [2] | **Soft Key Mask** | Integer | 2 | 0 – 65534, 65535 | 5 – 6 | Objekt-ID der zugehörigen Soft Key Mask (65535 = NULL). |
+| [3] | **Priority** | Integer | 1 | 0 – 2 | 7 | 0 = Hoch, 1 = Mittel, 2 = Niedrig. |
+| [4] | **Acoustic signal** | Integer | 1 | 0 – 3 | 8 | 0 = Höchste Prio, 1 = Mittel, 2 = Niedrig, 3 = Aus. |
+| - | **Number of objects to follow** | Integer | 1 | 0 – 255 | 9 | Anzahl der direkt enthaltenen Objekte. |
+| - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 10 | Anzahl der folgenden Makro-Referenzen. |
+| - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534 | 11 + ... | Objekt-ID eines enthaltenen Objekts. |
+| - | {X Location} | Signed Integer | 2 | -32768 bis +32767 | 13 + ... | X-Position relativ zur Maske (Pixel). |
+| - | {Y Location} | Signed Integer | 2 | -32768 bis +32767 | 15 + ... | Y-Position relativ zur Maske (Pixel). |
+| - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | (Nach Objekten) Event ID, die das Makro auslöst. |
+| - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ### Prioritätsstufen und Darstellung
 Die Priorität steuert nicht nur die Reihenfolge der Alarme, sondern oft auch deren visuelle Darstellung auf dem VT:
@@ -23,25 +32,17 @@ Die Priorität steuert nicht nur die Reihenfolge der Alarme, sondern oft auch de
 *   **Medium Priority (1):** Normale Fehlfunktion der Maschine.
 *   **Low Priority (2):** Nur zur Information (Statusmeldungen).
 
-## Beispiele für Alarmmasken
-
-### High Priority Alarm Mask (Priorität 0)
-Wird oft für sicherheitskritische Warnungen verwendet.
-![](https://user-images.githubusercontent.com/69573151/94601878-68b46400-0294-11eb-8eb6-2e652956ab6e.png)
-
-### Medium Priority Alarm Mask (Priorität 1)
-![](https://user-images.githubusercontent.com/69573151/94605730-cf884c00-0299-11eb-96e5-45c61989fc56.png)
-![](https://user-images.githubusercontent.com/69573151/94601845-5cc8a200-0294-11eb-82a9-4d544eb7cb92.png)
-
-### Low Priority Alarm Mask (Priorität 2)
-![](https://user-images.githubusercontent.com/69573151/94605669-bb444f00-0299-11eb-95b0-30519cb9f03b.png)
-![](https://user-images.githubusercontent.com/69573151/94601812-4e7a8600-0294-11eb-9a61-621ad998a191.png)
-
 ## Ereignisse (Events - Tabelle B.5)
 
-*   **On Show:** Die Maske wird sichtbar. Das VT sendet eine `VT Status` Nachricht.
-*   **On Change Priority:** Wenn die Priorität zur Laufzeit geändert wird, bewertet das VT alle aktiven Alarme neu und zeigt den Alarm mit der höchsten Priorität an.
-*   **On Change Soft Key Mask:** Erlaubt den Wechsel der Softkeys bei aktivem Alarm.
+Die Alarmmaske reagiert auf folgende Ereignisse:
+
+*   **On Show:** Ausgelöst, wenn die Maske sichtbar wird. Das VT sendet eine `VT Status` Nachricht.
+*   **On Hide:** Ausgelöst, wenn die Maske vom Display entfernt wird.
+*   **On Refresh:** Ausgelöst bei Änderungen an Objekten innerhalb der Maske.
+*   **On Change Priority:** Bei Änderung der Priorität bewertet das VT alle aktiven Alarme neu.
+*   **On Change Soft Key Mask:** Wechselt die Softkey-Belegung bei aktiver Alarmmaske.
+*   **On Change Child Location / Position:** Aktualisierung der Kind-Objekte.
+*   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
 
 ## Verhalten bei mehreren Alarmen
 Wenn mehrere Alarmmasken von verschiedenen Arbeitsgruppen gleichzeitig aktiv sind, bestimmt die Priorität (AID 3), welche Maske im Vordergrund steht. Bei gleicher Priorität liegt die Entscheidung meist beim VT (oft zeitliche Abfolge).

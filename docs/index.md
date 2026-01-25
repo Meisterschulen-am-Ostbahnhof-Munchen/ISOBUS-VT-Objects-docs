@@ -73,6 +73,17 @@ Videos
 
 ---
 
+```{toctree}
+:caption: 'Index & Suche'
+:maxdepth: 2
+genindex
+search
+```
+
+
+---
+
+
 **Willkommen bei der Dokumentation zu ISOBUS Virtual Terminal.**
 
 Diese Dokumentation ist Teil der Wissensdatenbank der Meisterschulen am Ostbahnhof München.

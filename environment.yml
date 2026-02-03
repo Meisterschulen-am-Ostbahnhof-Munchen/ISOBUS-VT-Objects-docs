@@ -14,7 +14,7 @@ dependencies:
   - requests>=2.32.0
   - docutils
   - snowballstemmer
-  - setuptools>=70.0.0
+  - setuptools>=78.1.1
   - urllib3>=2.2.2
   - pip
   - pip:
@@ -28,5 +28,4 @@ dependencies:
     - sphinx_pyscript
     - sphinx_tippy
     - sphinx-markdown-tables
-    - clang
     - zipp>=3.19.1

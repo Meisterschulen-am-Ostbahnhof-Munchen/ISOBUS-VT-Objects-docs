@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 ../isobus-objects/ID-03---Container---ISO-11783-6---B.4
 ../isobus-objects/ID-35---Key-Group---ISO-11783-6---B.20
 ../isobus-objects/ID-36---Graphics-Context---ISO-11783-6---B.18

@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 Einträge-von-Schülern
 Videos
 Jetter-ISO-Designer-Workspace-öffnen

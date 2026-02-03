@@ -3,9 +3,6 @@
 ```{index} single: ISOBUS VT Objekte
 ```
 
-Diese Sektion beschreibt die verschiedenen Objekttypen des ISOBUS Virtuellen Terminals gemäß ISO 11783-6.
-
-
 ```{toctree}
 :maxdepth: 1
 
@@ -59,6 +56,11 @@ ID-46---Graphic-Data---ISO-11783-6---B.27
 ID-47---Working-Set-Special-Controls---ISO-11783-6---B.29
 ID-48---Scaled-Graphic---ISO-11783-6---B.28
 ```
+
+
+Diese Sektion beschreibt die verschiedenen Objekttypen des ISOBUS Virtuellen Terminals gemäß ISO 11783-6.
+
+
 
 ## Liste der Objekte
 

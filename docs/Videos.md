@@ -1,4 +1,4 @@
-# Videos
+# 📺 Videos
 
 ```{index} single: Videos
 ```

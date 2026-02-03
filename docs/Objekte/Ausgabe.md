@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 ../isobus-objects/ID-11---Output-string---ISO-11783-6---B.9.2
 ../isobus-objects/ID-12---Output-number---ISO-11783-6---B.9.3
 ../isobus-objects/ID-17---Output-meter---ISO-11783-6---B.11.2

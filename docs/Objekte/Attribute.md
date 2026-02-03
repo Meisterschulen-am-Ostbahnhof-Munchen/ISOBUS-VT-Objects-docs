@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 ../isobus-objects/ID-23---Font-attributes---ISO-11783-6---B.14.2
 ../isobus-objects/ID-24---Line-attributes---ISO-11783-6---B.14.3
 ../isobus-objects/ID-25---Fill-attributes---ISO-11783-6---B.14.4

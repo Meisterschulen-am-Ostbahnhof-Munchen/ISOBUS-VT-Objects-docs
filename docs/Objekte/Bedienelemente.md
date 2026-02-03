@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 ../isobus-objects/ID-05---Key-(Soft-Key)---ISO-11783-6---B.6
 ../isobus-objects/ID-06---Button---ISO-11783-6---B.7
 ```

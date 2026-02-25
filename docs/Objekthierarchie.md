@@ -33,7 +33,6 @@ Die Datenmaske ist der Hauptanzeigebereich für die Bedienung.
 | Child Object | Min. VT Version |
 | :--- | :--- |
 | Container object (ID 3) | 2 |
-| Key object (ID 5) | 2 |
 | Button object (ID 6) | 2 |
 | Input Boolean object (ID 7) | 2 |
 | Input String object (ID 8) | 2 |
@@ -60,7 +59,6 @@ Alarmmasken dienen zur Anzeige von Warnungen.
 | Child Object | Min. VT Version |
 | :--- | :--- |
 | Container object (ID 3) | 2 |
-| Key object (ID 5) | 2 |
 | Button object (ID 6) | 2 |
 | Input Boolean object (ID 7) | 2 |
 | Input String object (ID 8) | 2 |
@@ -87,7 +85,6 @@ Container dienen zur Gruppierung von Objekten.
 | Child Object | Min. VT Version |
 | :--- | :--- |
 | Container object (ID 3) | 2 |
-| Key object (ID 5) | 2 |
 | Button object (ID 6) | 2 |
 | Input Boolean object (ID 7) | 2 |
 | Input String object (ID 8) | 2 |
@@ -114,7 +111,6 @@ Fenstermasken werden in User-Layouts verwendet.
 | Child Object | Min. VT Version |
 | :--- | :--- |
 | Container object (ID 3) | 4 |
-| Key object (ID 5) | 4 |
 | Button object (ID 6) | 4 |
 | Input Boolean object (ID 7) | 4 |
 | Input String object (ID 8) | 4 |

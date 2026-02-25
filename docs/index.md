@@ -19,7 +19,7 @@ myst:
 
 
 ```{toctree}
-:maxdepth: 7
+:maxdepth: 1
 :caption: Objekt-Kategorien
 
 Objekte/Objekte
@@ -78,6 +78,7 @@ Videos
 ---
 
 ```{toctree}
+:maxdepth: 1
 :caption: 'Index & Suche'
 :maxdepth: 2
 genindex

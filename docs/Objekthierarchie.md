@@ -223,9 +223,18 @@ Optionen in einer Auswahlliste.
 | Child Object | Min. VT Version |
 | :--- | :--- |
 | Working Set object (ID 0) | 4 |
+| Container object (ID 3) | 4 |
 | Output String object (ID 11) | 2 |
 | Output Number object (ID 12) | 2 |
 | Output List object (ID 37) | 4 |
+| Output Line object (ID 13) | 4 |
+| Output Rectangle object (ID 14) | 4 |
+| Output Ellipse object (ID 15) | 4 |
+| Output Polygon object (ID 16) | 4 |
+| Output Meter object (ID 17) | 4 |
+| Output Linear Bar Graph object (ID 18) | 4 |
+| Output Arched Bar Graph object (ID 19) | 4 |
+| Graphics Context object (ID 36) | 4 |
 | Picture Graphic object (ID 20) | 2 |
 | Scaled Graphic object (ID 48) | 6 |
 | Object Pointer object (ID 27) | 4 |
@@ -427,4 +436,3 @@ Sequenz von Objekten.
 | Picture Graphic object (ID 20) | 5 |
 | Scaled Graphic object (ID 48) | 6 |
 | Object Pointer object (ID 27) | 5 |
-| External Object Pointer object (ID 43) | 5 |

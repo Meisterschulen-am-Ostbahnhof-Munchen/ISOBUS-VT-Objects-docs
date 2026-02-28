@@ -3,6 +3,7 @@
 ```{index} single: Objekthierarchie
 ```
 
+
 Diese Seite basiert auf **Tabelle A.2 — Allowed hierarchical relationships of objects** der ISO 11783-6:2018 (Annex A). Sie definiert, welche Objekte (Child) in welchen anderen Objekten (Parent) enthalten sein dürfen.
 
 Die angegebene Zahl steht für die minimale **VT-Version**, ab der diese Beziehung unterstützt wird.
@@ -13,12 +14,6 @@ Das Working Set Objekt ist der Wurzel-Container einer Objekt-Pool-Hierarchie.
 | Child Object | Min. VT Version |
 | :--- | :--- |
 | Container object (ID 3) | 4 |
-| Key object (ID 5) | 4 |
-| Button object (ID 6) | 4 |
-| Input Boolean object (ID 7) | 4 |
-| Input String object (ID 8) | 4 |
-| Input Number object (ID 9) | 4 |
-| Input List object (ID 10) | 4 |
 | Output String object (ID 11) | 2 |
 | Output Number object (ID 12) | 2 |
 | Output List object (ID 37) | 4 |
@@ -30,7 +25,6 @@ Das Working Set Objekt ist der Wurzel-Container einer Objekt-Pool-Hierarchie.
 | Output Linear Bar Graph object (ID 18) | 4 |
 | Output Arched Bar Graph object (ID 19) | 4 |
 | Graphics Context object (ID 36) | 4 |
-| Animation object (ID 44) | 5 |
 | Picture Graphic object (ID 20) | 2 |
 | Scaled Graphic object (ID 48) | 6 |
 | Object Pointer object (ID 27) | 4 |
@@ -73,10 +67,6 @@ Alarmmasken dienen zur Anzeige von Warnungen.
 | Child Object | Min. VT Version |
 | :--- | :--- |
 | Working Set object (ID 0) | 3 |
-| Input Boolean object (ID 7) | 2 |
-| Input String object (ID 8) | 2 |
-| Input Number object (ID 9) | 2 |
-| Input List object (ID 10) | 2 |
 | Output String object (ID 11) | 2 |
 | Output Number object (ID 12) | 2 |
 | Output List object (ID 37) | 4 |
@@ -177,10 +167,6 @@ Inhalt einer Taste.
 | :--- | :--- |
 | Working Set object (ID 0) | 4 |
 | Container object (ID 3) | 2 |
-| Input Boolean object (ID 7) | 2 |
-| Input String object (ID 8) | 2 |
-| Input Number object (ID 9) | 2 |
-| Input List object (ID 10) | 2 |
 | Output String object (ID 11) | 2 |
 | Output Number object (ID 12) | 2 |
 | Output List object (ID 37) | 4 |
@@ -205,10 +191,6 @@ Inhalt einer Schaltfläche.
 | :--- | :--- |
 | Working Set object (ID 0) | 4 |
 | Container object (ID 3) | 2 |
-| Input Boolean object (ID 7) | 2 |
-| Input String object (ID 8) | 2 |
-| Input Number object (ID 9) | 2 |
-| Input List object (ID 10) | 2 |
 | Output String object (ID 11) | 2 |
 | Output Number object (ID 12) | 2 |
 | Output List object (ID 37) | 4 |
@@ -242,22 +224,9 @@ Optionen in einer Auswahlliste.
 | :--- | :--- |
 | Working Set object (ID 0) | 4 |
 | Container object (ID 3) | 4 |
-| Button object (ID 6) | 4 |
-| Input Boolean object (ID 7) | 4 |
-| Input String object (ID 8) | 4 |
-| Input Number object (ID 9) | 4 |
 | Output String object (ID 11) | 2 |
 | Output Number object (ID 12) | 2 |
 | Output List object (ID 37) | 4 |
-| Output Line object (ID 13) | 4 |
-| Output Rectangle object (ID 14) | 4 |
-| Output Ellipse object (ID 15) | 4 |
-| Output Polygon object (ID 16) | 4 |
-| Output Meter object (ID 17) | 4 |
-| Output Linear Bar Graph object (ID 18) | 4 |
-| Output Arched Bar Graph object (ID 19) | 4 |
-| Graphics Context object (ID 36) | 4 |
-| Animation object (ID 44) | 5 |
 | Picture Graphic object (ID 20) | 2 |
 | Scaled Graphic object (ID 48) | 6 |
 | Object Pointer object (ID 27) | 4 |
@@ -369,10 +338,6 @@ Objekte, die als Icon/Grafik in einem Label verwendet werden dürfen.
 | Child Object | Min. VT Version |
 | :--- | :--- |
 | Container object (ID 3) | 4 |
-| Input Boolean object (ID 7) | 4 |
-| Input String object (ID 8) | 4 |
-| Input Number object (ID 9) | 4 |
-| Input List object (ID 10) | 4 |
 | Output String object (ID 11) | 4 |
 | Output Number object (ID 12) | 4 |
 | Output List object (ID 37) | 4 |

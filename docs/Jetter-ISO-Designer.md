@@ -3,12 +3,7 @@
 ```{index} single: Jetter ISO-Designer
 ```
 
-```{toctree}
-:maxdepth: 1
-Einträge-von-Schülern
-Videos
-Jetter-ISO-Designer-Workspace-öffnen
-```
+
 
 M:\\Landmaschinenmechanik\\Unterricht\\SL\\Jetter\\ISODesignerSetup551.exe
 

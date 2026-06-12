@@ -3,10 +3,9 @@
 ```{index} single: Bitmaps einfügen
 ```
 
-:::{note}
-in der ISO 11783-6 werden für VT3/UT2 keine PNG Grafiken unterstützt. 
-siehe auch [ISOBUS-Objekte-Versionen](ISOBUS-Objekte-Versionen.md)
-:::
+!!! note
+    in der ISO 11783-6 werden für VT3/UT2 keine PNG Grafiken unterstützt. 
+    siehe auch [ISOBUS-Objekte-Versionen](ISOBUS-Objekte-Versionen.md)
 
 ## PNG finden
 
@@ -111,11 +110,10 @@ Gedanken:
 
 72x72 --> als Button, macht Innenfläche 64x64
 
-:::{note}
-Tipp: auch bei Buttons diese Größen anwenden, macht ein klares Erscheinungsbild. 
-
-für Größere Buttons vielfache davon, z.B. 80x160, 160x160 usw. 
-:::
+!!! note
+    Tipp: auch bei Buttons diese Größen anwenden, macht ein klares Erscheinungsbild. 
+    
+    für Größere Buttons vielfache davon, z.B. 80x160, 160x160 usw. 
 
 Empfehlung: 
 wenn das Symbol als Softkey und als CCI A3 Symbol verwendet werden soll, dann 64x64 Pixel machen. 

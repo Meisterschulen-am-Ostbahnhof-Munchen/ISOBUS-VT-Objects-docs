@@ -3,25 +3,7 @@
 ```{index} single: Objekte
 ```
 
-```{toctree}
-:maxdepth: 1
-Masken
-Container
-Bilder
-Bedienelemente
-Ausgabe
-Eingabe
-Funktionen
-Attribute
-Variablen
-Auxiliary
-Extern
-Spezial
-../Objekthierarchie
-../Leere_Objekte
-../Ungueltige_Pools
-../Referenz/Referenz
-```
+
 
 ----
 

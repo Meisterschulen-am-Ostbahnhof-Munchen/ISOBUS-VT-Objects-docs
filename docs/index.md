@@ -18,53 +18,18 @@ myst:
 # Wiki 2: ISOBUS Virtual Terminal
 
 
-```{toctree}
-:maxdepth: 1
-:caption: Objekt-Kategorien
-
-Objekte/Objekte
-```
-
-
-```{toctree}
-:maxdepth: 1
-:caption: Einführung
-
-Home
-ISOBUS-Objekte
-ISOBUS-Objekte-Versionen
-ISOBUS-Objekt-IDs
-logiBUS
-AuxAssignOfApp
-```
-
-```{toctree}
-:maxdepth: 1
-:caption: Jetter ISO Designer
-
-Jetter-ISO-Designer
-Jetter-ISO-Designer-Workspace-öffnen
-Bitmaps_einfuegen
-Vektorgrafiken_erstellen
-```
 
 
 
-```{toctree}
-:maxdepth: 1
-:caption: Referenz
 
-isobus-objects/isobus-objects-index
-ISOBUS-Wiki-Links
-```
 
-```{toctree}
-:maxdepth: 1
-:caption: Sonstiges
 
-Einträge-von-Schülern
-Videos
-```
+
+
+
+
+
+
 
 ## Meisterschulen am Ostbahnhof, München
 
@@ -77,13 +42,7 @@ Videos
 
 ---
 
-```{toctree}
-:maxdepth: 1
-:caption: 'Index & Suche'
-:maxdepth: 2
-genindex
-search
-```
+
 
 
 ---
@@ -99,9 +58,8 @@ Diese Dokumentation ist Teil der Wissensdatenbank der Meisterschulen am Ostbahnh
 
 ---
 
-:::{note}
-This project is under active development.
-:::
+!!! note
+    This project is under active development.
 
 **Contents**
 

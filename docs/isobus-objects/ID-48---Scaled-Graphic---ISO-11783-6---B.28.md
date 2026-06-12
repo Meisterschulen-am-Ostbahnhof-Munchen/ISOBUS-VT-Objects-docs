@@ -1,7 +1,6 @@
 # ID 48 – Scaled Graphic – ISO 11783-6 – B.28
 
-```{index} single: ID 48 – Scaled Graphic – ISO 11783-6 – B.28
-```
+
 
 Das **Scaled Graphic** Objekt mit der **ID 48** (ab VT Version 6) dient zur Anzeige und Skalierung von Grafikobjekten.
 

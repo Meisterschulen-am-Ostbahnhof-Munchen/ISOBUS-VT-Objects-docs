@@ -1,7 +1,6 @@
 # Ungültige Objektpools (Invalid Object Pools)
 
-```{index} single: Ungültige Pools
-```
+
 
 Damit ein ISOBUS-Objektpool (IOP) vom Virtual Terminal (VT) akzeptiert und geladen wird, muss er strikten strukturellen Regeln folgen. Verletzt der Pool eine dieser Regeln, sendet das VT am Ende der Übertragung (`End of Object Pool`) einen Fehlercode und verwirft meist den gesamten Pool.
 

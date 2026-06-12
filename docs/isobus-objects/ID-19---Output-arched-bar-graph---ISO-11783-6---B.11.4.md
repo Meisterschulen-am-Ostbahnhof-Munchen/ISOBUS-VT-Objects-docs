@@ -1,7 +1,6 @@
 # ID 19 – Output arched bar graph – ISO 11783-6 – B.11.4
 
-```{index} single: ID 19 – Output arched bar graph – ISO 11783-6 – B.11.4
-```
+
 
 Das **Output Arched Bar Graph** Objekt mit der **ID 19** ist eine bogenförmige Balkenanzeige. Es kombiniert die Eigenschaften eines linearen Balkendiagramms mit der kreisförmigen Geometrie eines Meter-Objekts.
 

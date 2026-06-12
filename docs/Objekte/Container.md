@@ -1,7 +1,6 @@
 # Container
 
-```{index} single: Container
-```
+
 
 
 ## 🎧 Podcast

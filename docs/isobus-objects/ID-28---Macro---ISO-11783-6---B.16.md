@@ -1,7 +1,6 @@
 # ID 28 – Macro – ISO 11783-6 – B.16
 
-```{index} single: ID 28 – Macro – ISO 11783-6 – B.16
-```
+
 
 Das **Macro** Objekt mit der **ID 28** erlaubt es, eine Sequenz von Befehlen im Virtuellen Terminal zu speichern und bei bestimmten Ereignissen (Events) automatisch auszuführen. Dies reduziert die notwendige Kommunikation über den ISOBUS, da einfache UI-Logik direkt im Terminal abläuft.
 

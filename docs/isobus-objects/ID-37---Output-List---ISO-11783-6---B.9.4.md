@@ -1,7 +1,6 @@
 # ID 37 – Output List – ISO 11783-6 – B.9.4
 
-```{index} single: ID 37 – Output List – ISO 11783-6 – B.9.4
-```
+
 
 Das **Output List** Objekt mit der **ID 37** (ab VT Version 4) wird verwendet, um eines von mehreren Objekten aus einer Liste anzuzeigen. Welches Objekt aktuell sichtbar ist, wird über einen Index (Value) gesteuert.
 

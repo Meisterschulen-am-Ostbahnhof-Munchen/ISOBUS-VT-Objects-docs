@@ -1,7 +1,6 @@
 # Masken
 
-```{index} single: Masken
-```
+
 
 
 

@@ -1,7 +1,6 @@
 # ID 35 – Key Group – ISO 11783-6 – B.20
 
-```{index} single: ID 35 – Key Group – ISO 11783-6 – B.20
-```
+
 
 Das **Key Group** Objekt mit der **ID 35** dient dazu, eine Gruppe von Softkeys zusammenzufassen. Dies wird primär in Verbindung mit **User-Layout Soft Key Masks** verwendet (ab VT Version 4).
 

@@ -1,7 +1,6 @@
 # ID 14 – Output rectangle – ISO 11783-6 – B.10.3
 
-```{index} single: ID 14 – Output rectangle – ISO 11783-6 – B.10.3
-```
+
 
 Das **Output Rectangle** Objekt mit der **ID 14** dient zum Zeichnen von Rechtecken, die entweder nur als Umriss, gefüllt oder in Kombination dargestellt werden können.
 

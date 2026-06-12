@@ -1,7 +1,6 @@
 # Vektorgrafiken erstellen
 
-```{index} single: Vektorgrafiken erstellen
-```
+
 
 ## Coral Draw X5
 Für den Fall, dass die Datei aus einer z.B. PDF Datei gewonnen werden soll, kann man sich mit Coral Draw X5 behelfen.

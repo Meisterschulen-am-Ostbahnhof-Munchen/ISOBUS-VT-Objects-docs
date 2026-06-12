@@ -1,7 +1,6 @@
 # Leere Objekte (Minimum Child Objects)
 
-```{index} single: Leere Objekte
-```
+
 
 In der ISO 11783-6 Norm gibt es für Container-Objekte (Objekte, die andere Objekte enthalten) eine wichtige Unterscheidung: **Darf das Objekt leer sein oder nicht?**
 

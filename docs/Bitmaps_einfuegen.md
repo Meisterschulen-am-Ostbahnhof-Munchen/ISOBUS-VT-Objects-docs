@@ -1,7 +1,6 @@
 # Bitmaps einfügen
 
-```{index} single: Bitmaps einfügen
-```
+
 
 !!! note
     in der ISO 11783-6 werden für VT3/UT2 keine PNG Grafiken unterstützt. 

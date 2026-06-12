@@ -1,7 +1,6 @@
 # ISOBUS VT Objekte
 
-```{index} single: ISOBUS VT Objekte
-```
+
 
 
 

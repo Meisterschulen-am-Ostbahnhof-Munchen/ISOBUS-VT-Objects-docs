@@ -1,7 +1,6 @@
 # ID 10 – Input list – ISO 11783-6 – B.8.5
 
-```{index} single: ID 10 – Input list – ISO 11783-6 – B.8.5
-```
+
 
 Das **Input List** Objekt mit der **ID 10** ermöglicht dem Bediener die Auswahl eines Elements aus einer vordefinierten Liste von Objekten. Es wird häufig für Dropdown-Menüs oder Auswahllisten verwendet.
 

@@ -1,7 +1,6 @@
 # ID 18 – Output linear bar graph – ISO 11783-6 – B.11.3
 
-```{index} single: ID 18 – Output linear bar graph – ISO 11783-6 – B.11.3
-```
+
 
 Das **Output Linear Bar Graph** Objekt mit der **ID 18** dient zur Anzeige von Werten in Form eines Balkens oder Thermometers. Es unterstützt verschiedene Ausrichtungen und bietet die Möglichkeit, einen Zielwert (Target) markant hervorzuheben.
 

@@ -1,7 +1,6 @@
 # Einträge von Schülern
 
-```{index} single: Einträge von Schülern
-```
+
 
 [Schuelerbereich/tree/main/Eintraege](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/Schuelerbereich/tree/main/Eintraege)
 

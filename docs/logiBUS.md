@@ -1,7 +1,6 @@
 # logiBUS®
 
-```{index} single: logiBUS®
-```
+
 
 
 ## 🎧 Podcast

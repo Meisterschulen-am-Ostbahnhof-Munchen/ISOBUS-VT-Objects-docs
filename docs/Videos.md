@@ -1,7 +1,6 @@
 # 📺 Videos
 
-```{index} single: Videos
-```
+
 
 ## ISO-Designer: Deutsch
 

@@ -1,7 +1,6 @@
 # ID 21 – Number variable – ISO 11783-6 – B.13.2
 
-```{index} single: ID 21 – Number variable – ISO 11783-6 – B.13.2
-```
+
 
 Das **Number Variable** Objekt mit der **ID 21** ist ein reines Datenobjekt. Es speichert einen numerischen Wert, der von anderen Anzeige- oder Eingabeobjekten referenziert werden kann.
 

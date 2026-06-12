@@ -1,5 +1,4 @@
 # Ausgabe
 
-```{index} single: Ausgabe
-```
+
 

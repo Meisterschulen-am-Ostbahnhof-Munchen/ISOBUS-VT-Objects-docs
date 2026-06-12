@@ -1,7 +1,6 @@
 # Bedienelemente
 
-```{index} single: Bedienelemente
-```
+
 
 
 

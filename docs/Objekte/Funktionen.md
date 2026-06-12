@@ -1,5 +1,4 @@
 # Funktionen
 
-```{index} single: Funktionen
-```
+
 

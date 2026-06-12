@@ -1,7 +1,6 @@
 # ID 16 – Output polygon – ISO 11783-6 – B.10.5
 
-```{index} single: ID 16 – Output polygon – ISO 11783-6 – B.10.5
-```
+
 
 Das **Output Polygon** Objekt mit der **ID 16** ermöglicht das Zeichnen komplexer, mehreckiger Formen durch die Definition einer Liste von Eckpunkten.
 

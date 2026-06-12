@@ -1,5 +1,4 @@
 # Eingabe
 
-```{index} single: Eingabe
-```
+
 

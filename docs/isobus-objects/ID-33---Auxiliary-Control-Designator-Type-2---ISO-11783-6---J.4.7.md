@@ -1,7 +1,6 @@
 # ID 33 – Auxiliary Control Designator Type 2 Object Pointer – ISO 11783-6 – J.4.7
 
-```{index} single: ID 33 – Auxiliary Control Designator Type 2 Object Pointer – ISO 11783-6 – J.4.7
-```
+
 
 Das **Auxiliary Control Designator Type 2 Object Pointer** Objekt mit der **ID 33** ermöglicht es einer Working Set, die aktuell zugewiesenen Hilfsfunktionen (Auxiliary Functions) und deren Bedienelemente (Inputs) grafisch in einer Maske darzustellen.
 

@@ -1,7 +1,6 @@
 # Event IDs (ISO 11783-6 Table A.3)
 
-```{index} single: Events
-```
+
 
 Diese Tabelle listet alle Ereignis-IDs (Event IDs), die in Makros (`Macro object`, ID 28) oder als Trigger für Attribute verwendet werden können.
 

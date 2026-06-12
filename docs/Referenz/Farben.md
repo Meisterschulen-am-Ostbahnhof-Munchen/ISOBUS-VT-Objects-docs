@@ -1,7 +1,6 @@
 # Standard Farbpalette (ISO 11783-6 Table A.4)
 
-```{index} single: Farben
-```
+
 
 Die VT-Standardfarbpalette definiert 256 Farben. Die ersten 16 Farben sind identisch mit der Standard-VGA-Palette.
 

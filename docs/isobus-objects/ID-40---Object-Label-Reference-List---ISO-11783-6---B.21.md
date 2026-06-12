@@ -1,7 +1,6 @@
 # ID 40 – Object Label Reference List – ISO 11783-6 – B.21
 
-```{index} single: ID 40 – Object Label Reference List – ISO 11783-6 – B.21
-```
+
 
 Das **Object Label Reference List** Objekt mit der **ID 40** (ab VT Version 5) wird verwendet, um Objekten (wie Variablen oder Eingabefeldern) eine Liste von Beschriftungsobjekten (Labels) zuzuordnen.
 

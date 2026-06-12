@@ -1,7 +1,6 @@
 # Objekthierarchie (Parent-Child Beziehungen)
 
-```{index} single: Objekthierarchie
-```
+
 
 
 Diese Seite basiert auf **Tabelle A.2 — Allowed hierarchical relationships of objects** der ISO 11783-6:2018 (Annex A). Sie definiert, welche Objekte (Child) in welchen anderen Objekten (Parent) enthalten sein dürfen.

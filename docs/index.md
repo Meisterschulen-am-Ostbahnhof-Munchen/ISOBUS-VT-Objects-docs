@@ -10,10 +10,7 @@ myst:
 ---
 
 
-```{image} _static/logos/Meisterschulen_LogoG1_4c.gif
-:alt: Logo Meisterschulen am Ostbahnhof
-:width: 400px
-```
+<img src="_static/logos/Meisterschulen_LogoG1_4c.gif" alt="Logo Meisterschulen am Ostbahnhof" width="400px" />
 
 # Wiki 2: ISOBUS Virtual Terminal
 
@@ -33,12 +30,9 @@ myst:
 
 ## Meisterschulen am Ostbahnhof, München
 
-```{index} single: Virtual Terminal
-```
-```{index} single: Objekt-Pool
-```
-```{index} single: ISOBUS-Objekte
-```
+
+
+
 
 ---
 
@@ -69,8 +63,6 @@ Diese Dokumentation ist Teil der Wissensdatenbank der Meisterschulen am Ostbahnh
 
 
 
-### Index & Suche
-* {ref}`genindex`
-* {ref}`search`
+
 
 [🏠 Hauptmenü](https://www.ms-muc-docs.de/) | [🔍 Super-Suche (alle Wikis)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/de/latest/) | [Schnelle Suche (IEC 61499)](https://www.ms-muc-docs.de/iec-61499/abk%C3%BCrzungen-und-bedeutungen/abk%C3%BCrzungen-und-bedeutungen)

@@ -1,7 +1,6 @@
 # Kommando-Übersicht (ISO 11783-6 Table A.5)
 
-```{index} single: Commands
-```
+
 
 Diese Tabelle listet alle Befehle (Messages), die zwischen ECU (Working Set) und VT ausgetauscht werden können.
 

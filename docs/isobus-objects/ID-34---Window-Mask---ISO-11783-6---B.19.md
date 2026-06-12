@@ -1,7 +1,6 @@
 # ID 34 – Window Mask – ISO 11783-6 – B.19
 
-```{index} single: ID 34 – Window Mask – ISO 11783-6 – B.19
-```
+
 
 Das **Window Mask** Objekt mit der **ID 34** (eingeführt mit VT Version 4) ermöglicht es, einen Teilbereich des Bildschirms zu definieren, der unabhängig von der Haupt-Datenmaske aktualisiert oder von anderen Working Sets mit Inhalten gefüllt werden kann.
 

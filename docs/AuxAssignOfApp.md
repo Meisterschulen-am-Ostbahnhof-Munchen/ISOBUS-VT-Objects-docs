@@ -1,7 +1,6 @@
 # AuxAssignOfApp
 
-```{index} single: AuxAssignOfApp
-```
+
 
 AuxAssignOfApp.txt
 

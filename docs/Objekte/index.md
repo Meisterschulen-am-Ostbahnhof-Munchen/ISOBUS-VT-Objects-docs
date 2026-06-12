@@ -1,7 +1,6 @@
 # Objekte
 
-```{index} single: Objekte
-```
+
 
 
 

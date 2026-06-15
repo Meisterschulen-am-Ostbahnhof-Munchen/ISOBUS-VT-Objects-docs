@@ -164,3 +164,8 @@ cython_debug/
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks
 
 *.pdf
+
+# Typst & Pandoc artifacts
+*combined.md
+*book.typ
+*img/downloaded/

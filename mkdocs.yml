@@ -10,6 +10,8 @@ plugins:
 site_name: 'ISOBUS Virtual Terminal: Benutzeroberfläche und Objekte (2)'
 site_url: https://docs.ms-muc-docs.de/projects/ISOBUS-VT-Objects-docs/
 repo_url: https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/ISOBUS-VT-Objects-docs
+edit_uri: edit/main/docs/
+view_uri: blob/main/docs/
 theme:
   features:
   - navigation.sections

@@ -12,7 +12,22 @@ myst:
 
 <img src="_static/logos/Meisterschulen_LogoG1_4c.gif" alt="Logo Meisterschulen am Ostbahnhof" width="400px" />
 
-# Wiki 2: ISOBUS Virtual Terminal
+# Wiki 2: ISOBUS Virtual Terminal (VT & HMI-Bedienoberflächen)
+
+## Meisterschulen am Ostbahnhof, München
+
+---
+
+### 📋 [Das steht im Lehrplan (Rahmenlehrplan 2025)](./das_steht_im_lehrplan.md)
+> **Das ISOBUS Virtual Terminal (VT / UT nach ISO 11783-6) ist die zentrale Mensch-Maschine-Schnittstelle (HMI)** zur Bedienung, Einstellung und Visualisierung aller vernetzten Anbaugeräte (Teil I LE 1.4 sowie Teil II LE 1.1 & LE 1.4).
+
+* 📋 **[Das steht im Lehrplan – Virtual Terminal & HMI im Lehrplan](./das_steht_im_lehrplan.md)**
+  * 🖥️ [ISOBUS VT Objektpools & HMI (ISO 11783-6, LE 1.4 & LE 1.1)](./lehrplan_praxis/isobus_vt_objektpools_hmi.md)
+  * 📱 [Maskenlayout, Softkeys & Ergonomie (LE 1.4 & LE 1.4)](./lehrplan_praxis/maskenlayout_softkeys_bedienkonzepte.md)
+  * 🎛️ [Input-Attribute, Key-Events & Interaktionsdiagnose (LE 2.2 & LE 1.3)](./lehrplan_praxis/input_attributes_diagnose.md)
+
+---
+
 
 
 

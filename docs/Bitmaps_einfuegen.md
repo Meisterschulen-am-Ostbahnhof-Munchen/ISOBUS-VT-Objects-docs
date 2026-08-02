@@ -139,3 +139,8 @@ Windows Paint bietet folgende Farbtiefen an:
 nun können die Bilder in ISO-Designer verwendet werden, 
 im Falle von Monochrom kann Weiß als Transparenter Hintergrund gesetzt werden, 
 im Falle einer anderen Farbtiefe wird oft Pink verwendet. 
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

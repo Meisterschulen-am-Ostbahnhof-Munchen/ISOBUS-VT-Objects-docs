@@ -38,6 +38,11 @@ Moderne Anbaugeräte besitzen kein eigenes Display mehr, sondern nutzen das Univ
 
 ---
 
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+
 ## 🔗 Hauptportal & Direktlinks zu den 6 Wikis
 
 | Wiki | Thema / Beschreibung | Link |

@@ -21,11 +21,13 @@ Die folgende Tabelle beschreibt den Aufbau des Line Attributes Objekts im Objekt
 
 ## Linienstärken und Darstellung
 Das VT verwendet einen quadratischen "Pinsel" der Größe `Line width` x `Line width`, um die Linie zu zeichnen.
+
 *   **Breite = 0:** Die Linie wird nicht gezeichnet.
 *   **Breite > 1:** Die Linie erscheint dicker.
 
 ## Linienstil (Line Art - AID 3)
 Über eine 16-Bit-Maske wird definiert, ob eine Linie durchgezogen, gestrichelt oder punktiert erscheint:
+
 *   Jedes gesetzte Bit (1) steht für einen gezeichneten Pinselstrich.
 *   Jedes nicht gesetzte Bit (0) steht für eine Lücke (Hintergrund scheint durch).
 *   **Beispiel 0xFFFF:** Durchgezogene Linie (alle Bits 1).

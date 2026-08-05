@@ -21,6 +21,7 @@ Die folgende Tabelle beschreibt den Aufbau des Soft Key Mask Objekts im Objektpo
 
 ### Funktionsweise und Zuweisung
 Eine Softkey-Maske enthält eine Liste von **Key Objekten** (ID 5), **Object Pointern** (ID 27) oder **External Object Pointern** (ID 43).
+
 *   **Reihenfolge:** Die Zuweisung zu den physischen Tasten am Terminal erfolgt strikt in der Reihenfolge der Liste.
 *   **NULL-Pointer:** Pointers auf die NULL Object ID reservieren eine Position (die folgenden Keys rücken nicht nach). Pointers auf NULL am Ende der Liste werden nicht angezeigt und nicht für das Paging berücksichtigt.
 *   **Paging:** Übersteigen die definierten Keys die Kapazität des VT, erstellt dieses automatisch Navigationshilfen (Pfeiltasten) zum Umblättern.
@@ -36,6 +37,7 @@ Die Softkey-Maske reagiert auf folgende Ereignisse:
 
 ## Zusammenspiel mit Datenmasken
 Jede Datenmaske (ID 1) verweist auf eine Soft Key Mask (ID 4). 
+
 *   Wird die Datenmaske gewechselt, wechselt das VT automatisch auch die Softkey-Belegung.
 *   Über das Kommando `Change Soft Key Mask` kann die Belegung der Tasten auch zur Laufzeit geändert werden, ohne die Hauptmaske zu wechseln.
 

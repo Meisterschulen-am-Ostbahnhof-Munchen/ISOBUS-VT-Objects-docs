@@ -3,6 +3,7 @@
 * [ISOBUS Masks in the Virtual Terminal: The Heart of Agricultural and Construction Machinery Interfaces (ISO 11783-6)]
 ----
 ISO 11783-6 describes a serial data communication network for agricultural and forestry tractors, as well as mounted, semi-mounted, trailed, or self-propelled implements. A central element is the virtual terminal, which serves as an interface for controlling and monitoring various implements. The mask types according to ISO 11783-6 are listed here:
+
 1. Working Set (ID 0): This object defines the display of data from different working sets on a single mask. It enables the simultaneous display of information from multiple implements on the same virtual terminal.
 
 2. **Data Mask** (ID 1): The data mask is a rectangular area on the display with a minimum resolution of 200 x 200 pixels. It displays various objects such as buttons, number and character fields, geometric shapes, gauges, and bar charts².

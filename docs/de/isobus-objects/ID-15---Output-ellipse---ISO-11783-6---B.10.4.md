@@ -33,6 +33,7 @@ Die Ellipse wird in ein virtuelles Rechteck (`Width` x `Height`) eingepasst.
 
 ## Winkelberechnung (Wichtig!)
 Die Winkelwerte in AID 5 und 6 werden **halbiert** übertragen (Bereich 0-180 entspricht 0-360°).
+
 *   **90° (Oben):** Wert 45
 *   **180° (Links):** Wert 90
 *   **270° (Unten):** Wert 135

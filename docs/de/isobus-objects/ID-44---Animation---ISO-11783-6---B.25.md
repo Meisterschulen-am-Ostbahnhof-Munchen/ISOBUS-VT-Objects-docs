@@ -31,6 +31,7 @@ Die folgende Tabelle beschreibt den Aufbau des Animation Objekts im Objektpool.
 
 ## Funktionsweise
 Das Animationsobjekt verwaltet eine Liste von Kind-Objekten. Wenn `Enabled` auf 1 steht, inkrementiert das Terminal den `Value` (Index) automatisch im Rhythmus des `Refresh Interval`.
+
 *   **Loop:** Nach Erreichen des `Last Child Index` wird wieder beim `First Child Index` begonnen.
 *   **Single Shot:** Die Animation stoppt beim letzten Frame.
 *   **Deaktivierung:** Das Verhalten beim Stoppen (Pause, Reset auf 1. Frame, Default-Bild oder Leer) wird über die Optionen gesteuert.

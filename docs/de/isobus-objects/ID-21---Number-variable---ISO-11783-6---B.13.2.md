@@ -28,6 +28,7 @@ Das Number Variable Objekt reagiert auf folgende Ereignisse:
 
 ## Bedeutung für die Implementierung
 Number Variables sind das Rückgrat der Kommunikation zwischen Maschine und Terminal. 
+
 *   **Effizienz:** Anstatt jedes Anzeigeobjekt einzeln zu aktualisieren, ändert die ECU nur den Wert der zentralen Variable.
 *   **Konsistenz:** Durch die Verwendung von Variablen wird sichergestellt, dass an verschiedenen Stellen der Benutzeroberfläche (z. B. Hauptmaske und Einstellungsmenü) immer derselbe aktuelle Wert angezeigt wird.
 

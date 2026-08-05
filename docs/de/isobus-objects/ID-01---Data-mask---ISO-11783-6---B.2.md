@@ -28,6 +28,7 @@ Die folgende Tabelle beschreibt den Aufbau des Data Mask Objekts im Objektpool.
 
 ### Struktur und Child-Objekte
 Die Datenmaske dient als Container für alle sichtbaren Elemente.
+
 *   **Objekt-Liste:** Jedes Kind-Objekt wird mit seiner ID und seiner Position (X/Y) definiert. Jedes Set aus ID und Position belegt 6 Bytes.
 *   **Reihenfolge:** Objekte werden in der gelisteten Reihenfolge gezeichnet (Z-Order). Höhere Indizes liegen über niedrigeren.
 *   **Koordinaten:** Die Positionierung erfolgt absolut in VT-Pixeln, bezogen auf die obere linke Ecke der Maske (0,0).

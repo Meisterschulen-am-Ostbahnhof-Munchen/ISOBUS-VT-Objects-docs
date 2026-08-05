@@ -32,6 +32,7 @@ The following table describes the structure of the Scaled Graphic object in the 
 
 ### Adjustment (Bits 3-6 of ScaleType)
 Defines the position within the area defined by `Width` and `Height`:
+
 * **Horizontal (Bits 3-4):** 0=Left, 1=Center, 2=Right.
 * **Vertical (Bits 5-6):** 0=Top, 1=Center, 2=Bottom.
 

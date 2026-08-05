@@ -35,6 +35,7 @@ Modern implements no longer have their own display; instead, they use the Univer
 
 ## 📂 Curriculum topics in this wiki
 ...
+
 * 🖥️ [ISOBUS VT object pools & HMI (ISO 11783-6)](./lehrplan_praxis/isobus_vt_objektpools_hmi.md)
 * 📱 [Mask layout, softkeys & ergonomics](./lehrplan_praxis/maskenlayout_softkeys_bedienkonzepte.md)
 * 🎛️ [Input attributes, key events & interaction diagnostics](./lehrplan_praxis/input_attributes_diagnose.md)

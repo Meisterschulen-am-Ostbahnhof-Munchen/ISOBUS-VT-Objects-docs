@@ -23,6 +23,7 @@ Die **ISO 11783-6** beschreibt ein seriell betriebenes Datenkommunikationsnetzwe
 Ich hoffe, das hilft! Wenn du noch weitere Fragen hast, stehe ich gerne zur Verfügung. 🚜
 
 Quelle: Unterhaltung mit Copilot, 18.7.2024
+
 1. ISO 11783 – STANDARD AND ITS IMPLEMENTATION - NTNU. https://folk.ntnu.no/skoge/prost/proceedings/ifac2005/Fullpapers/02392.pdf.
 2. ISO 11783-6:2018(en), Tractors and machinery for agriculture and .... https://www.iso.org/obp/ui/en/.
 3. INTERNATIONAL ISO This is a preview of ISO 11783-6:2018. Click here to .... https://webstore.ansi.org/preview-pages/ISO/preview_ISO+11783-6-2018.pdf.

@@ -25,6 +25,7 @@ Die Interpretation von AID 2 hängt stark von Bit 7 in den `Font style` Optionen
 
 ### Nicht-proportionale Schriftarten (Bit 7 = 0)
 Hier werden vordefinierte Rastergrößen verwendet (Breite x Höhe in Pixeln):
+
 *   **0:** 6x8
 *   **1:** 8x8
 *   **2:** 8x12

@@ -24,6 +24,7 @@ Die folgende Tabelle beschreibt den Aufbau des Input Boolean Objekts im Objektpo
 
 ### Darstellung
 Das VT visualisiert den Booleschen Wert (z. B. als Checkbox).
+
 *   **Wert 0:** Hintergrundfarbe wird gezeichnet.
 *   **Wert > 0:** Indikator wird in Vordergrundfarbe auf Hintergrund gezeichnet.
 

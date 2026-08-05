@@ -32,6 +32,7 @@ Die folgende Tabelle beschreibt den Aufbau des Key Objekts im Objektpool.
 
 ### Designator und Child-Objekte
 Ein Key-Objekt fungiert als Container für die grafischen Inhalte der Taste (z. B. Symbole oder Texte).
+
 *   **Koordinaten:** X- und Y-Positionen der Child-Objekte beziehen sich auf die obere linke Ecke des Softkey-Designators.
 *   **Clipping:** Alle Objekte, die außerhalb des physischen Bereichs des Softkeys liegen, werden vom VT abgeschnitten. Da die Softkey-Größen variieren, sollten Inhalte zentral platziert werden.
 

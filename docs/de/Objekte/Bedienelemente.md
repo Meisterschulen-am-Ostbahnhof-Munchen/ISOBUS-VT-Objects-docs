@@ -15,6 +15,7 @@ In der **ISO 11783-6** werden verschiedene Bedienelemente spezifiziert, die in l
 Diese Bedienelemente sind entscheidend für die effiziente Steuerung und Überwachung von Anbaugeräten über das virtuelle Terminal. Wenn du noch weitere Fragen hast, stehe ich gerne zur Verfügung! 🚜
 
 Quelle: Unterhaltung mit Copilot, 18.7.2024
+
 1. ISOBUS in Funktionalitäten - AEF Online. https://www.aef-online.org/fileadmin/user_upload/Content/pdfs/AEF_handfan_DE.pdf.
 2. ISO 11783-6:2018. https://www.iso.org/standard/71173.html.
 3. ISO 11783-6 - 2014-07 - DIN Media. https://www.dinmedia.de/de/norm/iso-11783-6/215929001.

@@ -31,6 +31,7 @@ Das Rechteck kombiniert Linien- und Fülleigenschaften:
 
 ## Geometrische Berechnung
 Die Ecken des Rechtecks ergeben sich aus der Startposition (StartX, StartY) des Objekts:
+
 *   **Ecke Oben-Links:** (StartX, StartY)
 *   **Ecke Unten-Rechts:** (StartX + Width - 1, StartY + Height - 1)
 Die Linienstärke (Line Width) muss bei der Planung berücksichtigt werden, da sie je nach VT-Implementierung nach innen oder außen wachsen kann.

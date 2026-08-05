@@ -20,6 +20,7 @@ Die folgende Tabelle beschreibt den Aufbau des External Object Definition Objekt
 
 ## Funktionsweise
 Damit Working Set A ein Objekt von Working Set B anzeigen kann (via *External Object Pointer*), muss Working Set B dieses Objekt explizit in einer *External Object Definition* für Working Set A freigeben. Dies dient der Sicherheit und Kontrolle über die eigenen Pool-Ressourcen.
+
 *   **Empfehlung:** Das `Enabled`-Bit sollte beim Laden des Pools zunächst auf 0 gesetzt sein und erst zur Laufzeit aktiviert werden, wenn der NAME des Partners bekannt und aktuell ist.
 
 ## Ereignisse (Events - Tabelle B.65)

@@ -1,6 +1,7 @@
 # Controls
 ----
 ISO 11783-6 specifies various controls used in agricultural and forestry tractors and implements. Here are the relevant controls according to ISO 11783-6:
+
 1. **Key (Soft Key)** (ID 5): Softkeys are programmable buttons on the virtual terminal. The softkey interface allows these keys to be customized depending on the context and implement. The operator can use them to perform specific functions or adjust settings.¹
 2. **Button** (ID 6): Buttons are physical buttons or keys on the control panel. They are used to trigger specific actions, such as starting or stopping an implement or changing settings.¹
 These controls are essential for the efficient control and monitoring of implements via the virtual terminal. If you have any further questions, please feel free to ask! 🚜

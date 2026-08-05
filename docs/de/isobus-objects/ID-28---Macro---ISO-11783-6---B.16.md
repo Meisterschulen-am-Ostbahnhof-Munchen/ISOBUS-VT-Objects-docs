@@ -39,12 +39,14 @@ Makros können fast alle kommandierenden VT-Funktionen nutzen:
 
 Makros lösen selbst keine Events aus, werden aber durch Events anderer Objekte gestartet.
 Das Makro Objekt unterstützt die Kommandos:
+
 *   `Execute Macro`
 *   `Execute Extended Macro`
 *   `Get Attribute Value`
 
 ## Bedeutung für die Implementierung
 Makros sind ein mächtiges Werkzeug zur **Performance-Optimierung**:
+
 1.  **Reaktionszeit:** Ein Maskenwechsel direkt nach einem Tastendruck erfolgt per Makro ohne CAN-Verzögerung.
 2.  **Entlastung:** Die ECU muss sich nicht um rein grafische Belange kümmern (z. B. das Umschalten eines Icons beim Drücken eines Buttons).
 3.  **Komplexität:** Mehrere Aktionen können in ein einziges Makro gepackt werden (z. B. "Variable auf 0 setzen" UND "Erfolgsmeldung einblenden" UND "Ton abspielen").

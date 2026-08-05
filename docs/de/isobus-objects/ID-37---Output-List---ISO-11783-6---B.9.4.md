@@ -24,6 +24,7 @@ Die folgende Tabelle beschreibt den Aufbau des Output List Objekts im Objektpool
 
 ## Funktionsweise
 Die Output List verhält sich ähnlich wie eine Animation, wird aber manuell über den Index gesteuert.
+
 *   **Index:** Der angezeigte Inhalt wird durch den Wert (Value oder Variable) bestimmt. Index 0 zeigt das erste Objekt in der Liste.
 *   **Spezialwert 255:** Bei Wert 255 wird nichts angezeigt (das Objekt ist unsichtbar).
 *   **NULL-Pointer:** Wenn ein Listeneintrag die ID NULL (65535) hat, wird für diesen Index ebenfalls nichts angezeigt.

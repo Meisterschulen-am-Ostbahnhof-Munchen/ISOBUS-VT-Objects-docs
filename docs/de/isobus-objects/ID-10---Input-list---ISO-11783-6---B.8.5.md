@@ -25,6 +25,7 @@ Die folgende Tabelle beschreibt den Aufbau des Input List Objekts im Objektpool.
 
 ## Funktionsweise und Darstellung
 Die Input List zeigt im normalen Zustand nur das aktuell ausgewählte Element an.
+
 *   **Auswahl:** Wenn der Bediener das Objekt öffnet, zeigt das VT die Liste der verfügbaren Einträge an.
 *   **Index:** Der übertragene Wert ist der **nullbasierte Index** des gewählten Elements in der Liste.
 *   **Spezialwert 255:** Signalisiert "keine Auswahl".

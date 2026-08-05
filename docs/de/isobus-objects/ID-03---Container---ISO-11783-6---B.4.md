@@ -25,6 +25,7 @@ Die folgende Tabelle beschreibt den Aufbau des Container Objekts im Objektpool.
 
 ### Relative Positionierung und Clipping
 Innerhalb eines Containers beginnt ein **eigenes Koordinatensystem**:
+
 *   **Relative Koordinaten:** Die X- und Y-Positionen der Child-Objekte beziehen sich auf die obere linke Ecke des Containers.
 *   **Clipping:** Alle Objekte oder Teile von Objekten, die außerhalb der durch `Width` und `Height` definierten Fläche liegen, werden vom VT abgeschnitten und nicht angezeigt.
 *   **Gruppen-Verschiebung:** Wenn der Container verschoben wird (z. B. per `Change Child Position`), verschieben sich alle darin enthaltenen Objekte automatisch mit.
@@ -41,6 +42,7 @@ Der Container reagiert auf folgende Ereignisse:
 
 ## Nutzung in der Praxis
 Container sind essenziell für dynamische Benutzeroberflächen:
+
 *   **Ein-/Ausblenden:** Mit dem Kommando `IsoVtcCmd_ObjHideShow` können komplexe Bedienfelder oder Statusanzeigen auf Knopfdruck erscheinen oder verschwinden.
 *   **Platzersparnis:** Mehrere Container können an der gleichen Stelle liegen; durch geschicktes Umschalten der Sichtbarkeit lassen sich verschiedene "Registerkarten" oder Modi realisieren.
 

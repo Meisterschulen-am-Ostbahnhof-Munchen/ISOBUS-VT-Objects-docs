@@ -3,6 +3,7 @@ For an ISOBUS object pool (IOP) to be accepted and loaded by the Virtual Termina
 Here are the most important rules that every programmer needs to know:
 ## 1. Structural Integrity (Parsing Errors)
 These are the most common errors that cause the VT parser to malfunction.
+
 * **Incorrect Length Specifications:** If an object specifies "Five child objects follow," but the byte stream only contains four (or six), the VT incorrectly reads the next object byte as an attribute of the previous one. The pool is then corrupted.
 
 `` * **Unknown Object Types:** An object type ID that is not defined in the standard (and the supported VT version).

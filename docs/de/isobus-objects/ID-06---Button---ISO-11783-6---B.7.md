@@ -36,6 +36,7 @@ Die folgende Tabelle beschreibt den Aufbau des Button Objekts im Objektpool.
 
 ### Aufbau und Darstellung
 Der Button besteht aus drei Bereichen:
+
 1.  **Button Area:** Die gesamte durch Width/Height definierte Fläche.
 2.  **Button Border:** Ein proprietärer 8-Pixel-Rahmen (wenn nicht durch Option Bit 5 entfernt).
 3.  **Button Face:** Die innere Fläche für Inhalte (Button Area minus Border).

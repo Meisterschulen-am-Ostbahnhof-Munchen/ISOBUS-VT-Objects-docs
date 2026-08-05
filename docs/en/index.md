@@ -34,6 +34,7 @@ html_meta:
 This documentation is part of the knowledge database of the master craftsman schools at Munich East Station.
 
 **Useful Links:**
+
 * [🏠 Main Menu](https://www.ms-muc-docs.de/)
 * [🔍 Super Search (All Wikis)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs/en/latest/)
 * [📄 Download PDF Handbook](https://meisterschulen-am-ostbahnhof-munchen.github.io/ISOBUS-VT-Objects-docs/en/pdf/isobus-vt-objects-docs-en.pdf)

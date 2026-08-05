@@ -21,6 +21,7 @@ Die folgende Tabelle beschreibt den Aufbau des Colour Palette Objekts im Objektp
 
 ## Funktionsweise
 Wenn ein Colour Palette Objekt aktiv ist, ersetzt es die Standardfarben des VTs für dieses Working Set. Die Farben werden beginnend bei Index 0 aufgefüllt.
+
 *   **Aktivierung:** Eine Colour Palette kann über das *Working Set Special Controls* Objekt (ID 47) als Standard gesetzt oder zur Laufzeit per `Select Colour Map or Palette` Kommando aktiviert werden.
 *   **Transparenz:** Der Alpha-Kanal ermöglicht halbtransparente Farben. Dies sollte jedoch mit Vorsicht genutzt werden, insbesondere bei überlagerten Objekten.
 
@@ -29,6 +30,7 @@ Während die *Colour Map* nur die Zuweisung (Indizierung) vorhandener Terminal-F
 
 ## Ereignisse (Events)
 Das Objekt selbst löst keine Events aus, beeinflusst aber die Darstellung aller Objekte, die Farben verwenden.
+
 *   **On Change Attribute:** Wird ausgelöst, wenn Attribute geändert werden. Das VT muss ggf. den gesamten Bildschirm neu zeichnen.
 
 ----

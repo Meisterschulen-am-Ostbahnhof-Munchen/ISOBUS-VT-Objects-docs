@@ -18,6 +18,7 @@ Die folgende Tabelle beschreibt den Aufbau des External Object Pointer Objekts i
 
 ## Funktionsweise und Regeln
 Das Objekt ermöglicht die Anzeige von Objekten aus fremden Objektpools.
+
 *   **Anzeige:** Das Terminal sucht das Objekt im Pool der durch den NAME identifizierten ECU und zeichnet es an die Stelle des Pointers.
 *   **Kontext:** Ereignisse (z. B. Button Press) und Makros werden im Kontext des **Original-Working-Sets** (Besitzer des Objekts) ausgeführt. Nachrichten (z. B. Button Activation) gehen an den Besitzer.
 *   **Fallback:** Wenn das externe Objekt nicht gefunden wird, nicht freigegeben ist oder ungültig ist, wird das `Default Object` angezeigt.

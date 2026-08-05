@@ -30,6 +30,7 @@ Die folgende Tabelle beschreibt den Aufbau des Scaled Graphic Objekts im Objektp
 
 ### Justierung (Bits 3-6 von ScaleType)
 Definiert die Position innerhalb des durch `Width` und `Height` definierten Bereichs:
+
 *   **Horizontal (Bits 3-4):** 0=Links, 1=Mitte, 2=Rechts.
 *   **Vertikal (Bits 5-6):** 0=Oben, 1=Mitte, 2=Unten.
 

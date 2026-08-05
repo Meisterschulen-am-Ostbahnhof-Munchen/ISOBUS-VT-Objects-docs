@@ -41,12 +41,14 @@ Einige Objekte haben sehr spezifische Regeln, die oft übersehen werden:
 ## 5. Ressourcen-Limits
 
 Auch wenn der Pool syntaktisch korrekt ist, kann er abgelehnt werden, wenn er die Hardware-Limits des VTs sprengt:
+
 *   **Speicher voll:** Der Pool ist größer als der verfügbare Flash-Speicher des VTs (Memory Out of range).
 *   **Zu viele Objekte:** Einige ältere VTs haben Limits für die absolute Anzahl an Objekten (z. B. max. 65534, was durch das 16-Bit ID-Feld vorgegeben ist, aber reale Limits liegen oft niedriger).
 *   **Softkey-Limit:** Eine Softkey-Maske, die mehr Keys definiert, als das VT verwalten kann (obwohl Paging vorgeschrieben ist, gibt es oft harte Limits).
 
 ## Tipps zur Fehlersuche
 Wenn das VT beim Laden "Object Pool Error" meldet:
+
 1.  Prüfen, ob **ID 0** existiert.
 2.  Prüfen, ob alle referenzierten IDs tatsächlich im Pool enthalten sind.
 3.  Prüfen, ob alle `Number of objects/macros/bytes` Felder exakt mit den folgenden Daten übereinstimmen.

@@ -29,6 +29,7 @@ Die folgende Tabelle beschreibt den Aufbau des Fill Attributes Objekts im Objekt
 
 ## Verwendung von Füllmustern (Wichtig!)
 Wenn ein Muster (AID 3) verwendet wird, gelten strenge Regeln für die referenzierte Grafik:
+
 *   **Ausrichtung:** Bei monochromen Grafiken muss die Breite durch 8 teilbar sein. Bei 16-Farben-Grafiken muss sie durch 2 teilbar sein.
 *   **Reihenfolge:** Bei dynamischen Änderungen muss erst das `Fill pattern` und dann der `Fill type` gesetzt werden, um Fehler im VT zu vermeiden.
 

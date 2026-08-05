@@ -46,6 +46,7 @@ Das Picture Graphic Objekt reagiert auf folgende Ereignisse:
 
 ## Bedeutung für die Implementierung
 Picture Graphics sind essenziell für ein modernes HMI. 
+
 *   **Verschwendung vermeiden:** Da Bitmaps viel Speicher im VT belegen, sollten sie so klein wie möglich gehalten werden. 
 *   **Ziederverwendung:** Ein Bild kann im Pool einmal definiert und von vielen Objekten (z. B. mehreren Buttons) referenziert werden.
 *   **Icons:** Sie werden häufig als "Designatoren" für Softkeys (ID 5) oder als Symbole in Containern (ID 3) verwendet.

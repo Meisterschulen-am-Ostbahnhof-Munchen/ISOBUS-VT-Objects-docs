@@ -18,6 +18,7 @@ Die folgende Tabelle beschreibt den Aufbau des External Reference NAME Objekts i
 
 ## Funktionsweise
 Dieses Objekt fungiert als "Adressbucheintrag". Wenn eine ECU ein Objekt von einer anderen ECU einbinden möchte, nutzt sie diesen Eintrag, um dem Terminal mitzuteilen, von welcher ECU (identifiziert durch den NAME) das Objekt stammt.
+
 *   **Aktivierung:** Sollte initial deaktiviert sein. Wenn das referenzierte Working Set online ist, kann die ECU dieses Objekt aktivieren.
 
 ## Ereignisse (Events - Tabelle B.67)

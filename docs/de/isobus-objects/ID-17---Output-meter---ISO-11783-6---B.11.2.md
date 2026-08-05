@@ -30,12 +30,14 @@ Die folgende Tabelle beschreibt den Aufbau des Output Meter Objekts im Objektpoo
 
 ## Funktionsweise und Darstellung
 Das Instrument wird in ein Quadrat eingepasst. Die Nadel bewegt sich auf einem Bogen, der durch Start- und Endwinkel definiert ist.
+
 *   **Winkel-Logik:** Wie bei der Ellipse werden Winkel halbiert übertragen (z. B. 45 für 90°).
 *   **Ticks (AID 6):** Bei zwei oder mehr Ticks wird einer am Anfang und einer am Ende des Bogens gezeichnet; weitere Ticks werden gleichmäßig dazwischen verteilt. Empfohlene Länge: 10 % der Meter-Breite.
 *   **Transparenz:** Das Meter-Objekt selbst ist transparent. Dadurch können Bitmaps (z. B. ein schönes Zifferblatt) dahinter platziert werden.
 
 ## Deflektionsrichtung (AID 5, Bit 3)
 Dies ist ein kritisches Attribut für die intuitive Bedienung:
+
 *   **0 (Anticlockwise):** Der Wert steigt gegen den Uhrzeigersinn.
 *   **1 (Clockwise):** Der Wert steigt im Uhrzeigersinn (Standard für die meisten analogen Instrumente).
 

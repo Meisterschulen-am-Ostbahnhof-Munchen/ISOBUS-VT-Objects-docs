@@ -29,6 +29,7 @@ Die folgende Tabelle beschreibt den Aufbau des Input String Objekts im Objektpoo
 
 ## Funktionsweise und Optionen
 Das Input String Objekt bietet flexible Möglichkeiten zur Textdarstellung:
+
 *   **Auto-Wrap:** Wenn aktiviert (Bit 1), bricht das VT den Text automatisch um, wenn die Breite des Feldes überschritten wird.
 *   **Justierung:** Über AID 8 wird sowohl die horizontale als auch die vertikale Ausrichtung gesteuert.
 *   **Validierung:** Durch die Verknüpfung mit einem `Input Attributes` Objekt kann die Eingabe auf bestimmte Zeichensätze begrenzt werden.

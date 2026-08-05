@@ -17,6 +17,7 @@ Die folgende Tabelle beschreibt den Aufbau des Colour Map Objekts im Objektpool.
 
 ### Struktur der Einträge
 Die Einträge definieren eine Umleitung der Farb-Indizes.
+
 *   **Beispiel:** Wenn der Eintrag an Index 0 den Wert 1 hat, wird überall dort, wo im Design Farbe 0 (Schwarz) verwendet wurde, nun Farbe 1 (Weiß) angezeigt.
 *   Die Länge der Einträge hängt vom VT-Typ ab:
     *   **Typ 0 (Monochrom):** 2 Einträge.
@@ -25,6 +26,7 @@ Die Einträge definieren eine Umleitung der Farb-Indizes.
 
 ## Funktionsweise
 Normalerweise verwendet ein Terminal eine Standard-Farbpalette (z. B. 256 Farben gemäß ISO). Mit der Colour Map kann eine Working Set definieren, dass z. B. der Farbindex 1 (Standard: Rot) stattdessen als Blau dargestellt werden soll.
+
 *   **Indirektion:** Dies bietet eine Ebene der Indirektion. Anstatt jedes Objekt einzeln zu ändern, kann durch einfaches Umschalten der Colour Map das gesamte Farbschema der Anwendung gewechselt werden (z. B. Tag-/Nacht-Modus).
 *   **Aktivierung:** Eine Colour Map wird über das Kommando `Select Colour Map` aktiviert.
 

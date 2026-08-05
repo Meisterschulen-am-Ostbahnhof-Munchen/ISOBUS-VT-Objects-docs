@@ -34,6 +34,7 @@ Das Input Attributes Objekt reagiert auf folgende Ereignisse:
 
 ## Bedeutung für die Implementierung
 Input Attributes sind ein wichtiges Werkzeug zur Vermeidung von Fehlbedienungen.
+
 *   **Beispiel Numerisch:** Ein Validierungsstring "0123456789.," begrenzt ein Textfeld auf rein numerische Zeichen.
 *   **Beispiel Sonderzeichen:** Verbot von Zeichen wie ";" oder "'", die in Datenbanken oder Dateisystemen Probleme verursachen könnten.
 

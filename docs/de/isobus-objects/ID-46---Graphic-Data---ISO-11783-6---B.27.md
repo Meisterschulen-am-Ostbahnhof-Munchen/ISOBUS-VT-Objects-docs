@@ -18,6 +18,7 @@ Die folgende Tabelle beschreibt den Aufbau des Graphic Data Objekts im Objektpoo
 
 ## Besonderheiten
 Das **Graphic Data** Objekt (ab VT Version 6) dient zur Speicherung von Rohdaten für Grafiken, insbesondere im **PNG-Format**. Im Gegensatz zum klassischen *Picture Graphic* Objekt (ID 20), das auf einfachen Bitmaps basierte, nutzt dieses Objekt den Industriestandard PNG.
+
 *   **Eigenständigkeit:** Das Objekt enthält seine eigene Farbpalette (innerhalb der PNG-Daten) und wird daher **nicht** von der *Colour Map* (ID 39) oder *Colour Palette* (ID 45) der Working Set beeinflusst.
 
 ## Verwendung

@@ -21,6 +21,7 @@ Die folgende Tabelle beschreibt den Aufbau des Working Set Special Controls Obje
 
 ## Bedeutung und Funktionsweise
 Dieses Objekt ist der zentrale Anlaufpunkt für das Terminal beim Laden des Pools (ab VT Version 6).
+
 *   **Farben:** Es definiert, welche *Colour Map* und *Colour Palette* **initial** beim Aktivieren des Pools verwendet werden sollen.
 *   **Sprachen:** Es definiert eine Liste von unterstützten Sprachen, die die Liste im *Working Set* Objekt (ID 0) **ersetzt**. Durch die Kombination von Sprach- und Ländercode (z. B. `pt` + `BR` vs. `pt` + `PT`) ist eine präzisere Auswahl möglich.
 *   **Erweiterbarkeit:** Das Attribut `Number of Bytes to follow` erlaubt es, das Objekt in Zukunft um neue Attribute zu erweitern, ohne ältere VTs zu verwirren (diese überspringen einfach die unbekannten Bytes).

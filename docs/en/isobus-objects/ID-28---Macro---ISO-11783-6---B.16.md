@@ -38,6 +38,7 @@ Macros can use almost all commanding VT functions:
 Macros do not trigger events themselves, but are started by events from other objects.
 
 The Macro object supports the following commands:
+
 * `Execute Macro`
 * `Execute Extended Macro`
 * `Get Attribute Value`

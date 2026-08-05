@@ -4,7 +4,10 @@ import sys
 import yaml
 import hashlib
 import urllib.request
+from io import BytesIO
 from unittest.mock import MagicMock
+
+from PIL import Image
 
 # Mock weasyprint before importing mkdocs to avoid GObject/GTK loading errors on Windows and CI
 sys.modules['weasyprint'] = MagicMock()
@@ -55,6 +58,11 @@ def _detect_image_ext(data):
         return '.svg'
     return None
 
+def _convert_bmp_to_png(data, output_path):
+    """Write BMP data as PNG because Typst does not support BMP images."""
+    with Image.open(BytesIO(data)) as image:
+        image.convert('RGBA').save(output_path, format='PNG')
+
 def download_remote_image(url, docs_dir):
     # Create downloaded directory under docs/img/downloaded
     downloaded_dir = os.path.join(docs_dir, 'img', 'downloaded')
@@ -74,7 +82,7 @@ def download_remote_image(url, docs_dir):
     }
 
     # Check if a file with this hash and any known extension already exists
-    for ext in ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.bmp']:
+    for ext in ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp']:
         local_path = os.path.join(downloaded_dir, f"{url_hash}{ext}")
         if os.path.exists(local_path):
             return f"img/downloaded/{url_hash}{ext}"
@@ -102,14 +110,19 @@ def download_remote_image(url, docs_dir):
 
             # Override extension if magic bytes reveal a different actual format
             actual_ext = _detect_image_ext(data)
-            if actual_ext and actual_ext != ext:
+            if actual_ext == '.bmp':
+                ext = '.png'
+            elif actual_ext and actual_ext != ext:
                 ext = actual_ext
 
             local_name = f"{url_hash}{ext}"
             local_path = os.path.join(downloaded_dir, local_name)
 
-            with open(local_path, 'wb') as out_file:
-                out_file.write(data)
+            if actual_ext == '.bmp':
+                _convert_bmp_to_png(data, local_path)
+            else:
+                with open(local_path, 'wb') as out_file:
+                    out_file.write(data)
 
             return f"img/downloaded/{local_name}"
     except Exception as e:

@@ -74,15 +74,15 @@ Modern implements no longer have their own display; instead, they use the Univer
 
 | **Wiki 0** | **Wiki of the Master Schools**<br>General information, Curriculum 2025 & Main Wiki. | [📖 Open](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/de/latest/) |
 
-| **Wiki 1** | **C Programming in ISOBUS**<br>Fundamentals of C programming and the ISOBUS environment. | [🚜 Open](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/install-isobus-environment-docs/de/latest/) |
+| **Wiki 1** | **C Programming in ISOBUS**<br>Fundamentals of C programming and the ISOBUS environment. | [🚜 Open](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/install-isobus-environment-docs/en/latest/) |
 
-| **Wiki 2** | **ISOBUS Virtual Terminal (VT)**<br>User interfaces, ISO Designer, VT object pools & HMI. | [🖥️ Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs/de/latest/) |
+| **Wiki 2** | **ISOBUS Virtual Terminal (VT)**<br>User interfaces, ISO Designer, VT object pools & HMI. | [🖥️ Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs/en/latest/) |
 
-| **Wiki 3** | **ISOBUS Technology & Machine Systems** <br> Hydraulics, Pneumatics, Motors, High-Voltage Technology, Gearboxes & Machine Safety. | [📡 Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-other-docs/de/latest/) |
+| **Wiki 3** | **ISOBUS Technology & Machine Systems** <br> Hydraulics, Pneumatics, Motors, High-Voltage Technology, Gearboxes & Machine Safety. | [📡 Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-other-docs/en/latest/) |
 
-| **Wiki 4** | **Visual Programming Languages** <br> Low-Code Development, IEC 61499 & 4diac IDE (Main Curriculum Topic). | [🧩 Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/) |
+| **Wiki 4** | **Visual Programming Languages** <br> Low-Code Development, IEC 61499 & 4diac IDE (Main Curriculum Topic). | [🧩 Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/en/latest/) |
 
-| **Wiki 5** | **Electronic Tools & Measuring Instruments** <br> Handbook for Crimping Technology, Soldering Stations, Oscilloscopes & Microscopes. | [🛠️ Open](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/werkzeug-docs/de/latest/) |
+| **Wiki 5** | **Electronic Tools & Measuring Instruments** <br> Handbook for Crimping Technology, Soldering Stations, Oscilloscopes & Microscopes. | [🛠️ Open](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/werkzeug-docs/en/latest/) |
 
 
 ```

@@ -81,9 +81,9 @@ This documentation is part of the knowledge database of the master craftsman sch
 
 * [🏠 Main Menu ](https://www.ms-muc-docs.de/)
 
-* [🔍 Super Search (All Wikis) ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/de/latest/)
+* [🔍 Super Search (All Wikis) ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs/en/latest/)
 
-* [📄 Download PDF Manual ](https://meisterschulen-am-ostbahnhof-munchen.github.io/ISOBUS-VT-Objects-docs/pdf/isobus-vt-objects-docs.pdf)
+* [📄 Download PDF Manual ](https://meisterschulen-am-ostbahnhof-munchen.github.io/ISOBUS-VT-Objects-docs/en/pdf/isobus-vt-objects-docs-en.pdf)
 
 ]
 ---
@@ -103,4 +103,4 @@ Content
 
 
 
-[🏠 Main Menu ](https://www.ms-muc-docs.de/) | [🔍 Super Search (All Wikis) ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/de/latest/) | [Quick Search (IEC 61499) ](https://www.ms-muc-docs.de/iec-61499/abk%C3%BCrzungen-und-bedeutungen/abk%C3%BCrzungen-und-bedeutungen)
+[🏠 Main Menu ](https://www.ms-muc-docs.de/) | [🔍 Super Search (All Wikis) ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs/en/latest/) | [Quick Search (IEC 61499) ](https://www.ms-muc-docs.de/iec-61499/abk%C3%BCrzungen-und-bedeutungen/abk%C3%BCrzungen-und-bedeutungen)

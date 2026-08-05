@@ -7,7 +7,8 @@ The button object, as defined in B.7, is a graphical element displayed on the VT
 
 **Overview of the Button Object**
 
-The button object, as defined in B.7, is a graphical element displayed on the VT's data screen. ### Attributes and Record Format (Table B.14)
+The button object, as defined in B.7, is a graphical element displayed on the VT's data screen.
+### Attributes and Record Format (Table B.14)
 
 The following table describes the structure of the Button object in the object pool.
 

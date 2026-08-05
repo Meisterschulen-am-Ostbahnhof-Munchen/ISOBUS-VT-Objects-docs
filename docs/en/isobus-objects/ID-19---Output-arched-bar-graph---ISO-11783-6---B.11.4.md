@@ -51,7 +51,8 @@ The arc-shaped bar is drawn based on a virtual ellipse object within the enclosi
 * **Angle Logic:** Angle values are transmitted in halves (as with the meter object), e.g., 45 for 90°.
 * **Deflection (AID 5, Bit 4):** Controls whether the bar "grows" clockwise or counterclockwise.
 * **Transparency:** The object is transparent, allowing it to be overlaid with background images.
-* **Transparency:** The object is transparent, enabling it to be overlaid with background images. ## Events (Table B.38)
+* **Transparency:** The object is transparent, enabling it to be overlaid with background images.
+## Events (Table B.38)
 
 The output Arched Bar Graph object responds to the following events:
 

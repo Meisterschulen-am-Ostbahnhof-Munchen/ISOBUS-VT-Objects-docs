@@ -45,7 +45,8 @@ The Picture Graphic object stores pixel graphics in binary form within the objec
 * **RLE Compression (Bit 2):** Run-Length Encoding can save memory for simple graphics (many areas of the same color).
 
 ### Transparency and Effects
-* **Transparency (Bit 0):** When enabled, the color defined in AID 3 is not drawn; instead, the background shows through. ## Events (Events - Table B.40)
+* **Transparency (Bit 0):** When enabled, the color defined in AID 3 is not drawn; instead, the background shows through.
+## Events (Events - Table B.40)
 
 The Picture Graphic object reacts to the following events:
 

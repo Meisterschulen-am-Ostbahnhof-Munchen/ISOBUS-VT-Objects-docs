@@ -18,7 +18,8 @@ Like the *Number Variable*, the *String Variable* is a pure data object without 
 * **Fixed Length:** The length of the variable is set in the pool during creation and cannot be increased at runtime.
 * **Padding:** If a string shorter than the defined length is stored, the VT automatically pads the remainder with spaces.
 * **Data Types:** Supports both 8-bit characters (default) and WideStrings (for special characters). The ECU can switch the type between these formats at runtime.
-* **Fixed Length:** ## Referencing and Updating
+* **Fixed Length:**
+## Referencing and Updating
 * **Referencing:** Objects such as *Input String* (ID 8) or *Output String* (ID 11) reference the ID of a string variable via their attribute `Variable reference`.
 * **Automatic Redraw:** As soon as the ECU changes the value of the variable via the `Change String Value` command, the VT automatically updates all visible objects that use this variable.
 

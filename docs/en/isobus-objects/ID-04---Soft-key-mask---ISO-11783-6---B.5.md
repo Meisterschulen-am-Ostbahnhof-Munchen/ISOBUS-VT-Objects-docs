@@ -27,7 +27,8 @@ A softkey mask contains a list of **Key Objects** (ID 5), **Object Pointers** (I
 * **Order:** The assignment to the physical keys on the terminal is strictly in the order of the list.
 * **NULL Pointers:** Pointers to the NULL Object ID reserve a position (the following keys do not move up). Pointers to NULL at the end of the list are not displayed and are not considered for paging.
 * **Paging:** If the defined keys exceed the capacity of the terminal, it automatically creates navigation aids (arrow keys) for page turning.
-* ## Events (Table B.9)
+*
+## Events (Table B.9)
 
 The softkey mask reacts to the following events:
 

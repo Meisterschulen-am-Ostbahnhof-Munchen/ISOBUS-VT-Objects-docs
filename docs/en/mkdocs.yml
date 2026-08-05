@@ -8,7 +8,7 @@ markdown_extensions:
     permalink: true
 plugins:
 - search
-site_name: 'ISOBUS Virtual Terminal: Benutzeroberfläche und Objekte (2)'
+site_name: ISOBUS Virtual Terminal: User Interface and Objects (2)
 site_url: https://docs.ms-muc-docs.de/projects/ISOBUS-VT-Objects-docs/
 extra:
   alternate:
@@ -20,6 +20,7 @@ extra:
     name: English
 repo_url: https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/ISOBUS-VT-Objects-docs
 edit_uri: edit/main/docs/en/
+view_uri: blob/main/docs/en/
 theme:
   features:
   - navigation.sections

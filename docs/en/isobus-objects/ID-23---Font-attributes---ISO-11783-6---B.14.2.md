@@ -4,21 +4,14 @@ The **Font Attributes** object with **ID 23** defines the appearance of text (fo
 The following table describes the structure of the Font Attributes object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 23 | 3 | Object type = Font Attributes. |
-
 [1] | **Font colour** | Integer | 1 | 0 – 255 | 4 | Text color. |
-
 [2] | **Font size** | Integer | 1 | 0 – 255 | 5 | Font size (see below). |
-
 [3] | **Font type** | Integer | 1 | 0 – 255 | 6 | Character set (see ISO Table K.1). |
-
 [4] | **Font style** | Bitmask | 1 | 0 – 255 | 7 | Bit 0: Bold<br>Bit 1: Crossed Out<br>Bit 2: Underlined<br>Bit 3: Italic<br>Bit 4: Inverted<br>Bit 5: Flashing (Inverted/Style)<br>Bit 6: Flashing (Hidden/Style)<br>Bit 7: Proportional (0=Fixfont, 1=Prop.). |
 | - | **Number of macros to follow** | Integers | 1 | 0 – 255 | 8 | Number of following macro references. |
 | - | **Repeat:** {Event ID} | Integers | 1 | 0 – 255 | var. | Event ID that triggers the macro. |
-
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ## Font Sizes and Render Modes

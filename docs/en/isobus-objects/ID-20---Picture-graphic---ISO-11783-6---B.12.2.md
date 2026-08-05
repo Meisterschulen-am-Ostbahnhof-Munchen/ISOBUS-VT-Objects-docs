@@ -4,31 +4,18 @@ The **Picture Graphic** object with **ID 20** is used to display raster graphics
 The following table describes the structure of the Picture Graphic object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 20 | 3 | Object type = Picture Graphic. |
-
 | [1] | **Width** | Integer | 2 | 0 – 65535 | 4 – 5 | Target width in pixels (height is scaled proportionally). |
-
 | [4] | **Actual width** | Integer | 2 | 0 – 65535 | 6 – 7 | Actual width of the raw data. |
-
 | [5] | **Actual height** | Integer | 2 | 0 – 65535 | 8 – 9 | Actual height of the raw data. |
-
 | [6] | **Format** | Integer | 1 | 0 – 2 | 10 | 0=Monochrome (1 bit), 1=16 colors (4 bits), 2=256 colors (8 bits). |
-
 | [2] | **Options** | Bitmask | 1 | 0 – 7 | 11 | Bit 0: Transparency (0=Opaque, 1=Transparent) <br>Bit 1: Blinking <br>Bit 2: Data format (0=Raw, 1=Run-Length Encoded). |
-
 | [3] | **Transparency color** | Integer | 1 | 0 – 255 | 12 | Color index to be displayed transparently. |
-
 | - | **Number of bytes in raw data** | Integer | 4 | 0 – 2^32-1 | 13 – 16 | Size of image data. |
-
 | - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 17 | Number of following macro references. |
-
 | - | **Repeat:** {raw data} | Integer | 1 | 0 – 255 | 18 ... | Image data (bytes). |
-
 | - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | (After image data) Event ID that triggers the macro. |
-
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ## Functionality and Display

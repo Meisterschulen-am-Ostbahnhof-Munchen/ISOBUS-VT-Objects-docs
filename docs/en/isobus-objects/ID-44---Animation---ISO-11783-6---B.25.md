@@ -4,41 +4,23 @@ The **Animation** object with **ID 44** (from VT version 5 onwards) enables the 
 The following table describes the structure of the Animation object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 44 | 3 | Object type = Animation. |
-
 | [1] | **Width** | Integer | 2 | 0 – 65535 | 4 – 5 | Width of the animation area in pixels. |
-
 [2] | **Height** | Integer | 2 | 0 – 65535 | 6 – 7 | Height of the animation area in pixels. |
-
 [3] | **Refresh Interval** | Integer | 2 | 0 – 65535 | 8 – 9 | Time in ms between frames (0 = Timer off). |
-
 [4] | **Value** | Integer | 1 | 0 – 255 | 10 | Current list index of the displayed object (0-254). |
-
 [5] | **Enabled** | Integer | 1 | 0 or 1 | 11 | 0 = Stopped (Disabled), 1 = Animating (Enabled). |
-
 [6] | **First Child Index** | Integer | 1 | 0 – 254 | 12 | Start index of the animation sequence. |
-
 [7] | **Last Child Index** | Integer | 1 | 0 – 254 | 13 | End index of the animation sequence. |
-
 [8] | **Default Child Index** | Integer | 1 | 0 – 254 | 14 | Index of the object displayed when the animation is disabled (depending on Options). |
-
 [9] | **Options** | Bitmask | 1 | 0 – 7 | 15 | Bit 0: Sequence (0=Single Shot, 1=Loop) | Bits 1–2: Disabled Behavior (0=Pause, 1=Reset to First, 2=Default Object, 3=Blank). |
-
 - | **Number of objects to follow** | Integer | 1 | 0 – 255 | 16 | Number of frames (objects) included. |
-
 | - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 17 | Number of following macro references. |
-
 | - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534 | 18 + ... | Object ID of a frame (child object). |
-
 | - | {X Location} | Signed Integer | 2 | -32768 to +32767 | 20 + ... | X position relative to the animation. |
-
 | - | {Y Location} | Signed Integer | 2 | -32768 to +32767 | 22 + ... | Y position relative to the animation. |
-
 | - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | Event ID that triggers the macro. |
-
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ## Functionality

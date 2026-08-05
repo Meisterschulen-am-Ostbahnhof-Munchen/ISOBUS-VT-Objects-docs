@@ -4,39 +4,22 @@ The **Output Number** object with **ID 12** is used to display numeric values. L
 The following table describes the structure of the Output Number object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 12 | 3 | Object type = Output Number. |
-
 [1] | **Width** | Integer | 2 | 0 – 65535 | 4 – 5 | Width of the display field in pixels. |
-
 [2] | **Height** | Integer | 2 | 0 – 65535 | 6 – 7 | Height of the display field in pixels. |
-
 [3] | **Background color** | Integer | 1 | 0 – 255 | 8 | Background color. |
-
 [4] | **Font attributes** | Integer | 2 | 0 – 65534 | 9 – 10 | Object ID of a font attribute object. |
-
 [5] | **Options** | Bitmask | 1 | 0 – 15 | 11 | Bit 0: Transparent <br> Bit 1: Display leading zeros <br> Bit 2: Display zero as blank <br> Bit 3: Truncate (1=Trim, 0=Round). |
-
 | [6] | **Variable reference** | Integer | 2 | 0 – 65534, 65535 | 12 – 13 | Reference to a Number Variable object for the raw value. |
-
 | [12] | **Value** | Integer | 4 | 0 – 2^32-1 | 14 – 17 | Raw value (unsigned 32-bit). Only if Variable Reference == NULL. |
-
 | [7] | **Offset** | Signed Integer | 4 | -2^31 – 2^31-1 | 18 – 21 | Scaling offset. |
-
 | [8] | **Scale** | Float | 4 | - | 22 – 25 | Scaling factor. |
-
 | [9] | **Number of decimals** | Integer | 1 | 0 – 7 | 26 | Number of decimal places. |
-
 | [10] | **Format** | Boolean | 1 | 0 or 1 | 27 | 0 = Fixed point, 1 = Exponential. |
-
 | [11] | **Justification** | Integer | 1 | 0 – 15 | 28 | Text alignment: Bits 0-1 (horizontal), Bits 2-3 (vertical). |
-
 | - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 29 | Number of following macro references. |
-
 | - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | Event ID that triggers the macro. |
-
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ## Scaling Logic

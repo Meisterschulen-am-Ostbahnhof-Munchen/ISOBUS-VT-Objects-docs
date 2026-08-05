@@ -4,19 +4,12 @@ The **External Object Definition** object with **ID 41** (from VT version 5 onwa
 The following table describes the structure of the External Object Definition object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 41 | 3 | Object type = External Object Definition. |
-
 | [1] | **Options** | Bitmask | 1 | 0 – 1 | 4 | Bit 0: Enabled (1=Share active, 0=Disabled). |
-
 | [2] | **NAME 0** | Integer | 4 | 0 – 2^32-1 | 5 – 8 | Bytes 1–4 of the NAME (ISO 11783-5) of the authorized working set. |
-
 | [3] | **NAME 1** | Integer | 4 | 0 – 2^32-1 | 9 – 12 | Bytes 5–8 of the NAME of the authorized working set. |
-
 | - | **Number of objects to follow** | Integer | 1 | 0 – 255 | 13 | Number of shared objects. |
-
 | - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534, 65535 | 14 + ... | Object ID of an object from the local pool that is shared with the external work set. |
 
 ## Functionality

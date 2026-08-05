@@ -4,15 +4,10 @@ The **Graphic Data** object with **ID 46** (from VT version 6 onwards) is used t
 The following table describes the structure of the Graphic Data object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 46 | 3 | Object type = Graphic Data. |
-
 | [1] | **Format** | Integer | 1 | 0 | 4 | Graphic format: 0 = PNG (max. 32-bit RGBA). |
-
 | - | **Number of bytes in raw data** | Integer | 4 | 0 – 2^32-1 | 5 – 8 | Number of bytes in the raw data. |
-
 | - | **Repeat:** {raw data} | Integer | 1 | 0 – 255 | 9 ... | Raw data of the graphic (bytes). |
 
 ## Special Features

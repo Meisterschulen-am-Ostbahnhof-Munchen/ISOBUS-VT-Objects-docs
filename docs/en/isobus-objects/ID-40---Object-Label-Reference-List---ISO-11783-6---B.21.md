@@ -4,19 +4,12 @@ The **Object Label Reference List** object with **ID 40** (from VT version 5 onw
 The following table describes the structure of the Object Label Reference List object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 40 | 3 | Object type = Object Label Reference List. |
-
 | [1] | **Number of Labelled objects** | Integer | 2 | 0 – 65535 | 4 – 5 | Number of subsequent label assignments. |
-
 | - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534 | 6 – 7 ... | Object ID of the object to be labeled (e.g., Input Number). |
-
 | - | {String Variable reference} | Integer | 2 | 0 – 65535 | 8 – 9 ... | Object ID of a string variable containing the label text (or FFFFh = no text). |
-
 | - | {Font type} | Integer | 1 | 0 – 255 | 10 ... | Font type (see Annex K). Ignored for WideString or NULL. |
-
 | - | {Object Label graphic representation} | Integer | 2 | 0 – 65535 | 11 – 12 ... | Object ID of a graphic (icon) for the label (or FFFFh = no graphic). |
 
 ## Meaning and Functionality

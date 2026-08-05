@@ -4,23 +4,14 @@ The **Output Line** object with **ID 13** is used to draw a simple line between 
 The following table describes the structure of the Output Line object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 13 | 3 | Object type = Output Line. |
-
 | [1] | **Line attributes** | Integer | 2 | 0 – 65534 | 4 – 5 | Object ID of a line attribute object (color, width, style). |
-
 | [2] | **Width** | Integer | 2 | 0 – 65535 | 6 – 7 | Width of the bounding virtual rectangle. |
-
 | [3] | **Height** | Integer | 2 | 0 – 65535 | 8 – 9 | Height of the bounding virtual rectangle. |
-
 | [4] | **Line Direction** | Integer | 1 | 0 or 1 | 10 | 0 = Top-Left to Bottom-Right <br>1 = Bottom-Left to Top-Right. |
-
 | - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 11 | Number of following macro references. |
-
 | - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | Event ID that triggers the macro. |
-
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ## Functionality and Geometry

@@ -4,21 +4,13 @@ The **Fill Attributes** object with **ID 25** defines how closed geometric shape
 The following table describes the structure of the Fill Attributes object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 25 | 3 | Object type = Fill Attributes. |
-
 [1] | **Fill type** | Integer | 1 | 0 – 3 | 4 | 0=No fill, 1=Line color, 2=Fill color, 3=Pattern. |
-
 [2] | **Fill color** | Integer | 1 | 0 – 255 | 5 | Fill color (only relevant for type 2). |
-
 [3] | **Fill pattern** | Integer | 2 | 0 – 65534, 65535 | 6 – 7 | Object ID of a Picture Graphic object for pattern fill (only for type 3). |
-
 [-] | **Number of macros to follow** | Integer | 1 | 0 – 255 | 8 | Number of following macro references. |
-
 [-] | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | Event ID that triggers the macro. |
-
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ## Fill Types and Logic

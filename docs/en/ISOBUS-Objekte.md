@@ -30,21 +30,13 @@ Here's the answer:
 ## VT Levels
 
 | | ISO 11783-06 | Jetter ISO Designer | UT according to AEF database | AUX according to AEF database |
-
 | --- | --- | --- | --- | --- |
-
 | 1 | Unnamed | < nicht wählbar > | < nicht zertifizierbar> | no AUX |
-
 | 2 | VT Version 2 | VT Level 2 | UT 1.0 | AUX-N 1.0 |
-
 3 | VT Version 3 | VT Level 3 | UT 2.0 | AUX-N 1.0 |
-
 4 | VT Version 4 | VT Level 4 | UT 2.0 | AUX-N 1.0 |
-
 5 | VT Version 5 | VT Level 5 | UT 2.0 | AUX-N 1.0 |
-
 6 | VT Version 6 | VT Level 6 | UT 2.0 | AUX-N 1.0 |
-
 7 | VT Version 7 | \< nicht wählbar > | UT 3.0 | AUX-N 1.0 |
 
 So, they started with the first version of the standard and published it.

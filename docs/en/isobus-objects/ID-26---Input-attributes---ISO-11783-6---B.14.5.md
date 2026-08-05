@@ -4,21 +4,13 @@ The **Input Attributes** object with **ID 26** is used to validate text input. I
 The following table describes the structure of the Input Attributes object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 26 | 3 | Object type = Input Attributes. |
-
 | [1] | **Validation type** | Integer | 1 | 0 – 1 | 4 | 0 = Allowed characters (list), 1 = Forbidden characters (list). |
-
 | - | **Length** | Integer | 1 | 0 – 255 | 5 | Length of the validation string in bytes. |
-
 | - | **Validation string** | String | Length | - | 6 ... | List of characters (8-bit string). |
-
 | - | **Number of macros to follow** | Integer | 1 | 0 – 255 | var. | Number of following macro references. |
-
 | - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | Event ID that triggers the macro. |
-
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ## Functionality and Validation

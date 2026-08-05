@@ -4,37 +4,21 @@ The **Input String** object with **ID 8** is used for inputting and displaying t
 The following table describes the structure of the Input String object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 8 | 3 | Object type = Input String. |
-
 | [1] | **Width** | Integer | 2 | 0 – 65535 | 4 – 5 | Width of the input field in pixels. Clipping occurs outside this range. |
-
 | [2] | **Height** | Integer | 2 | 0 – 65535 | 6 – 7 | Height of the input field in pixels. Clipping occurs outside this range. |
-
 | [3] | **Background color** | Integer | 1 | 0 – 255 | 8 | Background color (only when transparency is disabled). |
-
 | [4] | **Font attributes** | Integer | 2 | 0 – 65534 | 9 – 10 | Object ID of a font attribute object (color, size, font). |
-
 | [5] | **Input attributes** | Integer | 2 | 0 – 65534, 65535 | 11 – 12 | Object ID of an input attribute object for validation or NULL. |
-
 [6] | **Options** | Bitmask | 1 | 0 – 7 | 13 | Bit 0: Transparent <br> Bit 1: Auto-Wrap <br> Bit 2: Wrap on Hyphen. |
-
 [7] | **Variable reference** | Integer | 2 | 0 – 65534, 65535 | 14 – 15 | Reference to a string variable object. If NULL, the value is stored directly in the "Value" attribute. |
-
 [8] | **Justification** | Integer | 1 | 0 – 15 | 16 | Text alignment: Bits 0-1 (Horizontal): 0=Left, 1=Middle, 2=Right. Bits 2-3 (Vertical): 0=Top, 1=Middle, 2=Bottom. |
-
 | - | **Length** | Integer | 1 | 0 – 255 | 17 | Maximum length in bytes. If Variable Reference != NULL, this can be 0. |
-
 | - | **Value** | String | Length | - | 18 ... | Initial value of the string (only if Variable Reference == NULL). |
-
 | [9] | **Enabled** | Integer | 1 | 0 or 1 | var. | 0 = Disabled, 1 = Enabled. Position in the record depends on the length of the Value field. |
-
 | - | **Number of macros to follow** | Integer | 1 | 0 – 255 | var. | Number of subsequent macro references. |
-
 | - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | Event ID that triggers the macro. |
-
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ## Functionality and Options

@@ -4,21 +4,13 @@ The **Extended Input Attributes** object with **ID 38** (from VT version 4 onwar
 The following table describes the structure of the Extended Input Attributes object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 38 | 3 | Object type = Extended Input Attributes. |
-
 | [1] | **Validation type** | Integer | 1 | 0 – 1 | 4 | 0 = Allowed characters (whitelist), 1 = Forbidden characters (blacklist). |
-
 | - | **Number of code planes to follow** | Integer | 1 | 1 – 17 | 5 | Number of defined Unicode planes. |
-
 | - | **Repeat:** {Code plane number} | Integer | 1 | 0 – 16 | 6 ... | Unicode plane number (0 = BMP). |
-
 | - | {Number of character ranges to follow} | Integer | 1 | 1 – 255 | 7 ... | Number of ranges in this plane. |
-
 | - | **Repeat:** {{First character}} | Integer | 2 | 0 – 65535 | 8 ... | Start character of the range (WideChar). |
-
 | - | {{Last character}} | Integer | 2 | 0 – 65535 | 10 ... | End character of the range (WideChar). |
 
 ## Functionality

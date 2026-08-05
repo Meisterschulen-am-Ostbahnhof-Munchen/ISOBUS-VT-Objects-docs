@@ -4,21 +4,13 @@ The **Line Attributes** object with **ID 24** defines the graphic properties of 
 The following table describes the structure of the Line Attributes object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 [0] | **Type** | Integer | 1 | 24 | 3 | Object type = Line Attributes. |
-
 [1] | **Line colour** | Integer | 1 | 0 – 255 | 4 | Line color. |
-
 [2] | **Line width** | Integer | 1 | 0 – 255 | 5 | Line thickness in pixels. 0 = do not draw. |
-
 [3] | **Line art** | Bitmask | 2 | 0 – 65535 | 6 – 7 | Bit pattern for line style (1 = draw, 0 = background). |
-
 [-] | **Number of macros to follow** | Integer | 1 | 0 – 255 | 8 | Number of following macro references. |
-
 [-] **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | Event ID that triggers the macro. |
-
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ## Line Thickness and Appearance

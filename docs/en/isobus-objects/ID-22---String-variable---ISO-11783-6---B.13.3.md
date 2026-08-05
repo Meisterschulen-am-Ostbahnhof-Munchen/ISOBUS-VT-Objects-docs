@@ -4,12 +4,9 @@ The **String Variable** object with **ID 22** is used to store text strings that
 The following table describes the structure of the String Variable object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 22 | 3 | Object type = String Variable. |
 | - | **Length** | Integer | 2 | 0 – 65535 | 4 – 5 | Maximum fixed length of the string in bytes. |
-
 | - | **Value** | String | Length | - | 6 ... | String consisting of characters. Must be padded with spaces to reach the specified length. |
 
 ## Functionality and Special Features

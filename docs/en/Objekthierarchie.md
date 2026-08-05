@@ -4,17 +4,11 @@ The specified number represents the minimum **VT version** required for this rel
 ## Parent: Working Set object (ID 0)
 The working set object is the root container of an object pool hierarchy.
 | Child Object | Min. VT Version |
-
 | :--- | :--- |
-
 | Container object (ID 3) | 4 |
-
 | Output String object (ID 11) | 2 |
-
 | Output Number object (ID 12) | 2 |
-
 | Output List object (ID 37) | 4 |
-
 | Output Line object (ID 13) | 2 |
 | Output Rectangle object (ID 14) | 2 |
 | Output Ellipse object (ID 15) | 2 |

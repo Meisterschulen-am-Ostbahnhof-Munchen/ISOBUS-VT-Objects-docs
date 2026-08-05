@@ -4,9 +4,7 @@ The VT standard color palette defines 256 colors. The first 16 colors are identi
 | :--- | :--- | :--- | :--- |
 **0** | **Black** | 0, 0, 0 | `#000000` |
 **1** | **White** | 255, 255, 255 | `#FFFFFF` |
-
 **2** | **Green** | 0, 153, 0 | `#009900` |
-
 **3** | **Teal** | 0, 153, 153 | `#009999` |
 | **4** | **Maroon** | 153, 0, 0 | `#990000` |
 | **5** | **Purple** | 153, 0, 153 | `#990099` |
@@ -20,9 +18,7 @@ The VT standard color palette defines 256 colors. The first 16 colors are identi
 | **13** | **Magenta** | 255, 0, 255 | `#FF00FF` |
 | **14** | **Yellow** | 255, 255, 0 | `#FFFF00` |
 | **15** | **Navy** | 0, 0, 153 | `#000099` |
-
 | ... | ... | ... | ... |
-
 | **232-255**| **Proprietary** | - | VT manufacturer specific |
 
 *Note: For indices 16 to 231, an algorithmic distribution is defined in the color cube (6x6x6). See ISO 11783-6 Table A.4 for the complete list.*

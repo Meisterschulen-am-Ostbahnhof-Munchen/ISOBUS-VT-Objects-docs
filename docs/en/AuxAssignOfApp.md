@@ -13,17 +13,10 @@ File format:
 This means
 
 | | | Description |
-
 |------------------|---|------------------------------------------------|
-
 | 339 | | Manufacturer Code |
-
 | 2 | | Model Identification Code |
-
 | 2 | | Aux Type (in this case, Boolean non-latching) |
-
 | 31002 | | Aux Function Object ID on Implement |
-
 | 28001 | | Aux Input Object ID on Joystick |
-
 | cfbd6d2a008100a0 | | Joystick ISO Name |

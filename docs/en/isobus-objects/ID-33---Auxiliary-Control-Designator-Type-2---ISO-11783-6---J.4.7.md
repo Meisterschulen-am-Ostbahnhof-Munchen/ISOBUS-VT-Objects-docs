@@ -4,13 +4,9 @@ The **Auxiliary Control Designator Type 2 Object Pointer** object with **ID 33**
 The following table describes the structure of the Auxiliary Control Designator Type 2 object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 [0] | **Type** | Integer | 1 | 33 | 3 | Object type = Auxiliary Control Designator Type 2 Object Pointer. |
-
 [1] | **Pointer Type** | Integer | 1 | 0 – 3 | 4 | Reference type (see below). |
-
 [2] | **Auxiliary Object ID** | Integer | 2 | 0 – 65534, 65535 | 5 – 6 | Object ID of an Auxiliary Function (Type 2) or an Auxiliary Input (Type 2). |
 
 ### Pointer Types (AID 1)

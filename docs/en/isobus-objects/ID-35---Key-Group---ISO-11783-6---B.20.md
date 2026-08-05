@@ -4,25 +4,15 @@ The **Key Group** object with **ID 35** is used to group softkeys. This is prima
 The following table describes the structure of the Key Group object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 35 | 3 | Object type = Key Group. |
-
 | [1] | **Options** | Bitmask | 1 | 0 – 3 | 4 | Bit 0: Available (0=Not available/blanked, 1=Available)<br>Bit 1: Transparent (1=Background color of keys is ignored). |
-
 | [2] | **Name** | Integer | 2 | 0 – 65534 | 5 – 6 | Object ID of an output string or object pointer (name for mapping screen). |
-
 | - | **Key Group Icon** | Integer | 2 | 0 – 65534, 65535 | 7 – 8 | Object ID of an output object (icon for mapping screen). |
-
 | - | **Number of objects to follow** | Integer | 1 | 1 – 4 | 9 | Number of key objects in this group. Max. 4. |
-
 | - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 10 | Number of following macro references. |
-
 | - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534 | 11 + ... | Object ID of a key object or object pointer to key. |
-
 | - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | (After objects) Event ID that triggers the macro. |
-
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ## Events (Table B.62)

@@ -4,15 +4,10 @@ The **External Object Pointer** object with **ID 43** (from VT version 5 onwards
 The following table describes the structure of the External Object Pointer object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 43 | 3 | Object type = External Object Pointer. |
-
 [1] | **Default Object ID** | Integer | 2 | 0 – 65534, 65535 | 4 – 5 | ID of a local fallback object if external access fails. |
-
 [2] | **External Reference NAME ID** | Integer | 2 | 0 – 65534, 65535 | 6 – 7 | ID of an External Reference NAME object that identifies the target worksheet. |
-
 [3] | **External Object ID** | Integer | 2 | 0 – 65534, 65535 | 8 – 9 | ID of the object in the external pool. |
 
 ## Functionality and Rules

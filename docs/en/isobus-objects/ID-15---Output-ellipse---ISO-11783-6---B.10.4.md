@@ -4,29 +4,17 @@ The **Output Ellipse** object with **ID 15** is used to draw circles, ellipses, 
 The following table describes the structure of the Output Ellipse object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 15 | 3 | Object type = Ellipse. |
-
 | [1] | **Line attributes** | Integer | 2 | 0 – 65534 | 4 – 5 | Object ID of a Line Attributes object (for the outline). |
-
 | [2] | **Width** | Integer | 2 | 0 – 65535 | 6 – 7 | Width of the enclosing virtual rectangle. |
-
 | [3] | **Height** | Integer | 2 | 0 – 65535 | 8 – 9 | Height of the enclosing virtual rectangle. |
-
 | [4] | **Ellipse type** | Integer | 1 | 0 – 3 | 10 | 0=Closed Ellipse, 1=Open Ellipse (arc), 2=Segment (chord), 3=Sector (pie slice). |
-
 | [5] | **Start angle** | Integer | 1 | 0 – 180 | 11 | Start angle / 2 (in degrees, counterclockwise from the positive X-axis). |
-
 | [6] | **End angle** | Integer | 1 | 0 – 180 | 12 | End angle / 2 (in degrees, counterclockwise from the positive X-axis). |
-
 | [7] | **Fill attributes** | Integer | 2 | 0 – 65534, 65535 | 13 – 14 | Object ID of a Fill Attributes object (for filling) or NULL for no filling. |
-
 | - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 15 | Number of following macro references. |
-
 | - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | Event ID that triggers the macro. |
-
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ## Ellipse Types and Geometry

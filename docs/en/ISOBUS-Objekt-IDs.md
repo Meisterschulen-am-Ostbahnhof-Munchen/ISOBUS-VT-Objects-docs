@@ -11,9 +11,7 @@ Here, the object numbers correspond to the IDs in the standard.
 The definition in this table can therefore be considered good practice.
 
 | TypeName | StartID | FmtStr | ID | Link | Wiki |
-
 | ------------------------- | ------- | ------------------------------ | --- | ---------------------------------------------------------------------------------------------------------------- | ---- |
-
 | WorkingSet | 0 | WorkingSet\_%ld | 0 | [ID 0 - Working set - ISO-11783-6 - B.1](isobus-objects/ID-00---Working-set---ISO-11783-6---B.1.md) | [Wiki](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/working-set) |
 | DataMask | 1000 | DataMask\_%ld | 1 | [ID 1 - Data mask - ISO-11783-6 - B.2.](isobus-objects/ID-01---Data-mask---ISO-11783-6---B.2.md) | [Wiki](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/data-mask) |
 | AlarmMask | 2000 | AlarmMask\_%ld | 2 | [ID 2 – Alarm Mask – ISO 11783-6 – B.3](isobus-objects/ID-02---Alarm-Mask---ISO-11783-6---B.3.md) | [Wiki](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/alarm-mask) |
@@ -73,25 +71,15 @@ Here, the ID did not match the ObjectID.
 For example, with AUX Function.
 
 | TypeName | StartID | FmtStr |
-
 | ------------------------ | ------- | ----------------------------- |
-
 | WorkingSet | 0 | WorkingSet\_%ld |
-
 | DataMask | 100 | DataMask\_%ld |
-
 | AlarmMask | 200 | AlarmMask\_%ld |
-
 | Container | 300 | Container\_%ld |
-
 | SoftKeyMask | 400 | SoftKeyMask\_%ld |
-
 | SoftKey | 500 | SoftKey\_%ld |
-
 | KeyGroup | 3600 | KeyGroup\_%ld |
-
 | Button | 600 | Button\_%ld |
-
 | InputBoolean | 700 | InputBoolean\_%ld |
 | InputString | 800 | InputString\_%ld |
 | InputNumber | 900 | InputNumber\_%ld |

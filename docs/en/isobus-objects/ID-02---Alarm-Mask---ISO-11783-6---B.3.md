@@ -4,31 +4,18 @@ The **Alarm Mask** with **ID 2** is used to display critical information or warn
 The following table describes the structure of the Alarm Mask object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 2 | 3 | Object type = Alarm Mask. |
-
 [1] | **Background color** | Integer | 1 | 0 – 255 | 4 | Background color of the mask. |
-
 [2] | **Soft Key Mask** | Integer | 2 | 0 – 65534, 65535 | 5 – 6 | Object ID of the associated soft key mask (65535 = NULL). |
-
 [3] | **Priority** | Integer | 1 | 0 – 2 | 7 | 0 = High, 1 = Medium, 2 = Low. |
-
 [4] | **Acoustic signal** | Integer | 1 | 0 – 3 | 8 | 0 = Highest priority, 1 = Medium, 2 = Low, 3 = Off. |
-
 [-] | **Number of objects to follow** | Integer | 1 | 0 – 255 | 9 | Number of directly contained objects. |
-
 | - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 10 | Number of following macro references. |
-
 | - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534 | 11 + ... | Object ID of a contained object. |
-
 | - | {X Location} | Signed Integer | 2 | -32768 to +32767 | 13 + ... | X position relative to the mask (pixels). |
-
 | - | {Y Location} | Signed Integer | 2 | -32768 to +32767 | 15 + ... | Y position relative to the mask (pixels). |
-
 | - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | (By Object) Event ID that triggers the macro. |
-
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ### Priority Levels and Display

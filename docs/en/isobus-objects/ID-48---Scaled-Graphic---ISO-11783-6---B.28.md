@@ -4,23 +4,15 @@ The **Scaled Graphic** object with **ID 48** (from VT version 6 onwards) is used
 The following table describes the structure of the Scaled Graphic object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 48 | 3 | Object type = Scaled Graphic. |
 | [1] | **Width** | Integer | 2 | 0 – 65535 | 4 – 5 | Target width in pixels. |
-
 | [2] | **Height** | Integer | 2 | 0 – 65535 | 6 – 7 | Target height in pixels. |
-
 | [3] | **ScaleType** | Integer | 1 | 0 – 127 | 8 | Scaling mode and adjustment (see below). |
-
 | [4] | **Options** | Bitmask | 1 | 0 – 1 | 9 | Bit 0: Flashing (0=Normal, 1=Blinking). |
-
 | [5] | **Value** | Integer | 2 | 0 – 65535 | 10 – 11 | Object ID of the graphic object to be displayed (Graphic Data ID 46 or Picture Graphic ID 20) or pointer. |
 | - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 12 | Number of following macro references. |
-
 | - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | Event ID that triggers the macro. |
-
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ### Scaling Types (Bits 0-2 of ScaleType)

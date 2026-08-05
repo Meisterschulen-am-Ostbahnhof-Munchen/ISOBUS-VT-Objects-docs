@@ -4,38 +4,22 @@ The **Output Meter** object with **ID 17** is a circular display (pointer instru
 The following table describes the structure of the Output Meter object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 17 | 3 | Object type = Output Meter. |
-
 [1] | **Width** | Integer | 2 | 0 – 65535 | 4 – 5 | Width and height of the enclosing square. |
-
 [2] | **Needle color** | Integer | 1 | 0 – 255 | 6 | Needle color. |
-
 [3] | **Border color** | Integer | 1 | 0 – 255 | 7 | Border color (when drawn). |
-
 [4] | **Arc and tick color** | Integer | 1 | 0 – 255 | 8 | Arc and tick color. |
-
 [5] | **Options** | Bitmask | 1 | 0 – 15 | 9 | Bit 0: Draw Arc<br> Bit 1: Draw Border<br> Bit 2: Draw Ticks<br> Bit 3: Deflection Direction (0 = min->max counterclockwise, 1 = min->max clockwise). |
-
 [6] | **Number of ticks** | Integer | 1 | 0 – 255 | 10 | Number of scale markings. |
-
 [7] | **Start angle** | Integer | 1 | 0 – 180 | 11 | Start angle / 2 (in degrees, counterclockwise from the positive x-axis). |
-
 [8] | **End angle** | Integer | 1 | 0 – 180 | 12 | End angle / 2 (in degrees, counterclockwise from the positive x-axis).
 | [9] | **Min value** | Integer | 2 | 0 – 65535 | 13 – 14 | Value at the start angle. |
-
 | [10] | **Max value** | Integer | 2 | 0 – 65535 | 15 – 16 | Value at the end angle. |
-
 | [11] | **Variable reference** | Integer | 2 | 0 – 65534, 65535 | 17 – 18 | Reference to a Number Variable object. |
-
 | [12] | **Value** | Integer | 2 | 0 – 65535 | 19 – 20 | Current value. Only if Variable Reference == NULL. |
-
 | - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 21 | Number of following macro references. |
-
 | - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | Event ID that triggers the macro. |
-
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ## Functionality and Display

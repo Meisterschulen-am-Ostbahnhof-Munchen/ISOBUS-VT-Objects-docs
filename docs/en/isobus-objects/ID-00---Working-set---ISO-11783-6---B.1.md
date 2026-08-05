@@ -13,35 +13,20 @@ Each workgroup must define **exactly one** Working Set object in its object pool
 The following table describes the structure of the Working Set object in the object pool (byte stream).
 
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
-
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 0 | 3 | Object type = Working Set. |
-
 | [1] | **Background colour** | Integer | 1 | 0 – 255 | 4 | Background color. |
-
 | [2] | **Selectable** | Boolean | 1 | 0 or 1 | 5 | 0 = FALSE, 1 = TRUE. Indicates whether the working set can be selected by the operator. |
-
 | [3] | **Active mask** | Integer | 2 | 0 – 65534 | 6 – 7 | Object ID of the data or alarm mask displayed when the working set is active. |
-
 | - | **Number of objects to follow** | Integer | 1 | 1 – 255 | 8 | Number of following child objects (designator). Must be at least 1. |
-
 | - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 9 | Number of following macro references. |
-
 | - | **Number of languages to follow** | Integer | 1 | 0 – 255 | 10 | Number of following language codes. |
-
 | - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534 | 11 + ... | Object ID of a child object (part of the designator). List of all objects *before* the macros. |
-
 | - | {X Location} | Signed Integer | 2 | -32768 to +32767 | 13 + ... | Relative X position of the child object (pixels). |
-
 | - | {Y Location} | Signed Integer | 2 | -32768 to +32767 | 15 + ... | Relative Y position of the child object (pixels). |
-
 | - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | (After the objects) Event ID that triggers the macro. |
-
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed (or reference to the 16-bit Macro ID). |
-
 | - | **Repeat:** {Language Code} | String | 2 | - | var. | (After the macros) Two-letter language code according to ISO 639 (e.g., "de", "en"). |
 
 ### Designator (Child Objects)

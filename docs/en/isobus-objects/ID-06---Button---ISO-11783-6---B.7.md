@@ -13,37 +13,21 @@ The button object, as defined in B.7, is a graphical element displayed on the VT
 The following table describes the structure of the Button object in the object pool.
 
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
-
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 6 | 3 | Object type = Button. |
-
 | [1] | **Width** | Integer | 2 | 0 – 65535 | 4 – 5 | Maximum width of the button area in pixels. |
-
 | [2] | **Height** | Integer | 2 | 0 – 65535 | 6 – 7 | Maximum height of the button area in pixels. |
-
 [3] | **Background color** | Integer | 1 | 0 – 255 | 8 | Background color. |
-
 [4] | **Border color** | Integer | 1 | 0 – 255 | 9 | Border color (if not suppressed). |
-
 [5] | **Key Code** | Integer | 1 | 0 – 255 | 10 | Code sent in the `Button Activation` message. |
-
 [6] | **Options** | Bitmask | 1 | 0 – 63 | 11 | Bit 0: Latchable (0=Buttoning, 1=Hanging) qzmsdocs000002 Bit 1: State (only for Latchable: 0=Released, 1=Pressed) qzmsdocs000003 Bit 2: Suppress Border (1=No border drawn) qzmsdocs000004 Bit 3: Transparent (1=Background transparent) qzmsdocs000005 Bit 4: Disabled (1=Disabled/Grayed out) qzmsdocs000006 Bit 5: No Border (1=Border area omitted, Button Face = Button Area). |
-
 | - | **Number of objects to follow** | Integer | 1 | 0 – 255 | 12 | Number of directly contained objects (symbols, text). |
-
 | - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 13 | Number of subsequent macro references. |
-
 | - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534 | 14 + ... | Object ID of a contained object. |
-
 | - | {X Location} | Signed Integer | 2 | -32768 to +32767 | 16 + ... | X position relative to the upper left corner of the button face. |
-
 | - | {Y Location} | Signed Integer | 2 | -32768 to +32767 | 18 + ... | Y position relative to the upper left corner of the button face. |
-
 | - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | (After objects) Event ID that triggers the macro. |
-
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ### Structure and Appearance

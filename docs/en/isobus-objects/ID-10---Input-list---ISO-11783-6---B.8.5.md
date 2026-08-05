@@ -4,29 +4,17 @@ The **Input List** object with **ID 10** allows the operator to select an item f
 The following table describes the structure of the Input List object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 10 | 3 | Object type = Input List. |
-
 [1] | **Width** | Integer | 2 | 0 – 65535 | 4 – 5 | Width of the field (when closed). |
-
 [2] | **Height** | Integer | 2 | 0 – 65535 | 6 – 7 | Height of the field (when closed). |
-
 [3] | **Variable reference** | Integer | 2 | 0 – 65534, 65535 | 8 – 9 | Reference to a Number Variable object for the index. |
-
 [4] | **Value** | Integer | 1 | 0 – 255 | 10 | Currently selected index (0-254). 255 = no selection. (Only if Variable Reference == NULL). |
-
 - | **Number of list items** | Integer | 1 | 0 – 255 | 11 | Number of objects in the list. |
-
 | [5] | **Options** | Bitmask | 1 | 0 – 3 | 12 | Bit 0: Enabled (0=Disabled, 1=Enabled)<br>Bit 1: Real-time editing (1=Send value on change). |
-
 | - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 13 | Number of following macro references. |
-
 | - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534, 65535 | 14 + ... | Object ID of a list entry (displayed as an option). |
-
 | - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | (By Object) Event ID that triggers the macro. |
-
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ## Functionality and Display

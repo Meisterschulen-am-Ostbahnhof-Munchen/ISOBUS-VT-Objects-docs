@@ -5,11 +5,8 @@ This table lists all commands (messages) that can be exchanged between the ECU (
 * **Allowed in Macro:** Whether the command may be stored in a macro object.
 | Clause | Message Name | PGN | Function (Hex) | Macro? | VT Vers. |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-
 **C.2.3** | Object Pool Transfer | ECU->VT | 11 | No | 2 |
-
 **C.2.4** | End of Object Pool | ECU->VT | 12 | No | 2 |
-
 **D.4** | Get Number of Soft Keys | ECU->VT | C2 | No | 2 |
 | **D.6** | Get Text Font Data | ECU->VT | C3 | No | 2 |
 | **D.8** | Get Hardware Message | ECU->VT | C7 | No | 2 |

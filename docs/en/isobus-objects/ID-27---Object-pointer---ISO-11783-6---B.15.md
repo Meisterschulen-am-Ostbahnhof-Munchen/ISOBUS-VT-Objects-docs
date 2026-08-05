@@ -4,11 +4,8 @@ The **Object Pointer** object with **ID 27** serves as a dynamic placeholder. It
 The following table describes the structure of the Object Pointer object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 27 | 3 | Object type = Object Pointer. |
-
 | [1] | **Value** | Integer | 2 | 0 – 65534, 65535 | 4 – 5 | Object ID of the referenced object or NULL (65535). |
 
 ## Functionality and Application

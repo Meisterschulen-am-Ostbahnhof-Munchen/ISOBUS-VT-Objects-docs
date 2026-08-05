@@ -10,29 +10,17 @@ The **Key Object** (ID 5) defines the appearance and functional code of a softke
 The following table describes the structure of the Key Object in the object pool.
 
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
-
 | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 5 | 3 | Object type = Key. |
-
 | [1] | **Background colour** | Integer | 1 | 0 – 255 | 4 | Background color of the key. |
-
 | [2] | **Key code** | Integer | 1 | 1 – 255 | 5 | Code sent in the `Soft Key Activation` message. (0 is reserved for ACK). |
-
 | - | **Number of objects to follow** | Integer | 1 | 0 – 255 | 6 | Number of directly included objects (symbols, text). |
-
 | - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 7 | Number of subsequent macro references. |
-
 | - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534 | 8 + ... | Object ID of a contained object. |
-
 | - | {X Location} | Signed Integer | 2 | -32768 to +32767 | 10 + ... | X position relative to the button (pixels). |
-
 | - | {Y Location} | Signed Integer | 2 | -32768 to +32767 | 12 + ... | Y position relative to the button (pixels). |
-
 | - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | (After objects) Event ID that triggers the macro. |
-
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ### Designator and Child Objects

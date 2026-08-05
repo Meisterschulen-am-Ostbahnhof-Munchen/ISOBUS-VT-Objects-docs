@@ -4,21 +4,13 @@ The **Working Set Special Controls** object with **ID 47** (from VT version 6 on
 The following table describes the structure of the Working Set Special Controls object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 47 | 3 | Object type = Working Set Special Controls. |
-
 | [1] | **Number of Bytes to follow** | Integer | 2 | 5 – 65535 | 4 – 5 | Number of bytes in this object after this attribute. Enables parsing compatibility. |
-
 | [2] | **Object ID of Colour Map object** | Integer | 2 | 0 – 65534, 65535 | 6 – 7 | ID of the initial Colour Map to be used (ID 39) or NULL. |
-
 | [3] | **Object ID of Colour Palette object** | Integer | 2 | 0 – 65534, 65535 | 8 – 9 | ID of the initial Colour Palette to be used (ID 45) or NULL. |
-
 | - | **Number of languages pairs to follow** | Integer | 1 | 0 – 255 | 10 | Number of the following language/country code pairs. |
-
 | - | **Repeat:** {Language Code} | String | 2 | - | 11 – 12 ... | 2-letter code according to ISO 639-1 (e.g., "de"). |
-
 | - | {Country Code} | String | 2 | - | 13 – 14 ... | 2-letter code according to ISO 3166-1 (e.g., "DE") or "20 20" (Hex) if not applicable. |
 
 ## Meaning and Functionality

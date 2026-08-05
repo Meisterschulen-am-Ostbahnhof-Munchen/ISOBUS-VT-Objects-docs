@@ -4,13 +4,9 @@ The **Macro** object with **ID 28** allows you to store a sequence of commands i
 The following table describes the structure of the Macro object in the object pool.
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | - | **Object ID** | Integer | 2 | 0 – 255 (VT v4)<br>0 – 65534 (VT v5+) | 1 – 2 | Unique ID in the object pool. |
-
 | [0] | **Type** | Integer | 1 | 28 | 3 | Object type = Macro. |
-
 | - | **Number of bytes to follow** | Integer | 2 | 0 – 65535 | 4 – 5 | Number of bytes for the command list. |
-
 | - | **Repeat:** {Command} | Binary | 6 – n | - | 6 ... | List of command packages. Each command must be a multiple of 8 bytes long (padding with FFh). |
 
 ## Functionality and Structure

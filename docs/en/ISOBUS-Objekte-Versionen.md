@@ -8,9 +8,7 @@ based on ISO 11783-6:2018(en)
 Tractors and machinery for agriculture and forestry — Serial control and communications data network — Part 6: Virtual terminal
 
 | ID | Object description | VT 2 | VT 3 | VT 4 | VT 5 | VT 6 | Standard | Jetter support |
-
 | :-: | -------------------------------------------------- | :--: | :--: | :--: | :--: | :--: | ------------------------- | :---------------: |
-
 | 0 | Working set | X | X | X | X | X | 11783-6 – B.1 |   L2 - L6 |
 |  1 | Datamask |   X |   X |   X |   X |   X | 11783-6 – B.2 |   L2 - L6 |
 |  2 | Alarm Mask |   X |   X |   X |   X |   X | 11783-6 – B.3 |   L2 - L6 |

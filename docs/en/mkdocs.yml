@@ -8,7 +8,7 @@ markdown_extensions:
     permalink: true
 plugins:
 - search
-site_name: ISOBUS Virtual Terminal: User Interface and Objects (2)
+site_name: 'ISOBUS Virtual Terminal: User Interface and Objects (2)'
 site_url: https://docs.ms-muc-docs.de/projects/ISOBUS-VT-Objects-docs/
 extra:
   alternate:

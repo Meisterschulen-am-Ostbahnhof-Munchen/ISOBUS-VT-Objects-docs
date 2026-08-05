@@ -1,13 +1,8 @@
 # ID 12 – Output number – ISO 11783-6 – B.9.3
-
 The **Output Number** object with **ID 12** is used to display numeric values. Like the *Input Number* object, it supports automatic scaling and formatting, but is designed purely for display (read-only for the operator).
-
 ### Attributes and Record Format (Table B.23)
-
 The following table describes the structure of the Output Number object in the object pool.
-
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
-
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -53,7 +48,6 @@ Example: A raw value of 2500 with an offset of 0 and a scaling factor of 0.01 is
 
 ## Formatting Options
 * **Leading Zeros (Bit 1):** The field is padded with zeros on the left (e.g., "0012").
-
 * **Zero as Space (Bit 2):** If the scaled value is exactly zero, the field remains completely empty.
 * **Round vs. Truncate (Bit 3):** Controls how to handle values with more decimal places than defined in AID 9.
 
@@ -62,13 +56,9 @@ Example: A raw value of 2500 with an offset of 0 and a scaling factor of 0.01 is
 The Output Number object responds to the following events:
 
 * **On Change Value:** Triggered when the displayed value changes (e.g., variable updated or `Change Numeric Value` command). The VT redraws the object.
-
 * **On Refresh:** Triggered when the VT needs to redraw the object.
-
 * **On Change Background Colour:** Responds to a change in background color.
-
 * **On Change Attribute:** Responds to general attribute changes.
-
 * **On Change Size:** Responds to a change in size.
 
 ## Implementation Implementation Implementation

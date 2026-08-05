@@ -1,12 +1,8 @@
 # ISOBUS Object Versions
-
 Which object is present in which version?
-
 The table at:
-
 [https://extranet.epec.fi/Public/Manuals/EPEC_Programming_And_Libraries/projecttopics/topic000962.htm](https://extranet.epec.fi/Public/Manuals/EPEC_Programming_And_Libraries/projecttopics/topic000962.htm)
 is unfortunately incorrect and outdated:
-
 An up-to-date table should be created here,
 based on ISO 11783-6:2018(en)
 Tractors and machinery for agriculture and forestry — Serial control and communications data network — Part 6: Virtual terminal

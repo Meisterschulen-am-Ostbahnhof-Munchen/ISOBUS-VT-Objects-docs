@@ -1,13 +1,8 @@
 # ID 3 – Container – ISO 11783-6 – B.4
-
 The **Container** object with **ID 3** is used to logically group multiple objects. A container itself is not visible, but it allows you to move, show/hide, or split an entire group of objects.
-
 ### Attributes and Record Format (Table B.8)
-
 The following table describes the structure of the Container object in the object pool.
-
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
-
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -38,31 +33,23 @@ The following table describes the structure of the Container object in the objec
 Within a container, a **separate coordinate system** begins:
 
 * **Relative Coordinates:** The X and Y positions of child objects are referenced to the upper left corner of the container.
-
 * **Clipping:** All objects or parts of objects that lie outside the area defined by `Width` and `Height` are clipped by the container and not displayed.
-
 * **Group Move:** When the container is moved (e.g., via `Change Child Position`), all objects within it move automatically.
-
 
 ## Events (Table B.7)
 
 The container reacts to the following events:
 
 * **On Show:** Triggered by the command `Show Object` (even if the container is already visible). The VT redraws the contained objects.
-
 * **On Hide:** Triggered by the command `Hide Object`. The container is overdrawn with the background color of the parent mask.
-
 * **On Refresh:** Triggered when changes are made to child objects that require redrawing.
-
 * **On Change Child Location / Position:** Updates the position of child objects.
-
 * **On Change Size:** Reacts to changes in the container's size.
 
 ## Practical Use
 Containers are essential for dynamic user interfaces:
 
 * **Show/Hide:** Complex control panels or status indicators can be shown or hidden at the touch of a button using the command `IsoVtcCmd_ObjHideShow`.
-
 * **Space Saving:** Multiple containers can reside in the same location; by cleverly switching their visibility, different "tabs" or modes can be implemented.
 
 ### Examples from the ISO Designer

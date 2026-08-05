@@ -1,10 +1,6 @@
 # ISOBUS VT Objects
-
 This section describes the different object types of the ISOBUS Virtual Terminal according to ISO 11783-6.
-
-
 ## List of objects
-
 - [ID 0 - Working Set](ID-00---Working-set---ISO-11783-6---B.1.md)
 - [ID 1 - Data Mask](ID-01---Data-mask---ISO-11783-6---B.2.md)
 - [ID 2 - Alarm Mask](ID-02---Alarm-Mask---ISO-11783-6---B.3.md)

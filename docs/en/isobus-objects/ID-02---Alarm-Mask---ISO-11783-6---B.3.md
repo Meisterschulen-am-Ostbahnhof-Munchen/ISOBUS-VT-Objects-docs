@@ -1,13 +1,8 @@
 # ID 2 – Alarm Mask – ISO 11783-6 – B.3
-
 The **Alarm Mask** with **ID 2** is used to display critical information or warnings. It takes precedence over normal data masks and, depending on its priority, can overlay the entire display or parts of it.
-
 ### Attributes and Record Format (Table B.6)
-
 The following table describes the structure of the Alarm Mask object in the object pool.
-
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
-
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -40,9 +35,7 @@ The following table describes the structure of the Alarm Mask object in the obje
 The priority not only controls the order of the alarms, but often also their visual display on the VT:
 
 * **High Priority (0):** The operator is in danger or a serious malfunction has occurred. These alarms must be acknowledged immediately or force the terminal to focus.
-
 * **Medium Priority (1):** Normal machine malfunction.
-
 * **Low Priority (2):** For information only (status messages).
 
 ## Events (Events - Table B.5)
@@ -50,17 +43,11 @@ The priority not only controls the order of the alarms, but often also their vis
 The alarm screen reacts to the following events:
 
 * **On Show:** Triggered when the screen becomes visible. The VT sends a `VT Status` message.
-
 * **On Hide:** Triggered when the mask is removed from the display.
-
 * **On Refresh:** Triggered when objects within the mask are changed.
-
 * **On Change Priority:** When the priority changes, the VT re-evaluates all active alarms.
-
 * **On Change Soft Key Mask:** Changes the softkey assignment when an alarm mask is active.
-
 * **On Change Child Location / Position:** Updates child objects.
-
 * **On Change Attribute:** Reacts to general attribute changes.
 
 ## Behavior with Multiple Alarms

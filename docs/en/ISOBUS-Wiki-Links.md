@@ -1,18 +1,8 @@
 # ISOBUS Wiki Links
-
 Here is a collection of links to the ISOBUS Wiki by Tobias Tenberg, providing detailed information on various ISOBUS objects.
-
-
-
 ISOBUS Wiki links
 ...``` ]
 
-
-
-```` ]
-
-
-```` ]
 
 ``` ] ] * [Alert Mask](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/alarm-mask)
 * [Arched Bar Graph](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/arched-bar-graph)

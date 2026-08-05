@@ -1,13 +1,8 @@
 # ID 30 – Auxiliary Input Type 1 – ISO 11783-6 – J.4.4
-
 The **Auxiliary Input Type 1** object with **ID 30** defines the properties of a physical control element (e.g., joystick, switch) of an auxiliary input device.
-
 *Note: This object is considered obsolete as of VT version 3 and is replaced by Type 2 (ID 32).*
-
 ### Attributes and Record Format (Table J.3)
-
 The following table describes the structure of the Auxiliary Input Type 1 object in the object pool.
-
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -33,13 +28,11 @@ The following table describes the structure of the Auxiliary Input Type 1 object
 ## Functionality
 This object describes a physical input element (e.g., a button or a joystick axis) on an Auxiliary Input Device. It is provided by the Auxiliary Input Device so that the VT knows the available inputs and their properties.
 
-
 | - | {Y Location} | Signed Integer | 2 | -32768 to +32767 | 12 + ... | Y position relative to the upper left corner. |
 
 ## Functionality
 
 This object describes a physical input element (e.g., a button or a joystick axis) on an Auxiliary Input Device. It is provided by the Auxiliary Input Device so that the VT knows the available inputs and their properties.
-
 
 | - | {X Location} | Signed Integer | 2 | -32768 to +32767 | 12 + ... | The ``Input ID`` attribute links this object to the device's status messages.
 

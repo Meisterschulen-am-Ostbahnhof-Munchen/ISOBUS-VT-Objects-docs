@@ -1,13 +1,8 @@
 # ID 15 – Output Ellipse – ISO 11783-6 – B.10.4
-
 The **Output Ellipse** object with **ID 15** is used to draw circles, ellipses, arcs, segments, and sectors (pie chart segments).
-
 ### Attributes and Record Format (Table B.31)
-
 The following table describes the structure of the Output Ellipse object in the object pool.
-
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
-
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -38,13 +33,9 @@ The following table describes the structure of the Output Ellipse object in the 
 The ellipse is fitted into a virtual rectangle (`Width` x `Height`).
 
 * **Closed Ellipse (0):** A complete ellipse or a circle (if Width = Height).
-
 * **Open Ellipse (1):** Only the arc between the start and end angles is drawn.
-
 * **Segment (2):** A segment of a circle (the chord between the angle points is closed).
-
 * **Sector (3):** A sector of a circle (the angle points are connected to the center point, ideal for pie charts).
-
 
 ## Angle Calculation (Important!)
 
@@ -61,9 +52,7 @@ The angle values in AID 5 and 6 are transferred **halved** (range 0-180 correspo
 The Output Ellipse object reacts to the following events:
 
 * **On Change Size:** Triggered when the size of the rectangle changes at runtime.
-
 * **On Change Attribute:** Triggered when line or fill attributes (e.g., colors) change.
-
 * **On Refresh:** Triggered when the VT needs to redraw the object.
 
 ## Implementation Implications

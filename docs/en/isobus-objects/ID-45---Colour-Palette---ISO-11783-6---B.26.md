@@ -1,13 +1,8 @@
 # ID 45 – Colour Palette – ISO 11783-6 – B.26
-
 The **Colour Palette** object with **ID 45** (from VT version 6 onwards) allows a working set to completely replace the terminal's default color palette with its own ARGB color definitions.
-
 ### Attributes and Record Format (Table B.73)
-
 The following table describes the structure of the Colour Palette object in the object pool.
-
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
-
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |

@@ -1,13 +1,8 @@
 # Event IDs (ISO 11783-6 Table A.3)
-
 This table lists all event IDs that can be used in macros (`Macro object`, ID 28) or as triggers for attributes.
-
 *Note:* Starting with VT version 5, 16-bit macro references are supported.
-
 | Event ID | Event Name | Trigger (Occurs when) |
-
 | :--- | :--- | :--- |
-
 | **0** | Reserved | - |
 
 | **1** | On Activate | Working set becomes active. |

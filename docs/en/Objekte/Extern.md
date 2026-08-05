@@ -1,4 +1,1 @@
 # External Objects
-
-
-```

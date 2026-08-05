@@ -1,12 +1,8 @@
 # Object Hierarchy (Parent-Child Relationships)
-
 This page is based on **Table A.2 — Allowed hierarchical relationships of objects** of ISO 11783-6:2018 (Annex A). It defines which objects (child) may be contained within which other objects (parent).
-
 The specified number represents the minimum **VT version** required for this relationship to be supported.
-
 ## Parent: Working Set object (ID 0)
 The working set object is the root container of an object pool hierarchy.
-
 | Child Object | Min. VT Version |
 
 | :--- | :--- |

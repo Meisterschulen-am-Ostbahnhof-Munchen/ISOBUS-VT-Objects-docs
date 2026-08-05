@@ -1,13 +1,8 @@
 # ID 32 – Auxiliary Input Type 2 – ISO 11783-6 – J.4.5
-
 The **Auxiliary Input Type 2** object with **ID 32** defines a physical control element of an auxiliary input device (e.g., a button on a joystick) from VT version 3 onwards.
-
 ### Attributes and Record Format (Table J.4)
-
 The following table describes the structure of the Auxiliary Input Type 2 object in the object pool.
-
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
-
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -30,19 +25,14 @@ The following table describes the structure of the Auxiliary Input Type 2 object
 
 ### Function Attributes (Bitmask AID 2)
 * **Bits 0–3:** Auxiliary function type (see Table J.5)
-
 * 0: Boolean Latching
 * 1: Analogue
-
 * 2: Boolean Momentary
-
 * 3: Boolean Latching
-
 * ...
 * **Bits 4–5:** Reserved
 * **Bit 6:** Reserved
 * **Bit 7:** Single Assignment (1 = May only be assigned to one function).
-
 
 ## Functionality
 

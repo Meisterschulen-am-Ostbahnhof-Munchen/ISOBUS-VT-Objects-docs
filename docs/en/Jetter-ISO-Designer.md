@@ -1,13 +1,8 @@
 # Jetter ISO-Designer
-
 M:\\Agricultural Machinery Mechanics\\Instruction\\SL\\Jetter\\ISODesignerSetup551.exe
-
 <img src="https://user-images.githubusercontent.com/69573151/92991886-e7647f80-f4e6-11ea-8db8-25a5e0b5bdf8.png" />
-
 <img src="https://user-images.githubusercontent.com/69573151/92991891-edf2f700-f4e6-11ea-9a62-406ba1f38fed.png" />
-
 <img src="https://user-images.githubusercontent.com/69573151/92991896-f4816e80-f4e6-11ea-8cf4-d2a5c7a8d743.png" />
-
 <img src="https://user-images.githubusercontent.com/69573151/92991898-fa774f80-f4e6-11ea-9902-7f64aa61f715.png" />
 
 <img src="https://user-images.githubusercontent.com/69573151/92991905-0e22b600-f4e7-11ea-8a28-b7b3e88fc37a.png" />

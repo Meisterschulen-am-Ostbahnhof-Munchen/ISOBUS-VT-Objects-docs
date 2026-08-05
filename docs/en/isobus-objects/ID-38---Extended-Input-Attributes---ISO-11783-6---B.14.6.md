@@ -1,13 +1,8 @@
 # ID 38 – Extended Input Attributes – ISO 11783-6 – B.14.6
-
 The **Extended Input Attributes** object with **ID 38** (from VT version 4 onwards) is used to validate text input (input string) when using **WideStrings** (Unicode).
-
 ### Attribute and Record Format (Table B.53)
-
 The following table describes the structure of the Extended Input Attributes object in the object pool.
-
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
-
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |

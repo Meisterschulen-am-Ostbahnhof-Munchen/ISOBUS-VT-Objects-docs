@@ -1,13 +1,8 @@
 # ID 23 – Font attributes – ISO 11783-6 – B.14.2
-
 The **Font Attributes** object with **ID 23** defines the appearance of text (font, size, color, style). It is a central attribute object referenced by all text-based display and input objects.
-
 ### Attribute and Record Format (Table B.46)
-
 The following table describes the structure of the Font Attributes object in the object pool.
-
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
-
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -46,7 +41,6 @@ In this mode, the value in AID 2 directly represents the **font height in pixels
 The Font Attributes object responds to the following events:
 
 * **On Change Font Attributes:** Triggered by the command `Change Font Attributes`. The VT updates all objects that use these attributes.
-
 * **On Change Attribute:** Responds to general attribute changes.
 
 ## Implementation Implications

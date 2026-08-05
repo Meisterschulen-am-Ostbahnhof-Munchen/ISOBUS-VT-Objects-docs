@@ -1,22 +1,19 @@
 ---
 myst:
-  enable_extensions: ["colon_fence"]
-  html_meta:
-    "description lang=en": "metadata description"
-    "description lang=de": "metadata description"
-    "description lang=fr": "description des métadonnées"
-    "keywords": "Sphinx, MyST"
-    "property=og:locale": "de"
+enable_extensions: ["colon_fence"]
+html_meta:
+"description lang=en": "metadata description"
+"description lang=de": "metadata description"
+"description lang=fr": "description des métadonnées"
+"keywords": "Sphinx, MyST"
+"property=og:locale": "de"
 ---
-
 
 <img src="_static/logos/Meisterschulen_LogoG1_4c.gif" alt="Logo Meisterschulen am Ostbahnhof" width="400px" />
 
 # Wiki 2: ISOBUS Virtual Terminal (VT & HMI user interfaces)
 
-
 ## Master Schools at Munich's East Station
-
 
 #
 ---
@@ -25,14 +22,9 @@ myst:
 
 > **The ISOBUS Virtual Terminal (VT / UT according to ISO 11783-6) is the central human-machine interface (HMI)** for operating, configuring, and visualizing all networked attachments (Part I LE 1.4 and Part II LE 1.1 & LE 1.4).
 
-
-```
 * 📋 **[This is in the curriculum – Virtual Terminal & HMI in the curriculum]
-
 * 🖥️ [ISOBUS VT Object Pools & HMI (ISO 11783-6, LE 1.4 & LE 1.1)]
-
 * 📱 [Screen Layout, Softkeys & Ergonomics (LE 1.4 & LE 1.4)]
-
 * 🎛️ [Input Attributes, Key Events & Interaction Diagnostics (LE 2.2 & LE 1.3)]
 
 *
@@ -40,39 +32,15 @@ myst:
 *
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Master Schools at Munich's East Station
-
 
 #
 
-
-
-
 ---
 
-
-
-
 ---
-
 
 **Welcome to the ISOBUS Virtual Terminal documentation.**
-
 
 Welcome to the ISOBUS Virtual Terminal documentation.
 This documentation is part of the knowledge database of the master craftsman schools at Munich East Station.
@@ -80,27 +48,19 @@ This documentation is part of the knowledge database of the master craftsman sch
 **Useful Links:**
 
 * [🏠 Main Menu ](https://www.ms-muc-docs.de/)
-
 * [🔍 Super Search (All Wikis) ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs/en/latest/)
-
 * [📄 Download PDF Manual ](https://meisterschulen-am-ostbahnhof-munchen.github.io/ISOBUS-VT-Objects-docs/en/pdf/isobus-vt-objects-docs-en.pdf)
 
 ]
 ---
 
 !!! note
-    This project is under active development.
+This project is under active development.
 
 **Content**
 
-
 Content
 
-
 ---
-
-
-
-
 
 [🏠 Main Menu ](https://www.ms-muc-docs.de/) | [🔍 Super Search (All Wikis) ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs/en/latest/) | [Quick Search (IEC 61499) ](https://www.ms-muc-docs.de/iec-61499/abk%C3%BCrzungen-und-bedeutungen/abk%C3%BCrzungen-und-bedeutungen)

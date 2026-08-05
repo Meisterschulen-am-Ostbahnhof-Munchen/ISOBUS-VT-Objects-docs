@@ -1,13 +1,8 @@
 # ID 36 – Graphics Context Object – ISO 11783-6 – B.18
-
 The **Graphics Context Object (GCO)** with **ID 36** (from VT version 4 onwards) provides a dynamic graphics buffer (canvas) into which the ECU can draw at runtime. It is comparable to a bitmap whose content can be modified pixel-perfectly.
-
 ### Attributes and Record Format (Table B.59)
-
 The following table describes the structure of the Graphics Context Object in the object pool.
-
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
-
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -48,7 +43,6 @@ The following table describes the structure of the Graphics Context Object in th
 
 | [17] | **Transparency Color** | Integer | 1 | 0 – 255 | 34 | Transparency color (when Options Bit 0 is set). |
 
-
 ## Functionality and Structure
 The GCO consists of two main components:
 
@@ -60,11 +54,8 @@ The GCO consists of two main components:
 The canvas is manipulated using special commands (see ISO 11783-6, Annex F), such as:
 
 * `Set Graphics Cursor`: Sets the writing position.
-
 * `Draw Point / Line / Rectangle / Polygon / Ellipse`: Draws geometric shapes.
-
 * `Draw Text`: Writes text to the cursor position.
-
 * `Copy Canvas`: Copies areas within the canvas.
 
 ## Events (Table B.58)
@@ -72,7 +63,6 @@ The canvas is manipulated using special commands (see ISO 11783-6, Annex F), suc
 The Graphics Context object reacts to the following events:
 
 * **On Change Attribute:** Triggered when attributes change (e.g., viewport position, zoom). The VT updates the display.
-
 * **On Change Background Colour:** Fills the object (the canvas) with the new background color. **Caution:** Deletes the previous content!
 
 ## Application Example

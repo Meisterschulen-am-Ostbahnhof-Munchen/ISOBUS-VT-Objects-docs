@@ -1,24 +1,15 @@
 # ISOBUS Objects
-
 Take a close look at this link.
-
 ## Programming
-
 [Programming\_And\_Libraries](https://extranet.epec.fi/Public/Manuals/EPEC_Programming_And_Libraries/projecttopics/topic000962.htm)]
-
 Future: [ISOBUS Objects Versions](ISOBUS-Objekte-Versionen.md)]
-
 ISOBUS Wiki by Tobias Tenberg:
 
 * <https://isobus-studio.com/en/isobus-wiki>
-
 * [ISOBUS Wiki - Colors](https://isobus-studio.com/isobus-wiki/isobus-colours)]
-
 * [ISOBUS Wiki - Objectpool Objects Database](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects-database)]
 
 As you can see, there are various objects, but not all are supported in every ISOBUS version.
-
-
 
 ``` ![](https://user-images.githubusercontent.com/69573151/94335435-08939880-ffdc-11ea-92e7-662f2ff7779f.png)
 
@@ -57,7 +48,6 @@ Here's the answer:
 7 | VT Version 7 | \< nicht wählbar > | UT 3.0 | AUX-N 1.0 |
 
 So, they started with the first version of the standard and published it.
-
 
 In the second version, VT version 2 was mentioned... and so on. Please refer to the standard for details.
 

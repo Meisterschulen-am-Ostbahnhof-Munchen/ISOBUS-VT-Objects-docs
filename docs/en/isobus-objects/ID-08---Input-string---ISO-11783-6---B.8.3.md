@@ -1,13 +1,8 @@
 # ID 8 – Input string – ISO 11783-6 – B.8.3
-
 The **Input String** object with **ID 8** is used for inputting and displaying text strings by the operator.
-
 ### Attributes and Record Format (Table B.17)
-
 The following table describes the structure of the Input String object in the object pool.
-
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
-
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -47,32 +42,21 @@ The following table describes the structure of the Input String object in the ob
 The Input String object offers flexible text display options:
 
 * **Auto-Wrap:** When enabled (Bit 1), the VT automatically wraps the text if the field width is exceeded.
-
 * **Adjustment:** Horizontal and vertical alignment are controlled via AID 8.
-
 * **Validation:** By linking to a `Input Attributes` object, input can be restricted to specific character sets.
-
 
 ## Events (Table B.15)
 
 The Input String object reacts to the following events:
 
 * **On Enable:** When the object is enabled.
-
 * **On Disable:** When the object is disabled.
-
 * **On Input Field Selection:** When the operator focuses/selects the field.
-
 * **On Input Field De-selection:** When focus is lost.
-
 * **On Entry of Value:** When the operator confirms the text input (ENTER). Sends `Change String Value`.
-
 * **On Change Value:** When the value is changed (e.g., by a variable).
-
 * **On ESC:** When the operator cancels the input.
-
 * **On Change Background Colour:** Responds to a change in background color.
-
 * **On Change Attribute:** Responds to general attribute changes.
 
 ## Implementation Implementation Implementation Significance

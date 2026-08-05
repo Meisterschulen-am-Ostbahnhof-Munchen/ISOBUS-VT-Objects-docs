@@ -1,13 +1,8 @@
 # Standard Color Palette (ISO 11783-6 Table A.4)
-
 The VT standard color palette defines 256 colors. The first 16 colors are identical to the standard VGA palette.
-
 | Index | Name / Description | R, G, B Value | Hex Code (RGB) |
-
 | :--- | :--- | :--- | :--- |
-
 **0** | **Black** | 0, 0, 0 | `#000000` |
-
 **1** | **White** | 255, 255, 255 | `#FFFFFF` |
 
 **2** | **Green** | 0, 153, 0 | `#009900` |

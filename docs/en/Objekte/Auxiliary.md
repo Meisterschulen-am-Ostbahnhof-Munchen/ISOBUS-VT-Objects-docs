@@ -1,4 +1,1 @@
 # Auxiliary Functions
-
-
-```

@@ -1,13 +1,8 @@
 # ID 22 – String variable – ISO 11783-6 – B.13.3
-
 The **String Variable** object with **ID 22** is used to store text strings that can be referenced by display or input objects.
-
 ### Attributes and Record Format (Table B.44)
-
 The following table describes the structure of the String Variable object in the object pool.
-
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
-
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -21,15 +16,10 @@ The following table describes the structure of the String Variable object in the
 Like the *Number Variable*, the *String Variable* is a pure data object without its own visual representation.
 
 * **Fixed Length:** The length of the variable is set in the pool during creation and cannot be increased at runtime.
-
 * **Padding:** If a string shorter than the defined length is stored, the VT automatically pads the remainder with spaces.
-
 * **Data Types:** Supports both 8-bit characters (default) and WideStrings (for special characters). The ECU can switch the type between these formats at runtime.
-
-
 * **Fixed Length:** ## Referencing and Updating
 * **Referencing:** Objects such as *Input String* (ID 8) or *Output String* (ID 11) reference the ID of a string variable via their attribute `Variable reference`.
-
 * **Automatic Redraw:** As soon as the ECU changes the value of the variable via the `Change String Value` command, the VT automatically updates all visible objects that use this variable.
 
 ## Events (Table B.42)

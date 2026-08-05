@@ -1,13 +1,8 @@
 # ID 9 – Input number – ISO 11783-6 – B.8.4
-
 The **Input Number** object with **ID 9** is one of the most complex and important input objects. It is used for inputting and displaying numeric values and supports automatic scaling, formatting, and limit checking directly in the terminal.
-
 ### Attributes and Record Format (Table B.18)
-
 The following table describes the structure of the Input Number object in the object pool.
-
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
-
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -67,19 +62,12 @@ Limit values are also checked based on the scaled values. The VT only allows the
 The Input Number object responds to the following events:
 
 * **On Enable / On Disable:** Change of object state.
-
 * **On Input Field Selection / De-selection:** Focus events.
-
 * **On Entry of Value:** When the operator confirms a new value. Sends `Change Numeric Value`.
-
 * **On Change Value:** When the value is changed by the program.
-
 * **On ESC:** Cancel input.
-
 * **On Change Background Colour:** Change background color.
-
 * **On Change Attribute:** General attribute change.
-
 
 ## Real-Time Editing (AID 15, Bit 1)
 

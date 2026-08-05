@@ -1,13 +1,8 @@
 # ID 29 – Auxiliary Function Type 1 – ISO 11783-6 – J.4.2
-
 The **Auxiliary Function Type 1** object with **ID 29** defines the attributes and design of an auxiliary function control.
-
 *Note: This object is considered obsolete as of VT version 3 and is replaced by Type 2 (ID 31). It should no longer be used in new projects.*
-
 ### Attributes and Record Format (Table J.1)
-
 The following table describes the structure of the Auxiliary Function Type 1 object in the object pool.
-
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 
 | :--- | :--- | :--- | :--- | :--- | :--- |

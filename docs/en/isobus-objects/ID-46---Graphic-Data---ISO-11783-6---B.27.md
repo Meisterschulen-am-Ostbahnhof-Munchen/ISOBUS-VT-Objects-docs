@@ -1,13 +1,8 @@
 # ID 46 – Graphic Data (PNG) – ISO 11783-6 – B.27
-
 The **Graphic Data** object with **ID 46** (from VT version 6 onwards) is used to store raw data for graphics, especially in **PNG format**.
-
 ### Attributes and Record Format (Table B.74)
-
 The following table describes the structure of the Graphic Data object in the object pool.
-
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
-
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |

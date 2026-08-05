@@ -6,7 +6,7 @@ This section describes the different object types of the ISOBUS Virtual Terminal
 - [ID 2 - Alarm Mask](ID-02---Alarm-Mask---ISO-11783-6---B.3.md)
 - [ID 3 - Container](ID-03---Container---ISO-11783-6---B.4.md)
 - [ID 4 - Soft Key Mask](ID-04---Soft-key-mask---ISO-11783-6---B.5.md)
-- [ID 5 - Key (Soft Key)](ID-05---Key-(Soft-Key)---ISO-11783-6---B.6.md)
+- [ID 5 - Key (Soft Key)](ID-05---Key-%28Soft-Key%29---ISO-11783-6---B.6.md)
 - [ID 6 - Button](ID-06---Button---ISO-11783-6---B.7.md)
 - [ID 7 - Input Boolean](ID-07---Input-boolean---ISO-11783-6---B.8.2.md)
 - [ID 8 - Input String](ID-08---Input-string---ISO-11783-6---B.8.3.md)

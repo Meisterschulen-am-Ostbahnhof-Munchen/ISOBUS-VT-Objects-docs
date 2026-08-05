@@ -4,7 +4,7 @@ ISOBUS Wiki links
 ...``` ]
 
 
-``` ] ] * [Alert Mask](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/alarm-mask)
+`` ] ] * [Alert Mask](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/alarm-mask)
 * [Arched Bar Graph](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/arched-bar-graph)
 * [Boolean](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/boolean)
 * [Button](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/button)

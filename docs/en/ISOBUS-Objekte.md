@@ -11,7 +11,7 @@ ISOBUS Wiki by Tobias Tenberg:
 
 As you can see, there are various objects, but not all are supported in every ISOBUS version.
 
-``` ![](https://user-images.githubusercontent.com/69573151/94335435-08939880-ffdc-11ea-92e7-662f2ff7779f.png)
+`` ![](https://user-images.githubusercontent.com/69573151/94335435-08939880-ffdc-11ea-92e7-662f2ff7779f.png)
 
 If you were to create a new project with ISO Designer, it would ask you for the "VT Level."
 

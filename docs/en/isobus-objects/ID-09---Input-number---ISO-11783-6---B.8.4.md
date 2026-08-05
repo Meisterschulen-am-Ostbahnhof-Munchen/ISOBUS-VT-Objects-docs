@@ -55,7 +55,7 @@ This allows physical values (e.g., 12.5 bar) to be processed as simple integers 
 ## Validation
 Limit values are also checked based on the scaled values. The VT only allows the input field to be closed (ENTER) if the new value is within the scaled min/max limits:
 
-`Scaled Min <= Neuer Wert <= Scaled Max`
+Scaled Min <= Neuer Wert <= Scaled Max`
 
 ## Events (Table B.15)
 

@@ -13,7 +13,7 @@ The following table describes the structure of the Key Object in the object pool
 
 | :--- | :--- | :--- | :--- | :--- | :--- |
 
-``` | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
+| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
 
 | [0] | **Type** | Integer | 1 | 5 | 3 | Object type = Key. |
 

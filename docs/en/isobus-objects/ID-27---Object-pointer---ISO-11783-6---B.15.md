@@ -16,7 +16,7 @@ An object pointer is integrated into a mask like a normal child object. However,
 
 * **Dynamic Exchange:** The ECU can change `Value` (AID 1) at any time using the `Change Numeric Value` command. The VT then hides the old object and displays the new one in the same position.
 
-``` * **Placeholder Function:** It is ideal for status icons (e.g., changing symbols for different machine states) without having to layer multiple objects and hide them individually.
+`` * **Placeholder Function:** It is ideal for status icons (e.g., changing symbols for different machine states) without having to layer multiple objects and hide them individually.
 
 * **NULL Pointer:** If the value is set to 65535, nothing is drawn at this location.
 

@@ -15,7 +15,6 @@ html_meta:
 
 ## Master Schools at Munich's East Station
 
-#
 ---
 
 ### 📋 [This is in the curriculum (Framework Curriculum 2025)](./das_steht_im_lehrplan.md)

@@ -1,6 +1,6 @@
 # Masks
 ## 🎧 Podcast
-* [ISOBUS Masks in the Virtual Terminal: The Heart of Agricultural and Construction Machinery Interfaces (ISO 11783-6)]
+* [ISOBUS Masks in the Virtual Terminal: The Heart of Agricultural and Construction Machinery Interfaces (ISO 11783-6)](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Masken-im-VT-Das-Herzstck-der-Land--und-Baumaschinen-Interfaces-ISO-11783-6-e36a8m7)
 ----
 ISO 11783-6 describes a serial data communication network for agricultural and forestry tractors, as well as mounted, semi-mounted, trailed, or self-propelled implements. A central element is the virtual terminal, which serves as an interface for controlling and monitoring various implements. The mask types according to ISO 11783-6 are listed here:
 

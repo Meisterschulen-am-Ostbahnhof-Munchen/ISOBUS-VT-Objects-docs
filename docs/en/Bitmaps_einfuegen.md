@@ -128,7 +128,6 @@ You can also crop the images before scaling them.
 ...
 ### Reduce BMP Color Depth
 
-###
 For faster loading, reduce the color depth as much as possible.
 
 Windows Paint offers the following color depths:

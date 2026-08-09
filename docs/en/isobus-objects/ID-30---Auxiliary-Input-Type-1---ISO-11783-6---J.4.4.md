@@ -22,7 +22,6 @@ This object describes a physical input element (e.g., a button or a joystick axi
 
 ## Functionality
 
-This object describes a physical input element (e.g., a button or a joystick axis) on an Auxiliary Input Device. It is provided by the Auxiliary Input Device so that the VT knows the available inputs and their properties.
 
 | - | {X Location} | Signed Integer | 2 | -32768 to +32767 | 12 + ... | The ``Input ID`` attribute links this object to the device's status messages.
 

@@ -19,7 +19,7 @@ This object is the central point of contact for the terminal when loading the po
 
 * **Colors:** It defines which *Color Map* and *Color Palette* should be used **initially** when activating the pool.
 
-`` * **Languages:** This defines a list of supported languages that **replaces** the list in the *Working Set* object (ID 0). Combining language and country codes (e.g., `pt` + `BR` vs. `pt` + `PT`) allows for more precise selection.
+* **Languages:** This defines a list of supported languages that **replaces** the list in the *Working Set* object (ID 0). Combining language and country codes (e.g., `pt` + `BR` vs. `pt` + `PT`) allows for more precise selection.
 
 * **Extensibility:** The attribute `Number of Bytes to follow` allows the object to be extended with new attributes in the future without confusing older VTs (they simply skip the unknown bytes).
 

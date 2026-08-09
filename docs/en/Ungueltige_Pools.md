@@ -6,7 +6,7 @@ These are the most common errors that cause the VT parser to malfunction.
 
 * **Incorrect Length Specifications:** If an object specifies "Five child objects follow," but the byte stream only contains four (or six), the VT incorrectly reads the next object byte as an attribute of the previous one. The pool is then corrupted.
 
-`` * **Unknown Object Types:** An object type ID that is not defined in the standard (and the supported VT version).
+* **Unknown Object Types:** An object type ID that is not defined in the standard (and the supported VT version).
 
 * **Missing ID 0 Object:** Each workset **must** contain exactly one object with the **ID 0** (Working Set). If this is missing, the VT does not know who owns the pool.
 

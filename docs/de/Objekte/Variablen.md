@@ -1,7 +1,9 @@
 # Variablen
 
+## Objekte in dieser Kategorie
 
-
+- [ID 21 - Number Variable](../isobus-objects/ID-21---Number-variable---ISO-11783-6---B.13.2.md)
+- [ID 22 - String Variable](../isobus-objects/ID-22---String-variable---ISO-11783-6---B.13.3.md)
 
 
 ### Empfohlene Lektüre:

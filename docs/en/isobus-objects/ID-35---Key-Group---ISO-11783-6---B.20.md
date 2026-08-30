@@ -19,14 +19,14 @@ The following table describes the structure of the Key Group object in the objec
 
 The Key Group object reacts to the following events:
 
-* **On Change Attribute:** Reacts to general attribute changes.
+- **On Change Attribute:** Reacts to general attribute changes.
 
 ## Meaning and Functionality
 
 The Key Group object is used to define a logically related group of softkeys (e.g., "Hydraulic Functions"). This group is primarily used in **User Layout Soft Key Masks**.
 
-* **User Mapping:** The user can decide at the terminal where they want this group of keys to be placed in their softkey bar. The VT forces the user to place the group *as a whole* to maintain logical coherence.
-* **Transparency:** It is recommended to make Key Groups transparent so that the VT can set a uniform background color for the keys.
+- **User Mapping:** The user can decide at the terminal where they want this group of keys to be placed in their softkey bar. The VT forces the user to place the group *as a whole* to maintain logical coherence.
+- **Transparency:** It is recommended to make Key Groups transparent so that the VT can set a uniform background color for the keys.
 
 ----
 

@@ -27,21 +27,21 @@ Die folgende Tabelle beschreibt den Aufbau des Alarm Mask Objekts im Objektpool.
 ### Prioritätsstufen und Darstellung
 Die Priorität steuert nicht nur die Reihenfolge der Alarme, sondern oft auch deren visuelle Darstellung auf dem VT:
 
-*   **High Priority (0):** Der Bediener ist in Gefahr oder es liegt eine schwere Fehlfunktion vor. Diese Alarme müssen sofort quittiert werden oder erzwingen den Fokus des Terminals.
-*   **Medium Priority (1):** Normale Fehlfunktion der Maschine.
-*   **Low Priority (2):** Nur zur Information (Statusmeldungen).
+-   **High Priority (0):** Der Bediener ist in Gefahr oder es liegt eine schwere Fehlfunktion vor. Diese Alarme müssen sofort quittiert werden oder erzwingen den Fokus des Terminals.
+-   **Medium Priority (1):** Normale Fehlfunktion der Maschine.
+-   **Low Priority (2):** Nur zur Information (Statusmeldungen).
 
 ## Ereignisse (Events - Tabelle B.5)
 
 Die Alarmmaske reagiert auf folgende Ereignisse:
 
-*   **On Show:** Ausgelöst, wenn die Maske sichtbar wird. Das VT sendet eine `VT Status` Nachricht.
-*   **On Hide:** Ausgelöst, wenn die Maske vom Display entfernt wird.
-*   **On Refresh:** Ausgelöst bei Änderungen an Objekten innerhalb der Maske.
-*   **On Change Priority:** Bei Änderung der Priorität bewertet das VT alle aktiven Alarme neu.
-*   **On Change Soft Key Mask:** Wechselt die Softkey-Belegung bei aktiver Alarmmaske.
-*   **On Change Child Location / Position:** Aktualisierung der Kind-Objekte.
-*   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
+-   **On Show:** Ausgelöst, wenn die Maske sichtbar wird. Das VT sendet eine `VT Status` Nachricht.
+-   **On Hide:** Ausgelöst, wenn die Maske vom Display entfernt wird.
+-   **On Refresh:** Ausgelöst bei Änderungen an Objekten innerhalb der Maske.
+-   **On Change Priority:** Bei Änderung der Priorität bewertet das VT alle aktiven Alarme neu.
+-   **On Change Soft Key Mask:** Wechselt die Softkey-Belegung bei aktiver Alarmmaske.
+-   **On Change Child Location / Position:** Aktualisierung der Kind-Objekte.
+-   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
 
 ## Verhalten bei mehreren Alarmen
 Wenn mehrere Alarmmasken von verschiedenen Arbeitsgruppen gleichzeitig aktiv sind, bestimmt die Priorität (AID 3), welche Maske im Vordergrund steht. Bei gleicher Priorität liegt die Entscheidung meist beim VT (oft zeitliche Abfolge).

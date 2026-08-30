@@ -19,16 +19,16 @@ Die folgende Tabelle beschreibt den Aufbau des External Object Pointer Objekts i
 ## Funktionsweise und Regeln
 Das Objekt ermöglicht die Anzeige von Objekten aus fremden Objektpools.
 
-*   **Anzeige:** Das Terminal sucht das Objekt im Pool der durch den NAME identifizierten ECU und zeichnet es an die Stelle des Pointers.
-*   **Kontext:** Ereignisse (z. B. Button Press) und Makros werden im Kontext des **Original-Working-Sets** (Besitzer des Objekts) ausgeführt. Nachrichten (z. B. Button Activation) gehen an den Besitzer.
-*   **Fallback:** Wenn das externe Objekt nicht gefunden wird, nicht freigegeben ist oder ungültig ist, wird das `Default Object` angezeigt.
-*   **Sicherheit:** Das Ziel-Objekt muss durch die besitzende ECU via *External Object Definition* (ID 41) freigegeben worden sein.
+-   **Anzeige:** Das Terminal sucht das Objekt im Pool der durch den NAME identifizierten ECU und zeichnet es an die Stelle des Pointers.
+-   **Kontext:** Ereignisse (z. B. Button Press) und Makros werden im Kontext des **Original-Working-Sets** (Besitzer des Objekts) ausgeführt. Nachrichten (z. B. Button Activation) gehen an den Besitzer.
+-   **Fallback:** Wenn das externe Objekt nicht gefunden wird, nicht freigegeben ist oder ungültig ist, wird das `Default Object` angezeigt.
+-   **Sicherheit:** Das Ziel-Objekt muss durch die besitzende ECU via *External Object Definition* (ID 41) freigegeben worden sein.
 
 ## Ereignisse (Events - Tabelle B.69)
 
 Das External Object Pointer Objekt reagiert auf folgende Ereignisse:
 
-*   **On Change Attribute:** Wird ausgelöst durch das Kommando `Change Attribute`. Das VT evaluiert den Pointer neu und zeichnet ggf. neu.
+-   **On Change Attribute:** Wird ausgelöst durch das Kommando `Change Attribute`. Das VT evaluiert den Pointer neu und zeichnet ggf. neu.
 
 ## Anwendungsbeispiel
 Ein Traktor (Working Set A) möchte in seiner Hauptmaske den Füllstand eines gezogenen Düngestreuers (Working Set B) anzeigen. Er nutzt dazu einen *External Object Pointer*, der auf die Füllstandsanzeige im Pool des Streuers verweist.

@@ -22,23 +22,23 @@ Die folgende Tabelle beschreibt den Aufbau des Fill Attributes Objekts im Objekt
 ## Fülltypen und Logik
 Über AID 1 wird gesteuert, welche Quelle für die Flächenfüllung genutzt wird:
 
-*   **No Fill (0):** Die Fläche bleibt transparent; nur der Umriss (falls definiert) wird gezeichnet.
-*   **Line Colour (1):** Die Fläche wird in derselben Farbe gefüllt wie die Umrandung (aus den Line Attributes).
-*   **Specified Colour (2):** Es wird die in AID 2 definierte Farbe verwendet.
-*   **Pattern (3):** Die Fläche wird mit einer sich wiederholenden Grafik gefüllt (Kachelung).
+-   **No Fill (0):** Die Fläche bleibt transparent; nur der Umriss (falls definiert) wird gezeichnet.
+-   **Line Colour (1):** Die Fläche wird in derselben Farbe gefüllt wie die Umrandung (aus den Line Attributes).
+-   **Specified Colour (2):** Es wird die in AID 2 definierte Farbe verwendet.
+-   **Pattern (3):** Die Fläche wird mit einer sich wiederholenden Grafik gefüllt (Kachelung).
 
 ## Verwendung von Füllmustern (Wichtig!)
 Wenn ein Muster (AID 3) verwendet wird, gelten strenge Regeln für die referenzierte Grafik:
 
-*   **Ausrichtung:** Bei monochromen Grafiken muss die Breite durch 8 teilbar sein. Bei 16-Farben-Grafiken muss sie durch 2 teilbar sein.
-*   **Reihenfolge:** Bei dynamischen Änderungen muss erst das `Fill pattern` und dann der `Fill type` gesetzt werden, um Fehler im VT zu vermeiden.
+-   **Ausrichtung:** Bei monochromen Grafiken muss die Breite durch 8 teilbar sein. Bei 16-Farben-Grafiken muss sie durch 2 teilbar sein.
+-   **Reihenfolge:** Bei dynamischen Änderungen muss erst das `Fill pattern` und dann der `Fill type` gesetzt werden, um Fehler im VT zu vermeiden.
 
 ## Ereignisse (Events - Tabelle B.49)
 
 Das Fill Attributes Objekt reagiert auf folgende Ereignisse:
 
-*   **On Change Fill Attributes:** Wird ausgelöst durch das Kommando `Change Fill Attributes`. Das VT aktualisiert alle Objekte, die dieses Attribut verwenden.
-*   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
+-   **On Change Fill Attributes:** Wird ausgelöst durch das Kommando `Change Fill Attributes`. Das VT aktualisiert alle Objekte, die dieses Attribut verwenden.
+-   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
 
 ## Bedeutung für die Implementierung
 Fill Attributes sind unverzichtbar für die Gestaltung der Benutzeroberfläche. Sie ermöglichen es, Flächen hervorzuheben (z. B. gelbe Füllung für einen Warnbereich in einem Balkendiagramm) oder texturierte Hintergründe zu schaffen. Durch den Wechsel des Fülltyps zur Laufzeit können Zustände (z. B. "Tank leer" -> rot blinkende Füllung) sehr auffällig visualisiert werden.

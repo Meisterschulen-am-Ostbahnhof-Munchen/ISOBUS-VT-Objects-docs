@@ -41,13 +41,13 @@ Scaled Min <= Neuer Wert <= Scaled Max`
 
 The Input Number object responds to the following events:
 
-* **On Enable / On Disable:** Change of object state.
-* **On Input Field Selection / De-selection:** Focus events.
-* **On Entry of Value:** When the operator confirms a new value. Sends `Change Numeric Value`.
-* **On Change Value:** When the value is changed by the program.
-* **On ESC:** Cancel input.
-* **On Change Background Colour:** Change background color.
-* **On Change Attribute:** General attribute change.
+- **On Enable / On Disable:** Change of object state.
+- **On Input Field Selection / De-selection:** Focus events.
+- **On Entry of Value:** When the operator confirms a new value. Sends `Change Numeric Value`.
+- **On Change Value:** When the value is changed by the program.
+- **On ESC:** Cancel input.
+- **On Change Background Colour:** Change background color.
+- **On Change Attribute:** General attribute change.
 
 ## Real-Time Editing (AID 15, Bit 1)
 

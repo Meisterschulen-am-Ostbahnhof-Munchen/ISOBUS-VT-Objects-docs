@@ -26,19 +26,19 @@ The following table describes the structure of the Animation object in the objec
 ## Functionality
 The animation object manages a list of child objects. When `Enabled` is 1, the terminal automatically increments `Value` (index) at the same rate as `Refresh Interval`.
 
-* **Loop:** After reaching `Last Child Index`, the loop starts again at `First Child Index`.
-* **Single Shot:** The animation stops at the last frame.
-* **Deactivation:** The behavior when stopping (pause, reset to frame 1, default image, or blank) is controlled via the options.
+- **Loop:** After reaching `Last Child Index`, the loop starts again at `First Child Index`.
+- **Single Shot:** The animation stops at the last frame.
+- **Deactivation:** The behavior when stopping (pause, reset to frame 1, default image, or blank) is controlled via the options.
 
 ## Events (Events - Table B.71)
 
 The animation object reacts to the following events:
 
-* **On Enable / On Disable:** State change.
-* **On Change Value:** When the index is changed (manually or automatically). The VT draws the new object.
-* **On Change Attribute:** Reacts to general attribute changes.
-* **On Change Size:** Reacts to size changes.
-* **On Refresh:** Triggered by the timer (refresh interval) or other refresh conditions.
+- **On Enable / On Disable:** State change.
+- **On Change Value:** When the index is changed (manually or automatically). The VT draws the new object.
+- **On Change Attribute:** Reacts to general attribute changes.
+- **On Change Size:** Reacts to size changes.
+- **On Refresh:** Triggered by the timer (refresh interval) or other refresh conditions.
 
 ## Recommendation
 To avoid overloading the terminal's performance, individual objects should be kept small. A refresh interval of at least 200 ms is recommended.

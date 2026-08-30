@@ -32,19 +32,19 @@ Die folgende Tabelle beschreibt den Aufbau des Animation Objekts im Objektpool.
 ## Funktionsweise
 Das Animationsobjekt verwaltet eine Liste von Kind-Objekten. Wenn `Enabled` auf 1 steht, inkrementiert das Terminal den `Value` (Index) automatisch im Rhythmus des `Refresh Interval`.
 
-*   **Loop:** Nach Erreichen des `Last Child Index` wird wieder beim `First Child Index` begonnen.
-*   **Single Shot:** Die Animation stoppt beim letzten Frame.
-*   **Deaktivierung:** Das Verhalten beim Stoppen (Pause, Reset auf 1. Frame, Default-Bild oder Leer) wird über die Optionen gesteuert.
+-   **Loop:** Nach Erreichen des `Last Child Index` wird wieder beim `First Child Index` begonnen.
+-   **Single Shot:** Die Animation stoppt beim letzten Frame.
+-   **Deaktivierung:** Das Verhalten beim Stoppen (Pause, Reset auf 1. Frame, Default-Bild oder Leer) wird über die Optionen gesteuert.
 
 ## Ereignisse (Events - Tabelle B.71)
 
 Das Animation Objekt reagiert auf folgende Ereignisse:
 
-*   **On Enable / On Disable:** Zustandsänderung.
-*   **On Change Value:** Wenn der Index (manuell oder automatisch) geändert wird. Das VT zeichnet das neue Objekt.
-*   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
-*   **On Change Size:** Reaktion auf Größenänderung.
-*   **On Refresh:** Wird ausgelöst durch den Timer (Refresh Interval) oder andere Refresh-Bedingungen.
+-   **On Enable / On Disable:** Zustandsänderung.
+-   **On Change Value:** Wenn der Index (manuell oder automatisch) geändert wird. Das VT zeichnet das neue Objekt.
+-   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
+-   **On Change Size:** Reaktion auf Größenänderung.
+-   **On Refresh:** Wird ausgelöst durch den Timer (Refresh Interval) oder andere Refresh-Bedingungen.
 
 ## Empfehlung
 Um die Performance des Terminals nicht zu überlasten, sollten die Einzelobjekte klein gehalten werden. Ein Refresh-Intervall von mindestens 200 ms wird empfohlen.

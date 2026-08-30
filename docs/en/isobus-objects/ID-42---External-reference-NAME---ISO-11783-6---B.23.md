@@ -13,13 +13,13 @@ The following table describes the structure of the External Reference NAME objec
 ## Functionality
 This object functions as an "address book entry." When an ECU wants to load an object from another ECU, it uses this entry to tell the terminal which ECU (identified by the NAME) the object originates from.
 
-* **Activation:** Should be initially disabled. When the referenced working set is online, the ECU can activate this object.
+- **Activation:** Should be initially disabled. When the referenced working set is online, the ECU can activate this object.
 
 ## Events (Table B.67)
 
 The External Reference NAME object responds to the following events:
 
-* **On Change Attribute:** Triggered by the command `Change Attribute`. The VT re-evaluates all currently displayed external object pointers that reference this NAME object.
+- **On Change Attribute:** Triggered by the command `Change Attribute`. The VT re-evaluates all currently displayed external object pointers that reference this NAME object.
 
 ----
 

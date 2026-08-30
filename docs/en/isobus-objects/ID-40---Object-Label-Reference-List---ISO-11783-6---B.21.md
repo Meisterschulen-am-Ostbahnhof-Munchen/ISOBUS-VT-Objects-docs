@@ -15,8 +15,8 @@ The following table describes the structure of the Object Label Reference List o
 ## Meaning and Functionality
 This object is used to assign a name (text) and an icon (graphic) to other objects (e.g., working sets, input fields). These "labels" are used by the VT:
 
-* **Working Set Label:** The label for the working set object is displayed in the list of active workgroups.
-* **Input Labels:** For input fields, the VT displays the label (text/graphic) in the popup editor so the user knows which value they are currently editing (e.g., "seed quantity" instead of just "120").
+- **Working Set Label:** The label for the working set object is displayed in the list of active workgroups.
+- **Input Labels:** For input fields, the VT displays the label (text/graphic) in the popup editor so the user knows which value they are currently editing (e.g., "seed quantity" instead of just "120").
 
 Only **one** Object Label Reference List is allowed per object pool.
 

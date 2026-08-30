@@ -16,16 +16,16 @@ Die folgende Tabelle beschreibt den Aufbau des Auxiliary Control Designator Type
 | [2] | **Auxiliary Object ID** | Integer | 2 | 0 – 65534, 65535 | 5 – 6 | Objekt-ID einer Auxiliary Function (Type 2) oder eines Auxiliary Inputs (Type 2). |
 
 ### Pointer Types (AID 1)
-*   **0:** Das VT zeigt den Designator des durch `Auxiliary Object ID` angegebenen Objekts.
-*   **1:** Das VT zeigt den Designator des Objekts, das dem durch `Auxiliary Object ID` referenzierten Objekt zugewiesen ist (z. B. wenn AID 2 eine Funktion ist, wird der zugewiesene Input gezeigt).
-*   **2:** Das VT zeigt den Designator des Working Sets, das Besitzer des durch `Auxiliary Object ID` angegebenen Objekts ist.
-*   **3:** Das VT zeigt den Designator des Working Sets, das Besitzer des Objekts ist, welches dem durch `Auxiliary Object ID` referenzierten Objekt zugewiesen ist.
+-   **0:** Das VT zeigt den Designator des durch `Auxiliary Object ID` angegebenen Objekts.
+-   **1:** Das VT zeigt den Designator des Objekts, das dem durch `Auxiliary Object ID` referenzierten Objekt zugewiesen ist (z. B. wenn AID 2 eine Funktion ist, wird der zugewiesene Input gezeigt).
+-   **2:** Das VT zeigt den Designator des Working Sets, das Besitzer des durch `Auxiliary Object ID` angegebenen Objekts ist.
+-   **3:** Das VT zeigt den Designator des Working Sets, das Besitzer des Objekts ist, welches dem durch `Auxiliary Object ID` referenzierten Objekt zugewiesen ist.
 
 ## Ereignisse (Events - Tabelle J.7)
 
 Das Objekt reagiert auf folgende Ereignisse:
 
-*   **On Change Value:** Wird ausgelöst, wenn die Zuweisung (Mapping) geändert wird oder das referenzierte Objekt geändert wird. Das VT aktualisiert die Anzeige.
+-   **On Change Value:** Wird ausgelöst, wenn die Zuweisung (Mapping) geändert wird oder das referenzierte Objekt geändert wird. Das VT aktualisiert die Anzeige.
 
 ## Nutzen für den Entwickler
 Mit diesem Objekt kann eine grafische Übersicht erstellt werden, die dem Benutzer zeigt: "Diese Funktion auf meiner Maschine wird aktuell von Taste Y am Joystick Z gesteuert". Da die Zuweisung (Mapping) oft durch den Benutzer am Terminal erfolgt, erlaubt dieser Pointer eine dynamische Anzeige ohne Vorabwissen der ECU über die tatsächliche Belegung.

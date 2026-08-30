@@ -21,15 +21,15 @@ Die folgende Tabelle beschreibt den Aufbau des Auxiliary Input Type 2 Objekts im
 | - | {Y Location} | Signed Integer | 2 | -32768 bis +32767 | 12 + ... | Y-Position relativ zur oberen linken Ecke. |
 
 ### Function Attributes (Bitmaske AID 2)
-*   **Bit 0–3:** Auxiliary function type (siehe Tabelle J.5)
-    *   0: Boolean Latching (Schaltend)
-    *   1: Analogue (Analog)
-    *   2: Boolean Momentary (Tastend)
-    *   3: Boolean Latching (Dual)
-    *   ...
-*   **Bit 4–5:** Reserved
-*   **Bit 6:** Reserved
-*   **Bit 7:** Single Assignment (1 = Darf nur einer Funktion zugewiesen werden).
+-   **Bit 0–3:** Auxiliary function type (siehe Tabelle J.5)
+    -   0: Boolean Latching (Schaltend)
+    -   1: Analogue (Analog)
+    -   2: Boolean Momentary (Tastend)
+    -   3: Boolean Latching (Dual)
+    -   ...
+-   **Bit 4–5:** Reserved
+-   **Bit 6:** Reserved
+-   **Bit 7:** Single Assignment (1 = Darf nur einer Funktion zugewiesen werden).
 
 ## Funktionsweise
 Das Terminal nutzt diese Informationen, um dem Benutzer die verfügbaren Tasten und deren physikalische Eigenschaften anzuzeigen. Wenn der Benutzer eine Taste drückt, sendet das Eingabegerät eine Statusmeldung mit dem aktuellen Wert (Boolean oder Analog) und der `Input ID` an den ISOBUS.

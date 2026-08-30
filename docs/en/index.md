@@ -21,10 +21,10 @@ html_meta:
 
 > **The ISOBUS Virtual Terminal (VT / UT according to ISO 11783-6) is the central human-machine interface (HMI)** for operating, configuring, and visualizing all networked attachments (Part I LE 1.4 and Part II LE 1.1 & LE 1.4).
 
-* 📋 **[This is in the curriculum – Virtual Terminal & HMI in the curriculum](./das_steht_im_lehrplan.md)**
-  * 🖥️ [ISOBUS VT Object Pools & HMI (ISO 11783-6, LE 1.4 & LE 1.1)](./lehrplan_praxis/isobus_vt_objektpools_hmi.md)
-  * 📱 [Screen Layout, Softkeys & Ergonomics (LE 1.4 & LE 1.4)](./lehrplan_praxis/maskenlayout_softkeys_bedienkonzepte.md)
-  * 🎛️ [Input Attributes, Key Events & Interaction Diagnostics (LE 2.2 & LE 1.3)](./lehrplan_praxis/input_attributes_diagnose.md)
+- 📋 **[This is in the curriculum – Virtual Terminal & HMI in the curriculum](./das_steht_im_lehrplan.md)**
+  - 🖥️ [ISOBUS VT Object Pools & HMI (ISO 11783-6, LE 1.4 & LE 1.1)](./lehrplan_praxis/isobus_vt_objektpools_hmi.md)
+  - 📱 [Screen Layout, Softkeys & Ergonomics (LE 1.4 & LE 1.4)](./lehrplan_praxis/maskenlayout_softkeys_bedienkonzepte.md)
+  - 🎛️ [Input Attributes, Key Events & Interaction Diagnostics (LE 2.2 & LE 1.3)](./lehrplan_praxis/input_attributes_diagnose.md)
 
 ---
 
@@ -34,9 +34,9 @@ This documentation is part of the knowledge database of the master craftsman sch
 
 **Useful Links:**
 
-* [🏠 Main Menu](https://www.ms-muc-docs.de/)
-* [🔍 Super Search (All Wikis)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs/en/latest/)
-* [📄 Download PDF Handbook](https://meisterschulen-am-ostbahnhof-munchen.github.io/ISOBUS-VT-Objects-docs/en/pdf/isobus-vt-objects-docs-en.pdf)
+- [🏠 Main Menu](https://www.ms-muc-docs.de/)
+- [🔍 Super Search (All Wikis)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs/en/latest/)
+- [📄 Download PDF Handbook](https://meisterschulen-am-ostbahnhof-munchen.github.io/ISOBUS-VT-Objects-docs/en/pdf/isobus-vt-objects-docs-en.pdf)
 
 ---
 

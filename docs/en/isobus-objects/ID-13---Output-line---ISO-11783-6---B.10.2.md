@@ -17,21 +17,21 @@ The following table describes the structure of the Output Line object in the obj
 ## Functionality and Geometry
 The line is drawn within an imaginary rectangle defined by the object's position and `Width` and `Height`.
 
-* **Line Direction 0:** The line runs diagonally downwards.
-* Start point: (X, Y)
-* End point: (X + Width - Line Width, Y + Height - Line Width)
-* **Line Direction 1:** The line runs diagonally upwards.
-* Start point: (X, Y + Height - Line Width)
-* End point: (X + Width - Line Width, Y)
+- **Line Direction 0:** The line runs diagonally downwards.
+- Start point: (X, Y)
+- End point: (X + Width - Line Width, Y + Height - Line Width)
+- **Line Direction 1:** The line runs diagonally upwards.
+- Start point: (X, Y + Height - Line Width)
+- End point: (X + Width - Line Width, Y)
 
 ## Events (Events - Table B.26)
 
 The Output Line object reacts to the following events:
 
-* **On Change End Point:** Triggered when the geometry of the line is changed.
-* **On Change Attribute:** Triggered when the line properties (e.g., color) change.
-* **On Change Size:** Reacts to a change in size (e.g., by the `Change Size` command).
-* **On Refresh:** Triggered when the VT needs to redraw the object.
+- **On Change End Point:** Triggered when the geometry of the line is changed.
+- **On Change Attribute:** Triggered when the line properties (e.g., color) change.
+- **On Change Size:** Reacts to a change in size (e.g., by the `Change Size` command).
+- **On Refresh:** Triggered when the VT needs to redraw the object.
 
 ## Implementation Implications
 Lines are frequently used as separators in forms or for the simple graphical representation of relationships. By linking them to variables (via the Line Attributes), lines can change their color at runtime to indicate states (e.g., active/inactive).

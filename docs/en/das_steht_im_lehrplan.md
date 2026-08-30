@@ -36,16 +36,16 @@ Modern implements no longer have their own display; instead, they use the Univer
 ## 📂 Curriculum topics in this wiki
 ...
 
-* 🖥️ [ISOBUS VT object pools & HMI (ISO 11783-6)](./lehrplan_praxis/isobus_vt_objektpools_hmi.md)
-* 📱 [Mask layout, softkeys & ergonomics](./lehrplan_praxis/maskenlayout_softkeys_bedienkonzepte.md)
-* 🎛️ [Input attributes, key events & interaction diagnostics](./lehrplan_praxis/input_attributes_diagnose.md)
+- 🖥️ [ISOBUS VT object pools & HMI (ISO 11783-6)](./lehrplan_praxis/isobus_vt_objektpools_hmi.md)
+- 📱 [Mask layout, softkeys & ergonomics](./lehrplan_praxis/maskenlayout_softkeys_bedienkonzepte.md)
+- 🎛️ [Input attributes, key events & interaction diagnostics](./lehrplan_praxis/input_attributes_diagnose.md)
 
 ---
 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ## 🔗 Main portal & direct links to the 6 wikis
 ...

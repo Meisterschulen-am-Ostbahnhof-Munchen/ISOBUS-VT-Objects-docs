@@ -17,11 +17,11 @@ The following table describes the structure of the Working Set Special Controls 
 
 This object is the central point of contact for the terminal when loading the pool (from VT version 6 onwards).
 
-* **Colors:** It defines which *Color Map* and *Color Palette* should be used **initially** when activating the pool.
+- **Colors:** It defines which *Color Map* and *Color Palette* should be used **initially** when activating the pool.
 
-* **Languages:** This defines a list of supported languages that **replaces** the list in the *Working Set* object (ID 0). Combining language and country codes (e.g., `pt` + `BR` vs. `pt` + `PT`) allows for more precise selection.
+- **Languages:** This defines a list of supported languages that **replaces** the list in the *Working Set* object (ID 0). Combining language and country codes (e.g., `pt` + `BR` vs. `pt` + `PT`) allows for more precise selection.
 
-* **Extensibility:** The attribute `Number of Bytes to follow` allows the object to be extended with new attributes in the future without confusing older VTs (they simply skip the unknown bytes).
+- **Extensibility:** The attribute `Number of Bytes to follow` allows the object to be extended with new attributes in the future without confusing older VTs (they simply skip the unknown bytes).
 
 There can be a maximum of **one** Working Set Special Controls object per object pool.
 
@@ -29,7 +29,7 @@ There can be a maximum of **one** Working Set Special Controls object per object
 
 The object responds to the following events:
 
-* **On Refresh:** Triggered when settings change that require a complete rebuild of the display (e.g., color palette).
+- **On Refresh:** Triggered when settings change that require a complete rebuild of the display (e.g., color palette).
 
 ----
 

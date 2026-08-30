@@ -23,29 +23,29 @@ The following table describes the structure of the Picture Graphic object in the
 The Picture Graphic object stores pixel graphics in binary form within the object pool file (.IOP).
 
 ### Scaling and Formats
-* **Aspect Ratio:** The VT scales the graphic based on the target width (`Width`). To avoid distortion, the VT automatically calculates the target height from the ratio of `Actual width` to `Actual height`.
-* **Color Depth:** 1-bit (monochrome), 4-bit (16 colors), and 8-bit (256 colors) are supported.
+- **Aspect Ratio:** The VT scales the graphic based on the target width (`Width`). To avoid distortion, the VT automatically calculates the target height from the ratio of `Actual width` to `Actual height`.
+- **Color Depth:** 1-bit (monochrome), 4-bit (16 colors), and 8-bit (256 colors) are supported.
 
 ### Transparency and Effects
-* **Transparency (Bit 0):** When enabled, the color defined in AID 3 is not drawn; instead, the background shows through.
-* **Flashing (Bit 1):** The image can blink (frequency and style depend on the VT).
-* **RLE Compression (Bit 2):** Run-Length Encoding can save memory for simple graphics (many areas of the same color).
+- **Transparency (Bit 0):** When enabled, the color defined in AID 3 is not drawn; instead, the background shows through.
+- **Flashing (Bit 1):** The image can blink (frequency and style depend on the VT).
+- **RLE Compression (Bit 2):** Run-Length Encoding can save memory for simple graphics (many areas of the same color).
 
 ### Transparency and Effects
-* **Transparency (Bit 0):** When enabled, the color defined in AID 3 is not drawn; instead, the background shows through.
+- **Transparency (Bit 0):** When enabled, the color defined in AID 3 is not drawn; instead, the background shows through.
 ## Events (Events - Table B.40)
 
 The Picture Graphic object reacts to the following events:
 
-* **On Refresh:** Triggered when options change (e.g., transparency, blinking) or when the mask is refreshed.
-* **On Change Attribute:** Reacts to general attribute changes.
+- **On Refresh:** Triggered when options change (e.g., transparency, blinking) or when the mask is refreshed.
+- **On Change Attribute:** Reacts to general attribute changes.
 
 ## Implementation Implementation Importance
 Picture graphics are essential for a modern HMI.
 
-* **Avoid Waste:** Since bitmaps occupy a lot of memory in the VT, they should be kept as small as possible.
-* **Reuse:** An image can be defined once in the pool and referenced by many objects (e.g., multiple buttons).
-* **Icons:** They are frequently used as "designators" for softkeys (ID 5) or as symbols in containers (ID 3).
+- **Avoid Waste:** Since bitmaps occupy a lot of memory in the VT, they should be kept as small as possible.
+- **Reuse:** An image can be defined once in the pool and referenced by many objects (e.g., multiple buttons).
+- **Icons:** They are frequently used as "designators" for softkeys (ID 5) or as symbols in containers (ID 3).
 
 Further information and examples can be found in the [ISOBUS Wiki - Picture Graphic object](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/picture-graphic-object) by Tobias Tenberg].
 

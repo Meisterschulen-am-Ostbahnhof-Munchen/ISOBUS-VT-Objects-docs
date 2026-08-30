@@ -48,15 +48,15 @@ Der Button ist ein Container. Er kann andere Objekte enthalten, die im **Button 
 
 Der Button reagiert auf folgende Ereignisse:
 
-*   **On Key Press:** Ausgelöst beim Betätigen des Buttons. Sendet `Button Activation`.
-*   **On Key Release:** Ausgelöst beim Loslassen. Sendet `Button Activation`.
-*   **On Enable:** Wenn der Button per Kommando aktiviert wird.
-*   **On Disable:** Wenn der Button deaktiviert wird.
-*   **On Input Field Selection:** Wenn der Button fokussiert wird (Navigation).
-*   **On Input Field De-selection:** Wenn der Fokus verloren geht.
-*   **On Change Background Colour:** Reaktion auf Farbänderung.
-*   **On Change Size:** Reaktion auf Größenänderung (löscht alten Bereich, zeichnet neu).
-*   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
+-   **On Key Press:** Ausgelöst beim Betätigen des Buttons. Sendet `Button Activation`.
+-   **On Key Release:** Ausgelöst beim Loslassen. Sendet `Button Activation`.
+-   **On Enable:** Wenn der Button per Kommando aktiviert wird.
+-   **On Disable:** Wenn der Button deaktiviert wird.
+-   **On Input Field Selection:** Wenn der Button fokussiert wird (Navigation).
+-   **On Input Field De-selection:** Wenn der Fokus verloren geht.
+-   **On Change Background Colour:** Reaktion auf Farbänderung.
+-   **On Change Size:** Reaktion auf Größenänderung (löscht alten Bereich, zeichnet neu).
+-   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
 
 **Rolle des Button Objekts im Virtuellen Terminal**
 
@@ -80,16 +80,16 @@ Auswertung des Buttons:
 
 wird der Button gedrückt so werden folgende Nachrichten am ISOBUS abgesetzt:
 
-*   BUTTON\_STATE\_PRESSED
-    *   in dem Moment wo der Knopf gedrückt wurde
-*   BUTTON\_STATE\_HELD
-    *   falls der Knopf länger gehalten wurde
-    *   TODO Verweis auf ISO
-*   BUTTON\_STATE\_RELEASED
-    *   wenn der Knopf losgelassen wurde
-*   BUTTON\_STATE\_ABORTED
-    *   wenn der Knopf gedrückt, aber dann abgebrochen wurde
-    *   TODO besser beschreiben.
+-   BUTTON\_STATE\_PRESSED
+    -   in dem Moment wo der Knopf gedrückt wurde
+-   BUTTON\_STATE\_HELD
+    -   falls der Knopf länger gehalten wurde
+    -   TODO Verweis auf ISO
+-   BUTTON\_STATE\_RELEASED
+    -   wenn der Knopf losgelassen wurde
+-   BUTTON\_STATE\_ABORTED
+    -   wenn der Knopf gedrückt, aber dann abgebrochen wurde
+    -   TODO besser beschreiben.
 
 daraus ergibt sich:
 

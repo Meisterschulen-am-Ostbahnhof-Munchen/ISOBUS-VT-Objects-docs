@@ -6,10 +6,10 @@ Caution: This is very imprecise and will require a few attempts to achieve the d
 If there's another way, please correct it here (smile)
 
 ## Solid Edge
-* If something doesn't work, it helps to simply redo each line,
-* to ensure clear connections between the lines. Time-consuming, but it should work. (wink)
-* When drawing symbols for the displays, they must be 72x72. Quickly draw a rectangle and check it; that way you're on the safe side.
-* When drawing symbols for the displays, they must have dimensions of 72x72. * Select the entire object → Block → Ungroup all
+- If something doesn't work, it helps to simply redo each line,
+- to ensure clear connections between the lines. Time-consuming, but it should work. (wink)
+- When drawing symbols for the displays, they must be 72x72. Quickly draw a rectangle and check it; that way you're on the safe side.
+- When drawing symbols for the displays, they must have dimensions of 72x72. * Select the entire object → Block → Ungroup all
 
 ![image2015-10-21 10_4_0](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/ISOBUS-VT-Objects-docs/assets/69573151/8c3efd93-6903-4d12-93b1-c1be96ed3976)
 
@@ -47,8 +47,8 @@ Save
 Close
 
 ## ISO-Designer
-* Jetter has removed support for DXF vector graphics import.
-* ISO-Designer 5.3.1 is the last version that can still import DXF files.
+- Jetter has removed support for DXF vector graphics import.
+- ISO-Designer 5.3.1 is the last version that can still import DXF files.
 
 File → New → Workspace: Name of the .dfx file
 

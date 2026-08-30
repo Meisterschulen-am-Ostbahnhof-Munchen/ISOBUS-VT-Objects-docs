@@ -22,24 +22,24 @@ Die folgende Tabelle beschreibt den Aufbau des Line Attributes Objekts im Objekt
 ## Linienstärken und Darstellung
 Das VT verwendet einen quadratischen "Pinsel" der Größe `Line width` x `Line width`, um die Linie zu zeichnen.
 
-*   **Breite = 0:** Die Linie wird nicht gezeichnet.
-*   **Breite > 1:** Die Linie erscheint dicker.
+-   **Breite = 0:** Die Linie wird nicht gezeichnet.
+-   **Breite > 1:** Die Linie erscheint dicker.
 
 ## Linienstil (Line Art - AID 3)
 Über eine 16-Bit-Maske wird definiert, ob eine Linie durchgezogen, gestrichelt oder punktiert erscheint:
 
-*   Jedes gesetzte Bit (1) steht für einen gezeichneten Pinselstrich.
-*   Jedes nicht gesetzte Bit (0) steht für eine Lücke (Hintergrund scheint durch).
-*   **Beispiel 0xFFFF:** Durchgezogene Linie (alle Bits 1).
-*   **Beispiel 0xCCCC (11001100...):** Gestrichelte Linie.
-*   **Besonderheit:** Die Länge eines Strichs skaliert mit der `Line width`.
+-   Jedes gesetzte Bit (1) steht für einen gezeichneten Pinselstrich.
+-   Jedes nicht gesetzte Bit (0) steht für eine Lücke (Hintergrund scheint durch).
+-   **Beispiel 0xFFFF:** Durchgezogene Linie (alle Bits 1).
+-   **Beispiel 0xCCCC (11001100...):** Gestrichelte Linie.
+-   **Besonderheit:** Die Länge eines Strichs skaliert mit der `Line width`.
 
 ## Ereignisse (Events - Tabelle B.47)
 
 Das Line Attributes Objekt reagiert auf folgende Ereignisse:
 
-*   **On Change Line Attributes:** Wird ausgelöst durch das Kommando `Change Line Attributes`. Das VT aktualisiert alle Objekte, die dieses Attribut verwenden.
-*   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
+-   **On Change Line Attributes:** Wird ausgelöst durch das Kommando `Change Line Attributes`. Das VT aktualisiert alle Objekte, die dieses Attribut verwenden.
+-   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
 
 ## Bedeutung für die Implementierung
 Line Attributes ermöglichen eine effiziente Steuerung der grafischen Darstellung. Durch das Ändern eines einzigen Attribut-Objekts können beispielsweise alle Umrandungen in einer Maske gleichzeitig von "Dünn/Schwarz" auf "Dick/Rot" umgeschaltet werden, um einen Alarmzustand zu visualisieren.

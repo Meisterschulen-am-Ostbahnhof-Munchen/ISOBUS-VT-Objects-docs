@@ -1,8 +1,8 @@
 # ISOBUS Object IDs
 See also:
 
-* [ISOBUS Wiki - Colours](https://isobus-studio.com/isobus-wiki/isobus-colours)]
-* [ISOBUS Wiki - Objectpool Objects Database](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects-database)]
+- [ISOBUS Wiki - Colours](https://isobus-studio.com/isobus-wiki/isobus-colours)]
+- [ISOBUS Wiki - Objectpool Objects Database](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects-database)]
 Version: Jetter ISO-Designer 5.6.1
 Here, the object numbers correspond to the IDs in the standard.
 

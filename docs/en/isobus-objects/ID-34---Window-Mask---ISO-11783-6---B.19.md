@@ -25,28 +25,28 @@ The following table describes the structure of the Window Mask object in the obj
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ### Window Types (Excerpt from B.19.2)
-* **0:** Free Form (Free design, working set defines content).
-* **1:** 1x1 Numeric Output with units.
-* **2:** 1x1 Numeric Output without units.
-* **3:** 1x1 String Output.
-* **4:** 1x1 Numeric Input with Units.
-* **...**
-* **7:** 1x1 Horizontal Linear Bargraph.
-* **8:** 1x1 Single Button.
-* **...**
-* **10:** 2x1 Numeric Output with Units.
+- **0:** Free Form (Free design, working set defines content).
+- **1:** 1x1 Numeric Output with units.
+- **2:** 1x1 Numeric Output without units.
+- **3:** 1x1 String Output.
+- **4:** 1x1 Numeric Input with Units.
+- **...**
+- **7:** 1x1 Horizontal Linear Bargraph.
+- **8:** 1x1 Single Button.
+- **...**
+- **10:** 2x1 Numeric Output with Units.
 
 ## Events (Events - Table B.60)
 
 The Window Mask object responds to the following events:
 
-* **On Show:** When the window becomes visible as part of a user layout mask.
-* **On Hide:** When the window is hidden.
-* **On Refresh:** When child objects are changed.
-* **On Change Background Colour:** Responds to a color change.
-* **On Change Child Location / Position:** Updates child objects.
-* **On Change Attribute:** Responds to general attribute changes.
-* **On Pointing Event:** Touch events (only for Free Form Windows).
+- **On Show:** When the window becomes visible as part of a user layout mask.
+- **On Hide:** When the window is hidden.
+- **On Refresh:** When child objects are changed.
+- **On Change Background Colour:** Responds to a color change.
+- **On Change Child Location / Position:** Updates child objects.
+- **On Change Attribute:** Responds to general attribute changes.
+- **On Pointing Event:** Touch events (only for Free Form Windows).
 
 Further information and examples can be found in the [ISOBUS Wiki - Window Mask](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/window-mask)] by Tobias Tenberg.
 

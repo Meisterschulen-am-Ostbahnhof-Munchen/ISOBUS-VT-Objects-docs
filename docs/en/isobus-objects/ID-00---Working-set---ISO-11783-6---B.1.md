@@ -33,17 +33,17 @@ The following table describes the structure of the Working Set object in the obj
 
 The Working Set object serves as a container for a graphical identifier (designator) that represents the device (e.g., icon and name).
 
-* **Structure:** The number of objects specified under `Number of objects to follow` follows directly in the record. Each child object is defined by its ID, X-Pos, and Y-Pos.
-* **Space Limit:** All of these objects must fit within the area of a **softkey**. The VT truncates anything that extends beyond this area.
-* **Coordinates:** Relative to the upper left corner of the Working Set object.
+- **Structure:** The number of objects specified under `Number of objects to follow` follows directly in the record. Each child object is defined by its ID, X-Pos, and Y-Pos.
+- **Space Limit:** All of these objects must fit within the area of a **softkey**. The VT truncates anything that extends beyond this area.
+- **Coordinates:** Relative to the upper left corner of the Working Set object.
 
 ### Macros (Events)
 
 The working set defines events that can trigger macros. See Table B.1 for the event definitions.
 
-* **On Activate:** Triggered when the working set is selected by the operator.
-* **On Deactivate:** Triggered when the working set is exited.
-* **On Change Active Mask:** Triggered by the command `Change Active Mask`.
+- **On Activate:** Triggered when the working set is selected by the operator.
+- **On Deactivate:** Triggered when the working set is exited.
+- **On Change Active Mask:** Triggered by the command `Change Active Mask`.
 
 ### Language Support
 

@@ -5,9 +5,9 @@ Take a close look at this link.
 Future: [ISOBUS Objects Versions](ISOBUS-Objekte-Versionen.md)]
 ISOBUS Wiki by Tobias Tenberg:
 
-* <https://isobus-studio.com/en/isobus-wiki>
-* [ISOBUS Wiki - Colors](https://isobus-studio.com/isobus-wiki/isobus-colours)]
-* [ISOBUS Wiki - Objectpool Objects Database](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects-database)]
+- <https://isobus-studio.com/en/isobus-wiki>
+- [ISOBUS Wiki - Colors](https://isobus-studio.com/isobus-wiki/isobus-colours)]
+- [ISOBUS Wiki - Objectpool Objects Database](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects-database)]
 
 As you can see, there are various objects, but not all are supported in every ISOBUS version.
 

@@ -20,18 +20,18 @@ The following table describes the structure of the Output Ellipse object in the 
 ## Ellipse Types and Geometry
 The ellipse is fitted into a virtual rectangle (`Width` x `Height`).
 
-* **Closed Ellipse (0):** A complete ellipse or a circle (if Width = Height).
-* **Open Ellipse (1):** Only the arc between the start and end angles is drawn.
-* **Segment (2):** A segment of a circle (the chord between the angle points is closed).
-* **Sector (3):** A sector of a circle (the angle points are connected to the center point, ideal for pie charts).
+- **Closed Ellipse (0):** A complete ellipse or a circle (if Width = Height).
+- **Open Ellipse (1):** Only the arc between the start and end angles is drawn.
+- **Segment (2):** A segment of a circle (the chord between the angle points is closed).
+- **Sector (3):** A sector of a circle (the angle points are connected to the center point, ideal for pie charts).
 
 ## Angle Calculation (Important!)
 
 The angle values in AID 5 and 6 are transferred **halved** (range 0-180 corresponds to 0-360°).
 
-* **90° (Top):** Value 45
-* **180° (Left):** Value 90
-* **270° (Bottom):** Value 135
+- **90° (Top):** Value 45
+- **180° (Left):** Value 90
+- **270° (Bottom):** Value 135
 
 **Special note for scaled ellipses:** If the ellipse is not a circle (Width != Height), the VT must ensure that the angles are drawn mathematically correctly and not just a scaled circular arc (see ISO standard Figure B.8).
 
@@ -39,9 +39,9 @@ The angle values in AID 5 and 6 are transferred **halved** (range 0-180 correspo
 
 The Output Ellipse object reacts to the following events:
 
-* **On Change Size:** Triggered when the size of the rectangle changes at runtime.
-* **On Change Attribute:** Triggered when line or fill attributes (e.g., colors) change.
-* **On Refresh:** Triggered when the VT needs to redraw the object.
+- **On Change Size:** Triggered when the size of the rectangle changes at runtime.
+- **On Change Attribute:** Triggered when line or fill attributes (e.g., colors) change.
+- **On Refresh:** Triggered when the VT needs to redraw the object.
 
 ## Implementation Implications
 Ellipses and sectors are essential for creating analog pointer instruments (meters) or progress indicators. Dynamically changing the `End angle` via ECU command allows for the creation of filled circular arcs that intuitively visualize states.

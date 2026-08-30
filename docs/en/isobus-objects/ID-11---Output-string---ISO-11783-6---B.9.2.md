@@ -20,24 +20,24 @@ The following table describes the structure of the Output String object in the o
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ## Functionality and Special Features
-* **Transparency:** When bit 0 is set, the background of the text field is transparent, and the background color of the mask or an underlying object remains visible.
-* **Auto-Wrap:** Enables the display of multi-line text within the defined `Width` and `Height`.
-* **Alignment:** Alignment is pixel-perfect within the frame. This is especially important for vertical centering with different fonts.
-* * **Clipping:** Text that extends beyond the defined `Width` or `Height` is clipped by the VT.
+- **Transparency:** When bit 0 is set, the background of the text field is transparent, and the background color of the mask or an underlying object remains visible.
+- **Auto-Wrap:** Enables the display of multi-line text within the defined `Width` and `Height`.
+- **Alignment:** Alignment is pixel-perfect within the frame. This is especially important for vertical centering with different fonts.
+- * **Clipping:** Text that extends beyond the defined `Width` or `Height` is clipped by the VT.
 
 ## Static Text vs. Dynamic Variable
-* **Static Text:** The text is defined directly in the object pool and its properties can only be changed at runtime using the command `Change Attribute` (AID 5 or 7).
-* **Dynamic Text:** By linking it to a **string variable** (AID 6), the control unit (ECU) can update the text content at any time using `Change String Value` without having to reload the object itself.
+- **Static Text:** The text is defined directly in the object pool and its properties can only be changed at runtime using the command `Change Attribute` (AID 5 or 7).
+- **Dynamic Text:** By linking it to a **string variable** (AID 6), the control unit (ECU) can update the text content at any time using `Change String Value` without having to reload the object itself.
 
 ## Events (Events - Table B.21)
 
 The output string object reacts to the following events:
 
-* **On Change Value:** Triggered when the displayed value changes (e.g., variable updated). The VT redraws the object.
-* **On Refresh:** Triggered when the VT needs to redraw the object (e.g., mask change).
-* **On Change Background Colour:** Responds to a color change.
-* **On Change Attribute:** Responds to general attribute changes.
-* **On Change Size:** Responds to a size change.
+- **On Change Value:** Triggered when the displayed value changes (e.g., variable updated). The VT redraws the object.
+- **On Refresh:** Triggered when the VT needs to redraw the object (e.g., mask change).
+- **On Change Background Colour:** Responds to a color change.
+- **On Change Attribute:** Responds to general attribute changes.
+- **On Change Size:** Responds to a size change.
 
 ## Implementation Implementation Implementation Implementation (IM)
 Output strings are the primary method for status messages, labels, and unit displays. For texts available in multiple languages, it is recommended to control the text via variables or to maintain a separate mask/pool for each language.

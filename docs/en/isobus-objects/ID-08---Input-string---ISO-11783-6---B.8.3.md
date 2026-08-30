@@ -25,23 +25,23 @@ The following table describes the structure of the Input String object in the ob
 
 The Input String object offers flexible text display options:
 
-* **Auto-Wrap:** When enabled (Bit 1), the VT automatically wraps the text if the field width is exceeded.
-* **Adjustment:** Horizontal and vertical alignment are controlled via AID 8.
-* **Validation:** By linking to a `Input Attributes` object, input can be restricted to specific character sets.
+- **Auto-Wrap:** When enabled (Bit 1), the VT automatically wraps the text if the field width is exceeded.
+- **Adjustment:** Horizontal and vertical alignment are controlled via AID 8.
+- **Validation:** By linking to a `Input Attributes` object, input can be restricted to specific character sets.
 
 ## Events (Table B.15)
 
 The Input String object reacts to the following events:
 
-* **On Enable:** When the object is enabled.
-* **On Disable:** When the object is disabled.
-* **On Input Field Selection:** When the operator focuses/selects the field.
-* **On Input Field De-selection:** When focus is lost.
-* **On Entry of Value:** When the operator confirms the text input (ENTER). Sends `Change String Value`.
-* **On Change Value:** When the value is changed (e.g., by a variable).
-* **On ESC:** When the operator cancels the input.
-* **On Change Background Colour:** Responds to a change in background color.
-* **On Change Attribute:** Responds to general attribute changes.
+- **On Enable:** When the object is enabled.
+- **On Disable:** When the object is disabled.
+- **On Input Field Selection:** When the operator focuses/selects the field.
+- **On Input Field De-selection:** When focus is lost.
+- **On Entry of Value:** When the operator confirms the text input (ENTER). Sends `Change String Value`.
+- **On Change Value:** When the value is changed (e.g., by a variable).
+- **On ESC:** When the operator cancels the input.
+- **On Change Background Colour:** Responds to a change in background color.
+- **On Change Attribute:** Responds to general attribute changes.
 
 ## Implementation Implementation Implementation Significance
 Input strings are frequently used for names (e.g., field names, customer data) or passwords. Since text input on terminals without a keyboard (only touch or rotary push-button) can be cumbersome, default values or input lists should be preferred when the range of values is limited.

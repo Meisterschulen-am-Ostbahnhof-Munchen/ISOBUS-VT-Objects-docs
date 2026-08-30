@@ -20,22 +20,22 @@ The following table describes the structure of the Input List object in the obje
 ## Functionality and Display
 In its normal state, the Input List displays only the currently selected item.
 
-* **Selection:** When the user opens the object, the Input List displays the list of available entries.
-* **Index:** The transmitted value is the **zero-based index** of the selected item in the list.
-* **Special value 255:** Signals "no selection".
+- **Selection:** When the user opens the object, the Input List displays the list of available entries.
+- **Index:** The transmitted value is the **zero-based index** of the selected item in the list.
+- **Special value 255:** Signals "no selection".
 
 ## Events (Events - Table B.19)
 
 The Input List object reacts to the following events:
 
-* **On Enable / On Disable:** Change of the object's state.
-* **On Input Field Selection / De-selection:** Focus events.
-* **On Entry of Value:** When the user confirms a selection (ENTER). Sends `Change Numeric Value`.
-* **On Change Value:** When the index is changed by the program.
-* **On Entry of New Value:** Triggered when the value changes (often redundant to "On Entry of Value").
-* **On ESC:** Cancels the selection.
-* **On Change Attribute:** General attribute change.
-* **On Change Size:** Responds to a size change.
+- **On Enable / On Disable:** Change of the object's state.
+- **On Input Field Selection / De-selection:** Focus events.
+- **On Entry of Value:** When the user confirms a selection (ENTER). Sends `Change Numeric Value`.
+- **On Change Value:** When the index is changed by the program.
+- **On Entry of New Value:** Triggered when the value changes (often redundant to "On Entry of Value").
+- **On ESC:** Cancels the selection.
+- **On Change Attribute:** General attribute change.
+- **On Change Size:** Responds to a size change.
 
 ## Implementation Implications
 Input lists are ideally suited to prevent incorrect entries, as the operator can only select from valid options. Since the display (e.g., font size in the expanded list) is controlled by the VT, good readability is ensured on various devices.

@@ -21,7 +21,7 @@ For Working Set A to display an object from Working Set B (via an *External Obje
 
 The External Object Definition object responds to the following events:
 
-* **On Change Attribute:** Triggered by the command `Change Attribute` (e.g., enabling/disabling). The VT re-evaluates all currently displayed External Object Pointers that reference objects in this WS.
+- **On Change Attribute:** Triggered by the command `Change Attribute` (e.g., enabling/disabling). The VT re-evaluates all currently displayed External Object Pointers that reference objects in this WS.
 
 ----
 

@@ -31,28 +31,28 @@ Die folgende Tabelle beschreibt den Aufbau des Window Mask Objekts im Objektpool
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ### Fenstertypen (Auszug aus B.19.2)
-*   **0:** Free Form (Freie Gestaltung, Working Set definiert Inhalt).
-*   **1:** 1x1 Numeric Output mit Einheiten.
-*   **2:** 1x1 Numeric Output ohne Einheiten.
-*   **3:** 1x1 String Output.
-*   **4:** 1x1 Numeric Input mit Einheiten.
-*   **...**
-*   **7:** 1x1 Horizontal Linear Bargraph.
-*   **8:** 1x1 Single Button.
-*   **...**
-*   **10:** 2x1 Numeric Output mit Einheiten.
+-   **0:** Free Form (Freie Gestaltung, Working Set definiert Inhalt).
+-   **1:** 1x1 Numeric Output mit Einheiten.
+-   **2:** 1x1 Numeric Output ohne Einheiten.
+-   **3:** 1x1 String Output.
+-   **4:** 1x1 Numeric Input mit Einheiten.
+-   **...**
+-   **7:** 1x1 Horizontal Linear Bargraph.
+-   **8:** 1x1 Single Button.
+-   **...**
+-   **10:** 2x1 Numeric Output mit Einheiten.
 
 ## Ereignisse (Events - Tabelle B.60)
 
 Das Window Mask Objekt reagiert auf folgende Ereignisse:
 
-*   **On Show:** Wenn das Fenster als Teil einer User-Layout Maske sichtbar wird.
-*   **On Hide:** Wenn das Fenster ausgeblendet wird.
-*   **On Refresh:** Bei Änderungen an Kind-Objekten.
-*   **On Change Background Colour:** Reaktion auf Farbänderung.
-*   **On Change Child Location / Position:** Aktualisierung der Kind-Objekte.
-*   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
-*   **On Pointing Event:** Touch-Ereignisse (nur bei Free Form Window).
+-   **On Show:** Wenn das Fenster als Teil einer User-Layout Maske sichtbar wird.
+-   **On Hide:** Wenn das Fenster ausgeblendet wird.
+-   **On Refresh:** Bei Änderungen an Kind-Objekten.
+-   **On Change Background Colour:** Reaktion auf Farbänderung.
+-   **On Change Child Location / Position:** Aktualisierung der Kind-Objekte.
+-   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
+-   **On Pointing Event:** Touch-Ereignisse (nur bei Free Form Window).
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Window Mask](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/window-mask) von Tobias Tenberg.
 

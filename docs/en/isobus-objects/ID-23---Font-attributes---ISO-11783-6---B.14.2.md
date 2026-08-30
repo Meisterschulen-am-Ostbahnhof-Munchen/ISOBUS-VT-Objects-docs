@@ -20,11 +20,11 @@ The interpretation of AID 2 depends heavily on bit 7 in the `Font style` options
 ### Non-proportional fonts (bit 7 = 0)
 Here, predefined grid sizes are used (width x height in pixels):
 
-* **0:** 6x8
-* **1:** 8x8
-* **2:** 8x12
-* ...
-* **14:** 128x192
+- **0:** 6x8
+- **1:** 8x8
+- **2:** 8x12
+- ...
+- **14:** 128x192
 
 ### Proportional fonts (bit 7 = 1)
 In this mode, the value in AID 2 directly represents the **font height in pixels**. The width of individual characters varies.
@@ -33,8 +33,8 @@ In this mode, the value in AID 2 directly represents the **font height in pixels
 
 The Font Attributes object responds to the following events:
 
-* **On Change Font Attributes:** Triggered by the command `Change Font Attributes`. The VT updates all objects that use these attributes.
-* **On Change Attribute:** Responds to general attribute changes.
+- **On Change Font Attributes:** Triggered by the command `Change Font Attributes`. The VT updates all objects that use these attributes.
+- **On Change Attribute:** Responds to general attribute changes.
 
 ## Implementation Implications
 Font attributes allow for a consistent design. Instead of defining color and size individually for each text object, all objects reference a common attribute object. If this single object is changed (e.g., from white to yellow font), the entire HMI appearance changes immediately.

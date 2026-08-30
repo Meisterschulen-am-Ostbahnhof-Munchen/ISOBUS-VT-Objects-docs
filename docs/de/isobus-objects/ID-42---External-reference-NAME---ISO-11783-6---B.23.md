@@ -19,13 +19,13 @@ Die folgende Tabelle beschreibt den Aufbau des External Reference NAME Objekts i
 ## Funktionsweise
 Dieses Objekt fungiert als "Adressbucheintrag". Wenn eine ECU ein Objekt von einer anderen ECU einbinden möchte, nutzt sie diesen Eintrag, um dem Terminal mitzuteilen, von welcher ECU (identifiziert durch den NAME) das Objekt stammt.
 
-*   **Aktivierung:** Sollte initial deaktiviert sein. Wenn das referenzierte Working Set online ist, kann die ECU dieses Objekt aktivieren.
+-   **Aktivierung:** Sollte initial deaktiviert sein. Wenn das referenzierte Working Set online ist, kann die ECU dieses Objekt aktivieren.
 
 ## Ereignisse (Events - Tabelle B.67)
 
 Das External Reference NAME Objekt reagiert auf folgende Ereignisse:
 
-*   **On Change Attribute:** Wird ausgelöst durch das Kommando `Change Attribute`. Das VT evaluiert alle aktuell angezeigten External Object Pointer neu, die auf dieses NAME-Objekt verweisen.
+-   **On Change Attribute:** Wird ausgelöst durch das Kommando `Change Attribute`. Das VT evaluiert alle aktuell angezeigten External Object Pointer neu, die auf dieses NAME-Objekt verweisen.
 
 ----
 *Hinweis: Für detaillierte Spezifikationen wird auf die offizielle ISO 11783-6:2018, B.23 verwiesen.*

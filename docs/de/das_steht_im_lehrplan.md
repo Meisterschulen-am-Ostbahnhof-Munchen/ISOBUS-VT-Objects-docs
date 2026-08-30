@@ -32,16 +32,16 @@ Moderne Anbaugeräte besitzen kein eigenes Display mehr, sondern nutzen das Univ
 
 ## 📂 Lehrplan-Themen in diesem Wiki
 
-* 🖥️ [ISOBUS VT Objektpools & HMI (ISO 11783-6)](./lehrplan_praxis/isobus_vt_objektpools_hmi.md)
-* 📱 [Maskenlayout, Softkeys & Ergonomie](./lehrplan_praxis/maskenlayout_softkeys_bedienkonzepte.md)
-* 🎛️ [Input-Attribute, Key-Events & Interaktionsdiagnose](./lehrplan_praxis/input_attributes_diagnose.md)
+- 🖥️ [ISOBUS VT Objektpools & HMI (ISO 11783-6)](./lehrplan_praxis/isobus_vt_objektpools_hmi.md)
+- 📱 [Maskenlayout, Softkeys & Ergonomie](./lehrplan_praxis/maskenlayout_softkeys_bedienkonzepte.md)
+- 🎛️ [Input-Attribute, Key-Events & Interaktionsdiagnose](./lehrplan_praxis/input_attributes_diagnose.md)
 
 ---
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ## 🔗 Hauptportal & Direktlinks zu den 6 Wikis
 

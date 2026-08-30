@@ -4,8 +4,8 @@
 
 Diese Tabelle listet alle Befehle (Messages), die zwischen ECU (Working Set) und VT ausgetauscht werden können.
 
-*   **Function (Decimal/Hex):** Der Code im ersten Byte der Nachricht (bei Destination Specific PGN).
-*   **Allowed in Macro:** Ob der Befehl in einem Makro-Objekt gespeichert werden darf.
+-   **Function (Decimal/Hex):** Der Code im ersten Byte der Nachricht (bei Destination Specific PGN).
+-   **Allowed in Macro:** Ob der Befehl in einem Makro-Objekt gespeichert werden darf.
 
 | Clause | Message Name | PGN | Function (Hex) | Macro? | VT Vers. |
 | :--- | :--- | :--- | :--- | :--- | :--- |

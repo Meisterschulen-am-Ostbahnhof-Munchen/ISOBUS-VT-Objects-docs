@@ -16,25 +16,25 @@ The following table describes the structure of the Scaled Graphic object in the 
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ### Scaling Types (Bits 0-2 of ScaleType)
-* **0:** No scaling (use original size from the raw data).
-* **1:** Scale to width (maintain aspect ratio).
-* **2:** Scale to height (maintain aspect ratio).
-* **3:** Scale to both width and height (distortion possible).
-* **4:** Fit to area (Best Fit, maintain aspect ratio, graphic becomes as large as possible).
+- **0:** No scaling (use original size from the raw data).
+- **1:** Scale to width (maintain aspect ratio).
+- **2:** Scale to height (maintain aspect ratio).
+- **3:** Scale to both width and height (distortion possible).
+- **4:** Fit to area (Best Fit, maintain aspect ratio, graphic becomes as large as possible).
 
 ### Adjustment (Bits 3-6 of ScaleType)
 Defines the position within the area defined by `Width` and `Height`:
 
-* **Horizontal (Bits 3-4):** 0=Left, 1=Center, 2=Right.
-* **Vertical (Bits 5-6):** 0=Top, 1=Center, 2=Bottom.
+- **Horizontal (Bits 3-4):** 0=Left, 1=Center, 2=Right.
+- **Vertical (Bits 5-6):** 0=Top, 1=Center, 2=Bottom.
 
 ## Events (Events - Table B.75)
 
 The Scaled Graphic object responds to the following events:
 
-* **On Refresh:** Triggered on a mask refresh or option change.
-* **On Change Attribute:** Responds to general attribute changes.
-* **On Change Value:** Triggered when the referenced graphic object (value) is changed. The VT loads and scales the new image.
+- **On Refresh:** Triggered on a mask refresh or option change.
+- **On Change Attribute:** Responds to general attribute changes.
+- **On Change Value:** Triggered when the referenced graphic object (value) is changed. The VT loads and scales the new image.
 
 ----
 

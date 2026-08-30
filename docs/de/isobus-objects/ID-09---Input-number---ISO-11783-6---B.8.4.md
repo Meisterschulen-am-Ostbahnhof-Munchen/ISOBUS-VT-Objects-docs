@@ -46,13 +46,13 @@ Grenzwerte werden ebenfalls auf Basis der skalierten Werte geprüft. Das VT läs
 
 Das Input Number Objekt reagiert auf folgende Ereignisse:
 
-*   **On Enable / On Disable:** Zustandsänderung des Objekts.
-*   **On Input Field Selection / De-selection:** Fokus-Ereignisse.
-*   **On Entry of Value:** Wenn der Bediener einen neuen Wert bestätigt. Sendet `Change Numeric Value`.
-*   **On Change Value:** Wenn der Wert durch das Programm geändert wird.
-*   **On ESC:** Abbruch der Eingabe.
-*   **On Change Background Colour:** Farbänderung.
-*   **On Change Attribute:** Allgemeine Attributänderung.
+-   **On Enable / On Disable:** Zustandsänderung des Objekts.
+-   **On Input Field Selection / De-selection:** Fokus-Ereignisse.
+-   **On Entry of Value:** Wenn der Bediener einen neuen Wert bestätigt. Sendet `Change Numeric Value`.
+-   **On Change Value:** Wenn der Wert durch das Programm geändert wird.
+-   **On ESC:** Abbruch der Eingabe.
+-   **On Change Background Colour:** Farbänderung.
+-   **On Change Attribute:** Allgemeine Attributänderung.
 
 ## Real Time Editing (AID 15, Bit 1)
 Wenn dieses Bit gesetzt ist, sendet das VT bei jeder Änderung (z. B. bei jedem Tastendruck am Inkrementalgeber) den aktuellen Zwischenwert an die Arbeitsgruppe. Dies ermöglicht es der Maschine, sofort auf Änderungen zu reagieren (z. B. Drehzahlregelung in Echtzeit), noch bevor der Bediener die Eingabe final bestätigt.

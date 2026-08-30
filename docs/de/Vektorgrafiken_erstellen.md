@@ -9,10 +9,10 @@ Achtung: Sehr ungenau und wird ein paar Versuche benötigen, um die gewünschte 
 Falls es eine andere Möglichkeit geben sollte, bitte hier ausbessern (Lächeln) 
 
 ## Solid Edge
-* Falls etwas nicht klappt, hilft es einfach sich die Arbeit zu machen und jeden Strich noch ein Mal neu zu setzen,
-* um die klaren Bezüge zwischen den Linien sicherzustellen. Zeitraubend, aber dann sollte es gehen. (Zwinkern) 
-* Wenn man Symbole für die Displays zeichnet müssen diese die Maße 72x72 haben. Kurz ein Rechteck zeichnen und kontrollieren, dann ist man auf der sicheren Seite.
-* Gesamtes Objekt markieren → Block → Alle Gruppen auflösen
+- Falls etwas nicht klappt, hilft es einfach sich die Arbeit zu machen und jeden Strich noch ein Mal neu zu setzen,
+- um die klaren Bezüge zwischen den Linien sicherzustellen. Zeitraubend, aber dann sollte es gehen. (Zwinkern) 
+- Wenn man Symbole für die Displays zeichnet müssen diese die Maße 72x72 haben. Kurz ein Rechteck zeichnen und kontrollieren, dann ist man auf der sicheren Seite.
+- Gesamtes Objekt markieren → Block → Alle Gruppen auflösen
 
 ![image2015-10-21 10_4_0](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/ISOBUS-VT-Objects-docs/assets/69573151/8c3efd93-6903-4d12-93b1-c1be96ed3976)
 
@@ -47,8 +47,8 @@ Schließen
 
 ## ISO-Designer
 
-* Die Unterstützung von DXFs für den Import von Vektorgrafiken wurde von Jetter entfernt. 
-* ISO-Designer 5.3.1 ist die letzte die noch DXF importieren kann. 
+- Die Unterstützung von DXFs für den Import von Vektorgrafiken wurde von Jetter entfernt. 
+- ISO-Designer 5.3.1 ist die letzte die noch DXF importieren kann. 
 
 File → New → Workspace: Name der .dfx Datei)
 File → New → Project :

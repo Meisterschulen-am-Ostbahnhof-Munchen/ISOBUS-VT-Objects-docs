@@ -33,19 +33,19 @@ Die folgende Tabelle beschreibt den Aufbau des Output Arched Bar Graph Objekts i
 ## Funktionsweise und Geometrie
 Der bogenförmige Balken wird basierend auf einem virtuellen Ellipsenobjekt innerhalb des umschließenden Rechtecks gezeichnet.
 
-*   **Balkendicke (AID 8):** Definiert, wie breit der Bogen selbst ist.
-*   **Winkel-Logik:** Die Winkelwerte werden (wie beim Meter-Objekt) halbiert übertragen (z. B. 45 für 90°).
-*   **Deflektion (AID 5, Bit 4):** Steuert, ob der Balken im Uhrzeigersinn (Clockwise) oder gegen den Uhrzeigersinn (Anticlockwise) "wächst".
-*   **Transparenz:** Das Objekt ist transparent, was die Überlagerung mit Hintergrundbildern ermöglicht.
+-   **Balkendicke (AID 8):** Definiert, wie breit der Bogen selbst ist.
+-   **Winkel-Logik:** Die Winkelwerte werden (wie beim Meter-Objekt) halbiert übertragen (z. B. 45 für 90°).
+-   **Deflektion (AID 5, Bit 4):** Steuert, ob der Balken im Uhrzeigersinn (Clockwise) oder gegen den Uhrzeigersinn (Anticlockwise) "wächst".
+-   **Transparenz:** Das Objekt ist transparent, was die Überlagerung mit Hintergrundbildern ermöglicht.
 
 ## Ereignisse (Events - Tabelle B.38)
 
 Das Output Arched Bar Graph Objekt reagiert auf folgende Ereignisse:
 
-*   **On Change Value:** Wird ausgelöst, wenn sich der `Value` oder der `Target value` ändert. Das VT aktualisiert die Grafik.
-*   **On Change Attribute:** Wird ausgelöst, wenn sich Attribute ändern.
-*   **On Change Size:** Reaktion auf Größenänderung.
-*   **On Refresh:** Wird ausgelöst, wenn das VT das Objekt neu zeichnen muss.
+-   **On Change Value:** Wird ausgelöst, wenn sich der `Value` oder der `Target value` ändert. Das VT aktualisiert die Grafik.
+-   **On Change Attribute:** Wird ausgelöst, wenn sich Attribute ändern.
+-   **On Change Size:** Reaktion auf Größenänderung.
+-   **On Refresh:** Wird ausgelöst, wenn das VT das Objekt neu zeichnen muss.
 
 ## Bedeutung für die Implementierung
 Arched Bar Graphs sind ideal für moderne Cockpit-Designs, bei denen mehrere Skalen platzsparend ineinander verschachtelt werden (z. B. Temperatur und Kraftstoff). Durch die `Target line` kann dem Bediener ein Sollbereich visualisiert werden, während die bogenförmige Form eine intuitive Erfassung des Füllstandes ermöglicht.

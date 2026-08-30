@@ -21,13 +21,13 @@ Die folgende Tabelle beschreibt den Aufbau des External Object Definition Objekt
 ## Funktionsweise
 Damit Working Set A ein Objekt von Working Set B anzeigen kann (via *External Object Pointer*), muss Working Set B dieses Objekt explizit in einer *External Object Definition* für Working Set A freigeben. Dies dient der Sicherheit und Kontrolle über die eigenen Pool-Ressourcen.
 
-*   **Empfehlung:** Das `Enabled`-Bit sollte beim Laden des Pools zunächst auf 0 gesetzt sein und erst zur Laufzeit aktiviert werden, wenn der NAME des Partners bekannt und aktuell ist.
+-   **Empfehlung:** Das `Enabled`-Bit sollte beim Laden des Pools zunächst auf 0 gesetzt sein und erst zur Laufzeit aktiviert werden, wenn der NAME des Partners bekannt und aktuell ist.
 
 ## Ereignisse (Events - Tabelle B.65)
 
 Das External Object Definition Objekt reagiert auf folgende Ereignisse:
 
-*   **On Change Attribute:** Wird ausgelöst durch das Kommando `Change Attribute` (z. B. Aktivieren/Deaktivieren). Das VT evaluiert alle aktuell angezeigten External Object Pointer neu, die auf Objekte dieses WS verweisen.
+-   **On Change Attribute:** Wird ausgelöst durch das Kommando `Change Attribute` (z. B. Aktivieren/Deaktivieren). Das VT evaluiert alle aktuell angezeigten External Object Pointer neu, die auf Objekte dieses WS verweisen.
 
 ----
 *Hinweis: Für detaillierte Spezifikationen wird auf die offizielle ISO 11783-6:2018, B.22 verwiesen.*

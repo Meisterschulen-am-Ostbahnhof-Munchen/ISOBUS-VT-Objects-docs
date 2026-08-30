@@ -18,19 +18,19 @@ Die folgende Tabelle beschreibt den Aufbau des String Variable Objekts im Objekt
 ## Funktionsweise und Besonderheiten
 Wie die *Number Variable* ist auch die *String Variable* ein reines Datenobjekt ohne eigene visuelle Darstellung.
 
-*   **Feste Länge:** Die Länge der Variable wird bei der Erstellung im Pool festgelegt und kann zur Laufzeit nicht mehr vergrößert werden.
-*   **Padding:** Wenn ein kürzerer String als die definierte Länge gespeichert wird, füllt das VT den Rest automatisch mit Leerzeichen auf.
-*   **Datentypen:** Unterstützt sowohl 8-Bit Zeichen (Standard) als auch WideStrings (für Sonderzeichen). Die Steuerung (ECU) kann den Typ zur Laufzeit zwischen diesen Formaten umschalten.
+-   **Feste Länge:** Die Länge der Variable wird bei der Erstellung im Pool festgelegt und kann zur Laufzeit nicht mehr vergrößert werden.
+-   **Padding:** Wenn ein kürzerer String als die definierte Länge gespeichert wird, füllt das VT den Rest automatisch mit Leerzeichen auf.
+-   **Datentypen:** Unterstützt sowohl 8-Bit Zeichen (Standard) als auch WideStrings (für Sonderzeichen). Die Steuerung (ECU) kann den Typ zur Laufzeit zwischen diesen Formaten umschalten.
 
 ## Referenzierung und Aktualisierung
-*   **Referenzierung:** Objekte wie *Input String* (ID 8) oder *Output String* (ID 11) verweisen über ihr Attribut `Variable reference` auf die ID einer String Variable.
-*   **Automatisches Redraw:** Sobald die ECU den Wert der Variable per `Change String Value` Kommando ändert, aktualisiert das VT automatisch alle sichtbaren Objekte, die diese Variable nutzen.
+-   **Referenzierung:** Objekte wie *Input String* (ID 8) oder *Output String* (ID 11) verweisen über ihr Attribut `Variable reference` auf die ID einer String Variable.
+-   **Automatisches Redraw:** Sobald die ECU den Wert der Variable per `Change String Value` Kommando ändert, aktualisiert das VT automatisch alle sichtbaren Objekte, die diese Variable nutzen.
 
 ## Ereignisse (Events - Tabelle B.42)
 
 Das String Variable Objekt reagiert auf folgende Ereignisse:
 
-*   **On Change Value:** Wird ausgelöst, wenn sich der Wert ändert (durch `Change String Value` Befehl oder Eingabe des Bedieners). Das VT zeichnet alle Objekte neu, die diese Variable referenzieren.
+-   **On Change Value:** Wird ausgelöst, wenn sich der Wert ändert (durch `Change String Value` Befehl oder Eingabe des Bedieners). Das VT zeichnet alle Objekte neu, die diese Variable referenzieren.
 
 ## Bedeutung für die Implementierung
 String Variablen sind essenziell für dynamische Texte wie Fehlermeldungen im Klartext, Namen von Arbeitsaufträgen oder Fahrernamen. Da Texteingaben und -änderungen über den CAN-Bus (ISOBUS) ressourcenintensiv sind, sollten String Variablen so kurz wie möglich definiert werden.

@@ -25,25 +25,25 @@ The following table describes the structure of the Output Meter object in the ob
 ## Functionality and Display
 The instrument is fitted into a square. The needle moves along an arc defined by start and end angles.
 
-* **Angle Logic:** As with the ellipse, angles are bisected (e.g., 45 for 90°).
-* **Ticks (AID 6):** With two or more ticks, one is drawn at the beginning and one at the end of the arc; additional ticks are evenly distributed in between. Recommended length: 10% of the meter width.
-* **Transparency:** The meter object itself is transparent. This allows bitmaps (e.g., a nice clock face) to be placed behind it.
+- **Angle Logic:** As with the ellipse, angles are bisected (e.g., 45 for 90°).
+- **Ticks (AID 6):** With two or more ticks, one is drawn at the beginning and one at the end of the arc; additional ticks are evenly distributed in between. Recommended length: 10% of the meter width.
+- **Transparency:** The meter object itself is transparent. This allows bitmaps (e.g., a nice clock face) to be placed behind it.
 
 ## Deflection Direction (AID 5, Bit 3)
 
 This is a critical attribute for intuitive operation:
 
-* **0 (Anticlockwise):** The value increases counterclockwise.
-* **1 (Clockwise):** The value increases clockwise (standard for most analog instruments).
+- **0 (Anticlockwise):** The value increases counterclockwise.
+- **1 (Clockwise):** The value increases clockwise (standard for most analog instruments).
 
 ## Events (Table B.34)
 
 The Output Meter object reacts to the following events:
 
-* **On Change Value:** Triggered when the value to be displayed changes (e.g., variable updated). The VT moves the needle.
-* **On Change Attribute:** Triggered when attributes change.
-* **On Change Size:** Reacts to a change in size.
-* **On Refresh:** Triggered when the VT needs to redraw the object.
+- **On Change Value:** Triggered when the value to be displayed changes (e.g., variable updated). The VT moves the needle.
+- **On Change Attribute:** Triggered when attributes change.
+- **On Change Size:** Reacts to a change in size.
+- **On Refresh:** Triggered when the VT needs to redraw the object.
 
 ## Implementation Implications
 

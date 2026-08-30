@@ -18,27 +18,27 @@ The following table describes the structure of the Output Rectangle object in th
 ## Appearance and Properties
 The rectangle combines line and fill properties:
 
-* **Outline:** If AID 1 is linked, a border is drawn according to the Line Attributes.
+- **Outline:** If AID 1 is linked, a border is drawn according to the Line Attributes.
 
 **Repeat:** * **Fill:** If AID 5 is linked, the interior of the rectangle is filled according to the Fill attributes.
 
-* **Line Suppression (AID 4):** Allows you to selectively omit drawing individual edges of the rectangle. This is useful for table structures or open frames.
-* **Clipping:** The rectangle defines its own graphic boundaries using `Width` and `Height`.
+- **Line Suppression (AID 4):** Allows you to selectively omit drawing individual edges of the rectangle. This is useful for table structures or open frames.
+- **Clipping:** The rectangle defines its own graphic boundaries using `Width` and `Height`.
 
 ## Geometric Calculation
 The corners of the rectangle are determined by the object's starting position (StartX, StartY):
 
-* **Top-Left Corner:** (StartX, StartY)
-* **Bottom-Right Corner:** (StartX + Width - 1, StartY + Height - 1)
+- **Top-Left Corner:** (StartX, StartY)
+- **Bottom-Right Corner:** (StartX + Width - 1, StartY + Height - 1)
 The line width must be considered during planning, as it can grow inwards or outwards depending on the VT implementation.
 
 ## Events (Table B.28)
 
 The output Rectangle object responds to the following events:
 
-* **On Change Size:** Triggered when the size of the rectangle changes at runtime.
-* **On Change Attribute:** Triggered when line or fill attributes (e.g., colors) change.
-* **On Refresh:** Triggered when the VT needs to redraw the object.
+- **On Change Size:** Triggered when the size of the rectangle changes at runtime.
+- **On Change Attribute:** Triggered when line or fill attributes (e.g., colors) change.
+- **On Refresh:** Triggered when the VT needs to redraw the object.
 
 ## Implementation Implications
 

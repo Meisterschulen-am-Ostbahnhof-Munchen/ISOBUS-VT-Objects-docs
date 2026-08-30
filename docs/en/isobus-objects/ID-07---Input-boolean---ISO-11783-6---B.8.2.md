@@ -19,20 +19,20 @@ The following table describes the structure of the Input Boolean object in the o
 ### Display
 The VT visualizes the Boolean value (e.g., as a checkbox). * **Value 0:** Background color is drawn.
 
-* **Value > 0:** Indicator is drawn in the foreground color on the background.
+- **Value > 0:** Indicator is drawn in the foreground color on the background.
 
 ## Events (Table B.15)
 
 The Input Boolean object reacts to the following events:
 
-* **On Enable:** When the object is enabled.
-* **On Disable:** When the object is disabled.
-* **On Input Field Selection:** When the operator focuses/selects the field.
-* **On Input Field De-selection:** When focus is lost.
-* **On Entry of Value:** When the operator confirms a new value (ENTER). Sends `Change Numeric Value`.
-* **On Change Value:** When the value is changed (e.g., by a variable).
-* **On Change Background Colour:** Responds to a color change.
-* **On Change Attribute:** Responds to general attribute changes.
+- **On Enable:** When the object is enabled.
+- **On Disable:** When the object is disabled.
+- **On Input Field Selection:** When the operator focuses/selects the field.
+- **On Input Field De-selection:** When focus is lost.
+- **On Entry of Value:** When the operator confirms a new value (ENTER). Sends `Change Numeric Value`.
+- **On Change Value:** When the value is changed (e.g., by a variable).
+- **On Change Background Colour:** Responds to a color change.
+- **On Change Attribute:** Responds to general attribute changes.
 
 ## Implementation Implementation Implementation
 

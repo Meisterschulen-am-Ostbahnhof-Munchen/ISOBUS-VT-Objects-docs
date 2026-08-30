@@ -25,18 +25,18 @@ Die folgende Tabelle beschreibt den Aufbau des Output List Objekts im Objektpool
 ## Funktionsweise
 Die Output List verhält sich ähnlich wie eine Animation, wird aber manuell über den Index gesteuert.
 
-*   **Index:** Der angezeigte Inhalt wird durch den Wert (Value oder Variable) bestimmt. Index 0 zeigt das erste Objekt in der Liste.
-*   **Spezialwert 255:** Bei Wert 255 wird nichts angezeigt (das Objekt ist unsichtbar).
-*   **NULL-Pointer:** Wenn ein Listeneintrag die ID NULL (65535) hat, wird für diesen Index ebenfalls nichts angezeigt.
+-   **Index:** Der angezeigte Inhalt wird durch den Wert (Value oder Variable) bestimmt. Index 0 zeigt das erste Objekt in der Liste.
+-   **Spezialwert 255:** Bei Wert 255 wird nichts angezeigt (das Objekt ist unsichtbar).
+-   **NULL-Pointer:** Wenn ein Listeneintrag die ID NULL (65535) hat, wird für diesen Index ebenfalls nichts angezeigt.
 
 ## Ereignisse (Events - Tabelle B.24)
 
 Das Output List Objekt reagiert auf folgende Ereignisse:
 
-*   **On Change Value:** Wird ausgelöst, wenn sich der Index ändert. Das VT aktualisiert die Anzeige.
-*   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
-*   **On Change Size:** Reaktion auf Größenänderung.
-*   **On Refresh:** Wird ausgelöst, wenn das VT das Objekt neu zeichnen muss.
+-   **On Change Value:** Wird ausgelöst, wenn sich der Index ändert. Das VT aktualisiert die Anzeige.
+-   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
+-   **On Change Size:** Reaktion auf Größenänderung.
+-   **On Refresh:** Wird ausgelöst, wenn das VT das Objekt neu zeichnen muss.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - List (Output)](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/list-output) von Tobias Tenberg.
 

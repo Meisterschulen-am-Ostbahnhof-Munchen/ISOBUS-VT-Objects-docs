@@ -28,7 +28,7 @@ While the *Colour Map* only changes the assignment (indexing) of existing termin
 
 The object itself does not trigger any events, but it affects the display of all objects that use colors.
 
-* **On Change Attribute:** Triggered when attributes are changed. The virtual machine may need to redraw the entire screen.
+- **On Change Attribute:** Triggered when attributes are changed. The virtual machine may need to redraw the entire screen.
 
 ----
 

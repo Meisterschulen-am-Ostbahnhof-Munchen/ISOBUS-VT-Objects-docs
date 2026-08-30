@@ -46,15 +46,15 @@ The button is a container. It can contain other objects, which are displayed in 
 
 The button responds to the following events:
 
-* **On Key Press:** Triggered when the button is pressed. Sends `Button Activation`.
-* **On Key Release:** Triggered when the button is released. Sends `Button Activation`.
-* **On Enable:** When the button is enabled by a command.
-* **On Disable:** When the button is disabled.
-* **On Input Field Selection:** When the button is focused (navigation).
-* **On Input Field De-selection:** When focus is lost.
-* **On Change Background Colour:** Responds to a change in background color.
-* **On Change Size:** Responds to a change in size (deletes the old area, redraws).
-* **On Change Attribute:** Responds to general attribute changes.
+- **On Key Press:** Triggered when the button is pressed. Sends `Button Activation`.
+- **On Key Release:** Triggered when the button is released. Sends `Button Activation`.
+- **On Enable:** When the button is enabled by a command.
+- **On Disable:** When the button is disabled.
+- **On Input Field Selection:** When the button is focused (navigation).
+- **On Input Field De-selection:** When focus is lost.
+- **On Change Background Colour:** Responds to a change in background color.
+- **On Change Size:** Responds to a change in size (deletes the old area, redraws).
+- **On Change Attribute:** Responds to general attribute changes.
 
 **Role of the Button Object in the Virtual Terminal**
 
@@ -78,16 +78,16 @@ Button Evaluation:
 
 When the button is pressed, the following messages are sent to the ISOBUS:
 
-* BUTTON_STATE_PRESSED
-* at the moment the button was pressed
-* BUTTON_STATE_HELD
-* if the button was held down for a longer period
-* TODO: Reference to ISO
-* BUTTON_STATE_RELEASED
-* when the button was released
-* BUTTON_STATE_ABORTED
-* if the button was pressed but then released
-* TODO: Describe better.
+- BUTTON_STATE_PRESSED
+- at the moment the button was pressed
+- BUTTON_STATE_HELD
+- if the button was held down for a longer period
+- TODO: Reference to ISO
+- BUTTON_STATE_RELEASED
+- when the button was released
+- BUTTON_STATE_ABORTED
+- if the button was pressed but then released
+- TODO: Describe better.
 
 This results in the following:
 

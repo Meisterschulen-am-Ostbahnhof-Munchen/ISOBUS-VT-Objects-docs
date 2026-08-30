@@ -13,16 +13,16 @@ The following table describes the structure of the External Object Pointer objec
 ## Functionality and Rules
 This object allows the display of objects from external object pools.
 
-* **Display:** The terminal searches for the object in the pool of the ECU identified by the NAME and draws it at the pointer's location.
-* **Context:** Events (e.g., Button Press) and macros are executed in the context of the **original working set** (owner of the object). Messages (e.g., Button Activation) are sent to the owner.
-* **Fallback:** If the external object is not found, is not released, or is invalid, `Default Object` is displayed.
-* **Security:** The target object must have been released by the owning ECU via *External Object Definition* (ID 41).
+- **Display:** The terminal searches for the object in the pool of the ECU identified by the NAME and draws it at the pointer's location.
+- **Context:** Events (e.g., Button Press) and macros are executed in the context of the **original working set** (owner of the object). Messages (e.g., Button Activation) are sent to the owner.
+- **Fallback:** If the external object is not found, is not released, or is invalid, `Default Object` is displayed.
+- **Security:** The target object must have been released by the owning ECU via *External Object Definition* (ID 41).
 
 ## Events (Events - Table B.69)
 
 The External Object Pointer object reacts to the following events:
 
-* **On Change Attribute:** Triggered by the command `Change Attribute`. The VT re-evaluates the pointer and redraws it if necessary.
+- **On Change Attribute:** Triggered by the command `Change Attribute`. The VT re-evaluates the pointer and redraws it if necessary.
 
 ## Application Example
 A tractor (Working Set A) wants to display the fill level of a trailed fertilizer spreader (Working Set B) in its main interface. It uses an *External Object Pointer* that points to the fill level indicator in the spreader's reservoir.

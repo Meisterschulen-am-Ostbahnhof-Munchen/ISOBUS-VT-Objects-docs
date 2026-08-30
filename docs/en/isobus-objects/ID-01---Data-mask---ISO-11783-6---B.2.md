@@ -23,25 +23,25 @@ The following table describes the structure of the Data Mask object in the objec
 
 The data mask serves as a container for all visible elements.
 
-* **Object List:** Each child object is defined by its ID and its position (X/Y). Each set of ID and position occupies 6 bytes.
-* **Order:** Objects are drawn in the listed order (Z-order). Higher indices are positioned above lower ones.
-* **Coordinates:** Positioning is absolute in VT pixels, relative to the upper left corner of the mask (0,0).
+- **Object List:** Each child object is defined by its ID and its position (X/Y). Each set of ID and position occupies 6 bytes.
+- **Order:** Objects are drawn in the listed order (Z-order). Higher indices are positioned above lower ones.
+- **Coordinates:** Positioning is absolute in VT pixels, relative to the upper left corner of the mask (0,0).
 
 ## Events (Table B.3)
 
 The data mask responds to the following events:
 
-* **On Show:** Triggered when the mask becomes visible. The VT draws the background, the children, and the soft key mask.
-* **On Hide:** Triggered when the mask is removed from the display.
-* **On Refresh:** Triggered when changes are made to child objects that require redrawing.
-* **On Change Background Colour:** Response to a change in the background colour.
-* **On Change Soft Key Mask:** Response to a change in the assigned soft key mask.
-* **Pointing Events:** `press` and `release` during touch operation on the mask area.
+- **On Show:** Triggered when the mask becomes visible. The VT draws the background, the children, and the soft key mask.
+- **On Hide:** Triggered when the mask is removed from the display.
+- **On Refresh:** Triggered when changes are made to child objects that require redrawing.
+- **On Change Background Colour:** Response to a change in the background colour.
+- **On Change Soft Key Mask:** Response to a change in the assigned soft key mask.
+- **Pointing Events:** `press` and `release` during touch operation on the mask area.
 
 ## Behavior and Limitations
-* **Relationship with Softkeys:** Every data mask "has" a softkey mask. When the data mask is changed, the VT usually also changes the softkey layout.
-* **Refresh:** When a child object is changed, the VT redraws the affected areas.
-* **Visibility:** Only one data mask (or alarm mask) per workgroup can be active and in focus at any given time.
+- **Relationship with Softkeys:** Every data mask "has" a softkey mask. When the data mask is changed, the VT usually also changes the softkey layout.
+- **Refresh:** When a child object is changed, the VT redraws the affected areas.
+- **Visibility:** Only one data mask (or alarm mask) per workgroup can be active and in focus at any given time.
 
 ## Implementation Importance
 

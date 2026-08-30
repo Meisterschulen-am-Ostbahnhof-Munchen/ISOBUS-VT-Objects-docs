@@ -12,22 +12,22 @@ The following table describes the structure of the Macro object in the object po
 ## Functionality and Structure
 A macro consists of a list of VT commands (see ISO 11783-6, Annex F).
 
-* **Padding:** Each command within a macro must be padded to a length of **8 bytes** (using `0xFF`) if the actual command is shorter (e.g., Change Numeric Value).
-* **Execution:** Macros can be started by events (e.g., `On Press` of a button) or by the ECU command `Execute Macro`.
-* **Consistency:** The ECU is responsible for ensuring that macros only reference objects that actually exist in the pool.
+- **Padding:** Each command within a macro must be padded to a length of **8 bytes** (using `0xFF`) if the actual command is shorter (e.g., Change Numeric Value).
+- **Execution:** Macros can be started by events (e.g., `On Press` of a button) or by the ECU command `Execute Macro`.
+- **Consistency:** The ECU is responsible for ensuring that macros only reference objects that actually exist in the pool.
 
 ## Available Macro Commands (Excerpt)
 
 Macros can use almost all commanding VT functions:
 
-* **Visibility:** `Hide/Show Object` (show/hide containers).
-* **Interaction:** `Enable/Disable Object` (Locking buttons/input), `Select Input Object` (Setting focus).
-* **Values:** `Change Numeric Value` (Changing variables or pointers), `Change String Value`.
-* **Geometry:** `Change Child Location/Position` (Moving/scrolling objects), `Change Size`, `Change End Point`.
-* **Display:** `Change Background Color`, `Change Font/Line/Fill Attributes`.
-* **Navigation:** `Change Active Mask` (Screen change), `Change Soft Key Mask`.
-* **Audio:** `Control Audio Device` (Emit beeps).
-* **Lists:** `Change List Item` (Change the content of input lists).
+- **Visibility:** `Hide/Show Object` (show/hide containers).
+- **Interaction:** `Enable/Disable Object` (Locking buttons/input), `Select Input Object` (Setting focus).
+- **Values:** `Change Numeric Value` (Changing variables or pointers), `Change String Value`.
+- **Geometry:** `Change Child Location/Position` (Moving/scrolling objects), `Change Size`, `Change End Point`.
+- **Display:** `Change Background Color`, `Change Font/Line/Fill Attributes`.
+- **Navigation:** `Change Active Mask` (Screen change), `Change Soft Key Mask`.
+- **Audio:** `Control Audio Device` (Emit beeps).
+- **Lists:** `Change List Item` (Change the content of input lists).
 
 ## Events
 
@@ -35,9 +35,9 @@ Macros do not trigger events themselves, but are started by events from other ob
 
 The Macro object supports the following commands:
 
-* `Execute Macro`
-* `Execute Extended Macro`
-* `Get Attribute Value`
+- `Execute Macro`
+- `Execute Extended Macro`
+- `Get Attribute Value`
 
 ## Implementation Implementation Significance
 Macros are a powerful tool for **performance optimization**:

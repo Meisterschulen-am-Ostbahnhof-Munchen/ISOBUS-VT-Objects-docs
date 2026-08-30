@@ -26,11 +26,11 @@ Die Interpretation von AID 2 hängt stark von Bit 7 in den `Font style` Optionen
 ### Nicht-proportionale Schriftarten (Bit 7 = 0)
 Hier werden vordefinierte Rastergrößen verwendet (Breite x Höhe in Pixeln):
 
-*   **0:** 6x8
-*   **1:** 8x8
-*   **2:** 8x12
-*   ...
-*   **14:** 128x192
+-   **0:** 6x8
+-   **1:** 8x8
+-   **2:** 8x12
+-   ...
+-   **14:** 128x192
 
 ### Proportionale Schriftarten (Bit 7 = 1)
 In diesem Modus repräsentiert der Wert in AID 2 direkt die **Schrifthöhe in Pixeln**. Die Breite der einzelnen Zeichen variiert.
@@ -39,8 +39,8 @@ In diesem Modus repräsentiert der Wert in AID 2 direkt die **Schrifthöhe in Pi
 
 Das Font Attributes Objekt reagiert auf folgende Ereignisse:
 
-*   **On Change Font Attributes:** Wird ausgelöst durch das Kommando `Change Font Attributes`. Das VT aktualisiert alle Objekte, die diese Attribute verwenden.
-*   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
+-   **On Change Font Attributes:** Wird ausgelöst durch das Kommando `Change Font Attributes`. Das VT aktualisiert alle Objekte, die diese Attribute verwenden.
+-   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
 
 ## Bedeutung für die Implementierung
 Font Attributes erlauben ein konsistentes Design. Anstatt bei jedem Textobjekt Farbe und Größe einzeln zu definieren, verweisen alle Objekte auf ein gemeinsames Attribut-Objekt. Ändert man dieses eine Objekt (z. B. von weißer auf gelbe Schrift), ändert sich das gesamte HMI-Erscheinungsbild sofort.

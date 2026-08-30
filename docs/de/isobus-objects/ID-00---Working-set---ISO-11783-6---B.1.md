@@ -36,16 +36,16 @@ Die folgende Tabelle beschreibt den Aufbau des Working Set Objekts im Objektpool
 ### Designator (Child-Objekte)
 Das Working Set Objekt dient als Container für eine grafische Kennung (Designator), die das Gerät repräsentiert (z. B. Icon und Name).
 
-*   **Struktur:** Die unter `Number of objects to follow` angegebene Anzahl von Objekten folgt direkt im Record. Jedes Kind-Objekt wird durch ID, X-Pos und Y-Pos definiert.
-*   **Platzbeschränkung:** Die Gesamtheit dieser Objekte muss in den Bereich eines **Softkeys** passen. Das VT schneidet alles ab, was über diesen Bereich hinausragt.
-*   **Koordinaten:** Relativ zur oberen linken Ecke des Working Set Objekts.
+-   **Struktur:** Die unter `Number of objects to follow` angegebene Anzahl von Objekten folgt direkt im Record. Jedes Kind-Objekt wird durch ID, X-Pos und Y-Pos definiert.
+-   **Platzbeschränkung:** Die Gesamtheit dieser Objekte muss in den Bereich eines **Softkeys** passen. Das VT schneidet alles ab, was über diesen Bereich hinausragt.
+-   **Koordinaten:** Relativ zur oberen linken Ecke des Working Set Objekts.
 
 ### Makros (Events)
 Das Working Set definiert Ereignisse, die Makros auslösen können. Siehe Tabelle B.1 für die Event-Definitionen.
 
-*   **On Activate:** Ausgelöst bei Auswahl des Working Sets durch den Bediener.
-*   **On Deactivate:** Ausgelöst beim Verlassen des Working Sets.
-*   **On Change Active Mask:** Ausgelöst durch das Kommando `Change Active Mask`.
+-   **On Activate:** Ausgelöst bei Auswahl des Working Sets durch den Bediener.
+-   **On Deactivate:** Ausgelöst beim Verlassen des Working Sets.
+-   **On Change Active Mask:** Ausgelöst durch das Kommando `Change Active Mask`.
 
 ### Sprachenunterstützung
 Die Liste der Sprachcodes (`Language Code`) informiert das VT, welche Sprachen das Working Set unterstützt. Jeder Code besteht aus 2 ASCII-Zeichen (z.B. "de", "en", "fr"). Dies dient der Information; die eigentliche Sprachumschaltung erfolgt durch das Laden entsprechender Sprach-Objekte oder Texte.

@@ -26,22 +26,22 @@ Die folgende Tabelle beschreibt den Aufbau des Input List Objekts im Objektpool.
 ## Funktionsweise und Darstellung
 Die Input List zeigt im normalen Zustand nur das aktuell ausgewählte Element an.
 
-*   **Auswahl:** Wenn der Bediener das Objekt öffnet, zeigt das VT die Liste der verfügbaren Einträge an.
-*   **Index:** Der übertragene Wert ist der **nullbasierte Index** des gewählten Elements in der Liste.
-*   **Spezialwert 255:** Signalisiert "keine Auswahl".
+-   **Auswahl:** Wenn der Bediener das Objekt öffnet, zeigt das VT die Liste der verfügbaren Einträge an.
+-   **Index:** Der übertragene Wert ist der **nullbasierte Index** des gewählten Elements in der Liste.
+-   **Spezialwert 255:** Signalisiert "keine Auswahl".
 
 ## Ereignisse (Events - Tabelle B.19)
 
 Das Input List Objekt reagiert auf folgende Ereignisse:
 
-*   **On Enable / On Disable:** Zustandsänderung des Objekts.
-*   **On Input Field Selection / De-selection:** Fokus-Ereignisse.
-*   **On Entry of Value:** Wenn der Bediener eine Auswahl bestätigt (ENTER). Sendet `Change Numeric Value`.
-*   **On Change Value:** Wenn der Index durch das Programm geändert wird.
-*   **On Entry of New Value:** Ausgelöst, wenn sich der Wert ändert (oft redundant zu "On Entry of Value").
-*   **On ESC:** Abbruch der Auswahl.
-*   **On Change Attribute:** Allgemeine Attributänderung.
-*   **On Change Size:** Reaktion auf Größenänderung.
+-   **On Enable / On Disable:** Zustandsänderung des Objekts.
+-   **On Input Field Selection / De-selection:** Fokus-Ereignisse.
+-   **On Entry of Value:** Wenn der Bediener eine Auswahl bestätigt (ENTER). Sendet `Change Numeric Value`.
+-   **On Change Value:** Wenn der Index durch das Programm geändert wird.
+-   **On Entry of New Value:** Ausgelöst, wenn sich der Wert ändert (oft redundant zu "On Entry of Value").
+-   **On ESC:** Abbruch der Auswahl.
+-   **On Change Attribute:** Allgemeine Attributänderung.
+-   **On Change Size:** Reaktion auf Größenänderung.
 
 ## Bedeutung für die Implementierung
 Input Lists sind hervorragend geeignet, um Fehleingaben zu vermeiden, da der Bediener nur aus gültigen Optionen wählen kann. Da die Darstellung (z. B. Schriftgröße in der aufgeklappten Liste) vom VT gesteuert wird, ist eine gute Lesbarkeit auf verschiedenen Endgeräten gewährleistet.

@@ -36,19 +36,19 @@ Das VT berechnet den angezeigten Wert automatisch nach folgender Formel:
 Beispiel: Ein Rohwert von 2500 mit einem Offset von 0 und einem Skalierungsfaktor von 0.01 wird als **25.00** angezeigt (bei 2 Nachkommastellen).
 
 ## Formatierungsoptionen
-*   **Führende Nullen (Bit 1):** Das Feld wird links mit Nullen aufgefüllt (z. B. "0012").
-*   **Null als Leerzeichen (Bit 2):** Wenn der skalierte Wert exakt Null ist, bleibt das Feld komplett leer.
-*   **Runden vs. Abschneiden (Bit 3):** Steuert, wie mit Werten verfahren wird, die mehr Nachkommastellen haben, als in AID 9 definiert sind.
+-   **Führende Nullen (Bit 1):** Das Feld wird links mit Nullen aufgefüllt (z. B. "0012").
+-   **Null als Leerzeichen (Bit 2):** Wenn der skalierte Wert exakt Null ist, bleibt das Feld komplett leer.
+-   **Runden vs. Abschneiden (Bit 3):** Steuert, wie mit Werten verfahren wird, die mehr Nachkommastellen haben, als in AID 9 definiert sind.
 
 ## Ereignisse (Events)
 
 Das Output Number Objekt reagiert auf folgende Ereignisse:
 
-*   **On Change Value:** Wird ausgelöst, wenn sich der angezeigte Wert ändert (z.B. Variable aktualisiert oder `Change Numeric Value` Befehl). Das VT zeichnet das Objekt neu.
-*   **On Refresh:** Wird ausgelöst, wenn das VT das Objekt neu zeichnen muss.
-*   **On Change Background Colour:** Reaktion auf Farbänderung.
-*   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
-*   **On Change Size:** Reaktion auf Größenänderung.
+-   **On Change Value:** Wird ausgelöst, wenn sich der angezeigte Wert ändert (z.B. Variable aktualisiert oder `Change Numeric Value` Befehl). Das VT zeichnet das Objekt neu.
+-   **On Refresh:** Wird ausgelöst, wenn das VT das Objekt neu zeichnen muss.
+-   **On Change Background Colour:** Reaktion auf Farbänderung.
+-   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
+-   **On Change Size:** Reaktion auf Größenänderung.
 
 ## Bedeutung für die Implementierung
 Output Numbers sind ideal für die Anzeige von Sensordaten (Druck, Temperatur, Geschwindigkeit). Da die ECU lediglich Ganzzahlen (Rohwerte) übertragen muss, wird die CAN-Bus-Last minimiert und die Komplexität der Formatierung auf das Terminal verlagert. Die pixelgenaue Justierung (AID 11) sorgt dafür, dass die Zahlen auch bei verschiedenen Schriftarten exakt im Designrahmen ausgerichtet sind.

@@ -34,17 +34,17 @@ The GCO consists of two main components:
 ## Graphics Context Commands
 The canvas is manipulated using special commands (see ISO 11783-6, Annex F), such as:
 
-* `Set Graphics Cursor`: Sets the writing position.
-* `Draw Point / Line / Rectangle / Polygon / Ellipse`: Draws geometric shapes.
-* `Draw Text`: Writes text to the cursor position.
-* `Copy Canvas`: Copies areas within the canvas.
+- `Set Graphics Cursor`: Sets the writing position.
+- `Draw Point / Line / Rectangle / Polygon / Ellipse`: Draws geometric shapes.
+- `Draw Text`: Writes text to the cursor position.
+- `Copy Canvas`: Copies areas within the canvas.
 
 ## Events (Table B.58)
 
 The Graphics Context object reacts to the following events:
 
-* **On Change Attribute:** Triggered when attributes change (e.g., viewport position, zoom). The VT updates the display.
-* **On Change Background Colour:** Fills the object (the canvas) with the new background color. **Caution:** Deletes the previous content!
+- **On Change Attribute:** Triggered when attributes change (e.g., viewport position, zoom). The VT updates the display.
+- **On Change Background Colour:** Fills the object (the canvas) with the new background color. **Caution:** Deletes the previous content!
 
 ## Application Example
 Typical applications include **GPS maps** (swath logging), where the ECU continuously plots the driven route as a line in the GCO.

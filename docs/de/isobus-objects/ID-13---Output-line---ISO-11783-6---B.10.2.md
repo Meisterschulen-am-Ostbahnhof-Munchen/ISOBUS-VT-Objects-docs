@@ -23,21 +23,21 @@ Die folgende Tabelle beschreibt den Aufbau des Output Line Objekts im Objektpool
 ## Funktionsweise und Geometrie
 Die Linie wird innerhalb eines gedachten Rechtecks gespannt, das durch die Position des Objekts sowie `Width` und `Height` definiert ist.
 
-*   **Line Direction 0:** Die Linie verläuft diagonal fallend.
-    *   Startpunkt: (X, Y)
-    *   Endpunkt: (X + Width - Line Width, Y + Height - Line Width)
-*   **Line Direction 1:** Die Linie verläuft diagonal steigend.
-    *   Startpunkt: (X, Y + Height - Line Width)
-    *   Endpunkt: (X + Width - Line Width, Y)
+-   **Line Direction 0:** Die Linie verläuft diagonal fallend.
+    -   Startpunkt: (X, Y)
+    -   Endpunkt: (X + Width - Line Width, Y + Height - Line Width)
+-   **Line Direction 1:** Die Linie verläuft diagonal steigend.
+    -   Startpunkt: (X, Y + Height - Line Width)
+    -   Endpunkt: (X + Width - Line Width, Y)
 
 ## Ereignisse (Events - Tabelle B.26)
 
 Das Output Line Objekt reagiert auf folgende Ereignisse:
 
-*   **On Change End Point:** Wird ausgelöst, wenn die Geometrie der Linie geändert wird.
-*   **On Change Attribute:** Wird ausgelöst, wenn sich die Linien-Eigenschaften (z. B. Farbe) ändern.
-*   **On Change Size:** Reaktion auf Größenänderung (z. B. durch `Change Size` Kommando).
-*   **On Refresh:** Wird ausgelöst, wenn das VT das Objekt neu zeichnen muss.
+-   **On Change End Point:** Wird ausgelöst, wenn die Geometrie der Linie geändert wird.
+-   **On Change Attribute:** Wird ausgelöst, wenn sich die Linien-Eigenschaften (z. B. Farbe) ändern.
+-   **On Change Size:** Reaktion auf Größenänderung (z. B. durch `Change Size` Kommando).
+-   **On Refresh:** Wird ausgelöst, wenn das VT das Objekt neu zeichnen muss.
 
 ## Bedeutung für die Implementierung
 Linien werden häufig als Trennelemente in Masken oder zur einfachen grafischen Darstellung von Zusammenhängen genutzt. Durch die Verknüpfung mit Variablen (über die Line Attributes) können Linien zur Laufzeit ihre Farbe ändern, um Zustände (z. B. Aktiv/Inaktiv) zu signalisieren.

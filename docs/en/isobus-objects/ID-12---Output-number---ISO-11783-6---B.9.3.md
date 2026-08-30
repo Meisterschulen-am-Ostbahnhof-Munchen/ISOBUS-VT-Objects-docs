@@ -30,19 +30,19 @@ The VT automatically calculates the displayed value using the following formula:
 Example: A raw value of 2500 with an offset of 0 and a scaling factor of 0.01 is displayed as **25.00** (with 2 decimal places).
 
 ## Formatting Options
-* **Leading Zeros (Bit 1):** The field is padded with zeros on the left (e.g., "0012").
-* **Zero as Space (Bit 2):** If the scaled value is exactly zero, the field remains completely empty.
-* **Round vs. Truncate (Bit 3):** Controls how to handle values with more decimal places than defined in AID 9.
+- **Leading Zeros (Bit 1):** The field is padded with zeros on the left (e.g., "0012").
+- **Zero as Space (Bit 2):** If the scaled value is exactly zero, the field remains completely empty.
+- **Round vs. Truncate (Bit 3):** Controls how to handle values with more decimal places than defined in AID 9.
 
 ## Events
 
 The Output Number object responds to the following events:
 
-* **On Change Value:** Triggered when the displayed value changes (e.g., variable updated or `Change Numeric Value` command). The VT redraws the object.
-* **On Refresh:** Triggered when the VT needs to redraw the object.
-* **On Change Background Colour:** Responds to a change in background color.
-* **On Change Attribute:** Responds to general attribute changes.
-* **On Change Size:** Responds to a change in size.
+- **On Change Value:** Triggered when the displayed value changes (e.g., variable updated or `Change Numeric Value` command). The VT redraws the object.
+- **On Refresh:** Triggered when the VT needs to redraw the object.
+- **On Change Background Colour:** Responds to a change in background color.
+- **On Change Attribute:** Responds to general attribute changes.
+- **On Change Size:** Responds to a change in size.
 
 ## Implementation Implementation Implementation
 Output Numbers are ideal for displaying sensor data (pressure, temperature, speed). Since the ECU only needs to transmit integers (raw values), the CAN bus load is minimized and the formatting complexity is shifted to the terminal. Pixel-precise alignment (AID 11) ensures that the numbers are perfectly aligned within the design frame, even with different fonts.

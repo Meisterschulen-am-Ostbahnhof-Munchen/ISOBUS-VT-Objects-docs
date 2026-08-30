@@ -20,18 +20,18 @@ The following table describes the structure of the Output List object in the obj
 
 The Output List behaves similarly to an animation, but is manually controlled via the index.
 
-* **Index:** The displayed content is determined by the value (Value or Variable). Index 0 displays the first object in the list.
-* **Special Value 255:** With a value of 255, nothing is displayed (the object is invisible).
-* **NULL Pointer:** If a list entry has the ID NULL (65535), nothing is displayed for that index.
+- **Index:** The displayed content is determined by the value (Value or Variable). Index 0 displays the first object in the list.
+- **Special Value 255:** With a value of 255, nothing is displayed (the object is invisible).
+- **NULL Pointer:** If a list entry has the ID NULL (65535), nothing is displayed for that index.
 
 ## Events (Table B.24)
 
 The Output List object reacts to the following events:
 
-* **On Change Value:** Triggered when the index changes. The VT updates the display.
-* **On Change Attribute:** Reacts to general attribute changes.
-* **On Change Size:** Reacts to size changes.
-* **On Refresh:** Triggered when the VT needs to redraw the object.
+- **On Change Value:** Triggered when the index changes. The VT updates the display.
+- **On Change Attribute:** Reacts to general attribute changes.
+- **On Change Size:** Reacts to size changes.
+- **On Refresh:** Triggered when the VT needs to redraw the object.
 
 Further information and examples can be found in the [ISOBUS Wiki - List (Output)](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/list-output)] by Tobias Tenberg.
 

@@ -1,7 +1,7 @@
 # ID 5 – Key (Soft Key) – ISO 11783-6 – B.6
 ![](https://user-images.githubusercontent.com/69573151/95071971-c7e9fc80-070a-11eb-8261-f87394d32fb4.png)
 ## 🎧 Podcast
-* [ISO 11783-6: Understanding Softkeys and the Virtual Terminal – Your Key to Agricultural Machinery Mechatronics ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
+- [ISO 11783-6: Understanding Softkeys and the Virtual Terminal – Your Key to Agricultural Machinery Mechatronics ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
 ----
 The **Key Object** (ID 5) defines the appearance and functional code of a softkey. It is the interactive element within a softkey interface.
 
@@ -27,19 +27,19 @@ The following table describes the structure of the Key Object in the object pool
 
 A Key object acts as a container for the graphical content of the key (e.g., icons or text).
 
-* **Coordinates:** The X and Y positions of the child objects are relative to the upper left corner of the softkey designator.
-* **Clipping:** Any objects that lie outside the physical area of the softkey are clipped by the VT. Since softkey sizes vary, content should be placed centrally.
+- **Coordinates:** The X and Y positions of the child objects are relative to the upper left corner of the softkey designator.
+- **Clipping:** Any objects that lie outside the physical area of the softkey are clipped by the VT. Since softkey sizes vary, content should be placed centrally.
 
 ## Events (Events - Table B.11)
 
 The Key object responds to the following events:
 
-* **On Key Press:** Triggered when the key is pressed. Sends `Soft Key Activation`.
-* **On Key Release:** Triggered when the key is released. Sends `Soft Key Activation`.
-* **On Change Background Colour:** Responds to a change in the key color.
-* **On Change Child Location / Position:** Updates the graphical content.
-* **On Change Attribute:** Responds to general attribute changes.
-* **On Input Field Selection / De-selection:** Triggered when the key receives or loses focus (during navigation via encoder/cursor).
+- **On Key Press:** Triggered when the key is pressed. Sends `Soft Key Activation`.
+- **On Key Release:** Triggered when the key is released. Sends `Soft Key Activation`.
+- **On Change Background Colour:** Responds to a change in the key color.
+- **On Change Child Location / Position:** Updates the graphical content.
+- **On Change Attribute:** Responds to general attribute changes.
+- **On Input Field Selection / De-selection:** Triggered when the key receives or loses focus (during navigation via encoder/cursor).
 
 ## The Key Code
 

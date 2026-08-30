@@ -29,25 +29,25 @@ Die folgende Tabelle beschreibt den Aufbau des Data Mask Objekts im Objektpool.
 ### Struktur und Child-Objekte
 Die Datenmaske dient als Container für alle sichtbaren Elemente.
 
-*   **Objekt-Liste:** Jedes Kind-Objekt wird mit seiner ID und seiner Position (X/Y) definiert. Jedes Set aus ID und Position belegt 6 Bytes.
-*   **Reihenfolge:** Objekte werden in der gelisteten Reihenfolge gezeichnet (Z-Order). Höhere Indizes liegen über niedrigeren.
-*   **Koordinaten:** Die Positionierung erfolgt absolut in VT-Pixeln, bezogen auf die obere linke Ecke der Maske (0,0).
+-   **Objekt-Liste:** Jedes Kind-Objekt wird mit seiner ID und seiner Position (X/Y) definiert. Jedes Set aus ID und Position belegt 6 Bytes.
+-   **Reihenfolge:** Objekte werden in der gelisteten Reihenfolge gezeichnet (Z-Order). Höhere Indizes liegen über niedrigeren.
+-   **Koordinaten:** Die Positionierung erfolgt absolut in VT-Pixeln, bezogen auf die obere linke Ecke der Maske (0,0).
 
 ## Ereignisse (Events - Tabelle B.3)
 
 Die Datenmaske reagiert auf folgende Ereignisse:
 
-*   **On Show:** Ausgelöst, wenn die Maske sichtbar wird. Das VT zeichnet den Hintergrund, die Kinder und die Soft Key Mask.
-*   **On Hide:** Ausgelöst, wenn die Maske vom Display entfernt wird.
-*   **On Refresh:** Ausgelöst bei Änderungen an Kind-Objekten, die ein Neuzeichnen erfordern.
-*   **On Change Background Colour:** Reaktion auf eine Änderung der Hintergrundfarbe.
-*   **On Change Soft Key Mask:** Reaktion auf den Wechsel der zugewiesenen Soft Key Mask.
-*   **Pointing Events:** `press` und `release` bei Touch-Bedienung auf der Maskenfläche.
+-   **On Show:** Ausgelöst, wenn die Maske sichtbar wird. Das VT zeichnet den Hintergrund, die Kinder und die Soft Key Mask.
+-   **On Hide:** Ausgelöst, wenn die Maske vom Display entfernt wird.
+-   **On Refresh:** Ausgelöst bei Änderungen an Kind-Objekten, die ein Neuzeichnen erfordern.
+-   **On Change Background Colour:** Reaktion auf eine Änderung der Hintergrundfarbe.
+-   **On Change Soft Key Mask:** Reaktion auf den Wechsel der zugewiesenen Soft Key Mask.
+-   **Pointing Events:** `press` und `release` bei Touch-Bedienung auf der Maskenfläche.
 
 ## Verhalten und Einschränkungen
-*   **Zusammenhang mit Softkeys:** Jede Datenmaske "besitzt" eine Softkey-Maske. Wenn die Datenmaske gewechselt wird, wechselt das VT in der Regel auch das Softkey-Layout.
-*   **Refresh:** Wenn ein untergeordnetes Objekt (Child) geändert wird, sorgt das VT für ein Redraw der betroffenen Bereiche.
-*   **Sichtbarkeit:** Es kann immer nur eine Datenmaske (oder Alarmmaske) pro Arbeitsgruppe aktiv und im Fokus des VT sein.
+-   **Zusammenhang mit Softkeys:** Jede Datenmaske "besitzt" eine Softkey-Maske. Wenn die Datenmaske gewechselt wird, wechselt das VT in der Regel auch das Softkey-Layout.
+-   **Refresh:** Wenn ein untergeordnetes Objekt (Child) geändert wird, sorgt das VT für ein Redraw der betroffenen Bereiche.
+-   **Sichtbarkeit:** Es kann immer nur eine Datenmaske (oder Alarmmaske) pro Arbeitsgruppe aktiv und im Fokus des VT sein.
 
 ## Bedeutung für die Implementierung
 Die Datenmaske ist das Herzstück des HMI-Designs. Entwickler müssen darauf achten, dass die Auflösung der Maske zu den Fähigkeiten des VTs passt (Standard-Mindestauflösung oft 200x200 Pixel, moderne VTs bieten deutlich mehr). Eine effiziente Nutzung von Makros auf Masken-Events (z. B. `On Show`) kann helfen, Initialisierungen direkt im VT auszuführen.

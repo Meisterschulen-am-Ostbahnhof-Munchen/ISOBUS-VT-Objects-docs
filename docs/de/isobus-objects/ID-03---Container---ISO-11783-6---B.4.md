@@ -26,25 +26,25 @@ Die folgende Tabelle beschreibt den Aufbau des Container Objekts im Objektpool.
 ### Relative Positionierung und Clipping
 Innerhalb eines Containers beginnt ein **eigenes Koordinatensystem**:
 
-*   **Relative Koordinaten:** Die X- und Y-Positionen der Child-Objekte beziehen sich auf die obere linke Ecke des Containers.
-*   **Clipping:** Alle Objekte oder Teile von Objekten, die außerhalb der durch `Width` und `Height` definierten Fläche liegen, werden vom VT abgeschnitten und nicht angezeigt.
-*   **Gruppen-Verschiebung:** Wenn der Container verschoben wird (z. B. per `Change Child Position`), verschieben sich alle darin enthaltenen Objekte automatisch mit.
+-   **Relative Koordinaten:** Die X- und Y-Positionen der Child-Objekte beziehen sich auf die obere linke Ecke des Containers.
+-   **Clipping:** Alle Objekte oder Teile von Objekten, die außerhalb der durch `Width` und `Height` definierten Fläche liegen, werden vom VT abgeschnitten und nicht angezeigt.
+-   **Gruppen-Verschiebung:** Wenn der Container verschoben wird (z. B. per `Change Child Position`), verschieben sich alle darin enthaltenen Objekte automatisch mit.
 
 ## Ereignisse (Events - Tabelle B.7)
 
 Der Container reagiert auf folgende Ereignisse:
 
-*   **On Show:** Ausgelöst durch das Kommando `Show Object` (auch wenn der Container bereits sichtbar ist). Das VT zeichnet die enthaltenen Objekte neu.
-*   **On Hide:** Ausgelöst durch das Kommando `Hide Object`. Der Container wird mit der Hintergrundfarbe der Eltern-Maske überzeichnet.
-*   **On Refresh:** Ausgelöst bei Änderungen an untergeordneten Objekten, die ein Neuzeichnen erfordern.
-*   **On Change Child Location / Position:** Aktualisierung der Position von Kind-Objekten.
-*   **On Change Size:** Reaktion auf Größenänderung des Containers.
+-   **On Show:** Ausgelöst durch das Kommando `Show Object` (auch wenn der Container bereits sichtbar ist). Das VT zeichnet die enthaltenen Objekte neu.
+-   **On Hide:** Ausgelöst durch das Kommando `Hide Object`. Der Container wird mit der Hintergrundfarbe der Eltern-Maske überzeichnet.
+-   **On Refresh:** Ausgelöst bei Änderungen an untergeordneten Objekten, die ein Neuzeichnen erfordern.
+-   **On Change Child Location / Position:** Aktualisierung der Position von Kind-Objekten.
+-   **On Change Size:** Reaktion auf Größenänderung des Containers.
 
 ## Nutzung in der Praxis
 Container sind essenziell für dynamische Benutzeroberflächen:
 
-*   **Ein-/Ausblenden:** Mit dem Kommando `IsoVtcCmd_ObjHideShow` können komplexe Bedienfelder oder Statusanzeigen auf Knopfdruck erscheinen oder verschwinden.
-*   **Platzersparnis:** Mehrere Container können an der gleichen Stelle liegen; durch geschicktes Umschalten der Sichtbarkeit lassen sich verschiedene "Registerkarten" oder Modi realisieren.
+-   **Ein-/Ausblenden:** Mit dem Kommando `IsoVtcCmd_ObjHideShow` können komplexe Bedienfelder oder Statusanzeigen auf Knopfdruck erscheinen oder verschwinden.
+-   **Platzersparnis:** Mehrere Container können an der gleichen Stelle liegen; durch geschicktes Umschalten der Sichtbarkeit lassen sich verschiedene "Registerkarten" oder Modi realisieren.
 
 ### Beispiele aus dem ISO-Designer
 ![](https://user-images.githubusercontent.com/69573151/94602403-17f13b00-0295-11eb-8216-34070ca1bca8.png)

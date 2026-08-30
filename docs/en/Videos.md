@@ -1,6 +1,6 @@
 # 📺 Videos
 ## ISO Designer: German
-* [ISO Designer: German ](https://youtube.com/playlist?list=PLD-CHxmB4P7dONUFIWaUbzUUxXmc9hayo\&si=0EX2K7hXmHuxW\_iM)
+- [ISO Designer: German ](https://youtube.com/playlist?list=PLD-CHxmB4P7dONUFIWaUbzUUxXmc9hayo\&si=0EX2K7hXmHuxW\_iM)
 1. [ISO Designer: Copying Objects to a Project ](https://www.youtube.com/watch?v=EirliMv51nI)
 1. [ISO Designer: Aligning Objects ](https://www.youtube.com/watch?v=9J-a7oAyh40)
 1. [ISO Designer: Importing and Exporting Text to and from an Excel CSV File ](https://www.youtube.com/watch?v=9kHdGvo2mTM)
@@ -14,7 +14,7 @@
 1. [ISO Designer: Object Properties adopt](https://www.youtube.com/watch?v=U2OBFeYmUaE)
 
 ## ISO designer: English
-* [ISO Designer: English](https://youtube.com/playlist?list=PLD-CHxmB4P7dMFsr7TSBbH70BT4WvluEz\&si=VZRkW8oFbZgjS45a)
+- [ISO Designer: English](https://youtube.com/playlist?list=PLD-CHxmB4P7dMFsr7TSBbH70BT4WvluEz\&si=VZRkW8oFbZgjS45a)
 
 1. [ISO Designer: Copy Objects](https://www.youtube.com/watch?v=c8JLmgkSjHQ)  
 1. [ISO Designer: Arranging Objects](https://www.youtube.com/watch?v=jnfVsfJ8LlE)  

@@ -21,21 +21,21 @@ The following table describes the structure of the Alarm Mask object in the obje
 ### Priority Levels and Display
 The priority not only controls the order of the alarms, but often also their visual display on the VT:
 
-* **High Priority (0):** The operator is in danger or a serious malfunction has occurred. These alarms must be acknowledged immediately or force the terminal to focus.
-* **Medium Priority (1):** Normal machine malfunction.
-* **Low Priority (2):** For information only (status messages).
+- **High Priority (0):** The operator is in danger or a serious malfunction has occurred. These alarms must be acknowledged immediately or force the terminal to focus.
+- **Medium Priority (1):** Normal machine malfunction.
+- **Low Priority (2):** For information only (status messages).
 
 ## Events (Events - Table B.5)
 
 The alarm screen reacts to the following events:
 
-* **On Show:** Triggered when the screen becomes visible. The VT sends a `VT Status` message.
-* **On Hide:** Triggered when the mask is removed from the display.
-* **On Refresh:** Triggered when objects within the mask are changed.
-* **On Change Priority:** When the priority changes, the VT re-evaluates all active alarms.
-* **On Change Soft Key Mask:** Changes the softkey assignment when an alarm mask is active.
-* **On Change Child Location / Position:** Updates child objects.
-* **On Change Attribute:** Reacts to general attribute changes.
+- **On Show:** Triggered when the screen becomes visible. The VT sends a `VT Status` message.
+- **On Hide:** Triggered when the mask is removed from the display.
+- **On Refresh:** Triggered when objects within the mask are changed.
+- **On Change Priority:** When the priority changes, the VT re-evaluates all active alarms.
+- **On Change Soft Key Mask:** Changes the softkey assignment when an alarm mask is active.
+- **On Change Child Location / Position:** Updates child objects.
+- **On Change Attribute:** Reacts to general attribute changes.
 
 ## Behavior with Multiple Alarms
 If multiple alarm masks from different workgroups are active simultaneously, the priority (AID 3) determines which mask takes precedence. If the priority is the same, the VT usually decides (often based on chronological order).

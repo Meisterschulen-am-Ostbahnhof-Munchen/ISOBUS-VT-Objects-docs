@@ -21,8 +21,8 @@ Die folgende Tabelle beschreibt den Aufbau des Object Label Reference List Objek
 ## Bedeutung und Funktionsweise
 Das Objekt dient dazu, anderen Objekten (z. B. Working Set, Input-Felder) einen Namen (Text) und ein Icon (Grafik) zuzuweisen. Diese "Labels" werden vom VT verwendet:
 
-*   **Working Set Label:** Das Label für das Working Set Objekt wird in der Liste der aktiven Arbeitsgruppen angezeigt.
-*   **Input Labels:** Bei Eingabefeldern zeigt das VT das Label (Text/Grafik) im Popup-Editor an, damit der Benutzer weiß, welchen Wert er gerade bearbeitet (z. B. "Sämenge" statt nur "120").
+-   **Working Set Label:** Das Label für das Working Set Objekt wird in der Liste der aktiven Arbeitsgruppen angezeigt.
+-   **Input Labels:** Bei Eingabefeldern zeigt das VT das Label (Text/Grafik) im Popup-Editor an, damit der Benutzer weiß, welchen Wert er gerade bearbeitet (z. B. "Sämenge" statt nur "120").
 
 Es ist nur **eine** Object Label Reference List pro Objektpool erlaubt.
 

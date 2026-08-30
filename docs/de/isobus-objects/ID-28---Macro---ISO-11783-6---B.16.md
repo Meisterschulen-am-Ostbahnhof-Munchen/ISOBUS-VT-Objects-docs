@@ -18,31 +18,31 @@ Die folgende Tabelle beschreibt den Aufbau des Macro Objekts im Objektpool.
 ## Funktionsweise und Struktur
 Ein Makro besteht aus einer Liste von VT-Kommandos (siehe ISO 11783-6, Anhang F).
 
-*   **Padding:** Jeder Befehl innerhalb eines Makros muss auf eine Länge von **8 Byte** aufgefüllt werden (mit `0xFF`), falls das eigentliche Kommando kürzer ist (z.B. Change Numeric Value).
-*   **Ausführung:** Makros können durch Events (z. B. `On Press` eines Buttons) oder durch das Kommando `Execute Macro` von der ECU gestartet werden.
-*   **Konsistenz:** Die ECU ist dafür verantwortlich, dass Makros nur auf Objekte verweisen, die tatsächlich im Pool existieren.
+-   **Padding:** Jeder Befehl innerhalb eines Makros muss auf eine Länge von **8 Byte** aufgefüllt werden (mit `0xFF`), falls das eigentliche Kommando kürzer ist (z.B. Change Numeric Value).
+-   **Ausführung:** Makros können durch Events (z. B. `On Press` eines Buttons) oder durch das Kommando `Execute Macro` von der ECU gestartet werden.
+-   **Konsistenz:** Die ECU ist dafür verantwortlich, dass Makros nur auf Objekte verweisen, die tatsächlich im Pool existieren.
 
 ## Verfügbare Makro-Befehle (Auszug)
 
 Makros können fast alle kommandierenden VT-Funktionen nutzen:
 
-*   **Sichtbarkeit:** `Hide/Show Object` (Ein-/Ausblenden von Containern).
-*   **Interaktion:** `Enable/Disable Object` (Sperren von Buttons/Eingaben), `Select Input Object` (Fokus setzen).
-*   **Werte:** `Change Numeric Value` (Variablen oder Pointer ändern), `Change String Value`.
-*   **Geometrie:** `Change Child Location/Position` (Objekte verschieben/scrollen), `Change Size`, `Change End Point`.
-*   **Darstellung:** `Change Background Color`, `Change Font/Line/Fill Attributes`.
-*   **Navigation:** `Change Active Mask` (Maskenwechsel), `Change Soft Key Mask`.
-*   **Audio:** `Control Audio Device` (Signaltöne ausgeben).
-*   **Listen:** `Change List Item` (Inhalt von Input-Listen ändern).
+-   **Sichtbarkeit:** `Hide/Show Object` (Ein-/Ausblenden von Containern).
+-   **Interaktion:** `Enable/Disable Object` (Sperren von Buttons/Eingaben), `Select Input Object` (Fokus setzen).
+-   **Werte:** `Change Numeric Value` (Variablen oder Pointer ändern), `Change String Value`.
+-   **Geometrie:** `Change Child Location/Position` (Objekte verschieben/scrollen), `Change Size`, `Change End Point`.
+-   **Darstellung:** `Change Background Color`, `Change Font/Line/Fill Attributes`.
+-   **Navigation:** `Change Active Mask` (Maskenwechsel), `Change Soft Key Mask`.
+-   **Audio:** `Control Audio Device` (Signaltöne ausgeben).
+-   **Listen:** `Change List Item` (Inhalt von Input-Listen ändern).
 
 ## Ereignisse (Events)
 
 Makros lösen selbst keine Events aus, werden aber durch Events anderer Objekte gestartet.
 Das Makro Objekt unterstützt die Kommandos:
 
-*   `Execute Macro`
-*   `Execute Extended Macro`
-*   `Get Attribute Value`
+-   `Execute Macro`
+-   `Execute Extended Macro`
+-   `Get Attribute Value`
 
 ## Bedeutung für die Implementierung
 Makros sind ein mächtiges Werkzeug zur **Performance-Optimierung**:

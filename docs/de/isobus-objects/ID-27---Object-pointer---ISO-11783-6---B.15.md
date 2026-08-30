@@ -17,15 +17,15 @@ Die folgende Tabelle beschreibt den Aufbau des Object Pointer Objekts im Objektp
 ## Funktionsweise und Anwendung
 Ein Object Pointer wird wie ein normales Child-Objekt in eine Maske eingebunden. Anstatt jedoch selbst etwas zu zeichnen, "leitet" er die Anzeige an das Objekt weiter, dessen ID in AID 1 gespeichert ist.
 
-*   **Dynamischer Austausch:** Die ECU kann den `Value` (AID 1) per `Change Numeric Value` Kommando jederzeit ändern. Das VT blendet daraufhin das alte Objekt aus und das neue an derselben Stelle ein.
-*   **Platzhalter-Funktion:** Er eignet sich hervorragend für Status-Icons (z. B. wechselnde Symbole für verschiedene Maschinenzustände), ohne dass mehrere Objekte übereinandergelegt und einzeln versteckt werden müssen.
-*   **NULL-Pointer:** Wird der Wert auf 65535 gesetzt, wird an dieser Stelle nichts gezeichnet.
+-   **Dynamischer Austausch:** Die ECU kann den `Value` (AID 1) per `Change Numeric Value` Kommando jederzeit ändern. Das VT blendet daraufhin das alte Objekt aus und das neue an derselben Stelle ein.
+-   **Platzhalter-Funktion:** Er eignet sich hervorragend für Status-Icons (z. B. wechselnde Symbole für verschiedene Maschinenzustände), ohne dass mehrere Objekte übereinandergelegt und einzeln versteckt werden müssen.
+-   **NULL-Pointer:** Wird der Wert auf 65535 gesetzt, wird an dieser Stelle nichts gezeichnet.
 
 ## Ereignisse (Events - Tabelle B.54)
 
 Das Object Pointer Objekt reagiert auf folgende Ereignisse:
 
-*   **On Change Value:** Wird ausgelöst durch das Kommando `Change Numeric Value`. Das VT versteckt das vorherige Objekt und zeigt das neue an. Die Eltern-Maske wird aktualisiert.
+-   **On Change Value:** Wird ausgelöst durch das Kommando `Change Numeric Value`. Das VT versteckt das vorherige Objekt und zeigt das neue an. Die Eltern-Maske wird aktualisiert.
 
 ## Bedeutung für die Implementierung
 Object Pointer reduzieren die Komplexität der Maskensteuerung erheblich. Anstatt viele Objekte manuell per `Hide/Show` zu verwalten, muss die ECU nur eine einzige ID im Pointer ändern. Dies spart CAN-Bus-Bandbreite und vereinfacht die Programmlogik auf der Maschinensteuerung.

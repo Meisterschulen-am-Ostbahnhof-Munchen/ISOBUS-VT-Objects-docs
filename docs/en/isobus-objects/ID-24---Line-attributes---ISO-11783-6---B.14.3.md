@@ -16,24 +16,24 @@ The following table describes the structure of the Line Attributes object in the
 ## Line Thickness and Appearance
 The VT uses a square "brush" of size `Line width` x `Line width` to draw the line.
 
-* **Width = 0:** The line is not drawn.
-* **Width > 1:** The line appears thicker.
+- **Width = 0:** The line is not drawn.
+- **Width > 1:** The line appears thicker.
 
 ## Line Style (Line Art - AID 3)
 A 16-bit mask defines whether a line appears solid, dashed, or dotted:
 
-* Each set bit (1) represents a drawn brushstroke.
-* Each unset bit (0) represents a gap (background shows through).
-* **Example 0xFFFF:** Solid line (all bits 1).
-* **Example 0xCCCC (11001100...):** Dashed line.
-* **Special Feature:** The length of a line scales with the `Line width`.
+- Each set bit (1) represents a drawn brushstroke.
+- Each unset bit (0) represents a gap (background shows through).
+- **Example 0xFFFF:** Solid line (all bits 1).
+- **Example 0xCCCC (11001100...):** Dashed line.
+- **Special Feature:** The length of a line scales with the `Line width`.
 
 ## Events (Table B.47)
 
 The Line Attributes object reacts to the following events:
 
-* **On Change Line Attributes:** Triggered by the `Change Line Attributes` command. The VT updates all objects that use this attribute.
-* **On Change Attribute:** Reacts to general attribute changes.
+- **On Change Line Attributes:** Triggered by the `Change Line Attributes` command. The VT updates all objects that use this attribute.
+- **On Change Attribute:** Reacts to general attribute changes.
 
 ## Implementation Implementation Implementation
 Line attributes enable efficient control of the graphical display. By changing a single attribute object, for example, all borders in a mask can be switched simultaneously from "Thin/Black" to "Thick/Red" to visualize an alarm condition.

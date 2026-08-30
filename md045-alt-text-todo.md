@@ -1,0 +1,54 @@
+# MD045 - Fehlender Alt-Text bei Bildern
+
+48 Fundstellen. Bitte pro Zeile einen kurzen, beschreibenden Alt-Text in die eckigen Klammern `![...]` eintragen.
+
+| # | Datei | Zeile | Bild-URL |
+| --- | --- | --- | --- |
+| 1 | `docs/de/isobus-objects/ID-00---Working-set---ISO-11783-6---B.1.md` | 5 | https://user-images.githubusercontent.com/69573151/94337326-edc82080-ffe9-11ea-93d7-61752b51d9cf.png |
+| 2 | `docs/de/isobus-objects/ID-01---Data-mask---ISO-11783-6---B.2.md` | 5 | https://user-images.githubusercontent.com/69573151/94337364-35e74300-ffea-11ea-8342-cb8bd452b89d.png |
+| 3 | `docs/de/isobus-objects/ID-03---Container---ISO-11783-6---B.4.md` | 53 | https://user-images.githubusercontent.com/69573151/94602403-17f13b00-0295-11eb-8216-34070ca1bca8.png |
+| 4 | `docs/de/isobus-objects/ID-03---Container---ISO-11783-6---B.4.md` | 54 | https://user-images.githubusercontent.com/69573151/94606853-5f7ac580-029b-11eb-9293-18570b481dbf.png |
+| 5 | `docs/de/isobus-objects/ID-05---Key-(Soft-Key)---ISO-11783-6---B.6.md` | 5 | https://user-images.githubusercontent.com/69573151/95071971-c7e9fc80-070a-11eb-8261-f87394d32fb4.png |
+| 6 | `docs/de/isobus-objects/ID-06---Button---ISO-11783-6---B.7.md` | 5 | https://user-images.githubusercontent.com/69573151/94337426-7d6dcf00-ffea-11ea-8ab0-ca710054a888.png |
+| 7 | `docs/de/isobus-objects/ID-06---Button---ISO-11783-6---B.7.md` | 111 | https://user-images.githubusercontent.com/69573151/94337621-210baf00-ffec-11ea-9ec0-fe4a7e7c418b.png |
+| 8 | `docs/de/isobus-objects/ID-06---Button---ISO-11783-6---B.7.md` | 149 | https://user-images.githubusercontent.com/69573151/94602909-cbf2c600-0295-11eb-946a-a68b45b3eccc.png |
+| 9 | `docs/de/ISOBUS-Objekte.md` | 21 | https://user-images.githubusercontent.com/69573151/94335435-08939880-ffdc-11ea-92e7-662f2ff7779f.png |
+| 10 | `docs/de/ISOBUS-Objekte.md` | 27 | https://user-images.githubusercontent.com/69573151/94335523-5f996d80-ffdc-11ea-9032-8de45bd5b318.png |
+| 11 | `docs/de/Jetter-ISO-Designer-Workspace-öffnen.md` | 7 | https://user-images.githubusercontent.com/69573151/94337511-20bee400-ffeb-11ea-99eb-de3aa2e34c63.png |
+| 12 | `docs/de/Jetter-ISO-Designer-Workspace-öffnen.md` | 11 | https://user-images.githubusercontent.com/69573151/94337291-afcafc80-ffe9-11ea-8dec-d7f8f2b256bf.png |
+| 13 | `docs/de/Jetter-ISO-Designer-Workspace-öffnen.md` | 13 | https://user-images.githubusercontent.com/69573151/94337300-bce7eb80-ffe9-11ea-89a9-451cab2cf439.png |
+| 14 | `docs/de/Jetter-ISO-Designer-Workspace-öffnen.md` | 15 | https://user-images.githubusercontent.com/69573151/94337309-cd986180-ffe9-11ea-8246-23caf2906694.png |
+| 15 | `docs/de/Jetter-ISO-Designer.md` | 9 | https://user-images.githubusercontent.com/69573151/92991886-e7647f80-f4e6-11ea-8db8-25a5e0b5bdf8.png |
+| 16 | `docs/de/Jetter-ISO-Designer.md` | 11 | https://user-images.githubusercontent.com/69573151/92991891-edf2f700-f4e6-11ea-9a62-406ba1f38fed.png |
+| 17 | `docs/de/Jetter-ISO-Designer.md` | 13 | https://user-images.githubusercontent.com/69573151/92991896-f4816e80-f4e6-11ea-8cf4-d2a5c7a8d743.png |
+| 18 | `docs/de/Jetter-ISO-Designer.md` | 15 | https://user-images.githubusercontent.com/69573151/92991898-fa774f80-f4e6-11ea-9902-7f64aa61f715.png |
+| 19 | `docs/de/Jetter-ISO-Designer.md` | 17 | https://user-images.githubusercontent.com/69573151/92991905-0e22b600-f4e7-11ea-8a28-b7b3e88fc37a.png |
+| 20 | `docs/de/Jetter-ISO-Designer.md` | 19 | https://user-images.githubusercontent.com/69573151/92991913-1b3fa500-f4e7-11ea-8f51-912ea5482e4e.png |
+| 21 | `docs/de/Jetter-ISO-Designer.md` | 21 | https://user-images.githubusercontent.com/69573151/92991920-2a265780-f4e7-11ea-907f-f32b819eeb12.png |
+| 22 | `docs/de/Jetter-ISO-Designer.md` | 25 | https://user-images.githubusercontent.com/69573151/92991938-3f9b8180-f4e7-11ea-8e62-ec01194f1260.png |
+| 23 | `docs/de/Objekte/Attribute.md` | 24 | https://user-images.githubusercontent.com/69573151/94602676-7b7b6880-0295-11eb-98b3-4fbb4662964d.png |
+| 24 | `docs/de/Objekte/Variablen.md` | 24 | https://user-images.githubusercontent.com/69573151/94337714-f4a46280-ffec-11ea-81f1-92997fc1448e.png |
+| 25 | `docs/en/isobus-objects/ID-00---Working-set---ISO-11783-6---B.1.md` | 3 | https://user-images.githubusercontent.com/69573151/94337326-edc82080-ffe9-11ea-93d7-61752b51d9cf.png |
+| 26 | `docs/en/isobus-objects/ID-01---Data-mask---ISO-11783-6---B.2.md` | 3 | https://user-images.githubusercontent.com/69573151/94337364-35e74300-ffea-11ea-8342-cb8bd452b89d.png |
+| 27 | `docs/en/isobus-objects/ID-03---Container---ISO-11783-6---B.4.md` | 51 | https://user-images.githubusercontent.com/69573151/94602403-17f13b00-0295-11eb-8216-34070ca1bca8.png |
+| 28 | `docs/en/isobus-objects/ID-03---Container---ISO-11783-6---B.4.md` | 52 | https://user-images.githubusercontent.com/69573151/94606853-5f7ac580-029b-11eb-9293-18570b481dbf.png |
+| 29 | `docs/en/isobus-objects/ID-05---Key-(Soft-Key)---ISO-11783-6---B.6.md` | 3 | https://user-images.githubusercontent.com/69573151/95071971-c7e9fc80-070a-11eb-8261-f87394d32fb4.png |
+| 30 | `docs/en/isobus-objects/ID-06---Button---ISO-11783-6---B.7.md` | 3 | https://user-images.githubusercontent.com/69573151/94337426-7d6dcf00-ffea-11ea-8ab0-ca710054a888.png |
+| 31 | `docs/en/isobus-objects/ID-06---Button---ISO-11783-6---B.7.md` | 112 | https://user-images.githubusercontent.com/69573151/94337621-210baf00-ffec-11ea-9ec0-fe4a7e7c418b.png |
+| 32 | `docs/en/isobus-objects/ID-06---Button---ISO-11783-6---B.7.md` | 150 | https://user-images.githubusercontent.com/69573151/94602909-cbf2c600-0295-11eb-946a-a68b45b3eccc.png |
+| 33 | `docs/en/ISOBUS-Objekte.md` | 17 | https://user-images.githubusercontent.com/69573151/94335435-08939880-ffdc-11ea-92e7-662f2ff7779f.png |
+| 34 | `docs/en/ISOBUS-Objekte.md` | 23 | https://user-images.githubusercontent.com/69573151/94335523-5f996d80-ffdc-11ea-9032-8de45bd5b318.png |
+| 35 | `docs/en/Jetter-ISO-Designer-Workspace-öffnen.md` | 4 | https://user-images.githubusercontent.com/69573151/94337511-20bee400-ffeb-11ea-99eb-de3aa2e34c63.png |
+| 36 | `docs/en/Jetter-ISO-Designer-Workspace-öffnen.md` | 6 | https://user-images.githubusercontent.com/69573151/94337291-afcafc80-ffe9-11ea-8dec-d7f8f2b256bf.png |
+| 37 | `docs/en/Jetter-ISO-Designer-Workspace-öffnen.md` | 7 | https://user-images.githubusercontent.com/69573151/94337300-bce7eb80-ffe9-11ea-89a9-451cab2cf439.png |
+| 38 | `docs/en/Jetter-ISO-Designer-Workspace-öffnen.md` | 9 | https://user-images.githubusercontent.com/69573151/94337309-cd986180-ffe9-11ea-8246-23caf2906694.png |
+| 39 | `docs/en/Jetter-ISO-Designer.md` | 4 | https://user-images.githubusercontent.com/69573151/92991886-e7647f80-f4e6-11ea-8db8-25a5e0b5bdf8.png |
+| 40 | `docs/en/Jetter-ISO-Designer.md` | 5 | https://user-images.githubusercontent.com/69573151/92991891-edf2f700-f4e6-11ea-9a62-406ba1f38fed.png |
+| 41 | `docs/en/Jetter-ISO-Designer.md` | 6 | https://user-images.githubusercontent.com/69573151/92991896-f4816e80-f4e6-11ea-8cf4-d2a5c7a8d743.png |
+| 42 | `docs/en/Jetter-ISO-Designer.md` | 7 | https://user-images.githubusercontent.com/69573151/92991898-fa774f80-f4e6-11ea-9902-7f64aa61f715.png |
+| 43 | `docs/en/Jetter-ISO-Designer.md` | 9 | https://user-images.githubusercontent.com/69573151/92991905-0e22b600-f4e7-11ea-8a28-b7b3e88fc37a.png |
+| 44 | `docs/en/Jetter-ISO-Designer.md` | 11 | https://user-images.githubusercontent.com/69573151/92991913-1b3fa500-f4e7-11ea-8f51-912ea5482e4e.png |
+| 45 | `docs/en/Jetter-ISO-Designer.md` | 13 | https://user-images.githubusercontent.com/69573151/92991920-2a265780-f4e7-11ea-907f-f32b819eeb12.png |
+| 46 | `docs/en/Jetter-ISO-Designer.md` | 17 | https://user-images.githubusercontent.com/69573151/92991938-3f9b8180-f4e7-11ea-8e62-ec01194f1260.png |
+| 47 | `docs/en/Objekte/Attribute.md` | 10 | https://user-images.githubusercontent.com/69573151/94602676-7b7b6880-0295-11eb-98b3-4fbb4662964d.png |
+| 48 | `docs/en/Objekte/Variablen.md` | 13 | https://user-images.githubusercontent.com/69573151/94337714-f4a46280-ffec-11ea-81f1-92997fc1448e.png |

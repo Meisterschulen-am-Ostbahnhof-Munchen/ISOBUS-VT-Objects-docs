@@ -1,7 +1,11 @@
 # ID 28 – Macro – ISO 11783-6 – B.16
+
 The **Macro** object with **ID 28** allows you to store a sequence of commands in the Virtual Terminal and execute them automatically upon certain events. This reduces the necessary communication via ISOBUS, as simple UI logic runs directly in the terminal.
+
 ### Attributes and Record Format (Table B.56)
+
 The following table describes the structure of the Macro object in the object pool.
+
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | - | **Object ID** | Integer | 2 | 0 – 255 (VT v4)<br>0 – 65534 (VT v5+) | 1 – 2 | Unique ID in the object pool. |
@@ -10,6 +14,7 @@ The following table describes the structure of the Macro object in the object po
 | - | **Repeat:** {Command} | Binary | 6 – n | - | 6 ... | List of command packages. Each command must be a multiple of 8 bytes long (padding with FFh). |
 
 ## Functionality and Structure
+
 A macro consists of a list of VT commands (see ISO 11783-6, Annex F).
 
 - **Padding:** Each command within a macro must be padded to a length of **8 bytes** (using `0xFF`) if the actual command is shorter (e.g., Change Numeric Value).
@@ -40,11 +45,12 @@ The Macro object supports the following commands:
 - `Get Attribute Value`
 
 ## Implementation Implementation Significance
+
 Macros are a powerful tool for **performance optimization**:
 
 1. **Response Time:** A screen change immediately after a key press occurs via macro without CAN delay. 2. **Relief:** The ECU doesn't have to handle purely graphical tasks (e.g., toggling an icon when a button is pressed).
 
-3. **Complexity:** Multiple actions can be combined into a single macro (e.g., "Set variable to 0" AND "Show success message" AND "Play sound").
+2. **Complexity:** Multiple actions can be combined into a single macro (e.g., "Set variable to 0" AND "Show success message" AND "Play sound").
 
 ----
 

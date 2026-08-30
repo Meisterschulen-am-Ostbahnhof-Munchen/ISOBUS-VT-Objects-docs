@@ -16,6 +16,7 @@ Die folgende Tabelle beschreibt den Aufbau des Colour Map Objekts im Objektpool.
 | - | **Repeat:** {Colour Map} | Integer | var. | 0 – 255 | 6 ... | Liste von Farb-Indizes. |
 
 ### Struktur der Einträge
+
 Die Einträge definieren eine Umleitung der Farb-Indizes.
 
 -   **Beispiel:** Wenn der Eintrag an Index 0 den Wert 1 hat, wird überall dort, wo im Design Farbe 0 (Schwarz) verwendet wurde, nun Farbe 1 (Weiß) angezeigt.
@@ -25,12 +26,14 @@ Die Einträge definieren eine Umleitung der Farb-Indizes.
     -   **Typ 2 (256 Farben):** 256 Einträge.
 
 ## Funktionsweise
+
 Normalerweise verwendet ein Terminal eine Standard-Farbpalette (z. B. 256 Farben gemäß ISO). Mit der Colour Map kann eine Working Set definieren, dass z. B. der Farbindex 1 (Standard: Rot) stattdessen als Blau dargestellt werden soll.
 
 -   **Indirektion:** Dies bietet eine Ebene der Indirektion. Anstatt jedes Objekt einzeln zu ändern, kann durch einfaches Umschalten der Colour Map das gesamte Farbschema der Anwendung gewechselt werden (z. B. Tag-/Nacht-Modus).
 -   **Aktivierung:** Eine Colour Map wird über das Kommando `Select Colour Map` aktiviert.
 
 ## Anmerkung zu VT Version 6
+
 Ab Version 6 wird zusätzlich das *Colour Palette* Objekt (ID 45) unterstützt, mit dem die RGB-Werte der Farben selbst geändert werden können. Die Colour Map mappt Indizes auf Indizes, während die Colour Palette Indizes auf RGB-Werte mappt.
 
 ----

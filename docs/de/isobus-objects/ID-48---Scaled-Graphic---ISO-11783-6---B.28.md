@@ -22,6 +22,7 @@ Die folgende Tabelle beschreibt den Aufbau des Scaled Graphic Objekts im Objektp
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ### Skalierungstypen (Bits 0-2 von ScaleType)
+
 -   **0:** Keine Skalierung (Originalgröße aus den Rohdaten verwenden).
 -   **1:** Auf Breite skalieren (Seitenverhältnis beibehalten).
 -   **2:** Auf Höhe skalieren (Seitenverhältnis beibehalten).
@@ -29,6 +30,7 @@ Die folgende Tabelle beschreibt den Aufbau des Scaled Graphic Objekts im Objektp
 -   **4:** In Bereich einpassen (Best Fit, Seitenverhältnis beibehalten, Grafik wird so groß wie möglich).
 
 ### Justierung (Bits 3-6 von ScaleType)
+
 Definiert die Position innerhalb des durch `Width` und `Height` definierten Bereichs:
 
 -   **Horizontal (Bits 3-4):** 0=Links, 1=Mitte, 2=Rechts.

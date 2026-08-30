@@ -25,6 +25,7 @@ Die folgende Tabelle beschreibt den Aufbau des Alarm Mask Objekts im Objektpool.
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ### Prioritätsstufen und Darstellung
+
 Die Priorität steuert nicht nur die Reihenfolge der Alarme, sondern oft auch deren visuelle Darstellung auf dem VT:
 
 -   **High Priority (0):** Der Bediener ist in Gefahr oder es liegt eine schwere Fehlfunktion vor. Diese Alarme müssen sofort quittiert werden oder erzwingen den Fokus des Terminals.
@@ -44,9 +45,11 @@ Die Alarmmaske reagiert auf folgende Ereignisse:
 -   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
 
 ## Verhalten bei mehreren Alarmen
+
 Wenn mehrere Alarmmasken von verschiedenen Arbeitsgruppen gleichzeitig aktiv sind, bestimmt die Priorität (AID 3), welche Maske im Vordergrund steht. Bei gleicher Priorität liegt die Entscheidung meist beim VT (oft zeitliche Abfolge).
 
 ## Bedeutung für die Implementierung
+
 Alarmmasken sollten sparsam und nur für echte Warnungen eingesetzt werden, da sie den Arbeitsfluss des Bedieners unterbrechen. Es ist wichtig, die passende akustische Unterstützung (AID 4) zu wählen, um die Aufmerksamkeit zu steuern, ohne den Bediener zu stressen.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Alarm Mask](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/alarm-mask) von Tobias Tenberg.

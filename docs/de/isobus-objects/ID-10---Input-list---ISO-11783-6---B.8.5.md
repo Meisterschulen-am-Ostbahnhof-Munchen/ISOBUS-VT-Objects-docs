@@ -24,6 +24,7 @@ Die folgende Tabelle beschreibt den Aufbau des Input List Objekts im Objektpool.
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Funktionsweise und Darstellung
+
 Die Input List zeigt im normalen Zustand nur das aktuell ausgewählte Element an.
 
 -   **Auswahl:** Wenn der Bediener das Objekt öffnet, zeigt das VT die Liste der verfügbaren Einträge an.
@@ -44,6 +45,7 @@ Das Input List Objekt reagiert auf folgende Ereignisse:
 -   **On Change Size:** Reaktion auf Größenänderung.
 
 ## Bedeutung für die Implementierung
+
 Input Lists sind hervorragend geeignet, um Fehleingaben zu vermeiden, da der Bediener nur aus gültigen Optionen wählen kann. Da die Darstellung (z. B. Schriftgröße in der aufgeklappten Liste) vom VT gesteuert wird, ist eine gute Lesbarkeit auf verschiedenen Endgeräten gewährleistet.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - List (Input)](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/list-input) von Tobias Tenberg.

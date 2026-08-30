@@ -1,4 +1,5 @@
 # ID 6 – Button – ISO 11783-6 – B.7
+
 ![](https://user-images.githubusercontent.com/69573151/94337426-7d6dcf00-ffea-11ea-8ab0-ca710054a888.png)
 **Annex B.7 – Button**
 Annex B.7 of ISO 11783-6:2018 is dedicated to the detailed definition of the "button" object in the context of the Virtual Terminal (VT). Buttons are basic interactive user interface elements that allow the operator to trigger actions or send commands to the agricultural machine or implement.
@@ -8,6 +9,7 @@ The button object, as defined in B.7, is a graphical element displayed on the VT
 **Overview of the Button Object**
 
 The button object, as defined in B.7, is a graphical element displayed on the VT's data screen.
+
 ### Attributes and Record Format (Table B.14)
 
 The following table describes the structure of the Button object in the object pool.
@@ -31,6 +33,7 @@ The following table describes the structure of the Button object in the object p
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ### Structure and Appearance
+
 The button consists of three areas:
 
 1. **Button Area:** The entire area defined by Width/Height.
@@ -40,6 +43,7 @@ The button consists of three areas:
 3. **Button Face:** The inner area for content (Button Area minus Border).
 
 ### Container Structure
+
 The button is a container. It can contain other objects, which are displayed in the **Button Face**. Objects that extend beyond this area are clipped.
 
 ## Events (Events - Table B.13)

@@ -1,7 +1,11 @@
 # ID 14 – Output Rectangle – ISO 11783-6 – B.10.3
+
 The **Output Rectangle** object with **ID 14** is used to draw rectangles, which can be displayed as outlines, filled, or in combination.
+
 ### Attributes and Record Format (Table B.29)
+
 The following table describes the structure of the Output Rectangle object in the object pool.
+
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -16,6 +20,7 @@ The following table describes the structure of the Output Rectangle object in th
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ## Appearance and Properties
+
 The rectangle combines line and fill properties:
 
 - **Outline:** If AID 1 is linked, a border is drawn according to the Line Attributes.
@@ -26,6 +31,7 @@ The rectangle combines line and fill properties:
 - **Clipping:** The rectangle defines its own graphic boundaries using `Width` and `Height`.
 
 ## Geometric Calculation
+
 The corners of the rectangle are determined by the object's starting position (StartX, StartY):
 
 - **Top-Left Corner:** (StartX, StartY)

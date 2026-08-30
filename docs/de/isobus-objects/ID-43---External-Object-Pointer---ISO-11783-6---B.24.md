@@ -17,6 +17,7 @@ Die folgende Tabelle beschreibt den Aufbau des External Object Pointer Objekts i
 | [3] | **External Object ID** | Integer | 2 | 0 – 65534, 65535 | 8 – 9 | ID des Objekts im fremden Pool. |
 
 ## Funktionsweise und Regeln
+
 Das Objekt ermöglicht die Anzeige von Objekten aus fremden Objektpools.
 
 -   **Anzeige:** Das Terminal sucht das Objekt im Pool der durch den NAME identifizierten ECU und zeichnet es an die Stelle des Pointers.
@@ -31,6 +32,7 @@ Das External Object Pointer Objekt reagiert auf folgende Ereignisse:
 -   **On Change Attribute:** Wird ausgelöst durch das Kommando `Change Attribute`. Das VT evaluiert den Pointer neu und zeichnet ggf. neu.
 
 ## Anwendungsbeispiel
+
 Ein Traktor (Working Set A) möchte in seiner Hauptmaske den Füllstand eines gezogenen Düngestreuers (Working Set B) anzeigen. Er nutzt dazu einen *External Object Pointer*, der auf die Füllstandsanzeige im Pool des Streuers verweist.
 
 ----

@@ -25,6 +25,7 @@ Die folgende Tabelle beschreibt den Aufbau des Output Polygon Objekts im Objektp
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Polygontypen und Füllregeln
+
 Der Polygontyp (AID 5) informiert das VT über die Komplexität der Form, was die Effizienz des Zeichnens beeinflusst:
 
 -   **Convex (0):** Einfache Formen (z. B. Dreieck, Sechseck), bei denen jede horizontale Linie die Kanten nur zweimal schneidet.
@@ -33,6 +34,7 @@ Der Polygontyp (AID 5) informiert das VT über die Komplexität der Form, was di
 -   **Open (3):** Die Punkte werden nur durch Linien verbunden; das Polygon wird nicht geschlossen und nicht gefüllt.
 
 ## Geometrie und Punkte
+
 -   **Relative Position:** Alle Punkte (`Point X`, `Point Y`) beziehen sich auf die obere linke Ecke des Polygon-Objekts.
 -   **Automatisches Schließen:** Wenn der Typ nicht "Open" ist und der letzte Punkt nicht mit dem ersten identisch ist, schließt das VT das Polygon automatisch durch eine Linie vom letzten zum ersten Punkt.
 -   **Anzahl der Punkte:** Es können bis zu 255 Punkte definiert werden.
@@ -46,6 +48,7 @@ Das Output Polygon Objekt reagiert auf folgende Ereignisse:
 -   **On Change Size:** Reaktion auf Größenänderung (des umschließenden Rechtecks).
 
 ## Bedeutung für die Implementierung
+
 Polygone sind sehr mächtig für die Darstellung von unregelmäßigen Flächen, wie z. B. Tankinhalten in asymmetrischen Behältern oder zur Visualisierung von Feldumrissen. Aufgrund der Rechenlast bei komplexen Polygonen sollten ECU-Entwickler nach Möglichkeit "konvexe" Typen bevorzugen, wenn die Form dies zulässt.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Polygon](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/polygon) von Tobias Tenberg.

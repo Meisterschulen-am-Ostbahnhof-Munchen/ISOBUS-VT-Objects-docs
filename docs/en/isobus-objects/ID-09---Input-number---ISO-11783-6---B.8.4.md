@@ -1,7 +1,11 @@
 # ID 9 – Input number – ISO 11783-6 – B.8.4
+
 The **Input Number** object with **ID 9** is one of the most complex and important input objects. It is used for inputting and displaying numeric values and supports automatic scaling, formatting, and limit checking directly in the terminal.
+
 ### Attributes and Record Format (Table B.18)
+
 The following table describes the structure of the Input Number object in the object pool.
+
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -26,6 +30,7 @@ The following table describes the structure of the Input Number object in the ob
 | - | {Macro ID} | Integer | 1 | 0 – 255 | 40... | Macro ID of the macro to be executed. |
 
 ## Scaling Logic
+
 The VT automatically calculates the displayed value using the following formula:
 
 **Displayed Value = (Raw Value + Offset) × Scaling Factor**
@@ -33,6 +38,7 @@ The VT automatically calculates the displayed value using the following formula:
 This allows physical values (e.g., 12.5 bar) to be processed as simple integers in memory (e.g., 125), while the VT handles the conversion and decimal representation.
 
 ## Validation
+
 Limit values are also checked based on the scaled values. The VT only allows the input field to be closed (ENTER) if the new value is within the scaled min/max limits:
 
 Scaled Min <= Neuer Wert <= Scaled Max`

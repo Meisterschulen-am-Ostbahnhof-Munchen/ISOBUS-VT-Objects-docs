@@ -20,12 +20,14 @@ Die folgende Tabelle beschreibt den Aufbau des Line Attributes Objekts im Objekt
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Linienstärken und Darstellung
+
 Das VT verwendet einen quadratischen "Pinsel" der Größe `Line width` x `Line width`, um die Linie zu zeichnen.
 
 -   **Breite = 0:** Die Linie wird nicht gezeichnet.
 -   **Breite > 1:** Die Linie erscheint dicker.
 
 ## Linienstil (Line Art - AID 3)
+
 Über eine 16-Bit-Maske wird definiert, ob eine Linie durchgezogen, gestrichelt oder punktiert erscheint:
 
 -   Jedes gesetzte Bit (1) steht für einen gezeichneten Pinselstrich.
@@ -42,6 +44,7 @@ Das Line Attributes Objekt reagiert auf folgende Ereignisse:
 -   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
 
 ## Bedeutung für die Implementierung
+
 Line Attributes ermöglichen eine effiziente Steuerung der grafischen Darstellung. Durch das Ändern eines einzigen Attribut-Objekts können beispielsweise alle Umrandungen in einer Maske gleichzeitig von "Dünn/Schwarz" auf "Dick/Rot" umgeschaltet werden, um einen Alarmzustand zu visualisieren.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Line Attribute](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/line-attribute) von Tobias Tenberg.

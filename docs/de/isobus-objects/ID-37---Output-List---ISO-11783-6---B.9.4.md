@@ -23,6 +23,7 @@ Die folgende Tabelle beschreibt den Aufbau des Output List Objekts im Objektpool
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Funktionsweise
+
 Die Output List verhält sich ähnlich wie eine Animation, wird aber manuell über den Index gesteuert.
 
 -   **Index:** Der angezeigte Inhalt wird durch den Wert (Value oder Variable) bestimmt. Index 0 zeigt das erste Objekt in der Liste.

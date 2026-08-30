@@ -28,6 +28,7 @@ Die folgende Tabelle beschreibt den Aufbau des Input String Objekts im Objektpoo
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Funktionsweise und Optionen
+
 Das Input String Objekt bietet flexible Möglichkeiten zur Textdarstellung:
 
 -   **Auto-Wrap:** Wenn aktiviert (Bit 1), bricht das VT den Text automatisch um, wenn die Breite des Feldes überschritten wird.
@@ -49,6 +50,7 @@ Das Input String Objekt reagiert auf folgende Ereignisse:
 -   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
 
 ## Bedeutung für die Implementierung
+
 Input Strings werden häufig für Namen (z. B. Feldnamen, Kundendaten) oder Passwörter verwendet. Da die Texteingabe auf Terminals ohne Tastatur (nur Touch oder Dreh-Drück-Steller) mühsam sein kann, sollten Standardwerte oder Auswahllisten (Input List) bevorzugt werden, wenn der Wertevorrat begrenzt ist.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - String (Input)](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/string-input) von Tobias Tenberg.

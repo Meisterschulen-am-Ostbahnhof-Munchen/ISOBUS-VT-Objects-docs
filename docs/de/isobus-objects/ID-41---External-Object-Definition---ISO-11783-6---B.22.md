@@ -19,6 +19,7 @@ Die folgende Tabelle beschreibt den Aufbau des External Object Definition Objekt
 | - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534, 65535 | 14 + ... | Objekt-ID eines Objekts aus dem eigenen Pool, das für das externe WS freigegeben wird. |
 
 ## Funktionsweise
+
 Damit Working Set A ein Objekt von Working Set B anzeigen kann (via *External Object Pointer*), muss Working Set B dieses Objekt explizit in einer *External Object Definition* für Working Set A freigeben. Dies dient der Sicherheit und Kontrolle über die eigenen Pool-Ressourcen.
 
 -   **Empfehlung:** Das `Enabled`-Bit sollte beim Laden des Pools zunächst auf 0 gesetzt sein und erst zur Laufzeit aktiviert werden, wenn der NAME des Partners bekannt und aktuell ist.

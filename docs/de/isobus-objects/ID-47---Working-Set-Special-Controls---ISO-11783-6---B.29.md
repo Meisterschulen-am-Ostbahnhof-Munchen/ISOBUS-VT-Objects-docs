@@ -20,6 +20,7 @@ Die folgende Tabelle beschreibt den Aufbau des Working Set Special Controls Obje
 | - | {Country Code} | String | 2 | - | 13 – 14 ... | 2-Buchstaben Code gemäß ISO 3166-1 (z. B. "DE") oder "20 20" (Hex) falls nicht anwendbar. |
 
 ## Bedeutung und Funktionsweise
+
 Dieses Objekt ist der zentrale Anlaufpunkt für das Terminal beim Laden des Pools (ab VT Version 6).
 
 -   **Farben:** Es definiert, welche *Colour Map* und *Colour Palette* **initial** beim Aktivieren des Pools verwendet werden sollen.

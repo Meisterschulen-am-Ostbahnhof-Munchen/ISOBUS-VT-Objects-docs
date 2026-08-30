@@ -26,12 +26,14 @@ Die folgende Tabelle beschreibt den Aufbau des Output String Objekts im Objektpo
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Funktionsweise und Besonderheiten
+
 -   **Transparenz:** Wenn Bit 0 gesetzt ist, ist der Hintergrund des Textfeldes transparent, und die Hintergrundfarbe der Maske oder eines darunterliegenden Objekts bleibt sichtbar.
 -   **Auto-Wrap:** Ermöglicht die Darstellung mehrzeiliger Texte innerhalb der definierten `Width` und `Height`.
 -   **Justierung:** Die Ausrichtung erfolgt pixelgenau innerhalb des Rahmens. Dies ist besonders wichtig für die vertikale Zentrierung bei unterschiedlichen Schriftarten.
 -   **Clipping:** Text, der über die definierte `Width` oder `Height` hinausgeht, wird vom VT abgeschnitten.
 
 ## Statischer Text vs. Dynamische Variable
+
 -   **Statischer Text:** Der Text wird direkt im Objekt-Pool definiert und kann zur Laufzeit nur über das Kommando `Change Attribute` (AID 5 oder 7) in seinen Eigenschaften geändert werden.
 -   **Dynamischer Text:** Durch die Verknüpfung mit einer **String Variable** (AID 6) kann die Steuerung (ECU) den Textinhalt jederzeit per `Change String Value` aktualisieren, ohne das Objekt selbst neu laden zu müssen.
 
@@ -46,6 +48,7 @@ Das Output String Objekt reagiert auf folgende Ereignisse:
 -   **On Change Size:** Reaktion auf Größenänderung.
 
 ## Bedeutung für die Implementierung
+
 Output Strings sind die primäre Methode für Statusmeldungen, Beschriftungen und Einheitenanzeigen. Für Texte, die in vielen Sprachen vorliegen, empfiehlt es sich, die Texte über Variablen einzusteuern oder für jede Sprache eine eigene Maske/einen eigenen Pool vorzuhalten.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - String (Output)](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/string-output) von Tobias Tenberg.

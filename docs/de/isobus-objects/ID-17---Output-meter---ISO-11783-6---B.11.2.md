@@ -29,6 +29,7 @@ Die folgende Tabelle beschreibt den Aufbau des Output Meter Objekts im Objektpoo
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Funktionsweise und Darstellung
+
 Das Instrument wird in ein Quadrat eingepasst. Die Nadel bewegt sich auf einem Bogen, der durch Start- und Endwinkel definiert ist.
 
 -   **Winkel-Logik:** Wie bei der Ellipse werden Winkel halbiert übertragen (z. B. 45 für 90°).
@@ -36,6 +37,7 @@ Das Instrument wird in ein Quadrat eingepasst. Die Nadel bewegt sich auf einem B
 -   **Transparenz:** Das Meter-Objekt selbst ist transparent. Dadurch können Bitmaps (z. B. ein schönes Zifferblatt) dahinter platziert werden.
 
 ## Deflektionsrichtung (AID 5, Bit 3)
+
 Dies ist ein kritisches Attribut für die intuitive Bedienung:
 
 -   **0 (Anticlockwise):** Der Wert steigt gegen den Uhrzeigersinn.
@@ -51,6 +53,7 @@ Das Output Meter Objekt reagiert auf folgende Ereignisse:
 -   **On Refresh:** Wird ausgelöst, wenn das VT das Objekt neu zeichnen muss.
 
 ## Bedeutung für die Implementierung
+
 Das Output Meter ist ideal für die Visualisierung von Motordrehzahlen, Füllständen oder Druckwerten. Da es transparent ist, lassen sich durch Kombination mit Hintergrundgrafiken (ID 20) und verschiedenen Masken sehr ansprechende, analog wirkende Cockpit-Anzeigen gestalten.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Meter](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/meter) von Tobias Tenberg.

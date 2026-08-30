@@ -29,6 +29,7 @@ Die folgende Tabelle beschreibt den Aufbau des Output Linear Bar Graph Objekts i
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Funktionsweise und Optionen
+
 Der Balkengrafik wird in ein Rechteck eingepasst und ist standardmäßig transparent, sodass Hintergrundgrafiken sichtbar bleiben.
 
 -   **Ausrichtung (AID 5, Bit 4 & 5):** Ermöglicht horizontale (links-nach-rechts) oder vertikale (unten-nach-oben) Balken.
@@ -36,6 +37,7 @@ Der Balkengrafik wird in ein Rechteck eingepasst und ist standardmäßig transpa
 -   **Target Line:** Eine zusätzliche Markierung (z. B. ein roter Strich), die einen Sollwert oder einen Warnbereich kennzeichnet.
 
 ## Skalierung
+
 Der Balken wird proportional zum aktuellen `Value` zwischen `Min value` und `Max value` berechnet. Liegt der Wert außerhalb dieses Bereichs, wird der Balken entweder komplett leer oder komplett voll gezeichnet.
 
 ## Ereignisse (Events - Tabelle B.36)
@@ -48,6 +50,7 @@ Das Output Linear Bar Graph Objekt reagiert auf folgende Ereignisse:
 -   **On Refresh:** Wird ausgelöst, wenn das VT das Objekt neu zeichnen muss.
 
 ## Bedeutung für die Implementierung
+
 Balkendiagramme sind ideal für Füllstandsanzeigen (Kraftstoff, Saatgut), Temperaturanzeigen oder Lastanzeigen. Durch die Option der `Target line` kann dem Bediener sofort visualisiert werden, ob er sich im optimalen Arbeitsbereich befindet. Die Kombination mit Skalenstrichen (Ticks) erhöht die Ablesbarkeit.
 
 ## 🎧 Podcast

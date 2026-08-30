@@ -6,7 +6,7 @@
 - [ID 22 - String Variable](../isobus-objects/ID-22---String-variable---ISO-11783-6---B.13.3.md)
 
 
-### Empfohlene Lektüre:
+### Empfohlene Lektüre
 
 - ISO 11783-6
 

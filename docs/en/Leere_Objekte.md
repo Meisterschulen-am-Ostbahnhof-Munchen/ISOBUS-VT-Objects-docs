@@ -1,8 +1,12 @@
 # Empty Objects (Minimum Child Objects)
+
 The ISO 11783-6 standard makes an important distinction for container objects (objects that contain other objects): **Can the object be empty or not?**
 This rule is defined by the permissible range of values for the attribute **"Number of objects to follow"**.
+
 ## Objects that MUST NOT be empty (Minimum 1 Child)
+
 These objects must contain at least one child object, as they cannot fulfill their function in the system without content (usually because they must be visible to the user as a **designator** / icon).
+
 | Object ID | Name | Reason | Standard Reference |
 | :--- | :--- | :--- | :--- |
 **0** | **Working Set** | Must be displayed for selection in the VT menu. Without a graphical designator, the device would be invisible to the operator and could not be selected. | Table B.2 |
@@ -31,6 +35,7 @@ For most other containers, content such as `0` is permitted. This can be quite u
 **44** | **Animation** | An animation without frames displays nothing. |
 
 ### Special Feature: Input List (ID 10)
+
 Even a `Input List` can theoretically be empty (`Number of list items` = 0). In this case, the list exists but contains no selectable options.
 
 **35** | **Key Group** | Technically, an animation without frames displays nothing.

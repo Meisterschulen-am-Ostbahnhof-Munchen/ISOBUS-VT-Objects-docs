@@ -15,6 +15,7 @@ Die folgende Tabelle beschreibt den Aufbau des Object Pointer Objekts im Objektp
 | [1] | **Value** | Integer | 2 | 0 – 65534, 65535 | 4 – 5 | Objekt-ID des referenzierten Objekts oder NULL (65535). |
 
 ## Funktionsweise und Anwendung
+
 Ein Object Pointer wird wie ein normales Child-Objekt in eine Maske eingebunden. Anstatt jedoch selbst etwas zu zeichnen, "leitet" er die Anzeige an das Objekt weiter, dessen ID in AID 1 gespeichert ist.
 
 -   **Dynamischer Austausch:** Die ECU kann den `Value` (AID 1) per `Change Numeric Value` Kommando jederzeit ändern. Das VT blendet daraufhin das alte Objekt aus und das neue an derselben Stelle ein.
@@ -28,6 +29,7 @@ Das Object Pointer Objekt reagiert auf folgende Ereignisse:
 -   **On Change Value:** Wird ausgelöst durch das Kommando `Change Numeric Value`. Das VT versteckt das vorherige Objekt und zeigt das neue an. Die Eltern-Maske wird aktualisiert.
 
 ## Bedeutung für die Implementierung
+
 Object Pointer reduzieren die Komplexität der Maskensteuerung erheblich. Anstatt viele Objekte manuell per `Hide/Show` zu verwalten, muss die ECU nur eine einzige ID im Pointer ändern. Dies spart CAN-Bus-Bandbreite und vereinfacht die Programmlogik auf der Maschinensteuerung.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Object Pointer](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/object-pointer) von Tobias Tenberg.

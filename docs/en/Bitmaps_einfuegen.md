@@ -1,4 +1,5 @@
 # Insert Bitmaps
+
 !!! Note
 ISO 11783-6 does not support PNG graphics for VT3/UT2.
 See also [ISOBUS-Objects-Versions](ISOBUS-Objekte-Versionen.md)]
@@ -36,12 +37,12 @@ Original:
 
 by `https://www.iso.org/obp/graphics/grs/343178e8-8b69-4dd7-83c6-cee7c66b28a4_200.png`
 
-### 1. All files under img_original will be cropped by 2 pixels on all sides:
+### 1. All files under img_original will be cropped by 2 pixels on all sides
 
 To the folder: [img_original](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/tree/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_original)
 
 | Before | | After |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_original/Tractor_wheel_slip_200.png) | --> | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_cropped/Tractor_wheel_slip_200.png) |
 | 200x200 | | 196x196 |
 
@@ -55,7 +56,7 @@ The cropped images are then located under "img_cropped"
 to the folder: [img_cropped](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/tree/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_cropped)
 
 | before | | after |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_cropped/Tractor_wheel_slip_200.png) | --> | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_resized_DM_2/Tractor_wheel_slip_200.png) |
 | 196x196 | | 64x64 |
 
@@ -66,7 +67,7 @@ The cropped images are then located under "img_resized"
 to the folder: [img_resized](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/tree/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_resized_DM_2)
 
 | before | | after |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_resized_DM_2/Tractor_wheel_slip_200.png) | --> | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_monochrome_DM/Tractor_wheel_slip_200.png) |
 | 64x64 | | 64x64 
 
@@ -77,7 +78,7 @@ The images are then located under "img_monochrome"
 to the folder: [img_monochrome](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/tree/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_monochrome_DM)
 
 | before | | after |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_monochrome_DM/Tractor_wheel_slip_200.png) | --> | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_DM/Tractor_wheel_slip_200.bmp) |
 | 64x64 | | 64x64 
 
@@ -99,11 +100,12 @@ Name the bitmap appropriately; ISO filenames are often not very descriptive.
 
 ### Scaling BMP
 
-### BMP Scaling ...
+### BMP Scaling
+
 Size matters:
 
 | where | size | | | |
-|----------|-------------|---|---|---|
+| ---------- | ------------- | --- | --- | --- |
 | Softkey | 72x72 pixels | | | |
 | Datamask | free | | | |
 | CCI A3 | 64x64 pixels | | | |
@@ -126,6 +128,7 @@ If the symbol is to be used as a softkey and as a CCI A3 symbol, then make it 64
 ...
 You can also crop the images before scaling them.
 ...
+
 ### Reduce BMP Color Depth
 
 For faster loading, reduce the color depth as much as possible.
@@ -135,7 +138,7 @@ Windows Paint offers the following color depths:
 ![image](https://github.com/user-attachments/assets/e8f49c00-4a94-4d6f-b1e2-3ce32dc89c61)
 
 | Format | Colors | Bit | Note |
--------------------|------------------------------|-----|--------------------------------|
+------------------- | ------------------------------ | ----- | -------------------------------- |
 | Monochrome Bitmap | 2<sup>1</sup> = 2 | 1 | |
 | 16-Color Bitmap | 2<sup>4</sup> = 16 | 4 | |
 | 256-Color Bitmap | 2<sup>8</sup> = 256 | 8 | |
@@ -152,4 +155,5 @@ In the case of other color depths, pink is often used.
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 - [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

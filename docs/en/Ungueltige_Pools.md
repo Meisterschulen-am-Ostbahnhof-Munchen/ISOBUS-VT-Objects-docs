@@ -1,7 +1,10 @@
 # Invalid Object Pools
+
 For an ISOBUS object pool (IOP) to be accepted and loaded by the Virtual Terminal (VT), it must adhere to strict structural rules. If the pool violates any of these rules, the VT sends an error code at the end of the transmission (`End of Object Pool`) and usually discards the entire pool.
 Here are the most important rules that every programmer needs to know:
+
 ## 1. Structural Integrity (Parsing Errors)
+
 These are the most common errors that cause the VT parser to malfunction.
 
 - **Incorrect Length Specifications:** If an object specifies "Five child objects follow," but the byte stream only contains four (or six), the VT incorrectly reads the next object byte as an attribute of the previous one. The pool is then corrupted.
@@ -21,6 +24,7 @@ The VT checks whether all links are valid when loading (or at the latest when ac
 - *Example:* A `Output Rectangle` references a `Fill Attributes` object at `Line Attributes`. -> **Invalid!**
 
 ## 3. Logical Errors & Recursion
+
 - **Circular References:** Container A contains Container B, and Container B contains Container A. This leads to an infinite loop during drawing. The VT detects this and rejects the pool or (in the worst case) crashes.
 - **Circular References:** Container A contains Container B, and Container B contains Container A. * **Multiple Definitions:** An object ID (e.g., ID 50) may only be defined once in the pool. Duplicate IDs are prohibited.
 

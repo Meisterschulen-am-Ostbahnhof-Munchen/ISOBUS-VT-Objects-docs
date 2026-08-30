@@ -1,7 +1,11 @@
 # ID 45 – Colour Palette – ISO 11783-6 – B.26
+
 The **Colour Palette** object with **ID 45** (from VT version 6 onwards) allows a working set to completely replace the terminal's default color palette with its own ARGB color definitions.
+
 ### Attributes and Record Format (Table B.73)
+
 The following table describes the structure of the Colour Palette object in the object pool.
+
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -14,6 +18,7 @@ The following table describes the structure of the Colour Palette object in the 
 | - | {A} | Integer | 1 | 0 – 255 | 10 + ... | Alpha value (0 = Transparent, 255 = Opaque). |
 
 ## Functionality
+
 When a Colour Palette object is active, it replaces the default colors of the terminal for this working set. The colors are populated starting at index 0.
 
 **Activation:** A Colour Palette can be set as the default via the *Working Set Special Controls* object (ID 47) or activated at runtime using the `Select Colour Map or Palette` command.

@@ -31,6 +31,7 @@ Die folgende Tabelle beschreibt den Aufbau des Key Objekts im Objektpool.
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ### Designator und Child-Objekte
+
 Ein Key-Objekt fungiert als Container für die grafischen Inhalte der Taste (z. B. Symbole oder Texte).
 
 -   **Koordinaten:** X- und Y-Positionen der Child-Objekte beziehen sich auf die obere linke Ecke des Softkey-Designators.
@@ -48,9 +49,11 @@ Das Key-Objekt reagiert auf folgende Ereignisse:
 -   **On Input Field Selection / De-selection:** Ausgelöst, wenn die Taste den Fokus erhält oder verliert (bei Navigation via Encoder/Cursor).
 
 ## Der Key Code
+
 Der **Key Code** (AID 2) ist das entscheidende Bindeglied zur Softwarelogik (C-Code). Während die `Object ID` die Taste im Grafik-Pool identifiziert, nutzt die Applikation den `Key Code`, um die Funktion zuzuordnen. Dies erlaubt es, verschiedene grafische Tasten (unterschiedliche IDs) mit demselben funktionalen Code zu belegen.
 
 ## Bedeutung für die Implementierung
+
 Da die tatsächliche Größe und Form der Softkeys von VT zu VT variieren kann (z. B. Hochformat vs. Querformat, Touch vs. Hardwaretasten), ist es Best Practice, grafische Inhalte (Bitmaps) innerhalb des Keys klein genug zu wählen und mittig zu positionieren. Ein Key-Objekt ohne Child-Objekte erscheint als leere Fläche in der gewählten Hintergrundfarbe.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Softkey](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/softkey) von Tobias Tenberg.

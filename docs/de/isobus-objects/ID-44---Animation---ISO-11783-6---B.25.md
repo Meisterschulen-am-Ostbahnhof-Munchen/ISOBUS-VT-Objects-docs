@@ -30,6 +30,7 @@ Die folgende Tabelle beschreibt den Aufbau des Animation Objekts im Objektpool.
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Funktionsweise
+
 Das Animationsobjekt verwaltet eine Liste von Kind-Objekten. Wenn `Enabled` auf 1 steht, inkrementiert das Terminal den `Value` (Index) automatisch im Rhythmus des `Refresh Interval`.
 
 -   **Loop:** Nach Erreichen des `Last Child Index` wird wieder beim `First Child Index` begonnen.
@@ -47,6 +48,7 @@ Das Animation Objekt reagiert auf folgende Ereignisse:
 -   **On Refresh:** Wird ausgelöst durch den Timer (Refresh Interval) oder andere Refresh-Bedingungen.
 
 ## Empfehlung
+
 Um die Performance des Terminals nicht zu überlasten, sollten die Einzelobjekte klein gehalten werden. Ein Refresh-Intervall von mindestens 200 ms wird empfohlen.
 
 ----

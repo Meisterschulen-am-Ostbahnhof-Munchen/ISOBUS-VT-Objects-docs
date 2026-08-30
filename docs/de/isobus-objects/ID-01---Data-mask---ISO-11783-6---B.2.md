@@ -27,6 +27,7 @@ Die folgende Tabelle beschreibt den Aufbau des Data Mask Objekts im Objektpool.
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ### Struktur und Child-Objekte
+
 Die Datenmaske dient als Container für alle sichtbaren Elemente.
 
 -   **Objekt-Liste:** Jedes Kind-Objekt wird mit seiner ID und seiner Position (X/Y) definiert. Jedes Set aus ID und Position belegt 6 Bytes.
@@ -45,11 +46,13 @@ Die Datenmaske reagiert auf folgende Ereignisse:
 -   **Pointing Events:** `press` und `release` bei Touch-Bedienung auf der Maskenfläche.
 
 ## Verhalten und Einschränkungen
+
 -   **Zusammenhang mit Softkeys:** Jede Datenmaske "besitzt" eine Softkey-Maske. Wenn die Datenmaske gewechselt wird, wechselt das VT in der Regel auch das Softkey-Layout.
 -   **Refresh:** Wenn ein untergeordnetes Objekt (Child) geändert wird, sorgt das VT für ein Redraw der betroffenen Bereiche.
 -   **Sichtbarkeit:** Es kann immer nur eine Datenmaske (oder Alarmmaske) pro Arbeitsgruppe aktiv und im Fokus des VT sein.
 
 ## Bedeutung für die Implementierung
+
 Die Datenmaske ist das Herzstück des HMI-Designs. Entwickler müssen darauf achten, dass die Auflösung der Maske zu den Fähigkeiten des VTs passt (Standard-Mindestauflösung oft 200x200 Pixel, moderne VTs bieten deutlich mehr). Eine effiziente Nutzung von Makros auf Masken-Events (z. B. `On Show`) kann helfen, Initialisierungen direkt im VT auszuführen.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Data Mask](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/datamask) von Tobias Tenberg.

@@ -1,7 +1,11 @@
 # ID 3 – Container – ISO 11783-6 – B.4
+
 The **Container** object with **ID 3** is used to logically group multiple objects. A container itself is not visible, but it allows you to move, show/hide, or split an entire group of objects.
+
 ### Attributes and Record Format (Table B.8)
+
 The following table describes the structure of the Container object in the object pool.
+
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -18,6 +22,7 @@ The following table describes the structure of the Container object in the objec
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ### Relative Positioning and Clipping
+
 Within a container, a **separate coordinate system** begins:
 
 - **Relative Coordinates:** The X and Y positions of child objects are referenced to the upper left corner of the container.
@@ -35,16 +40,19 @@ The container reacts to the following events:
 - **On Change Size:** Reacts to changes in the container's size.
 
 ## Practical Use
+
 Containers are essential for dynamic user interfaces:
 
 - **Show/Hide:** Complex control panels or status indicators can be shown or hidden at the touch of a button using the command `IsoVtcCmd_ObjHideShow`.
 - **Space Saving:** Multiple containers can reside in the same location; by cleverly switching their visibility, different "tabs" or modes can be implemented.
 
 ### Examples from the ISO Designer
+
 ![](https://user-images.githubusercontent.com/69573151/94602403-17f13b00-0295-11eb-8216-34070ca1bca8.png)
 ![](https://user-images.githubusercontent.com/69573151/94606853-5f7ac580-029b-11eb-9293-18570b481dbf.png)
 
 ## Implementation Implications
+
 Since the container is a logical element, it consumes very little processing power itself, but is powerful in controlling the Z-order and grouping. Developers should ensure that `Width` and `Height` are set correctly to avoid unwanted clipping.
 
 Further information and examples can be found in the [ISOBUS Wiki - Container](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/container) by Tobias Tenberg].

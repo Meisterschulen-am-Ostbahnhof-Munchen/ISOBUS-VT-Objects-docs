@@ -31,6 +31,7 @@ Die folgende Tabelle beschreibt den Aufbau des Window Mask Objekts im Objektpool
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ### Fenstertypen (Auszug aus B.19.2)
+
 -   **0:** Free Form (Freie Gestaltung, Working Set definiert Inhalt).
 -   **1:** 1x1 Numeric Output mit Einheiten.
 -   **2:** 1x1 Numeric Output ohne Einheiten.

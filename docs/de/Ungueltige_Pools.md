@@ -47,6 +47,7 @@ Auch wenn der Pool syntaktisch korrekt ist, kann er abgelehnt werden, wenn er di
 -   **Softkey-Limit:** Eine Softkey-Maske, die mehr Keys definiert, als das VT verwalten kann (obwohl Paging vorgeschrieben ist, gibt es oft harte Limits).
 
 ## Tipps zur Fehlersuche
+
 Wenn das VT beim Laden "Object Pool Error" meldet:
 
 1.  Prüfen, ob **ID 0** existiert.

@@ -15,6 +15,7 @@ Die folgende Tabelle beschreibt den Aufbau des Number Variable Objekts im Objekt
 | [1] | **Value** | Integer | 4 | 0 – 2^32-1 | 4 – 7 | 32-Bit unsigned Integer-Wert. |
 
 ## Funktionsweise und Referenzierung
+
 Variablen sind keine sichtbaren Objekte. Sie werden niemals direkt in eine Maske oder einen Container als "Child" eingefügt, sondern dienen als Datenquelle für andere Objekte:
 
 -   **Referenzierung:** Objekte wie *Input Number* (ID 9), *Output Number* (ID 12) oder *Output Meter* (ID 17) verweisen über ihr Attribut `Variable reference` auf die ID einer Number Variable.
@@ -27,6 +28,7 @@ Das Number Variable Objekt reagiert auf folgende Ereignisse:
 -   **On Change Value:** Wird ausgelöst, wenn sich der Wert ändert (durch `Change Numeric Value` Befehl oder Eingabe des Bedieners). Das VT zeichnet alle Objekte neu, die diese Variable referenzieren.
 
 ## Bedeutung für die Implementierung
+
 Number Variables sind das Rückgrat der Kommunikation zwischen Maschine und Terminal. 
 
 -   **Effizienz:** Anstatt jedes Anzeigeobjekt einzeln zu aktualisieren, ändert die ECU nur den Wert der zentralen Variable.

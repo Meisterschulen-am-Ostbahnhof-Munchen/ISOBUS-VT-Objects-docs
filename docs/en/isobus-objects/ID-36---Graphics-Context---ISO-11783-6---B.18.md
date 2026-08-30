@@ -1,7 +1,11 @@
 # ID 36 – Graphics Context Object – ISO 11783-6 – B.18
+
 The **Graphics Context Object (GCO)** with **ID 36** (from VT version 4 onwards) provides a dynamic graphics buffer (canvas) into which the ECU can draw at runtime. It is comparable to a bitmap whose content can be modified pixel-perfectly.
+
 ### Attributes and Record Format (Table B.59)
+
 The following table describes the structure of the Graphics Context Object in the object pool.
+
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -25,6 +29,7 @@ The following table describes the structure of the Graphics Context Object in th
 | [17] | **Transparency Color** | Integer | 1 | 0 – 255 | 34 | Transparency color (when Options Bit 0 is set). |
 
 ## Functionality and Structure
+
 The GCO consists of two main components:
 
 1. **Canvas:** A persistent graphics memory (bitmap) with a defined size (`Canvas Width/Height`). The content is retained even when the object is not displayed.
@@ -32,6 +37,7 @@ The GCO consists of two main components:
 2. **Viewport:** A "window" that displays a portion of the canvas. The viewport defines the size of the object on the canvas. By changing `Viewport X/Y`, the content can be scrolled (panned).
 
 ## Graphics Context Commands
+
 The canvas is manipulated using special commands (see ISO 11783-6, Annex F), such as:
 
 - `Set Graphics Cursor`: Sets the writing position.
@@ -47,6 +53,7 @@ The Graphics Context object reacts to the following events:
 - **On Change Background Colour:** Fills the object (the canvas) with the new background color. **Caution:** Deletes the previous content!
 
 ## Application Example
+
 Typical applications include **GPS maps** (swath logging), where the ECU continuously plots the driven route as a line in the GCO.
 
 ----

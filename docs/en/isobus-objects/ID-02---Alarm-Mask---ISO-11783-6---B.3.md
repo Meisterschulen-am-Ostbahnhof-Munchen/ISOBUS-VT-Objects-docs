@@ -1,7 +1,11 @@
 # ID 2 – Alarm Mask – ISO 11783-6 – B.3
+
 The **Alarm Mask** with **ID 2** is used to display critical information or warnings. It takes precedence over normal data masks and, depending on its priority, can overlay the entire display or parts of it.
+
 ### Attributes and Record Format (Table B.6)
+
 The following table describes the structure of the Alarm Mask object in the object pool.
+
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -19,6 +23,7 @@ The following table describes the structure of the Alarm Mask object in the obje
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ### Priority Levels and Display
+
 The priority not only controls the order of the alarms, but often also their visual display on the VT:
 
 - **High Priority (0):** The operator is in danger or a serious malfunction has occurred. These alarms must be acknowledged immediately or force the terminal to focus.
@@ -38,9 +43,10 @@ The alarm screen reacts to the following events:
 - **On Change Attribute:** Reacts to general attribute changes.
 
 ## Behavior with Multiple Alarms
+
 If multiple alarm masks from different workgroups are active simultaneously, the priority (AID 3) determines which mask takes precedence. If the priority is the same, the VT usually decides (often based on chronological order).
 
-## Implementation Implementation Implementation Implementation Masks should be used sparingly and only for genuine warnings, as they interrupt the operator's workflow. It is important to select the appropriate audible alert (AID 4) to guide attention without stressing the operator.
+## Implementation Implementation Implementation Implementation Masks should be used sparingly and only for genuine warnings, as they interrupt the operator's workflow. It is important to select the appropriate audible alert (AID 4) to guide attention without stressing the operator
 
 Further information and examples can be found in the ISOBUS Wiki - Alarm Mask](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/alarm-mask) by Tobias Tenberg.
 

@@ -1,8 +1,12 @@
 # Object Hierarchy (Parent-Child Relationships)
+
 This page is based on **Table A.2 — Allowed hierarchical relationships of objects** of ISO 11783-6:2018 (Annex A). It defines which objects (child) may be contained within which other objects (parent).
 The specified number represents the minimum **VT version** required for this relationship to be supported.
+
 ## Parent: Working Set object (ID 0)
+
 The working set object is the root container of an object pool hierarchy.
+
 | Child Object | Min. VT Version |
 | :--- | :--- |
 | Container object (ID 3) | 4 |
@@ -22,6 +26,7 @@ The working set object is the root container of an object pool hierarchy.
 | Object Pointer object (ID 27) | 4 |
 
 ## Parent: Data Mask object (ID 1)
+
 The data mask is the main display area for operation.
 
 | Child Object | Min. VT version |
@@ -54,6 +59,7 @@ The data mask is the main display area for operation.
 | Auxiliary Control Designator Type 2 Object Pointer (ID 33) | 3 |
 
 ## Parent: Alarm Mask object (ID 2)
+
 Alarm masks are used to display warnings.
 
 | Child Object | Min. VT version |
@@ -80,6 +86,7 @@ Alarm masks are used to display warnings.
 | Auxiliary Control Designator Type 2 Object Pointer (ID 33) | 3 |
 
 ## Parent: Container object (ID 3)
+
 Containers are used to group objects.
 
 | Child Object | Min. VT version |
@@ -112,6 +119,7 @@ Containers are used to group objects.
 | Auxiliary Control Designator Type 2 Object Pointer (ID 33) | 3 |
 
 ## Parent: Window Mask object (ID 34)
+
 Window masks are used in user layouts.
 
 | Child Object | Min. VT version |
@@ -144,6 +152,7 @@ Window masks are used in user layouts.
 | Auxiliary Control Designator Type 2 Object Pointer (ID 33) | 4 |
 
 ## Parent: Soft Key Mask object (ID 4)
+
 Defines the assignment of the softkeys.
 
 | Child Object | Min. VT version |
@@ -153,6 +162,7 @@ Defines the assignment of the softkeys.
 | External Object Pointer object (ID 43) | 5 |
 
 ## Parent: Key object (ID 5)
+
 Content of a key.
 
 | Child Object | Min. VT version |
@@ -177,6 +187,7 @@ Content of a key.
 | External Object Pointer object (ID 43) | 5 |
 
 ## Parent: Button object (ID 6)
+
 Content of a button.
 
 | Child Object | Min. VT version |
@@ -201,6 +212,7 @@ Content of a button.
 | External Object Pointer object (ID 43) | 5 |
 
 ## Parent: Key Group object (ID 35)
+
 Grouping of softkeys.
 
 | Child Object | Min. VT version |
@@ -210,6 +222,7 @@ Grouping of softkeys.
 | External Object Pointer object (ID 43) | 5 |
 
 ## Parent: Input List object (ID 10)
+
 Options in a selection list.
 
 | Child Object | Min. VT version |
@@ -233,6 +246,7 @@ Options in a selection list.
 | External Object Pointer object (ID 43) | 5 |
 
 ## Parent: Output List object (ID 37)
+
 Options in an output list.
 
 | Child Object | Min. VT version |
@@ -265,6 +279,7 @@ Options in an output list.
 | Auxiliary Control Designator Type 2 Object Pointer (ID 33) | 4 |
 
 ## Parent: Auxiliary Function Type 1 object (ID 29)
+
 Auxiliary function designator (deprecated).
 
 | Child Object | Min. VT version |
@@ -278,6 +293,7 @@ Auxiliary function designator (deprecated).
 | Picture Graphic object (ID 20) | 2 |
 
 ## Parent: Auxiliary Input Type 1 object (ID 30)
+
 Auxiliary input designator (deprecated).
 
 | Child Object | Min. VT version |
@@ -291,6 +307,7 @@ Auxiliary input designator (deprecated).
 | Picture Graphic object (ID 20) | 2 |
 
 ## Parent: Auxiliary Function Type 2 object (ID 31)
+
 Auxiliary function designator.
 
 | Child Object | Min. VT version |
@@ -312,6 +329,7 @@ Auxiliary function designator.
 | Object Pointer object (ID 27) | 3 |
 
 ## Parent: Auxiliary Input Type 2 object (ID 32)
+
 Designator for auxiliary inputs.
 
 | Child Object | Min. VT version |
@@ -333,6 +351,7 @@ Designator for auxiliary inputs.
 | Object Pointer object (ID 27) | 3 |
 
 ## Parent: Object Label graphic representation
+
 Objects that may be used as icons/graphics in a label.
 
 | Child Object | Min. VT version |
@@ -354,6 +373,7 @@ Objects that may be used as icons/graphics in a label.
 | Object Pointer object (ID 27) | 4 |
 
 ## Parent: Object Label Reference List object (ID 40)
+
 Defines assignments of labels to objects.
 
 | Child Object | Min. VT version |
@@ -408,6 +428,7 @@ Defines assignments of labels to objects.
 | Working Set Special Controls object (ID 51) | 6 |
 
 ## Parent: Animation object (ID 44)
+
 Sequence of objects.
 
 | Child Object | Min. VT version |

@@ -32,6 +32,7 @@ Die folgende Tabelle beschreibt den Aufbau des Input Number Objekts im Objektpoo
 | - | {Macro ID} | Integer | 1 | 0 – 255 | 40... | Makro ID des auszuführenden Makros. |
 
 ## Die Skalierungslogik
+
 Das VT berechnet den angezeigten Wert automatisch nach folgender Formel:
 
 **Angezeigter Wert = (Rohwert + Offset) × Skalierungsfaktor**
@@ -39,6 +40,7 @@ Das VT berechnet den angezeigten Wert automatisch nach folgender Formel:
 Dies erlaubt es, physikalische Werte (z. B. 12,5 bar) als einfache Ganzzahlen im Speicher (z. B. 125) zu verarbeiten, während das VT die Umrechnung und Kommadarstellung übernimmt.
 
 ## Validierung
+
 Grenzwerte werden ebenfalls auf Basis der skalierten Werte geprüft. Das VT lässt das Schließen des Eingabefeldes (ENTER) nur zu, wenn der neue Wert innerhalb der skalierten Min/Max-Grenzen liegt:
 `Scaled Min <= Neuer Wert <= Scaled Max`
 
@@ -55,9 +57,11 @@ Das Input Number Objekt reagiert auf folgende Ereignisse:
 -   **On Change Attribute:** Allgemeine Attributänderung.
 
 ## Real Time Editing (AID 15, Bit 1)
+
 Wenn dieses Bit gesetzt ist, sendet das VT bei jeder Änderung (z. B. bei jedem Tastendruck am Inkrementalgeber) den aktuellen Zwischenwert an die Arbeitsgruppe. Dies ermöglicht es der Maschine, sofort auf Änderungen zu reagieren (z. B. Drehzahlregelung in Echtzeit), noch bevor der Bediener die Eingabe final bestätigt.
 
 ## Bedeutung für die Implementierung
+
 Das Input Number Objekt nimmt der Maschinensteuerung (ECU) viel Arbeit bei der Formatierung und Validierung ab. Entwickler sollten darauf achten, den Skalierungsfaktor und die Nachkommastellen so zu wählen, dass keine Rundungsfehler die Anzeige verfälschen.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Number (Input)](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/number-input) von Tobias Tenberg.

@@ -11,7 +11,7 @@
 - [ID 45 - Colour Palette](../isobus-objects/ID-45---Colour-Palette---ISO-11783-6---B.26.md)
 
 
-## Empfohlene Lektüre:
+## Empfohlene Lektüre
 
 - Hilfe Jetter ISO-Designer.
 

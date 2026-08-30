@@ -3,12 +3,14 @@
 
 
 ## Coral Draw X5
+
 Für den Fall, dass die Datei aus einer z.B. PDF Datei gewonnen werden soll, kann man sich mit Coral Draw X5 behelfen.
 Die Größe kann auch über Anordnen-->Änderungen–>Größe geändert werden.
 Achtung: Sehr ungenau und wird ein paar Versuche benötigen, um die gewünschte Größe zu bekommen.
 Falls es eine andere Möglichkeit geben sollte, bitte hier ausbessern (Lächeln) 
 
 ## Solid Edge
+
 - Falls etwas nicht klappt, hilft es einfach sich die Arbeit zu machen und jeden Strich noch ein Mal neu zu setzen,
 - um die klaren Bezüge zwischen den Linien sicherzustellen. Zeitraubend, aber dann sollte es gehen. (Zwinkern) 
 - Wenn man Symbole für die Displays zeichnet müssen diese die Maße 72x72 haben. Kurz ein Rechteck zeichnen und kontrollieren, dann ist man auf der sicheren Seite.
@@ -84,6 +86,7 @@ Build → Deploy
 Falls das nicht so ist, den Strich unter WorkingSet überprüfen. (siehe oben)
 
 ## Alternative mit Autodesk Fusion 360 und Plugin
+
 Software und Plugin installieren
 Fusion 360 herunterladen und installieren
 
@@ -91,7 +94,7 @@ Studenten / Schüler kostenlos.
 
 Das Plugin "DXFSplineToPolyline-win64" installieren.
 
-### Fusion 360 anwenden.
+### Fusion 360 anwenden
 
 Neue Konstruktion erstellen
 

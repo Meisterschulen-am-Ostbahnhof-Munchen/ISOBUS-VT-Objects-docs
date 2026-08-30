@@ -1,8 +1,12 @@
 # ID 1 – Data mask – ISO 11783-6 – B.2
+
 ![](https://user-images.githubusercontent.com/69573151/94337364-35e74300-ffea-11ea-8342-cb8bd452b89d.png)
 ----
+
 The **Data Mask** with **ID 1** is the primary display element for the user interface of a workgroup. It serves as the main container for all visual objects (buttons, number fields, graphics) displayed to the operator on the Virtual Terminal (VT).
+
 ### Attributes and Record Format (Table B.4)
+
 The following table describes the structure of the Data Mask object in the object pool.
 
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
@@ -39,6 +43,7 @@ The data mask responds to the following events:
 - **Pointing Events:** `press` and `release` during touch operation on the mask area.
 
 ## Behavior and Limitations
+
 - **Relationship with Softkeys:** Every data mask "has" a softkey mask. When the data mask is changed, the VT usually also changes the softkey layout.
 - **Refresh:** When a child object is changed, the VT redraws the affected areas.
 - **Visibility:** Only one data mask (or alarm mask) per workgroup can be active and in focus at any given time.

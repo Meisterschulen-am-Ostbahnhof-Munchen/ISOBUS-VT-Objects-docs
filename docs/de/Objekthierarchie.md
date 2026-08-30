@@ -8,6 +8,7 @@ Diese Seite basiert auf **Tabelle A.2 — Allowed hierarchical relationships of 
 Die angegebene Zahl steht für die minimale **VT-Version**, ab der diese Beziehung unterstützt wird.
 
 ## Parent: Working Set object (ID 0)
+
 Das Working Set Objekt ist der Wurzel-Container einer Objekt-Pool-Hierarchie.
 
 | Child Object | Min. VT Version |
@@ -29,6 +30,7 @@ Das Working Set Objekt ist der Wurzel-Container einer Objekt-Pool-Hierarchie.
 | Object Pointer object (ID 27) | 4 |
 
 ## Parent: Data Mask object (ID 1)
+
 Die Datenmaske ist der Hauptanzeigebereich für die Bedienung.
 
 | Child Object | Min. VT Version |
@@ -61,6 +63,7 @@ Die Datenmaske ist der Hauptanzeigebereich für die Bedienung.
 | Auxiliary Control Designator Type 2 Object Pointer (ID 33) | 3 |
 
 ## Parent: Alarm Mask object (ID 2)
+
 Alarmmasken dienen zur Anzeige von Warnungen.
 
 | Child Object | Min. VT Version |
@@ -87,6 +90,7 @@ Alarmmasken dienen zur Anzeige von Warnungen.
 | Auxiliary Control Designator Type 2 Object Pointer (ID 33) | 3 |
 
 ## Parent: Container object (ID 3)
+
 Container dienen zur Gruppierung von Objekten.
 
 | Child Object | Min. VT Version |
@@ -119,6 +123,7 @@ Container dienen zur Gruppierung von Objekten.
 | Auxiliary Control Designator Type 2 Object Pointer (ID 33) | 3 |
 
 ## Parent: Window Mask object (ID 34)
+
 Fenstermasken werden in User-Layouts verwendet.
 
 | Child Object | Min. VT Version |
@@ -151,6 +156,7 @@ Fenstermasken werden in User-Layouts verwendet.
 | Auxiliary Control Designator Type 2 Object Pointer (ID 33) | 4 |
 
 ## Parent: Soft Key Mask object (ID 4)
+
 Definiert die Belegung der Softkeys.
 
 | Child Object | Min. VT Version |
@@ -160,6 +166,7 @@ Definiert die Belegung der Softkeys.
 | External Object Pointer object (ID 43) | 5 |
 
 ## Parent: Key object (ID 5)
+
 Inhalt einer Taste.
 
 | Child Object | Min. VT Version |
@@ -184,6 +191,7 @@ Inhalt einer Taste.
 | External Object Pointer object (ID 43) | 5 |
 
 ## Parent: Button object (ID 6)
+
 Inhalt einer Schaltfläche.
 
 | Child Object | Min. VT Version |
@@ -208,6 +216,7 @@ Inhalt einer Schaltfläche.
 | External Object Pointer object (ID 43) | 5 |
 
 ## Parent: Key Group object (ID 35)
+
 Gruppierung von Softkeys.
 
 | Child Object | Min. VT Version |
@@ -217,6 +226,7 @@ Gruppierung von Softkeys.
 | External Object Pointer object (ID 43) | 5 |
 
 ## Parent: Input List object (ID 10)
+
 Optionen in einer Auswahlliste.
 
 | Child Object | Min. VT Version |
@@ -240,6 +250,7 @@ Optionen in einer Auswahlliste.
 | External Object Pointer object (ID 43) | 5 |
 
 ## Parent: Output List object (ID 37)
+
 Optionen in einer Ausgabeliste.
 
 | Child Object | Min. VT Version |
@@ -272,6 +283,7 @@ Optionen in einer Ausgabeliste.
 | Auxiliary Control Designator Type 2 Object Pointer (ID 33) | 4 |
 
 ## Parent: Auxiliary Function Type 1 object (ID 29)
+
 Designator für Hilfsfunktionen (veraltet).
 
 | Child Object | Min. VT Version |
@@ -285,6 +297,7 @@ Designator für Hilfsfunktionen (veraltet).
 | Picture Graphic object (ID 20) | 2 |
 
 ## Parent: Auxiliary Input Type 1 object (ID 30)
+
 Designator für Hilfseingänge (veraltet).
 
 | Child Object | Min. VT Version |
@@ -298,6 +311,7 @@ Designator für Hilfseingänge (veraltet).
 | Picture Graphic object (ID 20) | 2 |
 
 ## Parent: Auxiliary Function Type 2 object (ID 31)
+
 Designator für Hilfsfunktionen.
 
 | Child Object | Min. VT Version |
@@ -319,6 +333,7 @@ Designator für Hilfsfunktionen.
 | Object Pointer object (ID 27) | 3 |
 
 ## Parent: Auxiliary Input Type 2 object (ID 32)
+
 Designator für Hilfseingänge.
 
 | Child Object | Min. VT Version |
@@ -340,6 +355,7 @@ Designator für Hilfseingänge.
 | Object Pointer object (ID 27) | 3 |
 
 ## Parent: Object Label graphic representation
+
 Objekte, die als Icon/Grafik in einem Label verwendet werden dürfen.
 
 | Child Object | Min. VT Version |
@@ -361,6 +377,7 @@ Objekte, die als Icon/Grafik in einem Label verwendet werden dürfen.
 | Object Pointer object (ID 27) | 4 |
 
 ## Parent: Object Label Reference List object (ID 40)
+
 Definiert Zuweisungen von Labels zu Objekten.
 
 | Child Object | Min. VT Version |
@@ -415,6 +432,7 @@ Definiert Zuweisungen von Labels zu Objekten.
 | Working Set Special Controls object (ID 51) | 6 |
 
 ## Parent: Animation object (ID 44)
+
 Sequenz von Objekten.
 
 | Child Object | Min. VT Version |

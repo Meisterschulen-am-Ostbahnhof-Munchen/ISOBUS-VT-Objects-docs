@@ -1,7 +1,11 @@
 # ID 8 – Input string – ISO 11783-6 – B.8.3
+
 The **Input String** object with **ID 8** is used for inputting and displaying text strings by the operator.
+
 ### Attributes and Record Format (Table B.17)
+
 The following table describes the structure of the Input String object in the object pool.
+
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -44,6 +48,7 @@ The Input String object reacts to the following events:
 - **On Change Attribute:** Responds to general attribute changes.
 
 ## Implementation Implementation Implementation Significance
+
 Input strings are frequently used for names (e.g., field names, customer data) or passwords. Since text input on terminals without a keyboard (only touch or rotary push-button) can be cumbersome, default values or input lists should be preferred when the range of values is limited.
 
 Further information and examples can be found in the ISOBUS Wiki - String (Input)](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/string-input) by Tobias Tenberg.

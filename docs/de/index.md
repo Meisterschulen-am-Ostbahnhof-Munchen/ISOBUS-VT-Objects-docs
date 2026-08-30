@@ -19,6 +19,7 @@ myst:
 ---
 
 ### 📋 [Das steht im Lehrplan (Rahmenlehrplan 2025)](./das_steht_im_lehrplan.md)
+>
 > **Das ISOBUS Virtual Terminal (VT / UT nach ISO 11783-6) ist die zentrale Mensch-Maschine-Schnittstelle (HMI)** zur Bedienung, Einstellung und Visualisierung aller vernetzten Anbaugeräte (Teil I LE 1.4 sowie Teil II LE 1.1 & LE 1.4).
 
 - 📋 **[Das steht im Lehrplan – Virtual Terminal & HMI im Lehrplan](./das_steht_im_lehrplan.md)**

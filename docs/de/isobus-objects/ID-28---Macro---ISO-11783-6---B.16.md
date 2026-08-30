@@ -16,6 +16,7 @@ Die folgende Tabelle beschreibt den Aufbau des Macro Objekts im Objektpool.
 | - | **Repeat:** {Command} | Binary | 6 – n | - | 6 ... | Liste von Befehlspaketen. Jeder Befehl muss ein Vielfaches von 8 Bytes lang sein (Padding mit FFh). |
 
 ## Funktionsweise und Struktur
+
 Ein Makro besteht aus einer Liste von VT-Kommandos (siehe ISO 11783-6, Anhang F).
 
 -   **Padding:** Jeder Befehl innerhalb eines Makros muss auf eine Länge von **8 Byte** aufgefüllt werden (mit `0xFF`), falls das eigentliche Kommando kürzer ist (z.B. Change Numeric Value).
@@ -45,6 +46,7 @@ Das Makro Objekt unterstützt die Kommandos:
 -   `Get Attribute Value`
 
 ## Bedeutung für die Implementierung
+
 Makros sind ein mächtiges Werkzeug zur **Performance-Optimierung**:
 
 1.  **Reaktionszeit:** Ein Maskenwechsel direkt nach einem Tastendruck erfolgt per Makro ohne CAN-Verzögerung.

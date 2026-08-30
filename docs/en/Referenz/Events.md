@@ -1,6 +1,8 @@
 # Event IDs (ISO 11783-6 Table A.3)
+
 This table lists all event IDs that can be used in macros (`Macro object`, ID 28) or as triggers for attributes.
 *Note:* Starting with VT version 5, 16-bit macro references are supported.
+
 | Event ID | Event Name | Trigger (Occurs when) |
 | :--- | :--- | :--- |
 | **0** | Reserved | - |
@@ -32,7 +34,7 @@ This table lists all event IDs that can be used in macros (`Macro object`, ID 28
 **26** | On Change Child Position | Relative position changed in the container (scrolling). |
 **27** | On Pointing Event Press | Touch display pressed. |
 **28** | On Pointing Event Release | Touch display released. |
-**29-239**| Reserved | - |
-| **240-254**| Proprietary Events | Manufacturer-specific events. |
+**29-239** | Reserved | - |
+| **240-254** | Proprietary Events | Manufacturer-specific events. |
 | **255** | Reserved | - |
 | **255** | Use Extended Macro Ref. | (Only in byte stream) Indicates 16-bit macro ID. |

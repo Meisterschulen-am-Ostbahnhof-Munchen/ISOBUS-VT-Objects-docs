@@ -1,4 +1,4 @@
-# Welcome to the ISOBUS-VT-Objects wiki!
+# Welcome to the ISOBUS-VT-Objects wiki
 
 
 ## 🎧 Podcast

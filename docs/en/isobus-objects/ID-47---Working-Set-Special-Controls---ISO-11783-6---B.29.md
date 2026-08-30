@@ -1,7 +1,11 @@
 # ID 47 – Working Set Special Controls – ISO 11783-6 – B.29
+
 The **Working Set Special Controls** object with **ID 47** (from VT version 6 onwards) is used for the central control of pool-wide settings such as colors and languages.
+
 ### Attributes and Record Format (Table B.78)
+
 The following table describes the structure of the Working Set Special Controls object in the object pool.
+
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |

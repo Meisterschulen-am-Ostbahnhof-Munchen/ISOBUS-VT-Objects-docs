@@ -24,6 +24,7 @@ Die folgende Tabelle beschreibt den Aufbau des Container Objekts im Objektpool.
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ### Relative Positionierung und Clipping
+
 Innerhalb eines Containers beginnt ein **eigenes Koordinatensystem**:
 
 -   **Relative Koordinaten:** Die X- und Y-Positionen der Child-Objekte beziehen sich auf die obere linke Ecke des Containers.
@@ -41,16 +42,19 @@ Der Container reagiert auf folgende Ereignisse:
 -   **On Change Size:** Reaktion auf Größenänderung des Containers.
 
 ## Nutzung in der Praxis
+
 Container sind essenziell für dynamische Benutzeroberflächen:
 
 -   **Ein-/Ausblenden:** Mit dem Kommando `IsoVtcCmd_ObjHideShow` können komplexe Bedienfelder oder Statusanzeigen auf Knopfdruck erscheinen oder verschwinden.
 -   **Platzersparnis:** Mehrere Container können an der gleichen Stelle liegen; durch geschicktes Umschalten der Sichtbarkeit lassen sich verschiedene "Registerkarten" oder Modi realisieren.
 
 ### Beispiele aus dem ISO-Designer
+
 ![](https://user-images.githubusercontent.com/69573151/94602403-17f13b00-0295-11eb-8216-34070ca1bca8.png)
 ![](https://user-images.githubusercontent.com/69573151/94606853-5f7ac580-029b-11eb-9293-18570b481dbf.png)
 
 ## Bedeutung für die Implementierung
+
 Da der Container ein logisches Element ist, verbraucht er selbst kaum Rechenleistung, ist aber mächtig in der Steuerung der Z-Order und Gruppierung. Entwickler sollten darauf achten, dass die `Width` und `Height` korrekt gesetzt sind, um ungewolltes Clipping zu vermeiden.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Container](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/container) von Tobias Tenberg.

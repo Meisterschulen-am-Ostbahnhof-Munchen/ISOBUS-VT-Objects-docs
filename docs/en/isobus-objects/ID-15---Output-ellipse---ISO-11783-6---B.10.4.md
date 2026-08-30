@@ -1,7 +1,11 @@
 # ID 15 – Output Ellipse – ISO 11783-6 – B.10.4
+
 The **Output Ellipse** object with **ID 15** is used to draw circles, ellipses, arcs, segments, and sectors (pie chart segments).
+
 ### Attributes and Record Format (Table B.31)
+
 The following table describes the structure of the Output Ellipse object in the object pool.
+
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -18,6 +22,7 @@ The following table describes the structure of the Output Ellipse object in the 
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ## Ellipse Types and Geometry
+
 The ellipse is fitted into a virtual rectangle (`Width` x `Height`).
 
 - **Closed Ellipse (0):** A complete ellipse or a circle (if Width = Height).
@@ -44,6 +49,7 @@ The Output Ellipse object reacts to the following events:
 - **On Refresh:** Triggered when the VT needs to redraw the object.
 
 ## Implementation Implications
+
 Ellipses and sectors are essential for creating analog pointer instruments (meters) or progress indicators. Dynamically changing the `End angle` via ECU command allows for the creation of filled circular arcs that intuitively visualize states.
 
 Further information and examples can be found in the [ISOBUS Wiki - Ellipse](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/ellipse) by Tobias Tenberg].

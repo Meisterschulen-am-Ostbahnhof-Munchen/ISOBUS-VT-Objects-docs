@@ -29,6 +29,7 @@ Die folgende Tabelle beschreibt den Aufbau des Output Number Objekts im Objektpo
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Die Skalierungslogik
+
 Das VT berechnet den angezeigten Wert automatisch nach folgender Formel:
 
 **Angezeigter Wert = (Rohwert + Offset) × Skalierungsfaktor**
@@ -36,6 +37,7 @@ Das VT berechnet den angezeigten Wert automatisch nach folgender Formel:
 Beispiel: Ein Rohwert von 2500 mit einem Offset von 0 und einem Skalierungsfaktor von 0.01 wird als **25.00** angezeigt (bei 2 Nachkommastellen).
 
 ## Formatierungsoptionen
+
 -   **Führende Nullen (Bit 1):** Das Feld wird links mit Nullen aufgefüllt (z. B. "0012").
 -   **Null als Leerzeichen (Bit 2):** Wenn der skalierte Wert exakt Null ist, bleibt das Feld komplett leer.
 -   **Runden vs. Abschneiden (Bit 3):** Steuert, wie mit Werten verfahren wird, die mehr Nachkommastellen haben, als in AID 9 definiert sind.
@@ -51,6 +53,7 @@ Das Output Number Objekt reagiert auf folgende Ereignisse:
 -   **On Change Size:** Reaktion auf Größenänderung.
 
 ## Bedeutung für die Implementierung
+
 Output Numbers sind ideal für die Anzeige von Sensordaten (Druck, Temperatur, Geschwindigkeit). Da die ECU lediglich Ganzzahlen (Rohwerte) übertragen muss, wird die CAN-Bus-Last minimiert und die Komplexität der Formatierung auf das Terminal verlagert. Die pixelgenaue Justierung (AID 11) sorgt dafür, dass die Zahlen auch bei verschiedenen Schriftarten exakt im Designrahmen ausgerichtet sind.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Number (Output)](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/number-output) von Tobias Tenberg.

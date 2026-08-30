@@ -1,6 +1,8 @@
 # ID 0 – Working set – ISO 11783-6 – B.1
+
 ![](https://user-images.githubusercontent.com/69573151/94337326-edc82080-ffe9-11ea-93d7-61752b51d9cf.png)
 ----
+
 The **Working Set** object with **ID 0** is the central management element of a workgroup (Working Set) in ISOBUS. It defines how the workgroup presents itself to the Virtual Terminal (VT) and which interface is initially displayed.
 
 ## Key properties (according to ISO 11783-6, Annex B.1)
@@ -8,6 +10,7 @@ The **Working Set** object with **ID 0** is the central management element of a 
 Each workgroup must define **exactly one** Working Set object in its object pool. Only the VT can activate this object.
 
 ...
+
 ### Attributes and Record Format (Table B.2)
 
 The following table describes the structure of the Working Set object in the object pool (byte stream).
@@ -52,6 +55,7 @@ The list of language codes (`Language Code`) informs the VT which languages the 
 ### Language Support
 
 The list of language codes (`Language Code`) informs the VT which languages the working set supports.
+
 ## Implementation Implementation Implementation Implementation
 
 The working set object is the "anchor" of an application on the VT. Without a correctly defined object ID 0, the VT cannot identify the working group or load the first form. Developers must ensure that the `Active mask` AID points to a valid data form in the pool.

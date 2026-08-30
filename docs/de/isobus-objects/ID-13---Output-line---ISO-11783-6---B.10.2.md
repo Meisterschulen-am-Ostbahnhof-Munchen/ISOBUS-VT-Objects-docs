@@ -21,6 +21,7 @@ Die folgende Tabelle beschreibt den Aufbau des Output Line Objekts im Objektpool
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Funktionsweise und Geometrie
+
 Die Linie wird innerhalb eines gedachten Rechtecks gespannt, das durch die Position des Objekts sowie `Width` und `Height` definiert ist.
 
 -   **Line Direction 0:** Die Linie verläuft diagonal fallend.
@@ -40,6 +41,7 @@ Das Output Line Objekt reagiert auf folgende Ereignisse:
 -   **On Refresh:** Wird ausgelöst, wenn das VT das Objekt neu zeichnen muss.
 
 ## Bedeutung für die Implementierung
+
 Linien werden häufig als Trennelemente in Masken oder zur einfachen grafischen Darstellung von Zusammenhängen genutzt. Durch die Verknüpfung mit Variablen (über die Line Attributes) können Linien zur Laufzeit ihre Farbe ändern, um Zustände (z. B. Aktiv/Inaktiv) zu signalisieren.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Line (Output)](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/line-output) von Tobias Tenberg.

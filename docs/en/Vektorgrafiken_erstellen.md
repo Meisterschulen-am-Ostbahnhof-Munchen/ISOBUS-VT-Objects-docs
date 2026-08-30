@@ -1,11 +1,14 @@
 # Creating Vector Graphics
+
 ## CorelDRAW X5
+
 If you need to extract the file from, for example, a PDF file, you can use CorelDRAW X5.
 The size can also be changed via Arrange --> Modify --> Resize.
 Caution: This is very imprecise and will require a few attempts to achieve the desired size.
 If there's another way, please correct it here (smile)
 
 ## Solid Edge
+
 - If something doesn't work, it helps to simply redo each line,
 - to ensure clear connections between the lines. Time-consuming, but it should work. (wink)
 - When drawing symbols for the displays, they must be 72x72. Quickly draw a rectangle and check it; that way you're on the safe side.
@@ -47,6 +50,7 @@ Save
 Close
 
 ## ISO-Designer
+
 - Jetter has removed support for DXF vector graphics import.
 - ISO-Designer 5.3.1 is the last version that can still import DXF files.
 
@@ -86,6 +90,7 @@ You should now see "0 Error(s)" under "Deployment".
 If this is not the case, check the line under WorkingSet. (see above)
 
 ## Alternative with Autodesk Fusion 360 and Plugin
+
 Install the software and plugin
 Download and install Fusion 360
 
@@ -93,7 +98,7 @@ Free for students.
 
 Install the "DXFSplineToPolyline-win64" plugin.
 
-### Use Fusion 360.
+### Use Fusion 360
 
 Create a new design
 

@@ -1,7 +1,11 @@
 # ID 11 – Output string – ISO 11783-6 – B.9.2
+
 The **Output String** object with **ID 11** is used for the purely visual display of text strings on the Virtual Terminal. Unlike the *Input String*, this object does not allow direct editing by the user.
+
 ### Attributes and Record Format (Table B.22)
+
 The following table describes the structure of the Output String object in the object pool.
+
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -20,12 +24,14 @@ The following table describes the structure of the Output String object in the o
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ## Functionality and Special Features
+
 - **Transparency:** When bit 0 is set, the background of the text field is transparent, and the background color of the mask or an underlying object remains visible.
 - **Auto-Wrap:** Enables the display of multi-line text within the defined `Width` and `Height`.
 - **Alignment:** Alignment is pixel-perfect within the frame. This is especially important for vertical centering with different fonts.
-- * **Clipping:** Text that extends beyond the defined `Width` or `Height` is clipped by the VT.
+- - **Clipping:** Text that extends beyond the defined `Width` or `Height` is clipped by the VT.
 
 ## Static Text vs. Dynamic Variable
+
 - **Static Text:** The text is defined directly in the object pool and its properties can only be changed at runtime using the command `Change Attribute` (AID 5 or 7).
 - **Dynamic Text:** By linking it to a **string variable** (AID 6), the control unit (ECU) can update the text content at any time using `Change String Value` without having to reload the object itself.
 
@@ -40,6 +46,7 @@ The output string object reacts to the following events:
 - **On Change Size:** Responds to a size change.
 
 ## Implementation Implementation Implementation Implementation (IM)
+
 Output strings are the primary method for status messages, labels, and unit displays. For texts available in multiple languages, it is recommended to control the text via variables or to maintain a separate mask/pool for each language.
 
 Further information and examples can be found in the [ISOBUS Wiki - String (Output)](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/string-output) by Tobias Tenberg].

@@ -1,7 +1,11 @@
 # ID 21 – Number variable – ISO 11783-6 – B.13.2
+
 The **Number Variable** object with **ID 21** is a pure data object. It stores a numeric value that can be referenced by other display or input objects.
+
 ### Attributes and Record Format (Table B.43)
+
 The following table describes the structure of the Number Variable object in the object pool.
+
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -9,6 +13,7 @@ The following table describes the structure of the Number Variable object in the
 | [1] | **Value** | Integer | 4 | 0 – 2^32-1 | 4 – 7 | 32-bit unsigned integer value. |
 
 ## Functionality and Referencing
+
 Variables are not visible objects. They are never directly inserted into a mask or container as a "child" object, but rather serve as a data source for other objects:
 
 - **Referencing:** Objects such as *Input Number* (ID 9), *Output Number* (ID 12), or *Output Meter* (ID 17) reference the ID of a Number Variable via their attribute `Variable reference`.

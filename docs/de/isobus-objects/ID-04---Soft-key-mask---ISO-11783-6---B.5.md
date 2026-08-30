@@ -20,6 +20,7 @@ Die folgende Tabelle beschreibt den Aufbau des Soft Key Mask Objekts im Objektpo
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ### Funktionsweise und Zuweisung
+
 Eine Softkey-Maske enthält eine Liste von **Key Objekten** (ID 5), **Object Pointern** (ID 27) oder **External Object Pointern** (ID 43).
 
 -   **Reihenfolge:** Die Zuweisung zu den physischen Tasten am Terminal erfolgt strikt in der Reihenfolge der Liste.
@@ -36,12 +37,14 @@ Die Softkey-Maske reagiert auf folgende Ereignisse:
 -   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
 
 ## Zusammenspiel mit Datenmasken
+
 Jede Datenmaske (ID 1) verweist auf eine Soft Key Mask (ID 4). 
 
 -   Wird die Datenmaske gewechselt, wechselt das VT automatisch auch die Softkey-Belegung.
 -   Über das Kommando `Change Soft Key Mask` kann die Belegung der Tasten auch zur Laufzeit geändert werden, ohne die Hauptmaske zu wechseln.
 
 ## Bedeutung für die Implementierung
+
 Das Design der Softkey-Masken ist entscheidend für die Ergonomie. Entwickler sollten darauf achten, dass wichtige Funktionen (z. B. "Zurück" oder "Home") immer an der gleichen Position liegen. Durch den Einsatz von NULL-Pointern kann ein Springen der Tasten beim Wechsel zwischen verschiedenen Masken verhindert werden.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Softkey Mask](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/softkey-mask) von Tobias Tenberg.

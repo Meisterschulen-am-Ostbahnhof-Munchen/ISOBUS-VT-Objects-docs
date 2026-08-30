@@ -35,6 +35,7 @@ Die folgende Tabelle beschreibt den Aufbau des Button Objekts im Objektpool.
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ### Aufbau und Darstellung
+
 Der Button besteht aus drei Bereichen:
 
 1.  **Button Area:** Die gesamte durch Width/Height definierte Fläche.
@@ -42,6 +43,7 @@ Der Button besteht aus drei Bereichen:
 3.  **Button Face:** Die innere Fläche für Inhalte (Button Area minus Border).
 
 ### Container-Struktur
+
 Der Button ist ein Container. Er kann andere Objekte enthalten, die im **Button Face** dargestellt werden. Objekte, die über diesen Bereich hinausragen, werden abgeschnitten (Clipping).
 
 ## Ereignisse (Events - Tabelle B.13)

@@ -1,7 +1,11 @@
 # ID 48 – Scaled Graphic – ISO 11783-6 – B.28
+
 The **Scaled Graphic** object with **ID 48** (from VT version 6 onwards) is used to display and scale graphic objects.
+
 ### Attributes and Record Format (Table B.76)
+
 The following table describes the structure of the Scaled Graphic object in the object pool.
+
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -16,6 +20,7 @@ The following table describes the structure of the Scaled Graphic object in the 
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ### Scaling Types (Bits 0-2 of ScaleType)
+
 - **0:** No scaling (use original size from the raw data).
 - **1:** Scale to width (maintain aspect ratio).
 - **2:** Scale to height (maintain aspect ratio).
@@ -23,6 +28,7 @@ The following table describes the structure of the Scaled Graphic object in the 
 - **4:** Fit to area (Best Fit, maintain aspect ratio, graphic becomes as large as possible).
 
 ### Adjustment (Bits 3-6 of ScaleType)
+
 Defines the position within the area defined by `Width` and `Height`:
 
 - **Horizontal (Bits 3-4):** 0=Left, 1=Center, 2=Right.

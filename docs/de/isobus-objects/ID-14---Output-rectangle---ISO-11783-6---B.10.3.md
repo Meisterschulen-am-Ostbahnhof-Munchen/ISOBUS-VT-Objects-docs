@@ -22,6 +22,7 @@ Die folgende Tabelle beschreibt den Aufbau des Output Rectangle Objekts im Objek
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Darstellung und Eigenschaften
+
 Das Rechteck kombiniert Linien- und Fülleigenschaften:
 
 -   **Umriss:** Wenn AID 1 verlinkt ist, wird ein Rahmen gemäß den Line Attributes gezeichnet.
@@ -30,6 +31,7 @@ Das Rechteck kombiniert Linien- und Fülleigenschaften:
 -   **Clipping:** Das Rechteck definiert durch `Width` und `Height` seine eigenen grafischen Grenzen.
 
 ## Geometrische Berechnung
+
 Die Ecken des Rechtecks ergeben sich aus der Startposition (StartX, StartY) des Objekts:
 
 -   **Ecke Oben-Links:** (StartX, StartY)
@@ -45,6 +47,7 @@ Das Output Rectangle Objekt reagiert auf folgende Ereignisse:
 -   **On Refresh:** Wird ausgelöst, wenn das VT das Objekt neu zeichnen muss.
 
 ## Bedeutung für die Implementierung
+
 Rechtecke sind die am häufigsten verwendeten grafischen Primitiven. Sie dienen als Hintergrund für Textfelder, als Umrandung von Gruppen oder zur Erstellung von Balken (z. B. durch dynamische Änderung der `Width` oder `Height` per ECU-Kommando). In Kombination mit transparenten Hintergründen lassen sich so komplexe Layouts realisieren.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Rectangle](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/rectangle) von Tobias Tenberg.

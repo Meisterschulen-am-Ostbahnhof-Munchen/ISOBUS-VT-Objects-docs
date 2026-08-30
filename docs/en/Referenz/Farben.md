@@ -1,5 +1,7 @@
 # Standard Color Palette (ISO 11783-6 Table A.4)
+
 The VT standard color palette defines 256 colors. The first 16 colors are identical to the standard VGA palette.
+
 | Index | Name / Description | R, G, B Value | Hex Code (RGB) |
 | :--- | :--- | :--- | :--- |
 **0** | **Black** | 0, 0, 0 | `#000000` |
@@ -19,12 +21,13 @@ The VT standard color palette defines 256 colors. The first 16 colors are identi
 | **14** | **Yellow** | 255, 255, 0 | `#FFFF00` |
 | **15** | **Navy** | 0, 0, 153 | `#000099` |
 | ... | ... | ... | ... |
-| **232-255**| **Proprietary** | - | VT manufacturer specific |
+| **232-255** | **Proprietary** | - | VT manufacturer specific |
 
 *Note: For indices 16 to 231, an algorithmic distribution is defined in the color cube (6x6x6). See ISO 11783-6 Table A.4 for the complete list.*
 
 Further information and visualizations can be found in the [ISOBUS Wiki - Colours](https://isobus-studio.com/isobus-wiki/isobus-colours) by Tobias Tenberg.]
 
 ### Transparency
+
 The color index specified in the "Transparency Colour" attribute (e.g., in Picture Graphics) is not drawn. Often, a "signal color" such as magenta (index 13) is used if it is not present in the image.
 

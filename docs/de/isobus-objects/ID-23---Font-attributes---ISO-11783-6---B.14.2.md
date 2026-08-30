@@ -21,9 +21,11 @@ Die folgende Tabelle beschreibt den Aufbau des Font Attributes Objekts im Objekt
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Schriftgrößen und Render-Modi
+
 Die Interpretation von AID 2 hängt stark von Bit 7 in den `Font style` Optionen ab:
 
 ### Nicht-proportionale Schriftarten (Bit 7 = 0)
+
 Hier werden vordefinierte Rastergrößen verwendet (Breite x Höhe in Pixeln):
 
 -   **0:** 6x8
@@ -33,6 +35,7 @@ Hier werden vordefinierte Rastergrößen verwendet (Breite x Höhe in Pixeln):
 -   **14:** 128x192
 
 ### Proportionale Schriftarten (Bit 7 = 1)
+
 In diesem Modus repräsentiert der Wert in AID 2 direkt die **Schrifthöhe in Pixeln**. Die Breite der einzelnen Zeichen variiert.
 
 ## Ereignisse (Events - Tabelle B.45)
@@ -43,6 +46,7 @@ Das Font Attributes Objekt reagiert auf folgende Ereignisse:
 -   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
 
 ## Bedeutung für die Implementierung
+
 Font Attributes erlauben ein konsistentes Design. Anstatt bei jedem Textobjekt Farbe und Größe einzeln zu definieren, verweisen alle Objekte auf ein gemeinsames Attribut-Objekt. Ändert man dieses eine Objekt (z. B. von weißer auf gelbe Schrift), ändert sich das gesamte HMI-Erscheinungsbild sofort.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Font Attribute](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/font-attribute) von Tobias Tenberg.

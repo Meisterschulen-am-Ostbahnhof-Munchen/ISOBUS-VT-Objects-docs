@@ -1,7 +1,11 @@
 # ID 35 – Key Group – ISO 11783-6 – B.20
+
 The **Key Group** object with **ID 35** is used to group softkeys. This is primarily used in conjunction with **User Layout Soft Key Masks** (from VT version 4 onwards).
+
 ### Attributes and Record Format (Table B.63)
+
 The following table describes the structure of the Key Group object in the object pool.
+
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |

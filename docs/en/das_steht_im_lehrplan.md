@@ -1,4 +1,5 @@
 # 📋 This is on the curriculum: ISOBUS Virtual Terminal & HMI user interfaces
+>
 > 📌 **Source & Legal Basis:**
 > **Source:** *Framework Curriculum for the Preparation for the Master Craftsman Examination in Agricultural and Construction Machinery Mechatronics*
 > **Publisher:** German Association of Agricultural and Construction Machinery Mechatronics Technicians (LandBauTechnik-Bundesverband e. V.), Alfredstraße 102, 45131 Essen (as of February 25, 2025)
@@ -16,16 +17,21 @@ Modern implements no longer have their own display; instead, they use the Univer
 ---
 
 ## 📚 Curriculum Modules & Focus Areas
+
 ...
+
 ### Part 1 – Learning Unit 1.4: Automated Functions (80 units)
+
 - **Practical Integration of HMI Interfaces:** Linking sensor and actuator values with visual masks on the Virtual Terminal.
 - **Object Pool Creation:** Designing data masks, alarm masks, and softkeys using tools such as the ISO Designer.
 
 ### Part II – Learning Unit 1.1: Systems Engineering (120 hours)
+
 - **Human-Machine Interface (HMI/MMS):** Ergonomic design of operator terminals, structuring of object pools according to ISO 11783-6 (attributes, object IDs, graphic objects, output/input objects).
 - **Interaction Design:** Configuration of key events (key press/release), parameter changes via touchscreen and rotary encoder.
 
 ### Part II – Learning Unit 1.4: Technical Documentation & Drawings (80 hours)
+
 - **Planning Operating Concepts:** Creation of functional diagrams, screen layouts, softkey hierarchies, and symbol libraries for attachments.
 
 ### Part II – Learning Unit 1.4: Technical Documentation & Drawings (80 hours)
@@ -34,6 +40,7 @@ Modern implements no longer have their own display; instead, they use the Univer
 ---
 
 ## 📂 Curriculum topics in this wiki
+
 ...
 
 - 🖥️ [ISOBUS VT object pools & HMI (ISO 11783-6)](./lehrplan_praxis/isobus_vt_objektpools_hmi.md)
@@ -45,10 +52,13 @@ Modern implements no longer have their own display; instead, they use the Univer
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 - [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ## 🔗 Main portal & direct links to the 6 wikis
+
 ...
+
 | Wiki | Topic / Description | Link |
 | :--- | :--- | :---: |
 | **Wiki 0** | **Wiki of the Master Schools**<br>General information, Curriculum 2025 & Main Wiki. | [📖 Open](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/de/latest/) |

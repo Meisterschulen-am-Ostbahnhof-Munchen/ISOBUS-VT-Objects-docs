@@ -1,7 +1,11 @@
 # ID 37 – Output List – ISO 11783-6 – B.9.4
+
 The **Output List** object with **ID 37** (from VT version 4 onwards) is used to display one of several objects from a list. Which object is currently visible is controlled by an index (value).
+
 ### Attributes and Record Format (Table B.25)
+
 The following table describes the structure of the Output List object in the object pool.
+
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |

@@ -19,6 +19,7 @@ Die folgende Tabelle beschreibt den Aufbau des Object Label Reference List Objek
 | - | {Object Label graphic representation} | Integer | 2 | 0 – 65535 | 11 – 12 ... | Objekt-ID einer Grafik (Icon) für das Label (oder FFFFh = keine Grafik). |
 
 ## Bedeutung und Funktionsweise
+
 Das Objekt dient dazu, anderen Objekten (z. B. Working Set, Input-Felder) einen Namen (Text) und ein Icon (Grafik) zuzuweisen. Diese "Labels" werden vom VT verwendet:
 
 -   **Working Set Label:** Das Label für das Working Set Objekt wird in der Liste der aktiven Arbeitsgruppen angezeigt.

@@ -38,4 +38,5 @@ Für die meisten anderen Container ist ein Inhalt von `0` erlaubt. Dies kann dur
 | **44** | **Animation** | Eine Animation ohne Frames zeigt nichts an. |
 
 ### Besonderheit: Input List (ID 10)
+
 Auch eine `Input List` darf theoretisch leer sein (`Number of list items` = 0). In diesem Fall ist die Liste zwar vorhanden, enthält aber keine auswählbaren Optionen.

@@ -20,6 +20,7 @@ Die folgende Tabelle beschreibt den Aufbau des Extended Input Attributes Objekts
 | - | {{Last character}} | Integer | 2 | 0 – 65535 | 10 ... | Endzeichen des Bereichs (WideChar). |
 
 ## Funktionsweise
+
 Während das einfache *Input Attributes* Objekt (ID 26) nur 8-Bit Zeichen unterstützt, ermöglicht dieses Objekt die feingranulare Steuerung erlaubter Unicode-Zeichen (WideString). Dies wird für Sprachen benötigt, die mehr als 256 Zeichen umfassen (z. B. Asiatisch, Kyrillisch).
 Die Validierung erfolgt durch Definition von Bereichen innerhalb von Unicode-Ebenen.
 

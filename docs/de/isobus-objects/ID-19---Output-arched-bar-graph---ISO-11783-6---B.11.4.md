@@ -31,6 +31,7 @@ Die folgende Tabelle beschreibt den Aufbau des Output Arched Bar Graph Objekts i
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Funktionsweise und Geometrie
+
 Der bogenförmige Balken wird basierend auf einem virtuellen Ellipsenobjekt innerhalb des umschließenden Rechtecks gezeichnet.
 
 -   **Balkendicke (AID 8):** Definiert, wie breit der Bogen selbst ist.
@@ -48,6 +49,7 @@ Das Output Arched Bar Graph Objekt reagiert auf folgende Ereignisse:
 -   **On Refresh:** Wird ausgelöst, wenn das VT das Objekt neu zeichnen muss.
 
 ## Bedeutung für die Implementierung
+
 Arched Bar Graphs sind ideal für moderne Cockpit-Designs, bei denen mehrere Skalen platzsparend ineinander verschachtelt werden (z. B. Temperatur und Kraftstoff). Durch die `Target line` kann dem Bediener ein Sollbereich visualisiert werden, während die bogenförmige Form eine intuitive Erfassung des Füllstandes ermöglicht.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Arched Bar Graph](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/arched-bar-graph) von Tobias Tenberg.

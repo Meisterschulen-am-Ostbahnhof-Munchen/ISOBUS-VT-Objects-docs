@@ -37,7 +37,7 @@ Diese Tabelle listet alle Ereignis-IDs (Event IDs), die in Makros (`Macro object
 | **26** | On Change Child Position | Relative Position im Container geändert (Scrolling). |
 | **27** | On Pointing Event Press | Touch-Display gedrückt. |
 | **28** | On Pointing Event Release | Touch-Display losgelassen. |
-| **29-239**| Reserved | - |
-| **240-254**| Proprietary Events | Herstellerspezifische Events. |
+| **29-239** | Reserved | - |
+| **240-254** | Proprietary Events | Herstellerspezifische Events. |
 | **255** | Reserved | - |
 | **255** | Use Extended Macro Ref. | (Nur in Byte-Stream) Kennzeichnet 16-Bit Makro ID. |

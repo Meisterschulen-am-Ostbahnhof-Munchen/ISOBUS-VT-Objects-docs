@@ -29,10 +29,12 @@ Die folgende Tabelle beschreibt den Aufbau des Picture Graphic Objekts im Objekt
 Das Picture Graphic-Objekt speichert Pixelgrafiken in binärer Form innerhalb der Objektpool-Datei (.IOP).
 
 ### Skalierung und Formate
+
 -   **Seitenverhältnis:** Das VT skaliert die Grafik basierend auf der Ziel-Breite (`Width`). Um Verzerrungen zu vermeiden, berechnet das VT die Ziel-Höhe automatisch aus dem Verhältnis von `Actual width` zu `Actual height`.
 -   **Farbtiefe:** Unterstützt werden 1-Bit (Monochrom), 4-Bit (16 Farben) und 8-Bit (256 Farben).
 
 ### Transparenz und Effekte
+
 -   **Transparency (Bit 0):** Wenn aktiviert, wird die in AID 3 definierte Farbe nicht gezeichnet; stattdessen scheint der Hintergrund durch.
 -   **Flashing (Bit 1):** Das Bild kann blinken (Frequenz und Stil hängen vom VT ab).
 -   **RLE-Komprimierung (Bit 2):** Run-Length Encoding kann bei einfachen Grafiken (viele gleichfarbige Flächen) Speicherplatz sparen.
@@ -45,6 +47,7 @@ Das Picture Graphic Objekt reagiert auf folgende Ereignisse:
 -   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
 
 ## Bedeutung für die Implementierung
+
 Picture Graphics sind essenziell für ein modernes HMI. 
 
 -   **Verschwendung vermeiden:** Da Bitmaps viel Speicher im VT belegen, sollten sie so klein wie möglich gehalten werden. 

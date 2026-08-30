@@ -16,6 +16,7 @@ Die folgende Tabelle beschreibt den Aufbau des String Variable Objekts im Objekt
 | - | **Value** | String | Length | - | 6 ... | String aus Zeichen. Muss mit Leerzeichen aufgefüllt werden, um die Länge zu erreichen. |
 
 ## Funktionsweise und Besonderheiten
+
 Wie die *Number Variable* ist auch die *String Variable* ein reines Datenobjekt ohne eigene visuelle Darstellung.
 
 -   **Feste Länge:** Die Länge der Variable wird bei der Erstellung im Pool festgelegt und kann zur Laufzeit nicht mehr vergrößert werden.
@@ -23,6 +24,7 @@ Wie die *Number Variable* ist auch die *String Variable* ein reines Datenobjekt 
 -   **Datentypen:** Unterstützt sowohl 8-Bit Zeichen (Standard) als auch WideStrings (für Sonderzeichen). Die Steuerung (ECU) kann den Typ zur Laufzeit zwischen diesen Formaten umschalten.
 
 ## Referenzierung und Aktualisierung
+
 -   **Referenzierung:** Objekte wie *Input String* (ID 8) oder *Output String* (ID 11) verweisen über ihr Attribut `Variable reference` auf die ID einer String Variable.
 -   **Automatisches Redraw:** Sobald die ECU den Wert der Variable per `Change String Value` Kommando ändert, aktualisiert das VT automatisch alle sichtbaren Objekte, die diese Variable nutzen.
 
@@ -33,6 +35,7 @@ Das String Variable Objekt reagiert auf folgende Ereignisse:
 -   **On Change Value:** Wird ausgelöst, wenn sich der Wert ändert (durch `Change String Value` Befehl oder Eingabe des Bedieners). Das VT zeichnet alle Objekte neu, die diese Variable referenzieren.
 
 ## Bedeutung für die Implementierung
+
 String Variablen sind essenziell für dynamische Texte wie Fehlermeldungen im Klartext, Namen von Arbeitsaufträgen oder Fahrernamen. Da Texteingaben und -änderungen über den CAN-Bus (ISOBUS) ressourcenintensiv sind, sollten String Variablen so kurz wie möglich definiert werden.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - String Variable](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/string-variable) von Tobias Tenberg.

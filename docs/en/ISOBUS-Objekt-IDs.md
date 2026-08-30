@@ -1,4 +1,5 @@
 # ISOBUS Object IDs
+
 See also:
 
 - [ISOBUS Wiki - Colours](https://isobus-studio.com/isobus-wiki/isobus-colours)]
@@ -59,8 +60,8 @@ The definition in this table can therefore be considered good practice.
 | GraphicData | 46000 | GraphicData\_%ld | 46 | [ID 46 – Graphic Data (PNG) – ISO 11783-6 – B.27](isobus-objects/ID-46---Graphic-Data---ISO-11783-6---B.27.md) | [Wiki](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/graphic-data) |
 | ColorPalette | 45000 | ColorPalette\_%ld | 45 | [ID 45 – Color Palette – ISO 11783-6 – B.26](isobus-objects/ID-45---Colour-Palette---ISO-11783-6---B.26.md) | [Wiki](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/colour-palette) |
 | WorkingSetSpecialControls | 47000 | WorkingSetSpecialControls\_%ld | 47 | [ID 47 – Working Set Special Controls – ISO 11783-6 – B.29](isobus-objects/ID-47---Working-Set-Special-Controls---ISO-11783-6---B.29.md) | [Wiki](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/working-set-special-controls) |
-| IDsForTemporaryUse | 64000 | IDsForTemporaryUse\_%ld | 64 |                                                                                                                  | |
-| Proxy | 4194304 | Proxy\_%ld |     |                                                                                                                  | |
+| IDsForTemporaryUse | 64000 | IDsForTemporaryUse\_%ld | 64 | | |
+| Proxy | 4194304 | Proxy\_%ld | | | |
 
 In versions prior to V. 5.6.0, i.e., up to ISO Designer 5.5.1,
 

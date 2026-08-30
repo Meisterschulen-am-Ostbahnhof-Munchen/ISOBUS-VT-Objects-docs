@@ -1,7 +1,11 @@
 # ID 19 – Output Arched Bar Graph – ISO 11783-6 – B.11.4
+
 The **Output Arched Bar Graph** object with **ID 19** is an arched bar graph. It combines the properties of a linear bar chart with the circular geometry of a meter object.
+
 ### Attributes and Record Format (Table B.39)
+
 The following table describes the structure of the Output Arched Bar Graph object in the object pool.
+
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -28,21 +32,23 @@ The following table describes the structure of the Output Arched Bar Graph objec
 
 The arc-shaped bar is drawn based on a virtual ellipse object within the enclosing rectangle.
 
-* **Bar Thickness (AID 8):** Defines the width of the arc itself.
-* **Angle Logic:** Angle values are transmitted in halves (as with the meter object), e.g., 45 for 90°.
-* **Deflection (AID 5, Bit 4):** Controls whether the bar "grows" clockwise or counterclockwise.
-* **Transparency:** The object is transparent, allowing it to be overlaid with background images.
-* **Transparency:** The object is transparent, enabling it to be overlaid with background images.
+- **Bar Thickness (AID 8):** Defines the width of the arc itself.
+- **Angle Logic:** Angle values are transmitted in halves (as with the meter object), e.g., 45 for 90°.
+- **Deflection (AID 5, Bit 4):** Controls whether the bar "grows" clockwise or counterclockwise.
+- **Transparency:** The object is transparent, allowing it to be overlaid with background images.
+- **Transparency:** The object is transparent, enabling it to be overlaid with background images.
+
 ## Events (Table B.38)
 
 The output Arched Bar Graph object responds to the following events:
 
-* **On Change Value:** Triggered when the `Value` or `Target value` changes. The VT updates the graph.
-* **On Change Attribute:** Triggered when attributes change.
-* **On Change Size:** Responds to a size change.
-* **On Refresh:** Triggered when the VT needs to redraw the object.
+- **On Change Value:** Triggered when the `Value` or `Target value` changes. The VT updates the graph.
+- **On Change Attribute:** Triggered when attributes change.
+- **On Change Size:** Responds to a size change.
+- **On Refresh:** Triggered when the VT needs to redraw the object.
 
 ## Implementation Implications
+
 Arched bar graphs are ideal for modern cockpit designs where multiple scales are nested within each other to save space (e.g., temperature and fuel). The `Target line` allows the operator to visualize a target range, while the arc shape enables intuitive level measurement.
 
 Further information and examples can be found in the [ISOBUS Wiki - Arched Bar Graph](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/arched-bar-graph)] by Tobias Tenberg.

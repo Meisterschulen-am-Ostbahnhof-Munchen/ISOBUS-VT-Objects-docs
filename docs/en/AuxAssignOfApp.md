@@ -1,4 +1,5 @@
 # AuxAssignOfApp
+
 AuxAssignOfApp.txt
 It can be found on the logiBUS® web server:
 ![image](https://github.com/user-attachments/assets/32dd32de-69d9-454c-b1d9-1d4cb941c86f)
@@ -13,7 +14,7 @@ File format:
 This means
 
 | | | Description |
-|------------------|---|------------------------------------------------|
+| ------------------ | --- | ------------------------------------------------ |
 | 339 | | Manufacturer Code |
 | 2 | | Model Identification Code |
 | 2 | | Aux Type (in this case, Boolean non-latching) |

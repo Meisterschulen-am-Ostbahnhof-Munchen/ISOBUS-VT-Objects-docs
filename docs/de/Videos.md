@@ -4,7 +4,7 @@
 
 ## ISO-Designer: Deutsch
 
-* [ISO-Designer: Deutsch](https://youtube.com/playlist?list=PLD-CHxmB4P7dONUFIWaUbzUUxXmc9hayo\&si=0EX2K7hXmHuxW\_iM)
+- [ISO-Designer: Deutsch](https://youtube.com/playlist?list=PLD-CHxmB4P7dONUFIWaUbzUUxXmc9hayo\&si=0EX2K7hXmHuxW\_iM)
 
 1. [ISO-Designer: Objekte kopieren in Projekt](https://www.youtube.com/watch?v=EirliMv51nI)  
 1. [ISO-Designer: Objekte ausrichten](https://www.youtube.com/watch?v=9J-a7oAyh40)  
@@ -16,7 +16,7 @@
 
 ## ISO-Designer: englisch
 
-* [ISO-Designer: englisch](https://youtube.com/playlist?list=PLD-CHxmB4P7dMFsr7TSBbH70BT4WvluEz\&si=VZRkW8oFbZgjS45a)
+- [ISO-Designer: englisch](https://youtube.com/playlist?list=PLD-CHxmB4P7dMFsr7TSBbH70BT4WvluEz\&si=VZRkW8oFbZgjS45a)
 
 1. [ISO-Designer: Copy Objects](https://www.youtube.com/watch?v=c8JLmgkSjHQ)  
 1. [ISO-Designer: Arranging Objects](https://www.youtube.com/watch?v=jnfVsfJ8LlE)  

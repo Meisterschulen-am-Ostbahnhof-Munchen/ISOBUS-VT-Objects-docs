@@ -11,7 +11,7 @@
 
 ## 🎧 Podcast
 
-* [ISOBUS-Masken im VT: Das Herzstück der Land- und Baumaschinen-Interfaces (ISO 11783-6)](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Masken-im-VT-Das-Herzstck-der-Land--und-Baumaschinen-Interfaces-ISO-11783-6-e36a8m7)
+- [ISOBUS-Masken im VT: Das Herzstück der Land- und Baumaschinen-Interfaces (ISO 11783-6)](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Masken-im-VT-Das-Herzstck-der-Land--und-Baumaschinen-Interfaces-ISO-11783-6-e36a8m7)
 
 ----
 

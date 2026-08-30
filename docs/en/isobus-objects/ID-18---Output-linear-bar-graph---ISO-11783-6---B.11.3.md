@@ -1,7 +1,11 @@
 # ID 18 – Output Linear Bar Graph – ISO 11783-6 – B.11.3
+
 The **Output Linear Bar Graph** object with **ID 18** is used to display values in the form of a bar graph or thermometer. It supports various orientations and offers the option of highlighting a target value.
+
 ### Attributes and Record Format (Table B.37)
+
 The following table describes the structure of the Output Linear Bar Graph object in the object pool.
+
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -23,29 +27,33 @@ The following table describes the structure of the Output Linear Bar Graph objec
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ## Functionality and Options
+
 The bar graph is fitted into a rectangle and is transparent by default, so background graphics remain visible.
 
-* **Alignment (AID 5, Bits 4 & 5):** Allows horizontal (left-to-right) or vertical (bottom-to-top) bars.
-* **Display Type (Bit 3):** In addition to the classic fill bar, the object can also function as a "single pointer," where only a line is drawn at the current position.
-* **Target Line:** An additional marker (e.g., a red line) that indicates a target value or a warning range.
+- **Alignment (AID 5, Bits 4 & 5):** Allows horizontal (left-to-right) or vertical (bottom-to-top) bars.
+- **Display Type (Bit 3):** In addition to the classic fill bar, the object can also function as a "single pointer," where only a line is drawn at the current position.
+- **Target Line:** An additional marker (e.g., a red line) that indicates a target value or a warning range.
 
 ## Scaling
+
 The bar is calculated proportionally to the current value between `Value` and `Min value` and `Max value`. If the value is outside this range, the bar is either completely empty or completely filled.
 
 ## Events (Events - Table B.36)
 
 The Output Linear Bar Graph object reacts to the following events:
 
-* **On Change Value:** Triggered when `Value` or `Target value` changes. The VT updates the graph.
-* **On Change Attribute:** Triggered when attributes change.
-* **On Change Size:** Responds to size changes.
-* **On Refresh:** Triggered when the VT needs to redraw the object.
+- **On Change Value:** Triggered when `Value` or `Target value` changes. The VT updates the graph.
+- **On Change Attribute:** Triggered when attributes change.
+- **On Change Size:** Responds to size changes.
+- **On Refresh:** Triggered when the VT needs to redraw the object.
 
 ## Implementation Implications
+
 Bar charts are ideal for level indicators (fuel, seeds), temperature displays, or load indicators. The `Target line` option allows the operator to immediately visualize whether they are within the optimal operating range. Combining this with scale ticks improves readability.
 
 ## 🎧 Podcast
-* [ISOBUS bar chart: The Output Linear Bar Graph object of ISO 11783-6 decoded ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Balkendiagramm-Das-Output-Linear-Bar-Graph-Objekt-der-ISO-11783-6-entschlsselt-e36l0v2)
+
+- [ISOBUS bar chart: The Output Linear Bar Graph object of ISO 11783-6 decoded ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Balkendiagramm-Das-Output-Linear-Bar-Graph-Objekt-der-ISO-11783-6-entschlsselt-e36l0v2)
 
 ----
 

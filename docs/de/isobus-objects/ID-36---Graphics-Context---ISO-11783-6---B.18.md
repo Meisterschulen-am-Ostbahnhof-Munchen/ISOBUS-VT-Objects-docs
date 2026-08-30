@@ -31,27 +31,30 @@ Die folgende Tabelle beschreibt den Aufbau des Graphics Context Objekts im Objek
 | [17] | **Transparency Colour** | Integer | 1 | 0 – 255 | 34 | Transparenzfarbe (wenn Options Bit 0 gesetzt). |
 
 ## Funktionsweise und Struktur
+
 Das GCO besteht aus zwei Hauptkomponenten:
 
 1.  **Canvas:** Ein persistenter Grafikspeicher (Bitmap) mit definierter Größe (`Canvas Width/Height`). Der Inhalt bleibt erhalten, auch wenn das Objekt nicht angezeigt wird.
 2.  **Viewport:** Ein "Fenster", das einen Ausschnitt des Canvas anzeigt. Der Viewport definiert die Größe des Objekts auf der Maske. Durch Ändern von `Viewport X/Y` kann der Inhalt gescrollt (gepannt) werden.
 
 ## Graphics Context Commands
+
 Die Manipulation des Canvas erfolgt über spezielle Befehle (siehe ISO 11783-6, Anhang F), wie z. B.:
 
-*   `Set Graphics Cursor`: Setzt die Schreibposition.
-*   `Draw Point / Line / Rectangle / Polygon / Ellipse`: Zeichnet geometrische Formen.
-*   `Draw Text`: Schreibt Text an die Cursorposition.
-*   `Copy Canvas`: Kopiert Bereiche innerhalb des Canvas.
+-   `Set Graphics Cursor`: Setzt die Schreibposition.
+-   `Draw Point / Line / Rectangle / Polygon / Ellipse`: Zeichnet geometrische Formen.
+-   `Draw Text`: Schreibt Text an die Cursorposition.
+-   `Copy Canvas`: Kopiert Bereiche innerhalb des Canvas.
 
 ## Ereignisse (Events - Tabelle B.58)
 
 Das Graphics Context Objekt reagiert auf folgende Ereignisse:
 
-*   **On Change Attribute:** Wird ausgelöst bei Änderungen von Attributen (z. B. Viewport-Position, Zoom). Das VT aktualisiert die Anzeige.
-*   **On Change Background Colour:** Füllt das Objekt (den Canvas) mit der neuen Hintergrundfarbe. **Achtung:** Löscht den bisherigen Inhalt!
+-   **On Change Attribute:** Wird ausgelöst bei Änderungen von Attributen (z. B. Viewport-Position, Zoom). Das VT aktualisiert die Anzeige.
+-   **On Change Background Colour:** Füllt das Objekt (den Canvas) mit der neuen Hintergrundfarbe. **Achtung:** Löscht den bisherigen Inhalt!
 
 ## Anwendungsbeispiel
+
 Typische Anwendungen sind **GPS-Karten** (Swath-Logging), bei denen die ECU kontinuierlich die gefahrene Spur als Linie in den GCO zeichnet.
 
 ----

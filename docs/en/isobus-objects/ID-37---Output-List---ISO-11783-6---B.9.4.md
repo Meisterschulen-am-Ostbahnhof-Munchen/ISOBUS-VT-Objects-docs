@@ -1,7 +1,11 @@
 # ID 37 – Output List – ISO 11783-6 – B.9.4
+
 The **Output List** object with **ID 37** (from VT version 4 onwards) is used to display one of several objects from a list. Which object is currently visible is controlled by an index (value).
+
 ### Attributes and Record Format (Table B.25)
+
 The following table describes the structure of the Output List object in the object pool.
+
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -20,18 +24,18 @@ The following table describes the structure of the Output List object in the obj
 
 The Output List behaves similarly to an animation, but is manually controlled via the index.
 
-* **Index:** The displayed content is determined by the value (Value or Variable). Index 0 displays the first object in the list.
-* **Special Value 255:** With a value of 255, nothing is displayed (the object is invisible).
-* **NULL Pointer:** If a list entry has the ID NULL (65535), nothing is displayed for that index.
+- **Index:** The displayed content is determined by the value (Value or Variable). Index 0 displays the first object in the list.
+- **Special Value 255:** With a value of 255, nothing is displayed (the object is invisible).
+- **NULL Pointer:** If a list entry has the ID NULL (65535), nothing is displayed for that index.
 
 ## Events (Table B.24)
 
 The Output List object reacts to the following events:
 
-* **On Change Value:** Triggered when the index changes. The VT updates the display.
-* **On Change Attribute:** Reacts to general attribute changes.
-* **On Change Size:** Reacts to size changes.
-* **On Refresh:** Triggered when the VT needs to redraw the object.
+- **On Change Value:** Triggered when the index changes. The VT updates the display.
+- **On Change Attribute:** Reacts to general attribute changes.
+- **On Change Size:** Reacts to size changes.
+- **On Refresh:** Triggered when the VT needs to redraw the object.
 
 Further information and examples can be found in the [ISOBUS Wiki - List (Output)](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/list-output)] by Tobias Tenberg.
 

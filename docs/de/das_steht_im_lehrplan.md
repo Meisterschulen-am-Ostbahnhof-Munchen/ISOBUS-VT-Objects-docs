@@ -18,30 +18,34 @@ Moderne Anbaugeräte besitzen kein eigenes Display mehr, sondern nutzen das Univ
 ## 📚 Lehrplan-Module & Schwerpunkte
 
 ### 1. Teil I – Lerneinheit 1.4: Automatisierte Funktionen (80 UE)
+
 - **Praktische Einbindung von HMI-Oberflächen:** Verknüpfung von Sensor- und Aktorwerten mit visuellen Masken auf dem Virtual Terminal.
 - **Objektpool-Erstellung:** Design von Data Masks, Alarm Masks und Softkeys mit Werkzeugen wie dem ISO-Designer.
 
 ### 2. Teil II – Lerneinheit 1.1: Systemtechnik (120 UStd.)
+
 - **Mensch-Maschine-Schnittstelle (HMI / MMS):** Ergonomische Gestaltung von Bedienterminals, Strukturierung von Objektpools nach ISO 11783-6 (Attributes, Object IDs, Graphic Objects, Output/Input Objects).
 - **Interaktionsdesign:** Konfiguration von Tasten-Events (Key Press/Release), Parameteränderungen über Touchscreen und Drehencoder.
 
 ### 3. Teil II – Lerneinheit 1.4: Technische Dokumentation & Zeichnungen (80 UStd.)
+
 - **Planung von Bedienkonzepten:** Erstellung von Funktionsdiagrammen, Screen-Layouts, Softkey-Hierarchien und Symbolbibliotheken für Anbaugeräte.
 
 ---
 
 ## 📂 Lehrplan-Themen in diesem Wiki
 
-* 🖥️ [ISOBUS VT Objektpools & HMI (ISO 11783-6)](./lehrplan_praxis/isobus_vt_objektpools_hmi.md)
-* 📱 [Maskenlayout, Softkeys & Ergonomie](./lehrplan_praxis/maskenlayout_softkeys_bedienkonzepte.md)
-* 🎛️ [Input-Attribute, Key-Events & Interaktionsdiagnose](./lehrplan_praxis/input_attributes_diagnose.md)
+- 🖥️ [ISOBUS VT Objektpools & HMI (ISO 11783-6)](./lehrplan_praxis/isobus_vt_objektpools_hmi.md)
+- 📱 [Maskenlayout, Softkeys & Ergonomie](./lehrplan_praxis/maskenlayout_softkeys_bedienkonzepte.md)
+- 🎛️ [Input-Attribute, Key-Events & Interaktionsdiagnose](./lehrplan_praxis/input_attributes_diagnose.md)
 
 ---
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ## 🔗 Hauptportal & Direktlinks zu den 6 Wikis
 

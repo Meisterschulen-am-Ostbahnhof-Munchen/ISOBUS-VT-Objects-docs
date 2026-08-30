@@ -23,25 +23,27 @@ Die folgende Tabelle beschreibt den Aufbau des Input Boolean Objekts im Objektpo
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ### Darstellung
+
 Das VT visualisiert den Booleschen Wert (z. B. als Checkbox).
 
-*   **Wert 0:** Hintergrundfarbe wird gezeichnet.
-*   **Wert > 0:** Indikator wird in Vordergrundfarbe auf Hintergrund gezeichnet.
+-   **Wert 0:** Hintergrundfarbe wird gezeichnet.
+-   **Wert > 0:** Indikator wird in Vordergrundfarbe auf Hintergrund gezeichnet.
 
 ## Ereignisse (Events - Tabelle B.15)
 
 Das Input Boolean Objekt reagiert auf folgende Ereignisse:
 
-*   **On Enable:** Wenn das Objekt aktiviert wird.
-*   **On Disable:** Wenn das Objekt deaktiviert wird.
-*   **On Input Field Selection:** Bei Fokus/Auswahl durch den Bediener.
-*   **On Input Field De-selection:** Bei Fokusverlust.
-*   **On Entry of Value:** Wenn der Bediener einen neuen Wert bestätigt (ENTER). Sendet `Change Numeric Value`.
-*   **On Change Value:** Wenn der Wert (z.B. durch Variable) geändert wird.
-*   **On Change Background Colour:** Reaktion auf Farbänderung.
-*   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
+-   **On Enable:** Wenn das Objekt aktiviert wird.
+-   **On Disable:** Wenn das Objekt deaktiviert wird.
+-   **On Input Field Selection:** Bei Fokus/Auswahl durch den Bediener.
+-   **On Input Field De-selection:** Bei Fokusverlust.
+-   **On Entry of Value:** Wenn der Bediener einen neuen Wert bestätigt (ENTER). Sendet `Change Numeric Value`.
+-   **On Change Value:** Wenn der Wert (z.B. durch Variable) geändert wird.
+-   **On Change Background Colour:** Reaktion auf Farbänderung.
+-   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
 
 ## Bedeutung für die Implementierung
+
 Das Input Boolean ist ideal für einfache Ja/Nein-Optionen oder das Aktivieren/Deaktivieren von Maschinenfunktionen. Da die grafische Ausprägung (Häkchen-Stil) vom VT-Hersteller abhängt, sorgt dieses Objekt für ein konsistentes Erscheinungsbild innerhalb der Terminal-Oberfläche.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Boolean](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/boolean) von Tobias Tenberg.

@@ -17,11 +17,13 @@ Die folgende Tabelle beschreibt den Aufbau des Graphic Data Objekts im Objektpoo
 | - | **Repeat:** {raw data} | Integer | 1 | 0 – 255 | 9 ... | Rohdaten der Grafik (Bytes). |
 
 ## Besonderheiten
+
 Das **Graphic Data** Objekt (ab VT Version 6) dient zur Speicherung von Rohdaten für Grafiken, insbesondere im **PNG-Format**. Im Gegensatz zum klassischen *Picture Graphic* Objekt (ID 20), das auf einfachen Bitmaps basierte, nutzt dieses Objekt den Industriestandard PNG.
 
-*   **Eigenständigkeit:** Das Objekt enthält seine eigene Farbpalette (innerhalb der PNG-Daten) und wird daher **nicht** von der *Colour Map* (ID 39) oder *Colour Palette* (ID 45) der Working Set beeinflusst.
+-   **Eigenständigkeit:** Das Objekt enthält seine eigene Farbpalette (innerhalb der PNG-Daten) und wird daher **nicht** von der *Colour Map* (ID 39) oder *Colour Palette* (ID 45) der Working Set beeinflusst.
 
 ## Verwendung
+
 Dieses Objekt wird normalerweise nicht direkt in einer Maske platziert, sondern von einem **Scaled Graphic** Objekt (ID 48) referenziert, um es anzuzeigen und auf die gewünschte Größe zu skalieren. Es kann auch in einem *External Object Pointer* (ID 43) referenziert werden.
 
 ----

@@ -20,19 +20,21 @@ Die folgende Tabelle beschreibt den Aufbau des Auxiliary Function Type 2 Objekts
 | - | {Y Location} | Signed Integer | 2 | -32768 bis +32767 | 11 + ... | Y-Position relativ zur oberen linken Ecke. |
 
 ### Function Attributes (Bitmaske AID 2)
-*   **Bit 0–3:** Auxiliary function type (siehe Tabelle J.5)
-    *   0: Boolean Latching (Schaltend)
-    *   1: Analogue (Analog)
-    *   2: Boolean Momentary (Tastend)
-    *   3: Boolean Latching (Dual)
-    *   4: Analogue (Dual)
-    *   5: Boolean Momentary (Dual)
-    *   ...
-*   **Bit 4–5:** Reserved
-*   **Bit 6:** Assignment Restriction (0 = Frei, 1 = Eingeschränkt, siehe ISO 11783-6).
-*   **Bit 7:** Single Assignment (1 = Darf nur alleine auf einem Input liegen).
+
+-   **Bit 0–3:** Auxiliary function type (siehe Tabelle J.5)
+    -   0: Boolean Latching (Schaltend)
+    -   1: Analogue (Analog)
+    -   2: Boolean Momentary (Tastend)
+    -   3: Boolean Latching (Dual)
+    -   4: Analogue (Dual)
+    -   5: Boolean Momentary (Dual)
+    -   ...
+-   **Bit 4–5:** Reserved
+-   **Bit 6:** Assignment Restriction (0 = Frei, 1 = Eingeschränkt, siehe ISO 11783-6).
+-   **Bit 7:** Single Assignment (1 = Darf nur alleine auf einem Input liegen).
 
 ## Besonderheiten
+
 Dieses Objekt wird aktiv für das "Auxiliary Mapping" im Terminal genutzt. Es erlaubt der ECU, dem Terminal mitzuteilen, welche Funktionen (z. B. "Heber auf/ab") zur Verfügung stehen, damit der Benutzer diese auf Tasten oder Joysticks legen kann.
 Es ersetzt den veralteten Typ 1 (ID 29).
 

@@ -25,13 +25,14 @@ Die folgende Tabelle beschreibt den Aufbau des Key Group Objekts im Objektpool.
 
 Das Key Group Objekt reagiert auf folgende Ereignisse:
 
-*   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
+-   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
 
 ## Bedeutung und Funktionsweise
+
 Das Key Group Objekt dient dazu, eine logisch zusammengehörige Gruppe von Softkeys zu definieren (z.B. "Hydraulikfunktionen"). Diese Gruppe wird primär in **User-Layout Soft Key Masks** verwendet.
 
-*   **User-Mapping:** Der Benutzer kann am Terminal entscheiden, an welcher Position er diese Gruppe von Tasten in seiner Softkey-Leiste haben möchte. Das VT zwingt den Benutzer, die Gruppe *als Ganzes* zu platzieren, um die logische Zusammengehörigkeit nicht zu zerstören.
-*   **Transparenz:** Es wird empfohlen, Key Groups transparent zu gestalten, damit das VT die Hintergrundfarbe der Tasten einheitlich setzen kann.
+-   **User-Mapping:** Der Benutzer kann am Terminal entscheiden, an welcher Position er diese Gruppe von Tasten in seiner Softkey-Leiste haben möchte. Das VT zwingt den Benutzer, die Gruppe *als Ganzes* zu platzieren, um die logische Zusammengehörigkeit nicht zu zerstören.
+-   **Transparenz:** Es wird empfohlen, Key Groups transparent zu gestalten, damit das VT die Hintergrundfarbe der Tasten einheitlich setzen kann.
 
 ----
 *Hinweis: Für detaillierte Spezifikationen wird auf die offizielle ISO 11783-6:2018, B.20 verwiesen.*

@@ -1,7 +1,11 @@
 # ID 35 – Key Group – ISO 11783-6 – B.20
+
 The **Key Group** object with **ID 35** is used to group softkeys. This is primarily used in conjunction with **User Layout Soft Key Masks** (from VT version 4 onwards).
+
 ### Attributes and Record Format (Table B.63)
+
 The following table describes the structure of the Key Group object in the object pool.
+
 | AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
@@ -19,14 +23,14 @@ The following table describes the structure of the Key Group object in the objec
 
 The Key Group object reacts to the following events:
 
-* **On Change Attribute:** Reacts to general attribute changes.
+- **On Change Attribute:** Reacts to general attribute changes.
 
 ## Meaning and Functionality
 
 The Key Group object is used to define a logically related group of softkeys (e.g., "Hydraulic Functions"). This group is primarily used in **User Layout Soft Key Masks**.
 
-* **User Mapping:** The user can decide at the terminal where they want this group of keys to be placed in their softkey bar. The VT forces the user to place the group *as a whole* to maintain logical coherence.
-* **Transparency:** It is recommended to make Key Groups transparent so that the VT can set a uniform background color for the keys.
+- **User Mapping:** The user can decide at the terminal where they want this group of keys to be placed in their softkey bar. The VT forces the user to place the group *as a whole* to maintain logical coherence.
+- **Transparency:** It is recommended to make Key Groups transparent so that the VT can set a uniform background color for the keys.
 
 ----
 

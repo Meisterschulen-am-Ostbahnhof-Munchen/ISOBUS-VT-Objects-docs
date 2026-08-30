@@ -29,30 +29,33 @@ Die folgende Tabelle beschreibt den Aufbau des Output Linear Bar Graph Objekts i
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Funktionsweise und Optionen
+
 Der Balkengrafik wird in ein Rechteck eingepasst und ist standardmäßig transparent, sodass Hintergrundgrafiken sichtbar bleiben.
 
-*   **Ausrichtung (AID 5, Bit 4 & 5):** Ermöglicht horizontale (links-nach-rechts) oder vertikale (unten-nach-oben) Balken.
-*   **Darstellungstyp (Bit 3):** Neben dem klassischen füllenden Balken kann das Objekt auch als "Einzelzeiger" fungieren, bei dem nur eine Linie an der aktuellen Position gezeichnet wird.
-*   **Target Line:** Eine zusätzliche Markierung (z. B. ein roter Strich), die einen Sollwert oder einen Warnbereich kennzeichnet.
+-   **Ausrichtung (AID 5, Bit 4 & 5):** Ermöglicht horizontale (links-nach-rechts) oder vertikale (unten-nach-oben) Balken.
+-   **Darstellungstyp (Bit 3):** Neben dem klassischen füllenden Balken kann das Objekt auch als "Einzelzeiger" fungieren, bei dem nur eine Linie an der aktuellen Position gezeichnet wird.
+-   **Target Line:** Eine zusätzliche Markierung (z. B. ein roter Strich), die einen Sollwert oder einen Warnbereich kennzeichnet.
 
 ## Skalierung
+
 Der Balken wird proportional zum aktuellen `Value` zwischen `Min value` und `Max value` berechnet. Liegt der Wert außerhalb dieses Bereichs, wird der Balken entweder komplett leer oder komplett voll gezeichnet.
 
 ## Ereignisse (Events - Tabelle B.36)
 
 Das Output Linear Bar Graph Objekt reagiert auf folgende Ereignisse:
 
-*   **On Change Value:** Wird ausgelöst, wenn sich der `Value` oder der `Target value` ändert. Das VT aktualisiert die Grafik.
-*   **On Change Attribute:** Wird ausgelöst, wenn sich Attribute ändern.
-*   **On Change Size:** Reaktion auf Größenänderung.
-*   **On Refresh:** Wird ausgelöst, wenn das VT das Objekt neu zeichnen muss.
+-   **On Change Value:** Wird ausgelöst, wenn sich der `Value` oder der `Target value` ändert. Das VT aktualisiert die Grafik.
+-   **On Change Attribute:** Wird ausgelöst, wenn sich Attribute ändern.
+-   **On Change Size:** Reaktion auf Größenänderung.
+-   **On Refresh:** Wird ausgelöst, wenn das VT das Objekt neu zeichnen muss.
 
 ## Bedeutung für die Implementierung
+
 Balkendiagramme sind ideal für Füllstandsanzeigen (Kraftstoff, Saatgut), Temperaturanzeigen oder Lastanzeigen. Durch die Option der `Target line` kann dem Bediener sofort visualisiert werden, ob er sich im optimalen Arbeitsbereich befindet. Die Kombination mit Skalenstrichen (Ticks) erhöht die Ablesbarkeit.
 
 ## 🎧 Podcast
 
-* [ISOBUS-Balkendiagramm: Das Output Linear Bar Graph Objekt der ISO 11783-6 entschlüsselt](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Balkendiagramm-Das-Output-Linear-Bar-Graph-Objekt-der-ISO-11783-6-entschlsselt-e36l0v2)
+- [ISOBUS-Balkendiagramm: Das Output Linear Bar Graph Objekt der ISO 11783-6 entschlüsselt](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Balkendiagramm-Das-Output-Linear-Bar-Graph-Objekt-der-ISO-11783-6-entschlsselt-e36l0v2)
 
 ----
 *Hinweis: Für detaillierte Spezifikationen zu Datentypen und Nachrichtenformaten wird auf die offizielle ISO 11783-6:2018 verwiesen.*

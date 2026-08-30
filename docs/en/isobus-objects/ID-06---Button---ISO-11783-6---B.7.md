@@ -1,5 +1,6 @@
 # ID 6 – Button – ISO 11783-6 – B.7
-![](https://user-images.githubusercontent.com/69573151/94337426-7d6dcf00-ffea-11ea-8ab0-ca710054a888.png)
+
+![ISOBUS Button (ID 6) structure 1 (ID 6 – Button – ISO 11783-6 – B.7)](https://user-images.githubusercontent.com/69573151/94337426-7d6dcf00-ffea-11ea-8ab0-ca710054a888.png)
 **Annex B.7 – Button**
 Annex B.7 of ISO 11783-6:2018 is dedicated to the detailed definition of the "button" object in the context of the Virtual Terminal (VT). Buttons are basic interactive user interface elements that allow the operator to trigger actions or send commands to the agricultural machine or implement.
 **Overview of the Button Object**
@@ -8,6 +9,7 @@ The button object, as defined in B.7, is a graphical element displayed on the VT
 **Overview of the Button Object**
 
 The button object, as defined in B.7, is a graphical element displayed on the VT's data screen.
+
 ### Attributes and Record Format (Table B.14)
 
 The following table describes the structure of the Button object in the object pool.
@@ -31,6 +33,7 @@ The following table describes the structure of the Button object in the object p
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
 
 ### Structure and Appearance
+
 The button consists of three areas:
 
 1. **Button Area:** The entire area defined by Width/Height.
@@ -40,21 +43,22 @@ The button consists of three areas:
 3. **Button Face:** The inner area for content (Button Area minus Border).
 
 ### Container Structure
+
 The button is a container. It can contain other objects, which are displayed in the **Button Face**. Objects that extend beyond this area are clipped.
 
 ## Events (Events - Table B.13)
 
 The button responds to the following events:
 
-* **On Key Press:** Triggered when the button is pressed. Sends `Button Activation`.
-* **On Key Release:** Triggered when the button is released. Sends `Button Activation`.
-* **On Enable:** When the button is enabled by a command.
-* **On Disable:** When the button is disabled.
-* **On Input Field Selection:** When the button is focused (navigation).
-* **On Input Field De-selection:** When focus is lost.
-* **On Change Background Colour:** Responds to a change in background color.
-* **On Change Size:** Responds to a change in size (deletes the old area, redraws).
-* **On Change Attribute:** Responds to general attribute changes.
+- **On Key Press:** Triggered when the button is pressed. Sends `Button Activation`.
+- **On Key Release:** Triggered when the button is released. Sends `Button Activation`.
+- **On Enable:** When the button is enabled by a command.
+- **On Disable:** When the button is disabled.
+- **On Input Field Selection:** When the button is focused (navigation).
+- **On Input Field De-selection:** When focus is lost.
+- **On Change Background Colour:** Responds to a change in background color.
+- **On Change Size:** Responds to a change in size (deletes the old area, redraws).
+- **On Change Attribute:** Responds to general attribute changes.
 
 **Role of the Button Object in the Virtual Terminal**
 
@@ -78,16 +82,16 @@ Button Evaluation:
 
 When the button is pressed, the following messages are sent to the ISOBUS:
 
-* BUTTON_STATE_PRESSED
-* at the moment the button was pressed
-* BUTTON_STATE_HELD
-* if the button was held down for a longer period
-* TODO: Reference to ISO
-* BUTTON_STATE_RELEASED
-* when the button was released
-* BUTTON_STATE_ABORTED
-* if the button was pressed but then released
-* TODO: Describe better.
+- BUTTON_STATE_PRESSED
+- at the moment the button was pressed
+- BUTTON_STATE_HELD
+- if the button was held down for a longer period
+- TODO: Reference to ISO
+- BUTTON_STATE_RELEASED
+- when the button was released
+- BUTTON_STATE_ABORTED
+- if the button was pressed but then released
+- TODO: Describe better.
 
 This results in the following:
 
@@ -105,7 +109,7 @@ There are two evaluation methods:
 
 Call Hierarchy:
 
-![](https://user-images.githubusercontent.com/69573151/94337621-210baf00-ffec-11ea-9ec0-fe4a7e7c418b.png)
+![ISOBUS Button (ID 6) structure 2 (Events (Events - Table B.13))](https://user-images.githubusercontent.com/69573151/94337621-210baf00-ffec-11ea-9ec0-fe4a7e7c418b.png)
 
 ```c
 iso_u32 Tageszaehler = 0;
@@ -143,6 +147,6 @@ setU32("CF-A", "Gesamtzaehler", Gesamtzaehler);
 }
 ```
 
-![](https://user-images.githubusercontent.com/69573151/94602909-cbf2c600-0295-11eb-946a-a68b45b3eccc.png)
+![ISOBUS Button (ID 6) structure 3 (Events (Events - Table B.13))](https://user-images.githubusercontent.com/69573151/94602909-cbf2c600-0295-11eb-946a-a68b45b3eccc.png)
 
 Further information and examples can be found in the [ISOBUS Wiki - Button](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/button)] by Tobias Tenberg.

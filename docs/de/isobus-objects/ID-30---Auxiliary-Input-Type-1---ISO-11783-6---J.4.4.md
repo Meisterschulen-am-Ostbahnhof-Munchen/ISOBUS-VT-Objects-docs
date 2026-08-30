@@ -23,6 +23,7 @@ Die folgende Tabelle beschreibt den Aufbau des Auxiliary Input Type 1 Objekts im
 | - | {Y Location} | Signed Integer | 2 | -32768 bis +32767 | 12 + ... | Y-Position relativ zur oberen linken Ecke. |
 
 ## Funktionsweise
+
 Dieses Objekt beschreibt ein physisches Eingabeelement (z. B. einen Taster oder eine Achse eines Joysticks) an einem Auxiliary Input Device. Es wird vom Auxiliary Input Device bereitgestellt, damit das VT die verfügbaren Eingänge und deren Eigenschaften kennt.
 Die `Input ID` verknüpft dieses Objekt mit den Statusnachrichten des Geräts.
 

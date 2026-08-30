@@ -20,25 +20,28 @@ Die folgende Tabelle beschreibt den Aufbau des Input Attributes Objekts im Objek
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Funktionsweise und Validierung
+
 Das Objekt wirkt als Filter für die Tastatureingabe am VT:
 
-*   **Referenzierung:** Ein *Input String* Objekt (ID 8) verweist auf dieses Objekt.
-*   **Filter-Logik:** Wenn der `Validation type` auf 0 steht, lässt das VT nur die Zeichen zu, die im `Validation string` enthalten sind. Steht er auf 1, werden alle Zeichen außer den gelisteten akzeptiert.
-*   **Einschränkung:** Dieses Objekt unterstützt ausschließlich **8-Bit Strings**. Wenn das verknüpfte Eingabefeld einen WideString verwendet, findet keine Validierung statt.
+-   **Referenzierung:** Ein *Input String* Objekt (ID 8) verweist auf dieses Objekt.
+-   **Filter-Logik:** Wenn der `Validation type` auf 0 steht, lässt das VT nur die Zeichen zu, die im `Validation string` enthalten sind. Steht er auf 1, werden alle Zeichen außer den gelisteten akzeptiert.
+-   **Einschränkung:** Dieses Objekt unterstützt ausschließlich **8-Bit Strings**. Wenn das verknüpfte Eingabefeld einen WideString verwendet, findet keine Validierung statt.
 
 ## Ereignisse (Events - Tabelle B.51)
 
 Das Input Attributes Objekt reagiert auf folgende Ereignisse:
 
-*   **On Change Value:** Wird ausgelöst durch das Kommando `Change String Value`. Das VT aktualisiert den Validierungs-String.
+-   **On Change Value:** Wird ausgelöst durch das Kommando `Change String Value`. Das VT aktualisiert den Validierungs-String.
 
 ## Bedeutung für die Implementierung
+
 Input Attributes sind ein wichtiges Werkzeug zur Vermeidung von Fehlbedienungen.
 
-*   **Beispiel Numerisch:** Ein Validierungsstring "0123456789.," begrenzt ein Textfeld auf rein numerische Zeichen.
-*   **Beispiel Sonderzeichen:** Verbot von Zeichen wie ";" oder "'", die in Datenbanken oder Dateisystemen Probleme verursachen könnten.
+-   **Beispiel Numerisch:** Ein Validierungsstring "0123456789.," begrenzt ein Textfeld auf rein numerische Zeichen.
+-   **Beispiel Sonderzeichen:** Verbot von Zeichen wie ";" oder "'", die in Datenbanken oder Dateisystemen Probleme verursachen könnten.
 
 ### Hinweis: Extended Input Attributes (ID 38)
+
 Für die Validierung von WideStrings (Unicode) muss das *Extended Input Attributes* Objekt verwendet werden, welches die Definition ganzer Code-Bereiche (Code Planes) erlaubt.
 
 ----

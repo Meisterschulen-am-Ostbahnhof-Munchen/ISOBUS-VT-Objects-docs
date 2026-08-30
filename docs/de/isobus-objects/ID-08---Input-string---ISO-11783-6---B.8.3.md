@@ -28,27 +28,29 @@ Die folgende Tabelle beschreibt den Aufbau des Input String Objekts im Objektpoo
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Funktionsweise und Optionen
+
 Das Input String Objekt bietet flexible Möglichkeiten zur Textdarstellung:
 
-*   **Auto-Wrap:** Wenn aktiviert (Bit 1), bricht das VT den Text automatisch um, wenn die Breite des Feldes überschritten wird.
-*   **Justierung:** Über AID 8 wird sowohl die horizontale als auch die vertikale Ausrichtung gesteuert.
-*   **Validierung:** Durch die Verknüpfung mit einem `Input Attributes` Objekt kann die Eingabe auf bestimmte Zeichensätze begrenzt werden.
+-   **Auto-Wrap:** Wenn aktiviert (Bit 1), bricht das VT den Text automatisch um, wenn die Breite des Feldes überschritten wird.
+-   **Justierung:** Über AID 8 wird sowohl die horizontale als auch die vertikale Ausrichtung gesteuert.
+-   **Validierung:** Durch die Verknüpfung mit einem `Input Attributes` Objekt kann die Eingabe auf bestimmte Zeichensätze begrenzt werden.
 
 ## Ereignisse (Events - Tabelle B.15)
 
 Das Input String Objekt reagiert auf folgende Ereignisse:
 
-*   **On Enable:** Wenn das Objekt aktiviert wird.
-*   **On Disable:** Wenn das Objekt deaktiviert wird.
-*   **On Input Field Selection:** Bei Fokus/Auswahl durch den Bediener.
-*   **On Input Field De-selection:** Bei Fokusverlust.
-*   **On Entry of Value:** Wenn der Bediener die Texteingabe bestätigt (ENTER). Sendet `Change String Value`.
-*   **On Change Value:** Wenn der Wert (z.B. durch Variable) geändert wird.
-*   **On ESC:** Wenn der Bediener die Eingabe abbricht.
-*   **On Change Background Colour:** Reaktion auf Farbänderung.
-*   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
+-   **On Enable:** Wenn das Objekt aktiviert wird.
+-   **On Disable:** Wenn das Objekt deaktiviert wird.
+-   **On Input Field Selection:** Bei Fokus/Auswahl durch den Bediener.
+-   **On Input Field De-selection:** Bei Fokusverlust.
+-   **On Entry of Value:** Wenn der Bediener die Texteingabe bestätigt (ENTER). Sendet `Change String Value`.
+-   **On Change Value:** Wenn der Wert (z.B. durch Variable) geändert wird.
+-   **On ESC:** Wenn der Bediener die Eingabe abbricht.
+-   **On Change Background Colour:** Reaktion auf Farbänderung.
+-   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
 
 ## Bedeutung für die Implementierung
+
 Input Strings werden häufig für Namen (z. B. Feldnamen, Kundendaten) oder Passwörter verwendet. Da die Texteingabe auf Terminals ohne Tastatur (nur Touch oder Dreh-Drück-Steller) mühsam sein kann, sollten Standardwerte oder Auswahllisten (Input List) bevorzugt werden, wenn der Wertevorrat begrenzt ist.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - String (Input)](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/string-input) von Tobias Tenberg.

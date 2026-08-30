@@ -24,19 +24,21 @@ Die folgende Tabelle beschreibt den Aufbau des Output Ellipse Objekts im Objektp
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Ellipsentypen und Geometrie
+
 Die Ellipse wird in ein virtuelles Rechteck (`Width` x `Height`) eingepasst.
 
-*   **Closed Ellipse (0):** Eine vollständige Ellipse oder ein Kreis (wenn Width = Height).
-*   **Open Ellipse (1):** Nur der Bogen zwischen Start- und Endwinkel wird gezeichnet.
-*   **Segment (2):** Ein Kreisabschnitt (die Sehne zwischen den Winkelpunkten wird geschlossen).
-*   **Sektor (3):** Ein Kreisausschnitt (die Winkelpunkte werden mit dem Mittelpunkt verbunden, ideal für Tortendiagramme).
+-   **Closed Ellipse (0):** Eine vollständige Ellipse oder ein Kreis (wenn Width = Height).
+-   **Open Ellipse (1):** Nur der Bogen zwischen Start- und Endwinkel wird gezeichnet.
+-   **Segment (2):** Ein Kreisabschnitt (die Sehne zwischen den Winkelpunkten wird geschlossen).
+-   **Sektor (3):** Ein Kreisausschnitt (die Winkelpunkte werden mit dem Mittelpunkt verbunden, ideal für Tortendiagramme).
 
 ## Winkelberechnung (Wichtig!)
+
 Die Winkelwerte in AID 5 und 6 werden **halbiert** übertragen (Bereich 0-180 entspricht 0-360°).
 
-*   **90° (Oben):** Wert 45
-*   **180° (Links):** Wert 90
-*   **270° (Unten):** Wert 135
+-   **90° (Oben):** Wert 45
+-   **180° (Links):** Wert 90
+-   **270° (Unten):** Wert 135
 
 **Besonderheit bei skalierten Ellipsen:** Wenn die Ellipse kein Kreis ist (Width != Height), muss das VT sicherstellen, dass die Winkel mathematisch korrekt gezeichnet werden und nicht nur ein skalierter Kreisbogen dargestellt wird (siehe ISO-Norm Figure B.8).
 
@@ -44,11 +46,12 @@ Die Winkelwerte in AID 5 und 6 werden **halbiert** übertragen (Bereich 0-180 en
 
 Das Output Ellipse Objekt reagiert auf folgende Ereignisse:
 
-*   **On Change Size:** Wird ausgelöst, wenn die Größe des Rechtecks zur Laufzeit geändert wird.
-*   **On Change Attribute:** Wird ausgelöst, wenn sich Linien- oder Füllattribute (z. B. Farben) ändern.
-*   **On Refresh:** Wird ausgelöst, wenn das VT das Objekt neu zeichnen muss.
+-   **On Change Size:** Wird ausgelöst, wenn die Größe des Rechtecks zur Laufzeit geändert wird.
+-   **On Change Attribute:** Wird ausgelöst, wenn sich Linien- oder Füllattribute (z. B. Farben) ändern.
+-   **On Refresh:** Wird ausgelöst, wenn das VT das Objekt neu zeichnen muss.
 
 ## Bedeutung für die Implementierung
+
 Ellipsen und Sektoren sind unverzichtbar für die Erstellung von analogen Zeigerinstrumenten (Meters) oder Fortschrittsanzeigen. Durch die dynamische Änderung des `End angle` per ECU-Kommando lassen sich füllende Kreisbögen realisieren, die intuitiv Zustände visualisieren.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Ellipse](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/ellipse) von Tobias Tenberg.

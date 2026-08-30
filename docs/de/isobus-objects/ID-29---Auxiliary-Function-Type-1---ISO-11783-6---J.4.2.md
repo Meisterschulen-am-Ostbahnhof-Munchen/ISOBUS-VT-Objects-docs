@@ -22,6 +22,7 @@ Die folgende Tabelle beschreibt den Aufbau des Auxiliary Function Type 1 Objekts
 | - | {Y Location} | Signed Integer | 2 | -32768 bis +32767 | 11 + ... | Y-Position relativ zur oberen linken Ecke. |
 
 ## Funktionsweise
+
 Das VT nutzt diese Attribute, um die Zuweisung zu einem kompatiblen Auxiliary Input zu erzwingen. Das Designator-Symbol muss in den Bereich eines Softkeys passen; überstehende Teile werden abgeschnitten (Clipped).
 Das Objekt dient als Funktionsdefinition, die einem physischen Hilfseingabegerät (Auxiliary Input) zugewiesen werden kann.
 

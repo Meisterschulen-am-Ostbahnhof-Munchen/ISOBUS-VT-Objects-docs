@@ -4,8 +4,8 @@
 
 Diese Tabelle listet alle Befehle (Messages), die zwischen ECU (Working Set) und VT ausgetauscht werden können.
 
-*   **Function (Decimal/Hex):** Der Code im ersten Byte der Nachricht (bei Destination Specific PGN).
-*   **Allowed in Macro:** Ob der Befehl in einem Makro-Objekt gespeichert werden darf.
+-   **Function (Decimal/Hex):** Der Code im ersten Byte der Nachricht (bei Destination Specific PGN).
+-   **Allowed in Macro:** Ob der Befehl in einem Makro-Objekt gespeichert werden darf.
 
 | Clause | Message Name | PGN | Function (Hex) | Macro? | VT Vers. |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -35,7 +35,7 @@ Diese Tabelle listet alle Befehle (Messages), die zwischen ECU (Working Set) und
 | **F.14** | Change Child Location | ECU->VT | A5 | **Yes** | 2 |
 | **F.16** | Change Child Position | ECU->VT | B4 | **Yes** | 2 |
 | **F.18** | Change Size | ECU->VT | A6 | **Yes** | 2 |
-| **F.20** | Change Background Colour| ECU->VT | A7 | **Yes** | 2 |
+| **F.20** | Change Background Colour | ECU->VT | A7 | **Yes** | 2 |
 | **F.22** | Change Numeric Value | ECU->VT | A8 | **Yes** | 2 |
 | **F.24** | Change String Value | ECU->VT | B3 | **Yes** | 2 |
 | **F.26** | Change End Point | ECU->VT | A9 | **Yes** | 2 |

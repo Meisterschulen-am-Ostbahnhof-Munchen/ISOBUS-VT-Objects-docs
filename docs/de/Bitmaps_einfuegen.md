@@ -36,7 +36,7 @@ Original:
 
 von `https://www.iso.org/obp/graphics/grs/343178e8-8b69-4dd7-83c6-cee7c66b28a4_200.png`
 
-### 1. Alle Dateien unter img_original werden um 2 Pixel ringsum zugeschnitten:
+### 1. Alle Dateien unter img_original werden um 2 Pixel ringsum zugeschnitten
 
 zum Ordner: [img_original](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/tree/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_original)
 
@@ -143,4 +143,5 @@ im Falle einer anderen Farbtiefe wird oft Pink verwendet.
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

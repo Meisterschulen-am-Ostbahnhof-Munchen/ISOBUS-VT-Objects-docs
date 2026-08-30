@@ -20,11 +20,12 @@ Die folgende Tabelle beschreibt den Aufbau des Working Set Special Controls Obje
 | - | {Country Code} | String | 2 | - | 13 – 14 ... | 2-Buchstaben Code gemäß ISO 3166-1 (z. B. "DE") oder "20 20" (Hex) falls nicht anwendbar. |
 
 ## Bedeutung und Funktionsweise
+
 Dieses Objekt ist der zentrale Anlaufpunkt für das Terminal beim Laden des Pools (ab VT Version 6).
 
-*   **Farben:** Es definiert, welche *Colour Map* und *Colour Palette* **initial** beim Aktivieren des Pools verwendet werden sollen.
-*   **Sprachen:** Es definiert eine Liste von unterstützten Sprachen, die die Liste im *Working Set* Objekt (ID 0) **ersetzt**. Durch die Kombination von Sprach- und Ländercode (z. B. `pt` + `BR` vs. `pt` + `PT`) ist eine präzisere Auswahl möglich.
-*   **Erweiterbarkeit:** Das Attribut `Number of Bytes to follow` erlaubt es, das Objekt in Zukunft um neue Attribute zu erweitern, ohne ältere VTs zu verwirren (diese überspringen einfach die unbekannten Bytes).
+-   **Farben:** Es definiert, welche *Colour Map* und *Colour Palette* **initial** beim Aktivieren des Pools verwendet werden sollen.
+-   **Sprachen:** Es definiert eine Liste von unterstützten Sprachen, die die Liste im *Working Set* Objekt (ID 0) **ersetzt**. Durch die Kombination von Sprach- und Ländercode (z. B. `pt` + `BR` vs. `pt` + `PT`) ist eine präzisere Auswahl möglich.
+-   **Erweiterbarkeit:** Das Attribut `Number of Bytes to follow` erlaubt es, das Objekt in Zukunft um neue Attribute zu erweitern, ohne ältere VTs zu verwirren (diese überspringen einfach die unbekannten Bytes).
 
 Es darf maximal **ein** Working Set Special Controls Objekt pro Objektpool geben.
 
@@ -32,7 +33,7 @@ Es darf maximal **ein** Working Set Special Controls Objekt pro Objektpool geben
 
 Das Objekt reagiert auf folgende Ereignisse:
 
-*   **On Refresh:** Wird ausgelöst, wenn sich Einstellungen ändern, die einen kompletten Neuaufbau der Darstellung erfordern (z. B. Farbpalette).
+-   **On Refresh:** Wird ausgelöst, wenn sich Einstellungen ändern, die einen kompletten Neuaufbau der Darstellung erfordern (z. B. Farbpalette).
 
 ----
 *Hinweis: Für detaillierte Spezifikationen wird auf die offizielle ISO 11783-6:2018, B.29 verwiesen.*

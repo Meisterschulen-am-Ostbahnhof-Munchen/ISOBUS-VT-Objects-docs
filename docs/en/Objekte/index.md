@@ -1,4 +1,5 @@
 # Objects
+
 ----
 ISO 11783-6 specifies a serial data communication network for the control and communication of agricultural and forestry tractors, as well as mounted, semi-mounted, trailed, or self-propelled implements. More precisely, it is a virtual terminal that serves as an interface for controlling and monitoring various implements. With ISOBUS, farmers can control different types of implements via the same terminal, regardless of the manufacturer. This allows for improved clarity and efficiency on the tractor. 🚜
 

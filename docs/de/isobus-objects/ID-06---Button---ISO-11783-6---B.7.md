@@ -2,7 +2,7 @@
 
 
 
-![](https://user-images.githubusercontent.com/69573151/94337426-7d6dcf00-ffea-11ea-8ab0-ca710054a888.png)
+![ISOBUS Button (ID 6) Struktur 1 (ID 6 – Button – ISO 11783-6 – B.7)](https://user-images.githubusercontent.com/69573151/94337426-7d6dcf00-ffea-11ea-8ab0-ca710054a888.png)
 
 **Anhang B.7 – Button (Schaltfläche)**
 
@@ -35,6 +35,7 @@ Die folgende Tabelle beschreibt den Aufbau des Button Objekts im Objektpool.
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ### Aufbau und Darstellung
+
 Der Button besteht aus drei Bereichen:
 
 1.  **Button Area:** Die gesamte durch Width/Height definierte Fläche.
@@ -42,21 +43,22 @@ Der Button besteht aus drei Bereichen:
 3.  **Button Face:** Die innere Fläche für Inhalte (Button Area minus Border).
 
 ### Container-Struktur
+
 Der Button ist ein Container. Er kann andere Objekte enthalten, die im **Button Face** dargestellt werden. Objekte, die über diesen Bereich hinausragen, werden abgeschnitten (Clipping).
 
 ## Ereignisse (Events - Tabelle B.13)
 
 Der Button reagiert auf folgende Ereignisse:
 
-*   **On Key Press:** Ausgelöst beim Betätigen des Buttons. Sendet `Button Activation`.
-*   **On Key Release:** Ausgelöst beim Loslassen. Sendet `Button Activation`.
-*   **On Enable:** Wenn der Button per Kommando aktiviert wird.
-*   **On Disable:** Wenn der Button deaktiviert wird.
-*   **On Input Field Selection:** Wenn der Button fokussiert wird (Navigation).
-*   **On Input Field De-selection:** Wenn der Fokus verloren geht.
-*   **On Change Background Colour:** Reaktion auf Farbänderung.
-*   **On Change Size:** Reaktion auf Größenänderung (löscht alten Bereich, zeichnet neu).
-*   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
+-   **On Key Press:** Ausgelöst beim Betätigen des Buttons. Sendet `Button Activation`.
+-   **On Key Release:** Ausgelöst beim Loslassen. Sendet `Button Activation`.
+-   **On Enable:** Wenn der Button per Kommando aktiviert wird.
+-   **On Disable:** Wenn der Button deaktiviert wird.
+-   **On Input Field Selection:** Wenn der Button fokussiert wird (Navigation).
+-   **On Input Field De-selection:** Wenn der Fokus verloren geht.
+-   **On Change Background Colour:** Reaktion auf Farbänderung.
+-   **On Change Size:** Reaktion auf Größenänderung (löscht alten Bereich, zeichnet neu).
+-   **On Change Attribute:** Reaktion auf generelle Attributänderungen.
 
 **Rolle des Button Objekts im Virtuellen Terminal**
 
@@ -80,16 +82,16 @@ Auswertung des Buttons:
 
 wird der Button gedrückt so werden folgende Nachrichten am ISOBUS abgesetzt:
 
-*   BUTTON\_STATE\_PRESSED
-    *   in dem Moment wo der Knopf gedrückt wurde
-*   BUTTON\_STATE\_HELD
-    *   falls der Knopf länger gehalten wurde
-    *   TODO Verweis auf ISO
-*   BUTTON\_STATE\_RELEASED
-    *   wenn der Knopf losgelassen wurde
-*   BUTTON\_STATE\_ABORTED
-    *   wenn der Knopf gedrückt, aber dann abgebrochen wurde
-    *   TODO besser beschreiben.
+-   BUTTON\_STATE\_PRESSED
+    -   in dem Moment wo der Knopf gedrückt wurde
+-   BUTTON\_STATE\_HELD
+    -   falls der Knopf länger gehalten wurde
+    -   TODO Verweis auf ISO
+-   BUTTON\_STATE\_RELEASED
+    -   wenn der Knopf losgelassen wurde
+-   BUTTON\_STATE\_ABORTED
+    -   wenn der Knopf gedrückt, aber dann abgebrochen wurde
+    -   TODO besser beschreiben.
 
 daraus ergibt sich:
 
@@ -106,7 +108,7 @@ es gibt 2 Wege der Auswertung:
 
 Call Hierarchy:
 
-![](https://user-images.githubusercontent.com/69573151/94337621-210baf00-ffec-11ea-9ec0-fe4a7e7c418b.png)
+![ISOBUS Button (ID 6) Struktur 2 (Ereignisse (Events - Tabelle B.13))](https://user-images.githubusercontent.com/69573151/94337621-210baf00-ffec-11ea-9ec0-fe4a7e7c418b.png)
 
 ```c
 iso_u32 Tageszaehler = 0;
@@ -144,6 +146,6 @@ void VTC_handleSoftkeysAndButtons_RELEASED(const struct ButtonActivation_S *pBut
 }
 ```
 
-![](https://user-images.githubusercontent.com/69573151/94602909-cbf2c600-0295-11eb-946a-a68b45b3eccc.png)
+![ISOBUS Button (ID 6) Struktur 3 (Ereignisse (Events - Tabelle B.13))](https://user-images.githubusercontent.com/69573151/94602909-cbf2c600-0295-11eb-946a-a68b45b3eccc.png)
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Button](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/button) von Tobias Tenberg.

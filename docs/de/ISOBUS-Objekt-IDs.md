@@ -4,8 +4,8 @@
 
 Siehe auch:
 
-* [ISOBUS Wiki - Colours](https://isobus-studio.com/isobus-wiki/isobus-colours)
-* [ISOBUS Wiki - Objectpool Objects Database](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects-database)
+- [ISOBUS Wiki - Colours](https://isobus-studio.com/isobus-wiki/isobus-colours)
+- [ISOBUS Wiki - Objectpool Objects Database](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects-database)
 
 Stand Jetter ISO-Designer 5.6.1
 

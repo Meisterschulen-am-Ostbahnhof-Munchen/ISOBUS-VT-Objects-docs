@@ -22,29 +22,32 @@ Die folgende Tabelle beschreibt den Aufbau des Output Rectangle Objekts im Objek
 | - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
 
 ## Darstellung und Eigenschaften
+
 Das Rechteck kombiniert Linien- und Fülleigenschaften:
 
-*   **Umriss:** Wenn AID 1 verlinkt ist, wird ein Rahmen gemäß den Line Attributes gezeichnet.
-*   **Füllung:** Wenn AID 5 verlinkt ist, wird das Innere des Rechtecks gemäß den Fill Attributes gefüllt.
-*   **Linienunterdrückung (AID 4):** Ermöglicht es, gezielt einzelne Kanten des Rechtecks nicht zu zeichnen. Dies ist nützlich für Tabellenstrukturen oder offene Rahmen.
-*   **Clipping:** Das Rechteck definiert durch `Width` und `Height` seine eigenen grafischen Grenzen.
+-   **Umriss:** Wenn AID 1 verlinkt ist, wird ein Rahmen gemäß den Line Attributes gezeichnet.
+-   **Füllung:** Wenn AID 5 verlinkt ist, wird das Innere des Rechtecks gemäß den Fill Attributes gefüllt.
+-   **Linienunterdrückung (AID 4):** Ermöglicht es, gezielt einzelne Kanten des Rechtecks nicht zu zeichnen. Dies ist nützlich für Tabellenstrukturen oder offene Rahmen.
+-   **Clipping:** Das Rechteck definiert durch `Width` und `Height` seine eigenen grafischen Grenzen.
 
 ## Geometrische Berechnung
+
 Die Ecken des Rechtecks ergeben sich aus der Startposition (StartX, StartY) des Objekts:
 
-*   **Ecke Oben-Links:** (StartX, StartY)
-*   **Ecke Unten-Rechts:** (StartX + Width - 1, StartY + Height - 1)
+-   **Ecke Oben-Links:** (StartX, StartY)
+-   **Ecke Unten-Rechts:** (StartX + Width - 1, StartY + Height - 1)
 Die Linienstärke (Line Width) muss bei der Planung berücksichtigt werden, da sie je nach VT-Implementierung nach innen oder außen wachsen kann.
 
 ## Ereignisse (Events - Tabelle B.28)
 
 Das Output Rectangle Objekt reagiert auf folgende Ereignisse:
 
-*   **On Change Size:** Wird ausgelöst, wenn die Größe des Rechtecks zur Laufzeit geändert wird.
-*   **On Change Attribute:** Wird ausgelöst, wenn sich Linien- oder Füllattribute (z. B. Farben) ändern.
-*   **On Refresh:** Wird ausgelöst, wenn das VT das Objekt neu zeichnen muss.
+-   **On Change Size:** Wird ausgelöst, wenn die Größe des Rechtecks zur Laufzeit geändert wird.
+-   **On Change Attribute:** Wird ausgelöst, wenn sich Linien- oder Füllattribute (z. B. Farben) ändern.
+-   **On Refresh:** Wird ausgelöst, wenn das VT das Objekt neu zeichnen muss.
 
 ## Bedeutung für die Implementierung
+
 Rechtecke sind die am häufigsten verwendeten grafischen Primitiven. Sie dienen als Hintergrund für Textfelder, als Umrandung von Gruppen oder zur Erstellung von Balken (z. B. durch dynamische Änderung der `Width` oder `Height` per ECU-Kommando). In Kombination mit transparenten Hintergründen lassen sich so komplexe Layouts realisieren.
 
 Weitere Informationen und Beispiele finden sich im [ISOBUS Wiki - Rectangle](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/rectangle) von Tobias Tenberg.

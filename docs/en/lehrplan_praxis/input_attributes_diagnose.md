@@ -1,4 +1,5 @@
 # 🎛️ Input Attributes, Key Events & Interaction Diagnostics
+>
 > 📌 **Source & Legal Basis:**
 > **Source:** *Framework Curriculum for the Preparation for the Master Craftsman Examination in Agricultural and Construction Machinery Mechatronics*
 > **Publisher:** German Association of Agricultural and Construction Machinery Mechatronics Technicians (LandBauTechnik-Bundesverband e. V.), Alfredstraße 102, 45131 Essen (as of February 25, 2025)
@@ -9,6 +10,7 @@
 ---
 
 ## 1. Interactive Objects & Input Fields
+
 - **Input Number / Input String:** Input of target parameters (e.g., application rate in l/ha, working width in m).
 - **Button Objects:** Buttons and switches for triggering machine actions (e.g., start folding, turn on pump).
 - **Key Events:** Processing of `VT_KEY_EVENT` (Button Pressed, Button Released, Value Changed).
@@ -16,6 +18,7 @@
 ---
 
 ## 2. Error Diagnostics on VT Interfaces
+
 - **Object Pool Upload Errors:** Diagnostics for transmission interruptions (Memory Overflow, Version Incompatibility).
 - **CAN Bus Messages:** Analysis of VT-to-ECU and ECU-to-VT messages using CAN trace tools.
 

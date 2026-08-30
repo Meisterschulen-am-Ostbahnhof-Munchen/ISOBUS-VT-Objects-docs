@@ -7,7 +7,7 @@
 - The Individual ISO Objects
 - Font, Line, Fill, and Input Attributes
 
-<img src="https://user-images.githubusercontent.com/69573151/94602676-7b7b6880-0295-11eb-98b3-4fbb4662964d.png" />
+<img src="https://user-images.githubusercontent.com/69573151/94602676-7b7b6880-0295-11eb-98b3-4fbb4662964d.png" alt="ISOBUS object attributes properties - Recommended Reading" />
 
 ## 🎧 Podcast
 

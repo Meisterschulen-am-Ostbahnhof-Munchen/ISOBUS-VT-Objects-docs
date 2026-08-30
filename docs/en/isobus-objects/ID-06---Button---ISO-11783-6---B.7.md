@@ -1,6 +1,6 @@
 # ID 6 – Button – ISO 11783-6 – B.7
 
-![](https://user-images.githubusercontent.com/69573151/94337426-7d6dcf00-ffea-11ea-8ab0-ca710054a888.png)
+![ISOBUS Button (ID 6) structure 1 (ID 6 – Button – ISO 11783-6 – B.7)](https://user-images.githubusercontent.com/69573151/94337426-7d6dcf00-ffea-11ea-8ab0-ca710054a888.png)
 **Annex B.7 – Button**
 Annex B.7 of ISO 11783-6:2018 is dedicated to the detailed definition of the "button" object in the context of the Virtual Terminal (VT). Buttons are basic interactive user interface elements that allow the operator to trigger actions or send commands to the agricultural machine or implement.
 **Overview of the Button Object**
@@ -109,7 +109,7 @@ There are two evaluation methods:
 
 Call Hierarchy:
 
-![](https://user-images.githubusercontent.com/69573151/94337621-210baf00-ffec-11ea-9ec0-fe4a7e7c418b.png)
+![ISOBUS Button (ID 6) structure 2 (Events (Events - Table B.13))](https://user-images.githubusercontent.com/69573151/94337621-210baf00-ffec-11ea-9ec0-fe4a7e7c418b.png)
 
 ```c
 iso_u32 Tageszaehler = 0;
@@ -147,6 +147,6 @@ setU32("CF-A", "Gesamtzaehler", Gesamtzaehler);
 }
 ```
 
-![](https://user-images.githubusercontent.com/69573151/94602909-cbf2c600-0295-11eb-946a-a68b45b3eccc.png)
+![ISOBUS Button (ID 6) structure 3 (Events (Events - Table B.13))](https://user-images.githubusercontent.com/69573151/94602909-cbf2c600-0295-11eb-946a-a68b45b3eccc.png)
 
 Further information and examples can be found in the [ISOBUS Wiki - Button](https://isobus-studio.com/isobus-wiki/isobus-objectpool-objects/button)] by Tobias Tenberg.

@@ -50,8 +50,8 @@ Container sind essenziell für dynamische Benutzeroberflächen:
 
 ### Beispiele aus dem ISO-Designer
 
-![](https://user-images.githubusercontent.com/69573151/94602403-17f13b00-0295-11eb-8216-34070ca1bca8.png)
-![](https://user-images.githubusercontent.com/69573151/94606853-5f7ac580-029b-11eb-9293-18570b481dbf.png)
+![ISOBUS Container (ID 3) ISO-Designer Ansicht 1 (Beispiele aus dem ISO-Designer)](https://user-images.githubusercontent.com/69573151/94602403-17f13b00-0295-11eb-8216-34070ca1bca8.png)
+![ISOBUS Container (ID 3) ISO-Designer Ansicht 2 (Beispiele aus dem ISO-Designer)](https://user-images.githubusercontent.com/69573151/94606853-5f7ac580-029b-11eb-9293-18570b481dbf.png)
 
 ## Bedeutung für die Implementierung
 

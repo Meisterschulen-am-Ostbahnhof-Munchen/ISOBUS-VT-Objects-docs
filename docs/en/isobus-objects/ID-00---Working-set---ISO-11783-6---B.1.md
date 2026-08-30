@@ -1,6 +1,6 @@
 # ID 0 – Working set – ISO 11783-6 – B.1
 
-![](https://user-images.githubusercontent.com/69573151/94337326-edc82080-ffe9-11ea-93d7-61752b51d9cf.png)
+![ISOBUS Working Set (ID 0) structure - ID 0 – Working set – ISO 11783-6 – B.1](https://user-images.githubusercontent.com/69573151/94337326-edc82080-ffe9-11ea-93d7-61752b51d9cf.png)
 ----
 
 The **Working Set** object with **ID 0** is the central management element of a workgroup (Working Set) in ISOBUS. It defines how the workgroup presents itself to the Virtual Terminal (VT) and which interface is initially displayed.

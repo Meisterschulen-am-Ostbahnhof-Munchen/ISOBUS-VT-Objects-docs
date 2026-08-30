@@ -14,13 +14,13 @@ ISOBUS Wiki by Tobias Tenberg:
 
 As you can see, there are various objects, but not all are supported in every ISOBUS version.
 
-![](https://user-images.githubusercontent.com/69573151/94335435-08939880-ffdc-11ea-92e7-662f2ff7779f.png)
+![ISOBUS object pool and VT level overview 1 (Programming)](https://user-images.githubusercontent.com/69573151/94335435-08939880-ffdc-11ea-92e7-662f2ff7779f.png)
 
 If you were to create a new project with ISO Designer, it would ask you for the "VT Level."
 
 If you search for devices in the AEF database, you will see something like this:
 
-![](https://user-images.githubusercontent.com/69573151/94335523-5f996d80-ffdc-11ea-9032-8de45bd5b318.png)
+![ISOBUS object pool and VT level overview 2 (Programming)](https://user-images.githubusercontent.com/69573151/94335523-5f996d80-ffdc-11ea-9032-8de45bd5b318.png)
 
 So what is the difference between UT and VT?
 

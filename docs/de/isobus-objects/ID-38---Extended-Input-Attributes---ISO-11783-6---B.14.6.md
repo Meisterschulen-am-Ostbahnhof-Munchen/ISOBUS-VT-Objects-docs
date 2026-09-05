@@ -16,8 +16,8 @@ Die folgende Tabelle beschreibt den Aufbau des Extended Input Attributes Objekts
 | - | **Number of code planes to follow** | Integer | 1 | 1 – 17 | 5 | Anzahl der definierten Unicode-Ebenen. |
 | - | **Repeat:** {Code plane number} | Integer | 1 | 0 – 16 | 6 ... | Nummer der Unicode-Ebene (0 = BMP). |
 | - | {Number of character ranges to follow} | Integer | 1 | 1 – 255 | 7 ... | Anzahl der Bereiche in dieser Ebene. |
-| - | **Repeat:** {{First character}} | Integer | 2 | 0 – 65535 | 8 ... | Startzeichen des Bereichs (WideChar). |
-| - | {{Last character}} | Integer | 2 | 0 – 65535 | 10 ... | Endzeichen des Bereichs (WideChar). |
+| - | **Repeat:** {First character} | Integer | 2 | 0 – 65535 | 8 ... | Startzeichen des Bereichs (WideChar). |
+| - | {Last character} | Integer | 2 | 0 – 65535 | 10 ... | Endzeichen des Bereichs (WideChar). |
 
 ## Funktionsweise
 

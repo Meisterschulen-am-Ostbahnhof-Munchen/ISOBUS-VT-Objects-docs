@@ -14,8 +14,8 @@ The following table describes the structure of the Extended Input Attributes obj
 | - | **Number of code planes to follow** | Integer | 1 | 1 – 17 | 5 | Number of defined Unicode planes. |
 | - | **Repeat:** {Code plane number} | Integer | 1 | 0 – 16 | 6 ... | Unicode plane number (0 = BMP). |
 | - | {Number of character ranges to follow} | Integer | 1 | 1 – 255 | 7 ... | Number of ranges in this plane. |
-| - | **Repeat:** {{First character}} | Integer | 2 | 0 – 65535 | 8 ... | Start character of the range (WideChar). |
-| - | {{Last character}} | Integer | 2 | 0 – 65535 | 10 ... | End character of the range (WideChar). |
+| - | **Repeat:** {First character} | Integer | 2 | 0 – 65535 | 8 ... | Start character of the range (WideChar). |
+| - | {Last character} | Integer | 2 | 0 – 65535 | 10 ... | End character of the range (WideChar). |
 
 ## Functionality
 

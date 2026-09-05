@@ -66,6 +66,8 @@ Modern implements no longer have their own display; instead, they use the Univer
 | **Wiki 2** | **ISOBUS Virtual Terminal (VT)**<br>User interfaces, ISO Designer, VT object pools & HMI. | [🖥️ Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs/en/latest/) |
 | **Wiki 3** | **ISOBUS Technology & Machine Systems** <br> Hydraulics, Pneumatics, Motors, High-Voltage Technology, Gearboxes & Machine Safety. | [📡 Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-other-docs/en/latest/) |
 | **Wiki 4** | **Visual Programming Languages** <br> Low-Code Development, IEC 61499 & 4diac IDE (Main Curriculum Topic). | [🧩 Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/en/latest/) |
+| **Wiki 4.1** | **4diac Library Reference** <br> Function block & adapter reference for the 4diac libraries. | [🧩 Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs-de/en/latest/) |
+| **Wiki 4.2** | **4diac Exercises: Training Solutions** <br> Exercises and sample solutions for training with 4diac. | [🧩 Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/en/latest/) |
 | **Wiki 5** | **Electronic Tools & Measuring Instruments** <br> Handbook for Crimping Technology, Soldering Stations, Oscilloscopes & Microscopes. | [🛠️ Open](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/werkzeug-docs/en/latest/) |
 
 ---

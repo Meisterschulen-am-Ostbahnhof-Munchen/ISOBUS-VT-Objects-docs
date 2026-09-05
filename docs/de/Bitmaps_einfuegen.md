@@ -92,7 +92,7 @@ will man jedoch viele Dateien wandeln, so ist der Aufwand nicht unerheblich.
 ### PNG in BMP umwandlen
 
 das Bitmap geeigent benennen, die Dateinamen von ISO sind oft wenig aussagekräftig. 
-(keine Leerzeichen, keine Umlaute) siehe: <https://docs.ms-muc-docs.de/projects/visual-programming-languages-docs/de/latest/Allgemeines.html#namen>
+(keine Leerzeichen, keine Umlaute) siehe: <https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs-de/de/latest/Allgemeines.html#namen>
 
 ### BMP Skalieren
 

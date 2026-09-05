@@ -96,7 +96,7 @@ However, if you want to convert many files, the effort becomes considerable.
 
 Name the bitmap appropriately; ISO filenames are often not very descriptive.
 
-(no spaces, no umlauts) See: <https://docs.ms-muc-docs.de/projects/visual-programming-languages-docs/de/latest/Allgemeines.html#namen>
+(no spaces, no umlauts) See: <https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs-de/de/latest/Allgemeines.html#namen>
 
 ### Scaling BMP
 

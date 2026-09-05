@@ -9,6 +9,8 @@ Here, the object numbers correspond to the IDs in the standard.
 
 (The object numbers can take any value; except for macros.)
 
+(The FmtStr naming scheme `[File Name]_%ld` for PictureGraphic is likewise fixed by ISO-Designer - switching it to e.g. `PictureGraphic_%ld` is not accepted by the tool, verified against `MyProject.jot`)
+
 The definition in this table can therefore be considered good practice.
 
 | TypeName | StartID | FmtStr | ID | Link | Wiki |

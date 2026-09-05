@@ -13,6 +13,8 @@ hier stimmen die Objektnummern mit den IDs in der Norm überein.
 
 (die Objektnummern können jeden Wert annehmen; mit Ausnahme der Makros)
 
+(das FmtStr-Namensschema `[File Name]_%ld` bei PictureGraphic ist von ISO-Designer ebenfalls fest vorgegeben – eine Umstellung auf z. B. `PictureGraphic_%ld` wird vom Tool nicht übernommen, verifiziert gegen `MyProject.jot`)
+
 die Festlegung in dieser Tabelle kann man also als Good Practice bezeichnen.
 
 | TypeName                  | StartID | FmtStr                         | ID  | Link                                                                                                             | Wiki |

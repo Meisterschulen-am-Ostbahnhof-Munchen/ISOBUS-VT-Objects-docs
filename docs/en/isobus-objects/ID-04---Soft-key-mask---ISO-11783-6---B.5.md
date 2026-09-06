@@ -2,20 +2,20 @@
 
 The **Soft Key Mask** (softkey mask) with **ID 4** is a special container that defines the assignment of physical or virtual softkeys at the edge of the terminal. It is typically permanently assigned to a data mask or alarm mask.
 
-### Attributes and Record Format (Table B.10)
+## Attributes and Record Format (Table B.10)
 
 The following table describes the structure of the Soft Key Mask object in the object pool.
 
-| AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-| [0] | **Type** | Integer | 1 | 4 | 3 | Object type = Soft Key Mask. |
-| [1] | **Background color** | Integer | 1 | 0 – 255 | 4 | Background color. The key object has its own background attribute, which this can override. |
-| - | **Number of objects to follow** | Integer | 1 | 0 – 255 | 5 | Number of contained objects (keys or pointers). |
-| - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 6 | Number of following macro references. |
-| - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534 | 7 + ... | Object ID of a contained key object or pointer. |
-| - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | (By Object) Event ID that triggers the macro. |
-| - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Macro ID of the macro to be executed. |
+| AID | Name                            | Type    | Size (Bytes) | Range / Value | Record Byte | Description                                                                                 |
+| :-- | :------------------------------ | :------ | :----------- | :------------ | :---------- | :------------------------------------------------------------------------------------------ |
+| -   | **Object ID**                   | Integer | 2            | 0 – 65534     | 1 – 2       | Unique ID in the object pool.                                                               |
+| [0] | **Type**                        | Integer | 1            | 4             | 3           | Object type = Soft Key Mask.                                                                |
+| [1] | **Background color**            | Integer | 1            | 0 – 255       | 4           | Background color. The key object has its own background attribute, which this can override. |
+| -   | **Number of objects to follow** | Integer | 1            | 0 – 255       | 5           | Number of contained objects (keys or pointers).                                             |
+| -   | **Number of macros to follow**  | Integer | 1            | 0 – 255       | 6           | Number of following macro references.                                                       |
+| -   | **Repeat:** {Object ID}         | Integer | 2            | 0 – 65534     | 7 + ...     | Object ID of a contained key object or pointer.                                             |
+| -   | **Repeat:** {Event ID}          | Integer | 1            | 0 – 255       | var.        | (By Object) Event ID that triggers the macro.                                               |
+| -   | {Macro ID}                      | Integer | 1            | 0 – 255       | var.        | Macro ID of the macro to be executed.                                                       |
 
 ### Functionality and Assignment
 

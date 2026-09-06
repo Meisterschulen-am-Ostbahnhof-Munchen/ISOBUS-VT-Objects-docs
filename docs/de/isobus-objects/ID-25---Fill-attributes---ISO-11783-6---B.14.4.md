@@ -4,20 +4,20 @@
 
 Das **Fill Attributes** Objekt mit der **ID 25** definiert, wie geschlossene geometrische Formen (Rechtecke, Ellipsen, Polygone) gefüllt werden.
 
-### Attribute und Record Format (Tabelle B.50)
+## Attribute und Record Format (Tabelle B.50)
 
 Die folgende Tabelle beschreibt den Aufbau des Fill Attributes Objekts im Objektpool.
 
-| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
-| [0] | **Type** | Integer | 1 | 25 | 3 | Objekttyp = Fill Attributes. |
-| [1] | **Fill type** | Integer | 1 | 0 – 3 | 4 | 0=Keine Füllung, 1=Linienfarbe, 2=Füllfarbe, 3=Muster. |
-| [2] | **Fill colour** | Integer | 1 | 0 – 255 | 5 | Füllfarbe (nur bei Typ 2 relevant). |
-| [3] | **Fill pattern** | Integer | 2 | 0 – 65534, 65535 | 6 – 7 | Objekt-ID eines Picture Graphic Objekts für Musterfüllung (nur bei Typ 3). |
-| - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 8 | Anzahl der folgenden Makro-Referenzen. |
-| - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | Event ID, die das Makro auslöst. |
-| - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
+| AID | Name                           | Typ     | Größe (Bytes) | Bereich / Wert   | Record Byte | Beschreibung                                                               |
+| :-- | :----------------------------- | :------ | :------------ | :--------------- | :---------- | :------------------------------------------------------------------------- |
+| -   | **Object ID**                  | Integer | 2             | 0 – 65534        | 1 – 2       | Eindeutige ID im Objektpool.                                               |
+| [0] | **Type**                       | Integer | 1             | 25               | 3           | Objekttyp = Fill Attributes.                                               |
+| [1] | **Fill type**                  | Integer | 1             | 0 – 3            | 4           | 0=Keine Füllung, 1=Linienfarbe, 2=Füllfarbe, 3=Muster.                     |
+| [2] | **Fill colour**                | Integer | 1             | 0 – 255          | 5           | Füllfarbe (nur bei Typ 2 relevant).                                        |
+| [3] | **Fill pattern**               | Integer | 2             | 0 – 65534, 65535 | 6 – 7       | Objekt-ID eines Picture Graphic Objekts für Musterfüllung (nur bei Typ 3). |
+| -   | **Number of macros to follow** | Integer | 1             | 0 – 255          | 8           | Anzahl der folgenden Makro-Referenzen.                                     |
+| -   | **Repeat:** {Event ID}         | Integer | 1             | 0 – 255          | var.        | Event ID, die das Makro auslöst.                                           |
+| -   | {Macro ID}                     | Integer | 1             | 0 – 255          | var.        | Makro ID des auszuführenden Makros.                                        |
 
 ## Fülltypen und Logik
 

@@ -16,19 +16,19 @@ Das **Key Objekt** (ID 5) definiert das Aussehen und den funktionalen Code eines
 
 Die folgende Tabelle beschreibt den Aufbau des Key Objekts im Objektpool.
 
-| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
-| [0] | **Type** | Integer | 1 | 5 | 3 | Objekttyp = Key. |
-| [1] | **Background colour** | Integer | 1 | 0 – 255 | 4 | Hintergrundfarbe der Taste. |
-| [2] | **Key code** | Integer | 1 | 1 – 255 | 5 | Code, der in der `Soft Key Activation` Nachricht gesendet wird. (0 ist für ACK reserviert). |
-| - | **Number of objects to follow** | Integer | 1 | 0 – 255 | 6 | Anzahl der direkt enthaltenen Objekte (Symbole, Texte). |
-| - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 7 | Anzahl der folgenden Makro-Referenzen. |
-| - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534 | 8 + ... | Objekt-ID eines enthaltenen Objekts. |
-| - | {X Location} | Signed Integer | 2 | -32768 bis +32767 | 10 + ... | X-Position relativ zur Taste (Pixel). |
-| - | {Y Location} | Signed Integer | 2 | -32768 bis +32767 | 12 + ... | Y-Position relativ zur Taste (Pixel). |
-| - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | (Nach Objekten) Event ID, die das Makro auslöst. |
-| - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
+| AID | Name                            | Typ            | Größe (Bytes) | Bereich / Wert    | Record Byte | Beschreibung                                                                                |
+| :-- | :------------------------------ | :------------- | :------------ | :---------------- | :---------- | :------------------------------------------------------------------------------------------ |
+| -   | **Object ID**                   | Integer        | 2             | 0 – 65534         | 1 – 2       | Eindeutige ID im Objektpool.                                                                |
+| [0] | **Type**                        | Integer        | 1             | 5                 | 3           | Objekttyp = Key.                                                                            |
+| [1] | **Background colour**           | Integer        | 1             | 0 – 255           | 4           | Hintergrundfarbe der Taste.                                                                 |
+| [2] | **Key code**                    | Integer        | 1             | 1 – 255           | 5           | Code, der in der `Soft Key Activation` Nachricht gesendet wird. (0 ist für ACK reserviert). |
+| -   | **Number of objects to follow** | Integer        | 1             | 0 – 255           | 6           | Anzahl der direkt enthaltenen Objekte (Symbole, Texte).                                     |
+| -   | **Number of macros to follow**  | Integer        | 1             | 0 – 255           | 7           | Anzahl der folgenden Makro-Referenzen.                                                      |
+| -   | **Repeat:** {Object ID}         | Integer        | 2             | 0 – 65534         | 8 + ...     | Objekt-ID eines enthaltenen Objekts.                                                        |
+| -   | {X Location}                    | Signed Integer | 2             | -32768 bis +32767 | 10 + ...    | X-Position relativ zur Taste (Pixel).                                                       |
+| -   | {Y Location}                    | Signed Integer | 2             | -32768 bis +32767 | 12 + ...    | Y-Position relativ zur Taste (Pixel).                                                       |
+| -   | **Repeat:** {Event ID}          | Integer        | 1             | 0 – 255           | var.        | (Nach Objekten) Event ID, die das Makro auslöst.                                            |
+| -   | {Macro ID}                      | Integer        | 1             | 0 – 255           | var.        | Makro ID des auszuführenden Makros.                                                         |
 
 ### Designator und Child-Objekte
 

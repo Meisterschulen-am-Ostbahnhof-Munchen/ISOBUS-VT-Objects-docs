@@ -4,20 +4,20 @@
 
 Das **Auxiliary Function Type 2** Objekt mit der **ID 31** ist die moderne Definition für Hilfsfunktionen im ISOBUS (ab VT Version 3). Es bietet erweiterte Möglichkeiten zur Zuweisung von Bedienelementen.
 
-### Attribute und Record Format (Tabelle J.2)
+## Attribute und Record Format (Tabelle J.2)
 
 Die folgende Tabelle beschreibt den Aufbau des Auxiliary Function Type 2 Objekts im Objektpool.
 
-| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
-| [0] | **Type** | Integer | 1 | 31 | 3 | Objekttyp = Auxiliary Function Type 2. |
-| [1] | **Background colour** | Integer | 1 | 0 – 255 | 4 | Hintergrundfarbe. |
-| [2] | **Function attributes** | Bitmask | 1 | - | 5 | Bitmaske für Funktionstyp und Steuerung (siehe unten). |
-| - | **Number of objects to follow** | Integer | 1 | 1 – 255 | 6 | Anzahl der direkt enthaltenen Objekte (Designator). |
-| - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534 | 7 + ... | Objekt-ID eines enthaltenen Objekts. |
-| - | {X Location} | Signed Integer | 2 | -32768 bis +32767 | 9 + ... | X-Position relativ zur oberen linken Ecke. |
-| - | {Y Location} | Signed Integer | 2 | -32768 bis +32767 | 11 + ... | Y-Position relativ zur oberen linken Ecke. |
+| AID | Name                            | Typ            | Größe (Bytes) | Bereich / Wert    | Record Byte | Beschreibung                                           |
+| :-- | :------------------------------ | :------------- | :------------ | :---------------- | :---------- | :----------------------------------------------------- |
+| -   | **Object ID**                   | Integer        | 2             | 0 – 65534         | 1 – 2       | Eindeutige ID im Objektpool.                           |
+| [0] | **Type**                        | Integer        | 1             | 31                | 3           | Objekttyp = Auxiliary Function Type 2.                 |
+| [1] | **Background colour**           | Integer        | 1             | 0 – 255           | 4           | Hintergrundfarbe.                                      |
+| [2] | **Function attributes**         | Bitmask        | 1             | -                 | 5           | Bitmaske für Funktionstyp und Steuerung (siehe unten). |
+| -   | **Number of objects to follow** | Integer        | 1             | 1 – 255           | 6           | Anzahl der direkt enthaltenen Objekte (Designator).    |
+| -   | **Repeat:** {Object ID}         | Integer        | 2             | 0 – 65534         | 7 + ...     | Objekt-ID eines enthaltenen Objekts.                   |
+| -   | {X Location}                    | Signed Integer | 2             | -32768 bis +32767 | 9 + ...     | X-Position relativ zur oberen linken Ecke.             |
+| -   | {Y Location}                    | Signed Integer | 2             | -32768 bis +32767 | 11 + ...    | Y-Position relativ zur oberen linken Ecke.             |
 
 ### Function Attributes (Bitmaske AID 2)
 

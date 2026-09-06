@@ -4,20 +4,20 @@
 
 Das **Colour Palette** Objekt mit der **ID 45** (ab VT Version 6) erlaubt es einer Working Set, die Standard-Farbpalette des Terminals vollständig durch eigene ARGB-Farbdefinitionen zu ersetzen.
 
-### Attribute und Record Format (Tabelle B.73)
+## Attribute und Record Format (Tabelle B.73)
 
 Die folgende Tabelle beschreibt den Aufbau des Colour Palette Objekts im Objektpool.
 
-| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
-| [0] | **Type** | Integer | 1 | 45 | 3 | Objekttyp = Colour Palette. |
-| [1] | **Options** | Bitmask | 1 | 0 | 4 | Reserviert (sollte 0 sein). |
-| - | **Number of ARGB values to follow** | Integer | 2 | 0 – 256 | 5 – 6 | Anzahl der folgenden Farbdefinitionen. |
-| - | **Repeat:** {B} | Integer | 1 | 0 – 255 | 7 + ... | Blau-Wert. |
-| - | {G} | Integer | 1 | 0 – 255 | 8 + ... | Grün-Wert. |
-| - | {R} | Integer | 1 | 0 – 255 | 9 + ... | Rot-Wert. |
-| - | {A} | Integer | 1 | 0 – 255 | 10 + ... | Alpha-Wert (0=Transparent, 255=Opak). |
+| AID | Name                                | Typ     | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung                           |
+| :-- | :---------------------------------- | :------ | :------------ | :------------- | :---------- | :------------------------------------- |
+| -   | **Object ID**                       | Integer | 2             | 0 – 65534      | 1 – 2       | Eindeutige ID im Objektpool.           |
+| [0] | **Type**                            | Integer | 1             | 45             | 3           | Objekttyp = Colour Palette.            |
+| [1] | **Options**                         | Bitmask | 1             | 0              | 4           | Reserviert (sollte 0 sein).            |
+| -   | **Number of ARGB values to follow** | Integer | 2             | 0 – 256        | 5 – 6       | Anzahl der folgenden Farbdefinitionen. |
+| -   | **Repeat:** {B}                     | Integer | 1             | 0 – 255        | 7 + ...     | Blau-Wert.                             |
+| -   | {G}                                 | Integer | 1             | 0 – 255        | 8 + ...     | Grün-Wert.                             |
+| -   | {R}                                 | Integer | 1             | 0 – 255        | 9 + ...     | Rot-Wert.                              |
+| -   | {A}                                 | Integer | 1             | 0 – 255        | 10 + ...    | Alpha-Wert (0=Transparent, 255=Opak).  |
 
 ## Funktionsweise
 

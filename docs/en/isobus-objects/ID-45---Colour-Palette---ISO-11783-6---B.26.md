@@ -2,20 +2,20 @@
 
 The **Colour Palette** object with **ID 45** (from VT version 6 onwards) allows a working set to completely replace the terminal's default color palette with its own ARGB color definitions.
 
-### Attributes and Record Format (Table B.73)
+## Attributes and Record Format (Table B.73)
 
 The following table describes the structure of the Colour Palette object in the object pool.
 
-| AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-| [0] | **Type** | Integer | 1 | 45 | 3 | Object type = Color Palette. |
-| [1] | **Options** | Bitmask | 1 | 0 | 4 | Reserved (should be 0). |
-| - | **Number of ARGB values to follow** | Integer | 2 | 0 – 256 | 5 – 6 | Number of following color definitions. |
-| - | **Repeat:** {B} | Integer | 1 | 0 – 255 | 7 + ... | Blue value. |
-| - | {G} | Integer | 1 | 0 – 255 | 8 + ... | Green value. |
-| - | {R} | Integer | 1 | 0 – 255 | 9 + ... | Red value. |
-| - | {A} | Integer | 1 | 0 – 255 | 10 + ... | Alpha value (0 = Transparent, 255 = Opaque). |
+| AID | Name                                | Type    | Size (Bytes) | Range / Value | Record Byte | Description                                  |
+| :-- | :---------------------------------- | :------ | :----------- | :------------ | :---------- | :------------------------------------------- |
+| -   | **Object ID**                       | Integer | 2            | 0 – 65534     | 1 – 2       | Unique ID in the object pool.                |
+| [0] | **Type**                            | Integer | 1            | 45            | 3           | Object type = Color Palette.                 |
+| [1] | **Options**                         | Bitmask | 1            | 0             | 4           | Reserved (should be 0).                      |
+| -   | **Number of ARGB values to follow** | Integer | 2            | 0 – 256       | 5 – 6       | Number of following color definitions.       |
+| -   | **Repeat:** {B}                     | Integer | 1            | 0 – 255       | 7 + ...     | Blue value.                                  |
+| -   | {G}                                 | Integer | 1            | 0 – 255       | 8 + ...     | Green value.                                 |
+| -   | {R}                                 | Integer | 1            | 0 – 255       | 9 + ...     | Red value.                                   |
+| -   | {A}                                 | Integer | 1            | 0 – 255       | 10 + ...    | Alpha value (0 = Transparent, 255 = Opaque). |
 
 ## Functionality
 

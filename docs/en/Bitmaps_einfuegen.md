@@ -41,10 +41,10 @@ by `https://www.iso.org/obp/graphics/grs/343178e8-8b69-4dd7-83c6-cee7c66b28a4_20
 
 To the folder: [img_original](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/tree/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_original)
 
-| Before | | After |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Before                                                                                                                                                                                                            |     | After                                                                                                                                                                                                            |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_original/Tractor_wheel_slip_200.png) | --> | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_cropped/Tractor_wheel_slip_200.png) |
-| 200x200 | | 196x196 |
+| 200x200                                                                                                                                                                                                           |     | 196x196                                                                                                                                                                                                          |
 
 This removes the 2px crop marks from <https://www.iso.org/obp/>. These are generally undesirable for aesthetic reasons.
 
@@ -55,10 +55,10 @@ The cropped images are then located under "img_cropped"
 
 to the folder: [img_cropped](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/tree/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_cropped)
 
-| before | | after |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| before                                                                                                                                                                                                           |     | after                                                                                                                                                                                                                 |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_cropped/Tractor_wheel_slip_200.png) | --> | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_resized_DM_2/Tractor_wheel_slip_200.png) |
-| 196x196 | | 64x64 |
+| 196x196                                                                                                                                                                                                          |     | 64x64                                                                                                                                                                                                                 |
 
 The cropped images are then located under "img_resized"
 
@@ -66,10 +66,10 @@ The cropped images are then located under "img_resized"
 
 to the folder: [img_resized](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/tree/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_resized_DM_2)
 
-| before | | after |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| before                                                                                                                                                                                                                |     | after                                                                                                                                                                                                                  |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_resized_DM_2/Tractor_wheel_slip_200.png) | --> | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_monochrome_DM/Tractor_wheel_slip_200.png) |
-| 64x64 | | 64x64 
+| 64x64                                                                                                                                                                                                                 |     | 64x64                                                                                                                                                                                                                  |
 
 The images are then located under "img_monochrome"
 
@@ -77,10 +77,10 @@ The images are then located under "img_monochrome"
 
 to the folder: [img_monochrome](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/tree/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_monochrome_DM)
 
-| before | | after |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| before                                                                                                                                                                                                                 |     | after                                                                                                                                                                                                       |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_monochrome_DM/Tractor_wheel_slip_200.png) | --> | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_DM/Tractor_wheel_slip_200.bmp) |
-| 64x64 | | 64x64 
+| 64x64                                                                                                                                                                                                                  |     | 64x64                                                                                                                                                                                                       |
 
 The images are then located under "img"
 
@@ -104,11 +104,11 @@ Name the bitmap appropriately; ISO filenames are often not very descriptive.
 
 Size matters:
 
-| where | size | | | |
-| ---------- | ------------- | --- | --- | --- |
-| Softkey | 72x72 pixels | | | |
-| Datamask | free | | | |
-| CCI A3 | 64x64 pixels | | | |
+| where    | size         |     |     |     |
+| -------- | ------------ | --- | --- | --- |
+| Softkey  | 72x72 pixels |     |     |     |
+| Datamask | free         |     |     |     |
+| CCI A3   | 64x64 pixels |     |     |     |
 
 Thoughts:
 
@@ -137,12 +137,12 @@ Windows Paint offers the following color depths:
 ...
 ![image](https://github.com/user-attachments/assets/e8f49c00-4a94-4d6f-b1e2-3ce32dc89c61)
 
-| Format | Colors | Bit | Note |
-------------------- | ------------------------------ | ----- | -------------------------------- |
-| Monochrome Bitmap | 2<sup>1</sup> = 2 | 1 | |
-| 16-Color Bitmap | 2<sup>4</sup> = 16 | 4 | |
-| 256-Color Bitmap | 2<sup>8</sup> = 256 | 8 | |
-| 24-Bit Bitmap | 2<sup>24</sup> = 16,777,216 | 24 | not present in ISO 11783-6 |
+| Format            | Colors                      | Bit | Note                       |
+| ----------------- | --------------------------- | --- | -------------------------- |
+| Monochrome Bitmap | 2<sup>1</sup> = 2           | 1   |                            |
+| 16-Color Bitmap   | 2<sup>4</sup> = 16          | 4   |                            |
+| 256-Color Bitmap  | 2<sup>8</sup> = 256         | 8   |                            |
+| 24-Bit Bitmap     | 2<sup>24</sup> = 16,777,216 | 24  | not present in ISO 11783-6 |
 
 ## Insert BMP into ISO Designer
 

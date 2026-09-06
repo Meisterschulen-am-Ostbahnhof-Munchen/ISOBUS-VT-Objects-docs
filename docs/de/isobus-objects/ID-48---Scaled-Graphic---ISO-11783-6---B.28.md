@@ -4,22 +4,22 @@
 
 Das **Scaled Graphic** Objekt mit der **ID 48** (ab VT Version 6) dient zur Anzeige und Skalierung von Grafikobjekten.
 
-### Attribute und Record Format (Tabelle B.76)
+## Attribute und Record Format (Tabelle B.76)
 
 Die folgende Tabelle beschreibt den Aufbau des Scaled Graphic Objekts im Objektpool.
 
-| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
-| [0] | **Type** | Integer | 1 | 48 | 3 | Objekttyp = Scaled Graphic. |
-| [1] | **Width** | Integer | 2 | 0 – 65535 | 4 – 5 | Zielbreite in Pixeln. |
-| [2] | **Height** | Integer | 2 | 0 – 65535 | 6 – 7 | Zielhöhe in Pixeln. |
-| [3] | **ScaleType** | Integer | 1 | 0 – 127 | 8 | Skalierungsmodus und Justierung (siehe unten). |
-| [4] | **Options** | Bitmask | 1 | 0 – 1 | 9 | Bit 0: Flashing (0=Normal, 1=Blinkend). |
-| [5] | **Value** | Integer | 2 | 0 – 65535 | 10 – 11 | Objekt-ID des anzuzeigenden Grafikobjekts (Graphic Data ID 46 oder Picture Graphic ID 20) oder Pointer. |
-| - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 12 | Anzahl der folgenden Makro-Referenzen. |
-| - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | Event ID, die das Makro auslöst. |
-| - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
+| AID | Name                           | Typ     | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung                                                                                            |
+| :-- | :----------------------------- | :------ | :------------ | :------------- | :---------- | :------------------------------------------------------------------------------------------------------ |
+| -   | **Object ID**                  | Integer | 2             | 0 – 65534      | 1 – 2       | Eindeutige ID im Objektpool.                                                                            |
+| [0] | **Type**                       | Integer | 1             | 48             | 3           | Objekttyp = Scaled Graphic.                                                                             |
+| [1] | **Width**                      | Integer | 2             | 0 – 65535      | 4 – 5       | Zielbreite in Pixeln.                                                                                   |
+| [2] | **Height**                     | Integer | 2             | 0 – 65535      | 6 – 7       | Zielhöhe in Pixeln.                                                                                     |
+| [3] | **ScaleType**                  | Integer | 1             | 0 – 127        | 8           | Skalierungsmodus und Justierung (siehe unten).                                                          |
+| [4] | **Options**                    | Bitmask | 1             | 0 – 1          | 9           | Bit 0: Flashing (0=Normal, 1=Blinkend).                                                                 |
+| [5] | **Value**                      | Integer | 2             | 0 – 65535      | 10 – 11     | Objekt-ID des anzuzeigenden Grafikobjekts (Graphic Data ID 46 oder Picture Graphic ID 20) oder Pointer. |
+| -   | **Number of macros to follow** | Integer | 1             | 0 – 255        | 12          | Anzahl der folgenden Makro-Referenzen.                                                                  |
+| -   | **Repeat:** {Event ID}         | Integer | 1             | 0 – 255        | var.        | Event ID, die das Makro auslöst.                                                                        |
+| -   | {Macro ID}                     | Integer | 1             | 0 – 255        | var.        | Makro ID des auszuführenden Makros.                                                                     |
 
 ### Skalierungstypen (Bits 0-2 von ScaleType)
 

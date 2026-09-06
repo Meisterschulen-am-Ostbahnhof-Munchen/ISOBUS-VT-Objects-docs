@@ -4,26 +4,26 @@
 
 Das **Output String** Objekt mit der **ID 11** dient zur rein visuellen Anzeige von Textzeichenfolgen auf dem Virtuellen Terminal. Im Gegensatz zum *Input String* erlaubt dieses Objekt keine direkte Bearbeitung durch den Bediener.
 
-### Attribute und Record Format (Tabelle B.22)
+## Attribute und Record Format (Tabelle B.22)
 
 Die folgende Tabelle beschreibt den Aufbau des Output String Objekts im Objektpool.
 
-| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
-| [0] | **Type** | Integer | 1 | 11 | 3 | Objekttyp = Output String. |
-| [1] | **Width** | Integer | 2 | 0 – 65535 | 4 – 5 | Breite des Textfeldes in Pixeln. Clipping erfolgt außerhalb dieses Bereichs. |
-| [2] | **Height** | Integer | 2 | 0 – 65535 | 6 – 7 | Höhe des Textfeldes in Pixeln. Clipping erfolgt außerhalb dieses Bereichs. |
-| [3] | **Background colour** | Integer | 1 | 0 – 255 | 8 | Hintergrundfarbe (nur bei deaktivierter Transparenz). |
-| [4] | **Font attributes** | Integer | 2 | 0 – 65534 | 9 – 10 | Objekt-ID eines Font Attributes Objekts (Farbe, Größe, Font). |
-| [5] | **Options** | Bitmask | 1 | 0 – 7 | 11 | Bit 0: Transparent<br>Bit 1: Auto-Wrap (Automatischer Zeilenumbruch)<br>Bit 2: Wrap on Hyphen (Umbruch bei Bindestrich). |
-| [6] | **Variable reference** | Integer | 2 | 0 – 65534, 65535 | 12 – 13 | Verweis auf ein String Variable Objekt. Wenn NULL, wird der Wert direkt im Attribut "Value" gespeichert. |
-| [7] | **Justification** | Integer | 1 | 0 – 15 | 14 | Textausrichtung: Bits 0-1 (Horiz.): 0=Links, 1=Mitte, 2=Rechts.<br>Bits 2-3 (Vert.): 0=Oben, 1=Mitte, 2=Unten. |
-| - | **Length** | Integer | 2 | 0 – 65535 | 15 – 16 | Länge des festen Textwerts in Bytes. Wenn Variable Ref != NULL, kann dies 0 sein. |
-| - | **Value** | String | Length | - | 17... | Statischer Textinhalt (nur wenn Variable Reference == NULL). |
-| - | **Number of macros to follow** | Integer | 1 | 0 – 255 | var. | Anzahl der folgenden Makro-Referenzen. |
-| - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | Event ID, die das Makro auslöst. |
-| - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
+| AID | Name                           | Typ     | Größe (Bytes) | Bereich / Wert   | Record Byte | Beschreibung                                                                                                             |
+| :-- | :----------------------------- | :------ | :------------ | :--------------- | :---------- | :----------------------------------------------------------------------------------------------------------------------- |
+| -   | **Object ID**                  | Integer | 2             | 0 – 65534        | 1 – 2       | Eindeutige ID im Objektpool.                                                                                             |
+| [0] | **Type**                       | Integer | 1             | 11               | 3           | Objekttyp = Output String.                                                                                               |
+| [1] | **Width**                      | Integer | 2             | 0 – 65535        | 4 – 5       | Breite des Textfeldes in Pixeln. Clipping erfolgt außerhalb dieses Bereichs.                                             |
+| [2] | **Height**                     | Integer | 2             | 0 – 65535        | 6 – 7       | Höhe des Textfeldes in Pixeln. Clipping erfolgt außerhalb dieses Bereichs.                                               |
+| [3] | **Background colour**          | Integer | 1             | 0 – 255          | 8           | Hintergrundfarbe (nur bei deaktivierter Transparenz).                                                                    |
+| [4] | **Font attributes**            | Integer | 2             | 0 – 65534        | 9 – 10      | Objekt-ID eines Font Attributes Objekts (Farbe, Größe, Font).                                                            |
+| [5] | **Options**                    | Bitmask | 1             | 0 – 7            | 11          | Bit 0: Transparent<br>Bit 1: Auto-Wrap (Automatischer Zeilenumbruch)<br>Bit 2: Wrap on Hyphen (Umbruch bei Bindestrich). |
+| [6] | **Variable reference**         | Integer | 2             | 0 – 65534, 65535 | 12 – 13     | Verweis auf ein String Variable Objekt. Wenn NULL, wird der Wert direkt im Attribut "Value" gespeichert.                 |
+| [7] | **Justification**              | Integer | 1             | 0 – 15           | 14          | Textausrichtung: Bits 0-1 (Horiz.): 0=Links, 1=Mitte, 2=Rechts.<br>Bits 2-3 (Vert.): 0=Oben, 1=Mitte, 2=Unten.           |
+| -   | **Length**                     | Integer | 2             | 0 – 65535        | 15 – 16     | Länge des festen Textwerts in Bytes. Wenn Variable Ref != NULL, kann dies 0 sein.                                        |
+| -   | **Value**                      | String  | Length        | -                | 17...       | Statischer Textinhalt (nur wenn Variable Reference == NULL).                                                             |
+| -   | **Number of macros to follow** | Integer | 1             | 0 – 255          | var.        | Anzahl der folgenden Makro-Referenzen.                                                                                   |
+| -   | **Repeat:** {Event ID}         | Integer | 1             | 0 – 255          | var.        | Event ID, die das Makro auslöst.                                                                                         |
+| -   | {Macro ID}                     | Integer | 1             | 0 – 255          | var.        | Makro ID des auszuführenden Makros.                                                                                      |
 
 ## Funktionsweise und Besonderheiten
 

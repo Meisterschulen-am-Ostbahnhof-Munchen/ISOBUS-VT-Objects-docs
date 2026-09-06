@@ -1,6 +1,6 @@
 # Variables
 
-### Recommended reading
+## Recommended reading
 
 - ISO 11783-6
 - Chapter B.13.2

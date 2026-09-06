@@ -4,16 +4,16 @@
 
 Das **String Variable** Objekt mit der **ID 22** dient zur Speicherung von Textzeichenfolgen, die von Anzeige- oder Eingabeobjekten referenziert werden können.
 
-### Attribute und Record Format (Tabelle B.44)
+## Attribute und Record Format (Tabelle B.44)
 
 Die folgende Tabelle beschreibt den Aufbau des String Variable Objekts im Objektpool.
 
-| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
-| [0] | **Type** | Integer | 1 | 22 | 3 | Objekttyp = String Variable. |
-| - | **Length** | Integer | 2 | 0 – 65535 | 4 – 5 | Maximale feste Länge der Zeichenkette in Bytes. |
-| - | **Value** | String | Length | - | 6 ... | String aus Zeichen. Muss mit Leerzeichen aufgefüllt werden, um die Länge zu erreichen. |
+| AID | Name          | Typ     | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung                                                                           |
+| :-- | :------------ | :------ | :------------ | :------------- | :---------- | :------------------------------------------------------------------------------------- |
+| -   | **Object ID** | Integer | 2             | 0 – 65534      | 1 – 2       | Eindeutige ID im Objektpool.                                                           |
+| [0] | **Type**      | Integer | 1             | 22             | 3           | Objekttyp = String Variable.                                                           |
+| -   | **Length**    | Integer | 2             | 0 – 65535      | 4 – 5       | Maximale feste Länge der Zeichenkette in Bytes.                                        |
+| -   | **Value**     | String  | Length        | -              | 6 ...       | String aus Zeichen. Muss mit Leerzeichen aufgefüllt werden, um die Länge zu erreichen. |
 
 ## Funktionsweise und Besonderheiten
 

@@ -41,7 +41,7 @@ von `https://www.iso.org/obp/graphics/grs/343178e8-8b69-4dd7-83c6-cee7c66b28a4_2
 zum Ordner: [img_original](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/tree/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_original)
 
 | vorher                                                                                                                                                                                                            |     | nachher                                                                                                                                                                                                          |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_original/Tractor_wheel_slip_200.png) | --> | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_cropped/Tractor_wheel_slip_200.png) |
 | 200x200                                                                                                                                                                                                           |     | 196x196                                                                                                                                                                                                          |
 
@@ -53,10 +53,10 @@ Danach liegen die Zugeschnittenen Bilder unter "img_cropped"
 
 zum Ordner: [img_cropped](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/tree/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_cropped)
 
-| vorher                                                                                                                                                                                                            |     | nachher                                                                                                                                                                                                          |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| vorher                                                                                                                                                                                                           |     | nachher                                                                                                                                                                                                               |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_cropped/Tractor_wheel_slip_200.png) | --> | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_resized_DM_2/Tractor_wheel_slip_200.png) |
-| 196x196                                                                                                                                                                                                           |     | 64x64                                                                                                                                                                                                          |
+| 196x196                                                                                                                                                                                                          |     | 64x64                                                                                                                                                                                                                 |
 
 Danach liegen die Zugeschnittenen Bilder unter "img_resized"
 
@@ -64,10 +64,10 @@ Danach liegen die Zugeschnittenen Bilder unter "img_resized"
 
 zum Ordner: [img_resized](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/tree/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_resized_DM_2)
 
-| vorher                                                                                                                                                                                                            |     | nachher                                                                                                                                                                                                          |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| vorher                                                                                                                                                                                                                |     | nachher                                                                                                                                                                                                                |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_resized_DM_2/Tractor_wheel_slip_200.png) | --> | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_monochrome_DM/Tractor_wheel_slip_200.png) |
-| 64x64                                                                                                                                                                                                           |     | 64x64                                          
+| 64x64                                                                                                                                                                                                                 |     | 64x64                                                                                                                                                                                                                  |
 
 Danach liegen die Bilder unter "img_monochrome"
 
@@ -75,10 +75,10 @@ Danach liegen die Bilder unter "img_monochrome"
 
 zum Ordner: [img_monochrome](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/tree/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_monochrome_DM)
 
-| vorher                                                                                                                                                                                                            |     | nachher                                                                                                                                                                                                          |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| vorher                                                                                                                                                                                                                 |     | nachher                                                                                                                                                                                                     |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_monochrome_DM/Tractor_wheel_slip_200.png) | --> | ![image](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1/main/Ventilsteuerung/ISO-DesignerProjects/Workspace_TECU/DefaultPool/img/img_DM/Tractor_wheel_slip_200.bmp) |
-| 64x64                                                                                                                                                                                                           |     | 64x64                                          
+| 64x64                                                                                                                                                                                                                  |     | 64x64                                                                                                                                                                                                       |
 
 Danach liegen die Bilder unter "img"
 
@@ -98,11 +98,11 @@ das Bitmap geeigent benennen, die Dateinamen von ISO sind oft wenig aussagekräf
 
 die Größe ist wichtig: 
 
-| wo       | Größe       |   |   |   |
-|----------|-------------|---|---|---|
-| Softkey  | 72x72 pixel |   |   |   |
-| Datamask | frei        |   |   |   |
-| CCI A3   | 64x64 pixel |   |   |   |
+| wo       | Größe       |     |     |     |
+| -------- | ----------- | --- | --- | --- |
+| Softkey  | 72x72 pixel |     |     |     |
+| Datamask | frei        |     |     |     |
+| CCI A3   | 64x64 pixel |     |     |     |
 
 Gedanken: 
 80x80 --> als Button, macht Innenfläche 72x72
@@ -127,12 +127,12 @@ Windows Paint bietet folgende Farbtiefen an:
 
 ![image](https://github.com/user-attachments/assets/e8f49c00-4a94-4d6f-b1e2-3ce32dc89c61)
 
-| Format            | Farben                       | Bit | Hinweis                        |
-|-------------------|------------------------------|-----|--------------------------------|
-| Monochrom-Bitmap  | 2<sup>1</sup> = 2            | 1   |                                |
-| 16-Farben-Bitmap  | 2<sup>4</sup> = 16           | 4   |                                |
-| 256-Farben-Bitmap | 2<sup>8</sup> = 256          | 8   |                                |
-| 24-Bit-Bitmap     | 2<sup>24</sup> = 16.777.216  | 24  | in ISO 11783-6 nicht vorhanden |
+| Format            | Farben                      | Bit | Hinweis                        |
+| ----------------- | --------------------------- | --- | ------------------------------ |
+| Monochrom-Bitmap  | 2<sup>1</sup> = 2           | 1   |                                |
+| 16-Farben-Bitmap  | 2<sup>4</sup> = 16          | 4   |                                |
+| 256-Farben-Bitmap | 2<sup>8</sup> = 256         | 8   |                                |
+| 24-Bit-Bitmap     | 2<sup>24</sup> = 16.777.216 | 24  | in ISO 11783-6 nicht vorhanden |
 
 ## BMP in ISO-Designer einfügen
 

@@ -4,21 +4,21 @@
 
 Das **Auxiliary Input Type 2** Objekt mit der **ID 32** definiert ein physisches Bedienelement eines Auxiliary Input Geräts (z. B. eine Taste auf einem Joystick) ab VT Version 3.
 
-### Attribute und Record Format (Tabelle J.4)
+## Attribute und Record Format (Tabelle J.4)
 
 Die folgende Tabelle beschreibt den Aufbau des Auxiliary Input Type 2 Objekts im Objektpool.
 
-| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
-| [0] | **Type** | Integer | 1 | 32 | 3 | Objekttyp = Auxiliary Input Type 2. |
-| [1] | **Background colour** | Integer | 1 | 0 – 255 | 4 | Hintergrundfarbe. |
-| [2] | **Function attributes** | Bitmask | 1 | - | 5 | Bitmaske für Funktionstyp und Steuerung (siehe unten). |
-| [3] | **Input ID** | Integer | 1 | 0 – 255 | 6 | ID des physikalischen Eingangs. |
-| - | **Number of objects to follow** | Integer | 1 | 1 – 255 | 7 | Anzahl der direkt enthaltenen Objekte (Designator). |
-| - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534 | 8 + ... | Objekt-ID eines enthaltenen Objekts. |
-| - | {X Location} | Signed Integer | 2 | -32768 bis +32767 | 10 + ... | X-Position relativ zur oberen linken Ecke. |
-| - | {Y Location} | Signed Integer | 2 | -32768 bis +32767 | 12 + ... | Y-Position relativ zur oberen linken Ecke. |
+| AID | Name                            | Typ            | Größe (Bytes) | Bereich / Wert    | Record Byte | Beschreibung                                           |
+| :-- | :------------------------------ | :------------- | :------------ | :---------------- | :---------- | :----------------------------------------------------- |
+| -   | **Object ID**                   | Integer        | 2             | 0 – 65534         | 1 – 2       | Eindeutige ID im Objektpool.                           |
+| [0] | **Type**                        | Integer        | 1             | 32                | 3           | Objekttyp = Auxiliary Input Type 2.                    |
+| [1] | **Background colour**           | Integer        | 1             | 0 – 255           | 4           | Hintergrundfarbe.                                      |
+| [2] | **Function attributes**         | Bitmask        | 1             | -                 | 5           | Bitmaske für Funktionstyp und Steuerung (siehe unten). |
+| [3] | **Input ID**                    | Integer        | 1             | 0 – 255           | 6           | ID des physikalischen Eingangs.                        |
+| -   | **Number of objects to follow** | Integer        | 1             | 1 – 255           | 7           | Anzahl der direkt enthaltenen Objekte (Designator).    |
+| -   | **Repeat:** {Object ID}         | Integer        | 2             | 0 – 65534         | 8 + ...     | Objekt-ID eines enthaltenen Objekts.                   |
+| -   | {X Location}                    | Signed Integer | 2             | -32768 bis +32767 | 10 + ...    | X-Position relativ zur oberen linken Ecke.             |
+| -   | {Y Location}                    | Signed Integer | 2             | -32768 bis +32767 | 12 + ...    | Y-Position relativ zur oberen linken Ecke.             |
 
 ### Function Attributes (Bitmaske AID 2)
 

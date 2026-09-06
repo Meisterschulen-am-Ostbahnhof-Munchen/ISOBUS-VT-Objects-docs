@@ -4,22 +4,22 @@
 
 Das **Output Rectangle** Objekt mit der **ID 14** dient zum Zeichnen von Rechtecken, die entweder nur als Umriss, gefüllt oder in Kombination dargestellt werden können.
 
-### Attribute und Record Format (Tabelle B.29)
+## Attribute und Record Format (Tabelle B.29)
 
 Die folgende Tabelle beschreibt den Aufbau des Output Rectangle Objekts im Objektpool.
 
-| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
-| [0] | **Type** | Integer | 1 | 14 | 3 | Objekttyp = Output Rectangle. |
-| [1] | **Line attributes** | Integer | 2 | 0 – 65534 | 4 – 5 | Objekt-ID eines Line Attributes Objekts für den Rahmen. |
-| [2] | **Width** | Integer | 2 | 0 – 65535 | 6 – 7 | Breite des Rechtecks in Pixeln. |
-| [3] | **Height** | Integer | 2 | 0 – 65535 | 8 – 9 | Höhe des Rechtecks in Pixeln. |
-| [4] | **Line suppression** | Bitmask | 1 | 0 – 15 | 10 | Unterdrückung von Seiten: Bit 0=Oben, Bit 1=Rechts, Bit 2=Unten, Bit 3=Links. (1 = nicht zeichnen). |
-| [5] | **Fill attributes** | Integer | 2 | 0 – 65534, 65535 | 11 – 12 | Objekt-ID eines Fill Attributes Objekts (für die Füllung) oder NULL für keine Füllung. |
-| - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 13 | Anzahl der folgenden Makro-Referenzen. |
-| - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | Event ID, die das Makro auslöst. |
-| - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
+| AID | Name                           | Typ     | Größe (Bytes) | Bereich / Wert   | Record Byte | Beschreibung                                                                                        |
+| :-- | :----------------------------- | :------ | :------------ | :--------------- | :---------- | :-------------------------------------------------------------------------------------------------- |
+| -   | **Object ID**                  | Integer | 2             | 0 – 65534        | 1 – 2       | Eindeutige ID im Objektpool.                                                                        |
+| [0] | **Type**                       | Integer | 1             | 14               | 3           | Objekttyp = Output Rectangle.                                                                       |
+| [1] | **Line attributes**            | Integer | 2             | 0 – 65534        | 4 – 5       | Objekt-ID eines Line Attributes Objekts für den Rahmen.                                             |
+| [2] | **Width**                      | Integer | 2             | 0 – 65535        | 6 – 7       | Breite des Rechtecks in Pixeln.                                                                     |
+| [3] | **Height**                     | Integer | 2             | 0 – 65535        | 8 – 9       | Höhe des Rechtecks in Pixeln.                                                                       |
+| [4] | **Line suppression**           | Bitmask | 1             | 0 – 15           | 10          | Unterdrückung von Seiten: Bit 0=Oben, Bit 1=Rechts, Bit 2=Unten, Bit 3=Links. (1 = nicht zeichnen). |
+| [5] | **Fill attributes**            | Integer | 2             | 0 – 65534, 65535 | 11 – 12     | Objekt-ID eines Fill Attributes Objekts (für die Füllung) oder NULL für keine Füllung.              |
+| -   | **Number of macros to follow** | Integer | 1             | 0 – 255          | 13          | Anzahl der folgenden Makro-Referenzen.                                                              |
+| -   | **Repeat:** {Event ID}         | Integer | 1             | 0 – 255          | var.        | Event ID, die das Makro auslöst.                                                                    |
+| -   | {Macro ID}                     | Integer | 1             | 0 – 255          | var.        | Makro ID des auszuführenden Makros.                                                                 |
 
 ## Darstellung und Eigenschaften
 

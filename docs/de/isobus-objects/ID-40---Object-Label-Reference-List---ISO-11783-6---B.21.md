@@ -4,19 +4,19 @@
 
 Das **Object Label Reference List** Objekt mit der **ID 40** (ab VT Version 5) wird verwendet, um Objekten (wie Variablen oder Eingabefeldern) eine Liste von Beschriftungsobjekten (Labels) zuzuordnen.
 
-### Attribute und Record Format (Tabelle B.64)
+## Attribute und Record Format (Tabelle B.64)
 
 Die folgende Tabelle beschreibt den Aufbau des Object Label Reference List Objekts im Objektpool.
 
-| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
-| [0] | **Type** | Integer | 1 | 40 | 3 | Objekttyp = Object Label Reference List. |
-| [1] | **Number of Labelled objects** | Integer | 2 | 0 – 65535 | 4 – 5 | Anzahl der folgenden Label-Zuweisungen. |
-| - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534 | 6 – 7 ... | Objekt-ID des zu beschriftenden Objekts (z. B. Input Number). |
-| - | {String Variable reference} | Integer | 2 | 0 – 65535 | 8 – 9 ... | Objekt-ID einer String Variable mit dem Labeltext (oder FFFFh = kein Text). |
-| - | {Font type} | Integer | 1 | 0 – 255 | 10 ... | Schriftart (siehe Annex K). Ignoriert bei WideString oder NULL. |
-| - | {Object Label graphic representation} | Integer | 2 | 0 – 65535 | 11 – 12 ... | Objekt-ID einer Grafik (Icon) für das Label (oder FFFFh = keine Grafik). |
+| AID | Name                                  | Typ     | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung                                                                |
+| :-- | :------------------------------------ | :------ | :------------ | :------------- | :---------- | :-------------------------------------------------------------------------- |
+| -   | **Object ID**                         | Integer | 2             | 0 – 65534      | 1 – 2       | Eindeutige ID im Objektpool.                                                |
+| [0] | **Type**                              | Integer | 1             | 40             | 3           | Objekttyp = Object Label Reference List.                                    |
+| [1] | **Number of Labelled objects**        | Integer | 2             | 0 – 65535      | 4 – 5       | Anzahl der folgenden Label-Zuweisungen.                                     |
+| -   | **Repeat:** {Object ID}               | Integer | 2             | 0 – 65534      | 6 – 7 ...   | Objekt-ID des zu beschriftenden Objekts (z. B. Input Number).               |
+| -   | {String Variable reference}           | Integer | 2             | 0 – 65535      | 8 – 9 ...   | Objekt-ID einer String Variable mit dem Labeltext (oder FFFFh = kein Text). |
+| -   | {Font type}                           | Integer | 1             | 0 – 255        | 10 ...      | Schriftart (siehe Annex K). Ignoriert bei WideString oder NULL.             |
+| -   | {Object Label graphic representation} | Integer | 2             | 0 – 65535      | 11 – 12 ... | Objekt-ID einer Grafik (Icon) für das Label (oder FFFFh = keine Grafik).    |
 
 ## Bedeutung und Funktionsweise
 

@@ -4,25 +4,25 @@
 
 Die **Alarm Mask** (Alarmmaske) mit der **ID 2** dient zur Anzeige kritischer Informationen oder Warnungen. Sie hat Vorrang vor normalen Datenmasken und kann je nach Priorität das gesamte Display oder Teile davon überlagern.
 
-### Attribute und Record Format (Tabelle B.6)
+## Attribute und Record Format (Tabelle B.6)
 
 Die folgende Tabelle beschreibt den Aufbau des Alarm Mask Objekts im Objektpool.
 
-| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
-| [0] | **Type** | Integer | 1 | 2 | 3 | Objekttyp = Alarm Mask. |
-| [1] | **Background colour** | Integer | 1 | 0 – 255 | 4 | Hintergrundfarbe der Maske. |
-| [2] | **Soft Key Mask** | Integer | 2 | 0 – 65534, 65535 | 5 – 6 | Objekt-ID der zugehörigen Soft Key Mask (65535 = NULL). |
-| [3] | **Priority** | Integer | 1 | 0 – 2 | 7 | 0 = Hoch, 1 = Mittel, 2 = Niedrig. |
-| [4] | **Acoustic signal** | Integer | 1 | 0 – 3 | 8 | 0 = Höchste Prio, 1 = Mittel, 2 = Niedrig, 3 = Aus. |
-| - | **Number of objects to follow** | Integer | 1 | 0 – 255 | 9 | Anzahl der direkt enthaltenen Objekte. |
-| - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 10 | Anzahl der folgenden Makro-Referenzen. |
-| - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534 | 11 + ... | Objekt-ID eines enthaltenen Objekts. |
-| - | {X Location} | Signed Integer | 2 | -32768 bis +32767 | 13 + ... | X-Position relativ zur Maske (Pixel). |
-| - | {Y Location} | Signed Integer | 2 | -32768 bis +32767 | 15 + ... | Y-Position relativ zur Maske (Pixel). |
-| - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | (Nach Objekten) Event ID, die das Makro auslöst. |
-| - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
+| AID | Name                            | Typ            | Größe (Bytes) | Bereich / Wert    | Record Byte | Beschreibung                                            |
+| :-- | :------------------------------ | :------------- | :------------ | :---------------- | :---------- | :------------------------------------------------------ |
+| -   | **Object ID**                   | Integer        | 2             | 0 – 65534         | 1 – 2       | Eindeutige ID im Objektpool.                            |
+| [0] | **Type**                        | Integer        | 1             | 2                 | 3           | Objekttyp = Alarm Mask.                                 |
+| [1] | **Background colour**           | Integer        | 1             | 0 – 255           | 4           | Hintergrundfarbe der Maske.                             |
+| [2] | **Soft Key Mask**               | Integer        | 2             | 0 – 65534, 65535  | 5 – 6       | Objekt-ID der zugehörigen Soft Key Mask (65535 = NULL). |
+| [3] | **Priority**                    | Integer        | 1             | 0 – 2             | 7           | 0 = Hoch, 1 = Mittel, 2 = Niedrig.                      |
+| [4] | **Acoustic signal**             | Integer        | 1             | 0 – 3             | 8           | 0 = Höchste Prio, 1 = Mittel, 2 = Niedrig, 3 = Aus.     |
+| -   | **Number of objects to follow** | Integer        | 1             | 0 – 255           | 9           | Anzahl der direkt enthaltenen Objekte.                  |
+| -   | **Number of macros to follow**  | Integer        | 1             | 0 – 255           | 10          | Anzahl der folgenden Makro-Referenzen.                  |
+| -   | **Repeat:** {Object ID}         | Integer        | 2             | 0 – 65534         | 11 + ...    | Objekt-ID eines enthaltenen Objekts.                    |
+| -   | {X Location}                    | Signed Integer | 2             | -32768 bis +32767 | 13 + ...    | X-Position relativ zur Maske (Pixel).                   |
+| -   | {Y Location}                    | Signed Integer | 2             | -32768 bis +32767 | 15 + ...    | Y-Position relativ zur Maske (Pixel).                   |
+| -   | **Repeat:** {Event ID}          | Integer        | 1             | 0 – 255           | var.        | (Nach Objekten) Event ID, die das Makro auslöst.        |
+| -   | {Macro ID}                      | Integer        | 1             | 0 – 255           | var.        | Makro ID des auszuführenden Makros.                     |
 
 ### Prioritätsstufen und Darstellung
 

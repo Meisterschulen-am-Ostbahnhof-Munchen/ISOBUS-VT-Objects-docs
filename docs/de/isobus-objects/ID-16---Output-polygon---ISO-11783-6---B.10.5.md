@@ -4,25 +4,25 @@
 
 Das **Output Polygon** Objekt mit der **ID 16** ermöglicht das Zeichnen komplexer, mehreckiger Formen durch die Definition einer Liste von Eckpunkten.
 
-### Attribute und Record Format (Tabelle B.33)
+## Attribute und Record Format (Tabelle B.33)
 
 Die folgende Tabelle beschreibt den Aufbau des Output Polygon Objekts im Objektpool.
 
-| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
-| [0] | **Type** | Integer | 1 | 16 | 3 | Objekttyp = Polygon. |
-| [1] | **Width** | Integer | 2 | 0 – 65535 | 4 – 5 | Breite des umschließenden virtuellen Rechtecks. |
-| [2] | **Height** | Integer | 2 | 0 – 65535 | 6 – 7 | Höhe des umschließenden virtuellen Rechtecks. |
-| [3] | **Line attributes** | Integer | 2 | 0 – 65534 | 8 – 9 | Objekt-ID eines Line Attributes Objekts (für den Umriss). |
-| [4] | **Fill attributes** | Integer | 2 | 0 – 65534, 65535 | 10 – 11 | Objekt-ID eines Fill Attributes Objekts (Füllung) oder NULL. |
-| [5] | **Polygon type** | Integer | 1 | 0 – 3 | 12 | 0=Konvex, 1=Nicht-konvex, 2=Komplex, 3=Offen. |
-| - | **Number of points** | Integer | 1 | 3 – 255 | 13 | Anzahl der Eckpunkte (mindestens 3). |
-| - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 14 | Anzahl der folgenden Makro-Referenzen. |
-| - | **Repeat:** {Point X} | Integer | 2 | 0 – 65535 | 15 + ... | X-Position des Punktes relativ zur linken oberen Ecke des Objekts. |
-| - | {Point Y} | Integer | 2 | 0 – 65535 | 17 + ... | Y-Position des Punktes relativ zur linken oberen Ecke des Objekts. |
-| - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | (Nach Punkten) Event ID, die das Makro auslöst. |
-| - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
+| AID | Name                           | Typ     | Größe (Bytes) | Bereich / Wert   | Record Byte | Beschreibung                                                       |
+| :-- | :----------------------------- | :------ | :------------ | :--------------- | :---------- | :----------------------------------------------------------------- |
+| -   | **Object ID**                  | Integer | 2             | 0 – 65534        | 1 – 2       | Eindeutige ID im Objektpool.                                       |
+| [0] | **Type**                       | Integer | 1             | 16               | 3           | Objekttyp = Polygon.                                               |
+| [1] | **Width**                      | Integer | 2             | 0 – 65535        | 4 – 5       | Breite des umschließenden virtuellen Rechtecks.                    |
+| [2] | **Height**                     | Integer | 2             | 0 – 65535        | 6 – 7       | Höhe des umschließenden virtuellen Rechtecks.                      |
+| [3] | **Line attributes**            | Integer | 2             | 0 – 65534        | 8 – 9       | Objekt-ID eines Line Attributes Objekts (für den Umriss).          |
+| [4] | **Fill attributes**            | Integer | 2             | 0 – 65534, 65535 | 10 – 11     | Objekt-ID eines Fill Attributes Objekts (Füllung) oder NULL.       |
+| [5] | **Polygon type**               | Integer | 1             | 0 – 3            | 12          | 0=Konvex, 1=Nicht-konvex, 2=Komplex, 3=Offen.                      |
+| -   | **Number of points**           | Integer | 1             | 3 – 255          | 13          | Anzahl der Eckpunkte (mindestens 3).                               |
+| -   | **Number of macros to follow** | Integer | 1             | 0 – 255          | 14          | Anzahl der folgenden Makro-Referenzen.                             |
+| -   | **Repeat:** {Point X}          | Integer | 2             | 0 – 65535        | 15 + ...    | X-Position des Punktes relativ zur linken oberen Ecke des Objekts. |
+| -   | {Point Y}                      | Integer | 2             | 0 – 65535        | 17 + ...    | Y-Position des Punktes relativ zur linken oberen Ecke des Objekts. |
+| -   | **Repeat:** {Event ID}         | Integer | 1             | 0 – 255          | var.        | (Nach Punkten) Event ID, die das Makro auslöst.                    |
+| -   | {Macro ID}                     | Integer | 1             | 0 – 255          | var.        | Makro ID des auszuführenden Makros.                                |
 
 ## Polygontypen und Füllregeln
 

@@ -16,22 +16,22 @@ Jede Arbeitsgruppe muss **genau ein** Working Set Objekt in ihrem Objektpool def
 
 Die folgende Tabelle beschreibt den Aufbau des Working Set Objekts im Objektpool (Byte-Stream).
 
-| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
-| [0] | **Type** | Integer | 1 | 0 | 3 | Objekttyp = Working Set. |
-| [1] | **Background colour** | Integer | 1 | 0 – 255 | 4 | Hintergrundfarbe. |
-| [2] | **Selectable** | Boolean | 1 | 0 oder 1 | 5 | 0 = FALSE, 1 = TRUE. Gibt an, ob das Working Set vom Bediener ausgewählt werden kann. |
-| [3] | **Active mask** | Integer | 2 | 0 – 65534 | 6 – 7 | Objekt-ID der Data oder Alarm Mask, die angezeigt wird, wenn das Working Set aktiv ist. |
-| - | **Number of objects to follow** | Integer | 1 | 1 – 255 | 8 | Anzahl der folgenden Kind-Objekte (Designator). Muss mindestens 1 sein. |
-| - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 9 | Anzahl der folgenden Makro-Referenzen. |
-| - | **Number of languages to follow** | Integer | 1 | 0 – 255 | 10 | Anzahl der folgenden Sprachcodes. |
-| - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534 | 11 + ... | Objekt-ID eines Kind-Objekts (Teil des Designators). Liste aller Objekte erfolgt *vor* den Makros. |
-| - | {X Location} | Signed Integer | 2 | -32768 bis +32767 | 13 + ... | Relative X-Position des Kind-Objekts (Pixel). |
-| - | {Y Location} | Signed Integer | 2 | -32768 bis +32767 | 15 + ... | Relative Y-Position des Kind-Objekts (Pixel). |
-| - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | (Nach den Objekten) Event ID, die das Makro auslöst. |
-| - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros (oder Referenz auf 16-Bit Makro ID). |
-| - | **Repeat:** {Language Code} | String | 2 | - | var. | (Nach den Makros) Zweistelliger Sprachcode gemäß ISO 639 (z.B. "de", "en"). |
+| AID | Name                              | Typ            | Größe (Bytes) | Bereich / Wert    | Record Byte | Beschreibung                                                                                       |
+| :-- | :-------------------------------- | :------------- | :------------ | :---------------- | :---------- | :------------------------------------------------------------------------------------------------- |
+| -   | **Object ID**                     | Integer        | 2             | 0 – 65534         | 1 – 2       | Eindeutige ID im Objektpool.                                                                       |
+| [0] | **Type**                          | Integer        | 1             | 0                 | 3           | Objekttyp = Working Set.                                                                           |
+| [1] | **Background colour**             | Integer        | 1             | 0 – 255           | 4           | Hintergrundfarbe.                                                                                  |
+| [2] | **Selectable**                    | Boolean        | 1             | 0 oder 1          | 5           | 0 = FALSE, 1 = TRUE. Gibt an, ob das Working Set vom Bediener ausgewählt werden kann.              |
+| [3] | **Active mask**                   | Integer        | 2             | 0 – 65534         | 6 – 7       | Objekt-ID der Data oder Alarm Mask, die angezeigt wird, wenn das Working Set aktiv ist.            |
+| -   | **Number of objects to follow**   | Integer        | 1             | 1 – 255           | 8           | Anzahl der folgenden Kind-Objekte (Designator). Muss mindestens 1 sein.                            |
+| -   | **Number of macros to follow**    | Integer        | 1             | 0 – 255           | 9           | Anzahl der folgenden Makro-Referenzen.                                                             |
+| -   | **Number of languages to follow** | Integer        | 1             | 0 – 255           | 10          | Anzahl der folgenden Sprachcodes.                                                                  |
+| -   | **Repeat:** {Object ID}           | Integer        | 2             | 0 – 65534         | 11 + ...    | Objekt-ID eines Kind-Objekts (Teil des Designators). Liste aller Objekte erfolgt *vor* den Makros. |
+| -   | {X Location}                      | Signed Integer | 2             | -32768 bis +32767 | 13 + ...    | Relative X-Position des Kind-Objekts (Pixel).                                                      |
+| -   | {Y Location}                      | Signed Integer | 2             | -32768 bis +32767 | 15 + ...    | Relative Y-Position des Kind-Objekts (Pixel).                                                      |
+| -   | **Repeat:** {Event ID}            | Integer        | 1             | 0 – 255           | var.        | (Nach den Objekten) Event ID, die das Makro auslöst.                                               |
+| -   | {Macro ID}                        | Integer        | 1             | 0 – 255           | var.        | Makro ID des auszuführenden Makros (oder Referenz auf 16-Bit Makro ID).                            |
+| -   | **Repeat:** {Language Code}       | String         | 2             | -                 | var.        | (Nach den Makros) Zweistelliger Sprachcode gemäß ISO 639 (z.B. "de", "en").                        |
 
 ### Designator (Child-Objekte)
 

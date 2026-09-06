@@ -4,15 +4,15 @@
 
 Das **Number Variable** Objekt mit der **ID 21** ist ein reines Datenobjekt. Es speichert einen numerischen Wert, der von anderen Anzeige- oder Eingabeobjekten referenziert werden kann.
 
-### Attribute und Record Format (Tabelle B.43)
+## Attribute und Record Format (Tabelle B.43)
 
 Die folgende Tabelle beschreibt den Aufbau des Number Variable Objekts im Objektpool.
 
-| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
-| [0] | **Type** | Integer | 1 | 21 | 3 | Objekttyp = Number Variable. |
-| [1] | **Value** | Integer | 4 | 0 – 2^32-1 | 4 – 7 | 32-Bit unsigned Integer-Wert. |
+| AID | Name          | Typ     | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung                  |
+| :-- | :------------ | :------ | :------------ | :------------- | :---------- | :---------------------------- |
+| -   | **Object ID** | Integer | 2             | 0 – 65534      | 1 – 2       | Eindeutige ID im Objektpool.  |
+| [0] | **Type**      | Integer | 1             | 21             | 3           | Objekttyp = Number Variable.  |
+| [1] | **Value**     | Integer | 4             | 0 – 2^32-1     | 4 – 7       | 32-Bit unsigned Integer-Wert. |
 
 ## Funktionsweise und Referenzierung
 

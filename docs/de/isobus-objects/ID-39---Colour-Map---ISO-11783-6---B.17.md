@@ -4,16 +4,16 @@
 
 Das **Colour Map** Objekt mit der **ID 39** (optional ab VT Version 4/5, Pflicht ab VT Version 6) ermöglicht es einer Working Set, die Farbtabelle des Terminals zur Laufzeit umzudefinieren.
 
-### Attribute und Record Format (Tabelle B.57)
+## Attribute und Record Format (Tabelle B.57)
 
 Die folgende Tabelle beschreibt den Aufbau des Colour Map Objekts im Objektpool.
 
-| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
-| [0] | **Type** | Integer | 1 | 39 | 3 | Objekttyp = Colour Map. |
-| - | **Number of colour indexes to follow** | Integer | 2 | 2, 16, 256 | 4 – 5 | Anzahl der folgenden Einträge. Muss zur Farbtiefe des VTs passen (siehe Get Hardware). |
-| - | **Repeat:** {Colour Map} | Integer | var. | 0 – 255 | 6 ... | Liste von Farb-Indizes. |
+| AID | Name                                   | Typ     | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung                                                                           |
+| :-- | :------------------------------------- | :------ | :------------ | :------------- | :---------- | :------------------------------------------------------------------------------------- |
+| -   | **Object ID**                          | Integer | 2             | 0 – 65534      | 1 – 2       | Eindeutige ID im Objektpool.                                                           |
+| [0] | **Type**                               | Integer | 1             | 39             | 3           | Objekttyp = Colour Map.                                                                |
+| -   | **Number of colour indexes to follow** | Integer | 2             | 2, 16, 256     | 4 – 5       | Anzahl der folgenden Einträge. Muss zur Farbtiefe des VTs passen (siehe Get Hardware). |
+| -   | **Repeat:** {Colour Map}               | Integer | var.          | 0 – 255        | 6 ...       | Liste von Farb-Indizes.                                                                |
 
 ### Struktur der Einträge
 

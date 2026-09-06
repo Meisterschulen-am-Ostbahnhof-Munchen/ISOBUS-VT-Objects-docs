@@ -4,23 +4,23 @@
 
 Das **Input Boolean** Objekt mit der **ID 7** ermöglicht dem Bediener die Eingabe eines TRUE/FALSE-Wertes (z. B. in Form eines Kontrollkästchens).
 
-### Attribute und Record Format (Tabelle B.16)
+## Attribute und Record Format (Tabelle B.16)
 
 Die folgende Tabelle beschreibt den Aufbau des Input Boolean Objekts im Objektpool.
 
-| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
-| [0] | **Type** | Integer | 1 | 7 | 3 | Objekttyp = Input Boolean. |
-| [1] | **Background colour** | Integer | 1 | 0 – 255 | 4 | Hintergrundfarbe. |
-| [2] | **Width** | Integer | 2 | 0 – 65535 | 5 – 6 | Breite und Höhe des quadratischen Feldes in Pixeln. |
-| [3] | **Foreground colour** | Integer | 2 | 0 – 65534 | 7 – 8 | Objekt-ID eines Font Attributes Objekts für die Farbe des Indikators (nur Schriftfarbe relevant). |
-| [4] | **Variable reference** | Integer | 2 | 0 – 65534, 65535 | 9 – 10 | Objekt-ID einer Number Variable zur Speicherung des Wertes. (65535 = Wert direkt in Attribut 5). |
-| [5] | **Value** | Integer | 1 | 0, 1 – 255 | 11 | Wert: 0 = FALSE, >0 = TRUE. (Nur genutzt, wenn Variable reference NULL ist). |
-| [6] | **Enabled** | Integer | 1 | 0 oder 1 | 12 | 0 = Deaktiviert, 1 = Aktiviert. |
-| - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 13 | Anzahl der folgenden Makro-Referenzen. |
-| - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | Event ID, die das Makro auslöst. |
-| - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
+| AID | Name                           | Typ     | Größe (Bytes) | Bereich / Wert   | Record Byte | Beschreibung                                                                                      |
+| :-- | :----------------------------- | :------ | :------------ | :--------------- | :---------- | :------------------------------------------------------------------------------------------------ |
+| -   | **Object ID**                  | Integer | 2             | 0 – 65534        | 1 – 2       | Eindeutige ID im Objektpool.                                                                      |
+| [0] | **Type**                       | Integer | 1             | 7                | 3           | Objekttyp = Input Boolean.                                                                        |
+| [1] | **Background colour**          | Integer | 1             | 0 – 255          | 4           | Hintergrundfarbe.                                                                                 |
+| [2] | **Width**                      | Integer | 2             | 0 – 65535        | 5 – 6       | Breite und Höhe des quadratischen Feldes in Pixeln.                                               |
+| [3] | **Foreground colour**          | Integer | 2             | 0 – 65534        | 7 – 8       | Objekt-ID eines Font Attributes Objekts für die Farbe des Indikators (nur Schriftfarbe relevant). |
+| [4] | **Variable reference**         | Integer | 2             | 0 – 65534, 65535 | 9 – 10      | Objekt-ID einer Number Variable zur Speicherung des Wertes. (65535 = Wert direkt in Attribut 5).  |
+| [5] | **Value**                      | Integer | 1             | 0, 1 – 255       | 11          | Wert: 0 = FALSE, >0 = TRUE. (Nur genutzt, wenn Variable reference NULL ist).                      |
+| [6] | **Enabled**                    | Integer | 1             | 0 oder 1         | 12          | 0 = Deaktiviert, 1 = Aktiviert.                                                                   |
+| -   | **Number of macros to follow** | Integer | 1             | 0 – 255          | 13          | Anzahl der folgenden Makro-Referenzen.                                                            |
+| -   | **Repeat:** {Event ID}         | Integer | 1             | 0 – 255          | var.        | Event ID, die das Makro auslöst.                                                                  |
+| -   | {Macro ID}                     | Integer | 1             | 0 – 255          | var.        | Makro ID des auszuführenden Makros.                                                               |
 
 ### Darstellung
 

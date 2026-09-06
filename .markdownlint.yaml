@@ -18,3 +18,13 @@ fenced-code-language: false
 # Falsche Verschachtelung (z.B. # gefolgt von ### ohne ##) erkennt stattdessen
 # MD001/heading-increment, das über "default: true" aktiv bleibt.
 MD043: false
+
+# MD060/table-column-style ist eine reine Layout-/Whitespace-Konvention
+# (Pipe-Ausrichtung in Tabellen) ohne Effekt auf das Rendering - gleiche
+# Kategorie wie die whitespace/layout-Regeln oben. Feuert hier zusätzlich
+# fälschlich auf Tabellenzellen mit Emoji (variable Zeichenbreite lässt
+# sich nicht zuverlässig mit Leerzeichen ausrichten, auch nicht per
+# `--fix`). Aus Konsistenzgründen mit dem Schwester-Repo
+# visual-programming-languages-docs (dort aus demselben Grund deaktiviert)
+# ebenfalls deaktiviert.
+MD060: false

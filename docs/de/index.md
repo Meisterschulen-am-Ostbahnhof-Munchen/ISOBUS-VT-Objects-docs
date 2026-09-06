@@ -9,10 +9,9 @@ myst:
     "property=og:locale": "de"
 ---
 
+# Wiki 2: ISOBUS Virtual Terminal (VT & HMI-Bedienoberflächen)
 
 <img src="_static/logos/Meisterschulen_LogoG1_4c.gif" alt="Logo Meisterschulen am Ostbahnhof" width="400px" />
-
-# Wiki 2: ISOBUS Virtual Terminal (VT & HMI-Bedienoberflächen)
 
 ## Meisterschulen am Ostbahnhof, München
 
@@ -29,35 +28,6 @@ myst:
 
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Meisterschulen am Ostbahnhof, München
-
-
-
-
-
----
-
-
-
-
----
-
-
 **Willkommen bei der Dokumentation zu ISOBUS Virtual Terminal.**
 
 Diese Dokumentation ist Teil der Wissensdatenbank der Meisterschulen am Ostbahnhof München.
@@ -65,7 +35,7 @@ Diese Dokumentation ist Teil der Wissensdatenbank der Meisterschulen am Ostbahnh
 **Nützliche Links:**
 
 - [🏠 Hauptmenü](https://www.ms-muc-docs.de/)
-- [🔍 Super-Suche (alle Wikis)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs/de/latest/)
+- [🔍 Super-Suche (alle Wikis)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs-de/de/latest/)
 - [📄 PDF-Handbuch herunterladen](https://meisterschulen-am-ostbahnhof-munchen.github.io/ISOBUS-VT-Objects-docs/de/pdf/isobus-vt-objects-docs-de.pdf)
 
 ---
@@ -73,14 +43,8 @@ Diese Dokumentation ist Teil der Wissensdatenbank der Meisterschulen am Ostbahnh
 !!! note
     This project is under active development.
 
-**Contents**
-
-
+## Contents
 
 ---
 
-
-
-
-
-[🏠 Hauptmenü](https://www.ms-muc-docs.de/) | [🔍 Super-Suche (alle Wikis)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs/de/latest/) | [Schnelle Suche (IEC 61499)](https://www.ms-muc-docs.de/iec-61499/abk%C3%BCrzungen-und-bedeutungen/abk%C3%BCrzungen-und-bedeutungen)
+[🏠 Hauptmenü](https://www.ms-muc-docs.de/) | [🔍 Super-Suche (alle Wikis)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs-de/de/latest/) | [Schnelle Suche (IEC 61499)](https://www.ms-muc-docs.de/iec-61499/abk%C3%BCrzungen-und-bedeutungen/abk%C3%BCrzungen-und-bedeutungen)

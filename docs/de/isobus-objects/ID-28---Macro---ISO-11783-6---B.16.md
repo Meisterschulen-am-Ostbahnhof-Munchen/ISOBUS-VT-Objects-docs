@@ -4,16 +4,16 @@
 
 Das **Macro** Objekt mit der **ID 28** erlaubt es, eine Sequenz von Befehlen im Virtuellen Terminal zu speichern und bei bestimmten Ereignissen (Events) automatisch auszuführen. Dies reduziert die notwendige Kommunikation über den ISOBUS, da einfache UI-Logik direkt im Terminal abläuft.
 
-### Attribute und Record Format (Tabelle B.56)
+## Attribute und Record Format (Tabelle B.56)
 
 Die folgende Tabelle beschreibt den Aufbau des Macro Objekts im Objektpool.
 
-| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 255 (VT v4)<br>0 – 65534 (VT v5+) | 1 – 2 | Eindeutige ID im Objektpool. |
-| [0] | **Type** | Integer | 1 | 28 | 3 | Objekttyp = Macro. |
-| - | **Number of bytes to follow** | Integer | 2 | 0 – 65535 | 4 – 5 | Anzahl der Bytes für die Befehlsliste. |
-| - | **Repeat:** {Command} | Binary | 6 – n | - | 6 ... | Liste von Befehlspaketen. Jeder Befehl muss ein Vielfaches von 8 Bytes lang sein (Padding mit FFh). |
+| AID | Name                          | Typ     | Größe (Bytes) | Bereich / Wert                        | Record Byte | Beschreibung                                                                                        |
+| :-- | :---------------------------- | :------ | :------------ | :------------------------------------ | :---------- | :-------------------------------------------------------------------------------------------------- |
+| -   | **Object ID**                 | Integer | 2             | 0 – 255 (VT v4)<br>0 – 65534 (VT v5+) | 1 – 2       | Eindeutige ID im Objektpool.                                                                        |
+| [0] | **Type**                      | Integer | 1             | 28                                    | 3           | Objekttyp = Macro.                                                                                  |
+| -   | **Number of bytes to follow** | Integer | 2             | 0 – 65535                             | 4 – 5       | Anzahl der Bytes für die Befehlsliste.                                                              |
+| -   | **Repeat:** {Command}         | Binary  | 6 – n         | -                                     | 6 ...       | Liste von Befehlspaketen. Jeder Befehl muss ein Vielfaches von 8 Bytes lang sein (Padding mit FFh). |
 
 ## Funktionsweise und Struktur
 

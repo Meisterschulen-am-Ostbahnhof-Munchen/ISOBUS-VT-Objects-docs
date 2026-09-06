@@ -2,15 +2,15 @@
 
 The **Number Variable** object with **ID 21** is a pure data object. It stores a numeric value that can be referenced by other display or input objects.
 
-### Attributes and Record Format (Table B.43)
+## Attributes and Record Format (Table B.43)
 
 The following table describes the structure of the Number Variable object in the object pool.
 
-| AID | Name | Type | Size (Bytes) | Range / Value | Record Byte | Description |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Unique ID in the object pool. |
-| [0] | **Type** | Integer | 1 | 21 | 3 | Object Type = Number Variable. |
-| [1] | **Value** | Integer | 4 | 0 – 2^32-1 | 4 – 7 | 32-bit unsigned integer value. |
+| AID | Name          | Type    | Size (Bytes) | Range / Value | Record Byte | Description                    |
+| :-- | :------------ | :------ | :----------- | :------------ | :---------- | :----------------------------- |
+| -   | **Object ID** | Integer | 2            | 0 – 65534     | 1 – 2       | Unique ID in the object pool.  |
+| [0] | **Type**      | Integer | 1            | 21            | 3           | Object Type = Number Variable. |
+| [1] | **Value**     | Integer | 4            | 0 – 2^32-1    | 4 – 7       | 32-bit unsigned integer value. |
 
 ## Functionality and Referencing
 

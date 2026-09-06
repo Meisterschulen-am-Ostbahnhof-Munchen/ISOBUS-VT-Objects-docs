@@ -4,16 +4,16 @@
 
 Das **Auxiliary Control Designator Type 2 Object Pointer** Objekt mit der **ID 33** ermöglicht es einer Working Set, die aktuell zugewiesenen Hilfsfunktionen (Auxiliary Functions) und deren Bedienelemente (Inputs) grafisch in einer Maske darzustellen.
 
-### Attribute und Record Format (Tabelle J.6)
+## Attribute und Record Format (Tabelle J.6)
 
 Die folgende Tabelle beschreibt den Aufbau des Auxiliary Control Designator Type 2 Objekts im Objektpool.
 
-| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
-| [0] | **Type** | Integer | 1 | 33 | 3 | Objekttyp = Auxiliary Control Designator Type 2 Object Pointer. |
-| [1] | **Pointer Type** | Integer | 1 | 0 – 3 | 4 | Typ der Referenz (siehe unten). |
-| [2] | **Auxiliary Object ID** | Integer | 2 | 0 – 65534, 65535 | 5 – 6 | Objekt-ID einer Auxiliary Function (Type 2) oder eines Auxiliary Inputs (Type 2). |
+| AID | Name                    | Typ     | Größe (Bytes) | Bereich / Wert   | Record Byte | Beschreibung                                                                      |
+| :-- | :---------------------- | :------ | :------------ | :--------------- | :---------- | :-------------------------------------------------------------------------------- |
+| -   | **Object ID**           | Integer | 2             | 0 – 65534        | 1 – 2       | Eindeutige ID im Objektpool.                                                      |
+| [0] | **Type**                | Integer | 1             | 33               | 3           | Objekttyp = Auxiliary Control Designator Type 2 Object Pointer.                   |
+| [1] | **Pointer Type**        | Integer | 1             | 0 – 3            | 4           | Typ der Referenz (siehe unten).                                                   |
+| [2] | **Auxiliary Object ID** | Integer | 2             | 0 – 65534, 65535 | 5 – 6       | Objekt-ID einer Auxiliary Function (Type 2) oder eines Auxiliary Inputs (Type 2). |
 
 ### Pointer Types (AID 1)
 

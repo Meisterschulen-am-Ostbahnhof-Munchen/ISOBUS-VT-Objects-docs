@@ -8,23 +8,23 @@
 
 Die **Data Mask** (Datenmaske) mit der **ID 1** ist das primäre Anzeigeelement für die Benutzeroberfläche einer Arbeitsgruppe. Sie dient als Hauptcontainer für alle visuellen Objekte (Buttons, Zahlenfelder, Grafiken), die dem Bediener auf dem Virtuellen Terminal (VT) angezeigt werden.
 
-### Attribute und Record Format (Tabelle B.4)
+## Attribute und Record Format (Tabelle B.4)
 
 Die folgende Tabelle beschreibt den Aufbau des Data Mask Objekts im Objektpool.
 
-| AID | Name | Typ | Größe (Bytes) | Bereich / Wert | Record Byte | Beschreibung |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Object ID** | Integer | 2 | 0 – 65534 | 1 – 2 | Eindeutige ID im Objektpool. |
-| [0] | **Type** | Integer | 1 | 1 | 3 | Objekttyp = Data mask. |
-| [1] | **Background colour** | Integer | 1 | 0 – 255 | 4 | Hintergrundfarbe der Maske. |
-| [2] | **Soft Key Mask** | Integer | 2 | 0 – 65534, 65535 | 5 – 6 | Objekt-ID der zugehörigen Soft Key Mask (65535 = NULL). |
-| - | **Number of objects to follow** | Integer | 1 | 0 – 255 | 7 | Anzahl der direkt enthaltenen Objekte. |
-| - | **Number of macros to follow** | Integer | 1 | 0 – 255 | 8 | Anzahl der folgenden Makro-Referenzen. |
-| - | **Repeat:** {Object ID} | Integer | 2 | 0 – 65534 | 9 + ... | Objekt-ID eines enthaltenen Objekts. |
-| - | {X Location} | Signed Integer | 2 | -32768 bis +32767 | 11 + ... | X-Position relativ zur Maske (Pixel). |
-| - | {Y Location} | Signed Integer | 2 | -32768 bis +32767 | 13 + ... | Y-Position relativ zur Maske (Pixel). |
-| - | **Repeat:** {Event ID} | Integer | 1 | 0 – 255 | var. | (Nach Objekten) Event ID, die das Makro auslöst. |
-| - | {Macro ID} | Integer | 1 | 0 – 255 | var. | Makro ID des auszuführenden Makros. |
+| AID | Name                            | Typ            | Größe (Bytes) | Bereich / Wert    | Record Byte | Beschreibung                                            |
+| :-- | :------------------------------ | :------------- | :------------ | :---------------- | :---------- | :------------------------------------------------------ |
+| -   | **Object ID**                   | Integer        | 2             | 0 – 65534         | 1 – 2       | Eindeutige ID im Objektpool.                            |
+| [0] | **Type**                        | Integer        | 1             | 1                 | 3           | Objekttyp = Data mask.                                  |
+| [1] | **Background colour**           | Integer        | 1             | 0 – 255           | 4           | Hintergrundfarbe der Maske.                             |
+| [2] | **Soft Key Mask**               | Integer        | 2             | 0 – 65534, 65535  | 5 – 6       | Objekt-ID der zugehörigen Soft Key Mask (65535 = NULL). |
+| -   | **Number of objects to follow** | Integer        | 1             | 0 – 255           | 7           | Anzahl der direkt enthaltenen Objekte.                  |
+| -   | **Number of macros to follow**  | Integer        | 1             | 0 – 255           | 8           | Anzahl der folgenden Makro-Referenzen.                  |
+| -   | **Repeat:** {Object ID}         | Integer        | 2             | 0 – 65534         | 9 + ...     | Objekt-ID eines enthaltenen Objekts.                    |
+| -   | {X Location}                    | Signed Integer | 2             | -32768 bis +32767 | 11 + ...    | X-Position relativ zur Maske (Pixel).                   |
+| -   | {Y Location}                    | Signed Integer | 2             | -32768 bis +32767 | 13 + ...    | Y-Position relativ zur Maske (Pixel).                   |
+| -   | **Repeat:** {Event ID}          | Integer        | 1             | 0 – 255           | var.        | (Nach Objekten) Event ID, die das Makro auslöst.        |
+| -   | {Macro ID}                      | Integer        | 1             | 0 – 255           | var.        | Makro ID des auszuführenden Makros.                     |
 
 ### Struktur und Child-Objekte
 

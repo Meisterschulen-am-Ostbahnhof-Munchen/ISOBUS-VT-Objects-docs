@@ -1,7 +1,6 @@
 import os
 import re
 import sys
-import yaml
 import hashlib
 import urllib.request
 from io import BytesIO
@@ -12,14 +11,14 @@ from PIL import Image
 # Mock weasyprint before importing mkdocs to avoid GObject/GTK loading errors on Windows and CI
 sys.modules['weasyprint'] = MagicMock()
 
-import mkdocs.config
-import mkdocs.config.config_options
+import mkdocs.config  # noqa: E402 - must come after the weasyprint mock above
+import mkdocs.config.config_options  # noqa: E402
 # No-op validation to allow docs_dir: . and site_dir inside docs_dir during merge
 mkdocs.config.config_options.DocsDir.post_validation = lambda self, config, key_name: None
 mkdocs.config.config_options.SiteDir.post_validation = lambda self, config, key_name: None
 
-from mkdocs.structure.files import get_files
-from mkdocs.structure.nav import get_navigation
+from mkdocs.structure.files import get_files  # noqa: E402 - must come after the post_validation patch above
+from mkdocs.structure.nav import get_navigation  # noqa: E402
 
 def clean_id(path):
     # Convert path like "Allgemeines/Zahlen.md" to a clean anchor id "allgemeines-zahlen"

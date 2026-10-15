@@ -9,7 +9,7 @@ markdown_extensions:
 plugins:
   - search
 site_name: 'ISOBUS Virtual Terminal: Benutzeroberfläche und Objekte (2)'
-site_url: https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs-de/
+site_url: https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs/de/latest/
 extra:
   alternate:
     - lang: de
